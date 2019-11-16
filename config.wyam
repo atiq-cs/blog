@@ -1,9 +1,0 @@
-#recipe Blog
-
-// Customize your settings and add new ones here
-Settings[Keys.Host] = "host.com";
-Settings[BlogKeys.Title] = "SAOSX Blog";
-Settings[BlogKeys.Description] = "Heads in the cloud! A blog by Atiq Rahman!";
-Settings[BlogKeys.Intro] = "A short intro for the blog!";
-
-// Add any pipeline customizations here

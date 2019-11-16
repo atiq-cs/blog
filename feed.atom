@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<id>http://host.com/</id>
+	<title>SAOSX Blog</title>
+	<link rel="self" href="http://host.com/" />
+	<rights>2019</rights>
+	<updated>2019-11-16T23:18:13Z</updated>
+	<subtitle>Heads in the cloud! A blog by Atiq Rahman!</subtitle>
+	<entry>
+		<id>http://host.com/posts/mercurial</id>
+		<title>Mercurial Useful Commands</title>
+		<link href="http://host.com/posts/mercurial" />
+		<updated>2019-11-14T00:00:00Z</updated>
+		<content>&lt;p&gt;List files changed in previous commit,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hg show --stat --template 'List of files: \n{files}\n'
+hg show tip~2
+hg show D17531166 --ignore-all-space --ignore-space-change --ignore-blank-lines --ignore-space-at-eol --exclude &amp;quot;materialized_configs/*&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;hg status&lt;/code&gt; has an equivalent. . represents current &lt;code&gt;HEAD&lt;/code&gt; of bookmark/repo,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hg status --rev .~1:.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;using alias &lt;code&gt;tip&lt;/code&gt; (=HEAD) here's one more example,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hg status --rev tip~1:tip
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;rebase example,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hg rebase --source e630a3b5 --dest -d master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To identify the working directory or specified revision,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hg identify
+64541997a288 tip events_text_location_node
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id="revert-examples"&gt;Revert Examples&lt;/h4&gt;
+&lt;p&gt;revert a file to previous commit,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hg revert --rev tip~1 my_file_path
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;get a clean state of file
+similar to git reset all,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hg revert --all
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Following seems awesome,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hg revert --rev .~1 --all
+hg revert --rev .~1 file_path..
+hg revert --rev .~1 file_path
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Revert a file to specific revision,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hg revert -rd48959b331d747a10603ebdbef608ff2080a25a0 users/tests/tests_seti.py
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;in case of a terrible merge conflict on json files, we can undo that,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hg revert --rev .~1 materialized_configs/search/*
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="creating-traditional-diffpatch-file"&gt;Creating traditional diff/patch file&lt;/h3&gt;
+&lt;p&gt;trying some patch related cmd, but, it's not working,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hg diff -r tip -p &amp;gt; 'Feature engineering for my awesome project.patch'
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Status to see file list changed,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hg status --rev tip~1:tip
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;check log,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hg log -l 10
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;common cmds,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hg rebase
+hg fold
+hg forget
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;this will also delete the file,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hg remove
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;hg command line to do checkout with first 9 digits/letters as SHA id of the commit,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hg checkout 3d5b62937
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;get hg log upto 10 commits,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hg log -l 10
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;show current diff (uncommitted),&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hg diff
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;checkout to a specific revision and also to delete current change,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hg checkout d48959b331d747a10603ebdbef608ff2080a25a0 --clean
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;bring current changes,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hg pull
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="bookmarks"&gt;Bookmarks&lt;/h3&gt;
+&lt;p&gt;The other name of branches,
+to create and checkout,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hg checkout --rev master --bookmark pages_text_location_node
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;rename,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hg bookmark --rename old_name new_name
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And we can use &lt;code&gt;--force&lt;/code&gt; in case of a conflict.&lt;/p&gt;
+&lt;p&gt;Just create,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hg bookmark --rev master trebek_rule_filter_loc_pages
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;mercurial and webrev (diffs)
+Some commands&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hg config --edit
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;During webRTI, we do,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hg commit -m '22720551 aalib should switch from slang to ncurses'
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Searching inside component projects
+We automate some stuff for components using &lt;code&gt;/opt/onbld/bin/pbchk&lt;/code&gt;,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hg pbchk
+hg: unknown command 'pbchk'
+Mercurial Distributed SCM
+
+hg config --edit
+the user name first hg edit --
+
+$ pbchk
+-ksh: pbchk: not found [No such file or directory]
+
+hg commit -m remove
+hg recommit
+hg push ssh://user&amp;#64;domain.com//gates/incoming
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;mercurial on Solaris (2017-02)
+some examples,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hg log
+hg serve
+hg view
+hg log -G
+
+hg tip - absolute
+hg parent
+hg summary - working dir and tons of other thing
+hg reconnect
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Rewriting history
+hash will change for changing some of the fields
+There are phases&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;public is immutable and others not&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;amend example,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hg commit --amend -m &amp;quot;git 2.7.5&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Rebasing,
+like fast forward merge, can go to merge tool&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hg pull --rebase
++1 heads
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+		<summary>&lt;p&gt;List files changed in previous commit,&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>http://host.com/posts/markdown-online</id>
+		<title>Markdown Editor and Related Tools</title>
+		<link href="http://host.com/posts/markdown-online" />
+		<updated>2018-02-04T00:00:00Z</updated>
+		<content>&lt;h2 id="document-publishing-using-markdown"&gt;Document publishing using markdown&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/contribute/how-to-write-use-markdown"&gt;https://docs.microsoft.com/en-us/contribute/how-to-write-use-markdown&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/lunet-io/markdig"&gt;https://github.com/lunet-io/markdig&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Example markdown doc from msdn &lt;a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/"&gt;async programming C#&lt;/a&gt;,&lt;/p&gt;
+&lt;p&gt;While blogging using markdown on wordpress &lt;a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet"&gt;adam P's Markdown Cheatsheet&lt;/a&gt; is handy.&lt;/p&gt;
+&lt;h2 id="markdown-editors-online"&gt;Markdown Editors Online&lt;/h2&gt;
+&lt;p&gt;Here are few online tools available directly for editing in markdown syntax,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.maketecheasier.com/best-markdown-editor-web/"&gt;https://www.maketecheasier.com/best-markdown-editor-web/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://stackedit-beta.herokuapp.com/"&gt;https://stackedit-beta.herokuapp.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://stackedit.io/app"&gt;https://stackedit.io/app&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dillinger.io/"&gt;https://dillinger.io/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://markable.in/"&gt;https://markable.in/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.slant.co/topics/2196/%7Eonline-markdown-editor"&gt;slant&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://gist.github.com/palimadra/87e7c294be6447bac96b"&gt;stackedit markdown&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://libraries.io/bower/stackedit"&gt;https://libraries.io/bower/stackedit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://hackmd.io/C3iKwt4XSmaiAZtqWn7JBw"&gt;https://hackmd.io/C3iKwt4XSmaiAZtqWn7JBw&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://simplemde.com/"&gt;https://simplemde.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;blogifier now has markdown as default editor, try a demo!&lt;/p&gt;
+&lt;h2 id="markdown-in-blogging-platforms"&gt;Markdown in Blogging Platforms&lt;/h2&gt;
+&lt;p&gt;markdown in blog services such as in blogger usually requires manually converting the markdown source to html. After we get the html we can post them in the blog using html source view. Some people use an alternative solution: a mix of github and javascript to solve this problem. First one below uses this to render markdown along with scientific equations.&lt;/p&gt;
+&lt;h3 id="markdown-in-wordpress"&gt;Markdown in wordpress&lt;/h3&gt;
+&lt;p&gt;wordpress recently added the feature of enabling markdown syntax for writing. This is pretty neat. &lt;a href="https://en.support.wordpress.com/markdown/"&gt;wordpress.com - support&lt;/a&gt; provides instruction how to enable the feature. They also provide a &lt;a href="https://en.support.wordpress.com/markdown-quick-reference/"&gt;Markdown quick reference&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;However, if you are writing scientific equations you can find troubles.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Scientific equation writing in Markdown solution for Wordpress&lt;/em&gt;
+&lt;a href="http://mathalope.co.uk/2015/03/29/how-i-write-scientific-blog-posts-that-contains-codes-and-mathematical-expressions-a-quick-reference-with-wordpress-gist-and-mathjax/"&gt;mathalope&lt;/a&gt;
+shows how to do it using the combination of self-hosted wordpress and javascript mathjax.&lt;/p&gt;
+&lt;h3 id="markdown-in-blogger"&gt;Markdown in blogger&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://blog.saliya.org/2014/08/blogging-with-markdown-in-blogger.html"&gt;Saliya's Blogs - Blogging with Markdown in Blogger&lt;/a&gt; shows how to do this in blogger.&lt;/p&gt;
+&lt;h2 id="markdown-in-wiki-systems"&gt;Markdown in Wiki Systems&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://pandoc.org/try/"&gt;pandoc&lt;/a&gt; allows viewing wiki syntax differences along with markdown.&lt;/p&gt;
+&lt;h2 id="markdown-related-resources-2018-07"&gt;Markdown related resources 2018-07&lt;/h2&gt;
+&lt;p&gt;Projects on github,
+&lt;a href="https://github.com/sparksuite/simplemde-markdown-editor"&gt;https://github.com/sparksuite/simplemde-markdown-editor&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;stackexchange's C# markdown, Which Markdown library is used?
+&lt;a href="https://math.meta.stackexchange.com/questions/9648/which-markdown-library-is-used"&gt;https://math.meta.stackexchange.com/questions/9648/which-markdown-library-is-used&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;On MarkdownSharp,
+&lt;a href="https://github.com/StackExchange/MarkdownSharp/blob/master/MarkdownSharp/Markdown.cs"&gt;https://github.com/StackExchange/MarkdownSharp/blob/master/MarkdownSharp/Markdown.cs&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/mundimark/awesome-markdown-editors"&gt;https://github.com/mundimark/awesome-markdown-editors&lt;/a&gt;
+&lt;a href="https://github.com/linezero/Blog"&gt;https://github.com/linezero/Blog&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/search?q=markdown+editor"&gt;https://github.com/search?q=markdown+editor&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/benweet/stackedit/blob/master/src/components/Editor.vue"&gt;https://github.com/benweet/stackedit/blob/master/src/components/Editor.vue&lt;/a&gt;&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;Example markdown doc from msdn &lt;a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/"&gt;async programming C#&lt;/a&gt;,&lt;/p&gt;</summary>
+	</entry>
+</feed>
