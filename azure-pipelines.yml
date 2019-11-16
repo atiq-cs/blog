@@ -4,8 +4,15 @@
 # https://aka.ms/yaml
 
 trigger:
-- master
-
+  branches:
+    include:
+      - source
+    exclude:
+      - master
+  paths:
+    exclude:
+      - .gitignore
+      - README.md
 pool:
   vmImage: 'windows-2019'
 
@@ -16,4 +23,4 @@ steps:
       target: Deploy
     env:
       GITHUB_ACCESS_TOKEN: $(githubAccessToken)
-      GITHUB_USERNAME: "$(githubUserName)"
+      GITHUB_USERNAME: "atiq-cs"
