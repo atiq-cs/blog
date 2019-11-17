@@ -25,3 +25,4 @@ steps:
       GITHUB_ACCESS_TOKEN: $(githubAccessToken)
       GITHUB_USERNAME: "$(githubUserName)"
       GITHUB_USEREMAIL: "$(githubUserEmail)"
+      CNAME_CONTENT: "$(CNameContent)"

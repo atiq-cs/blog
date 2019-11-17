@@ -9,6 +9,7 @@ var repositoryUrl = "https://github.com/atiq-cs/saos";
 var githubUserName = EnvironmentVariable("GITHUB_USERNAME");
 var githubUserEmail = EnvironmentVariable("GITHUB_USEREMAIL");
 var githubAccessToken = EnvironmentVariable("GITHUB_ACCESS_TOKEN");
+var CNameContent = EnvironmentVariable("CNAME_CONTENT");;
 
 var gitVersion = GitVersion();
 
@@ -112,11 +113,17 @@ Task("CopyToMasterBranch")
         foreach (string dirPath in System.IO.Directory.GetDirectories(sourcePath, "*", SearchOption.AllDirectories))
         {
             System.IO.Directory.CreateDirectory(dirPath.Replace(sourcePath, tempDir));
-        } 
+        }
 
-        //Copy all the files & Replaces any files with the same name
+        // Copy all the files & Replaces any files with the same name
         foreach (string newPath in System.IO.Directory.GetFiles(sourcePath, "*.*", SearchOption.AllDirectories))
             System.IO.File.Copy(newPath, newPath.Replace(sourcePath, tempDir), true);
+
+        // Write CNAME file
+        string CNameFileName = "CNAME";
+        // ref, https://docs.microsoft.com/en-us/dotnet/standard/io/how-to-write-text-to-a-file
+        System.IO.File.WriteAllText(System.IO.Path.Combine(tempDir, CNameFileName), CNameContent);
+        // if we need to add more lines to this file use, `File.AppendAllLines()`
     });
 
 Task("CommitMasterBranch")
