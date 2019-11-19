@@ -46,20 +46,16 @@ shows how to do it using the combination of self-hosted wordpress and javascript
 ## Markdown in Wiki Systems
 [pandoc](http://pandoc.org/try/) allows viewing wiki syntax differences along with markdown.
 
-
-## Markdown related resources 2018-07
+#### Markdown related resources 2018-07
 Projects on github,
-https://github.com/sparksuite/simplemde-markdown-editor
+[simplemde-markdown-editor](https://github.com/sparksuite/simplemde-markdown-editor)
 
-stackexchange's C# markdown, Which Markdown library is used?
-https://math.meta.stackexchange.com/questions/9648/which-markdown-library-is-used
+stackexchange's C# markdown, Which Markdown library is used? [ref](https://math.meta.stackexchange.com/questions/9648/which-markdown-library-is-used)
 
-On MarkdownSharp,
-https://github.com/StackExchange/MarkdownSharp/blob/master/MarkdownSharp/Markdown.cs
+[MarkdownSharp](https://github.com/StackExchange/MarkdownSharp/blob/master/MarkdownSharp/Markdown.cs)
 
-https://github.com/mundimark/awesome-markdown-editors
-https://github.com/linezero/Blog
-
-https://github.com/search?q=markdown+editor
-
-https://github.com/benweet/stackedit/blob/master/src/components/Editor.vue
+*More*
+- https://github.com/mundimark/awesome-markdown-editors
+- https://github.com/linezero/Blog
+- https://github.com/search?q=markdown+editor
+- https://github.com/benweet/stackedit/blob/master/src/components/Editor.vue
