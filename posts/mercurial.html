@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 
-        <title>SAOSX Blog - Markdown Editor and Related Tools</title>
+        <title>SAOSX Blog - Mercurial Useful Commands</title>
         <meta name="description" content="Heads in the cloud! A blog by Atiq Rahman!" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">        
 
@@ -28,9 +28,9 @@
         <meta name="msapplication-tooltip" content="SAOSX Blog" />
         <meta name="msapplication-starturl" content="/" />
 
-        <meta property="og:title" content="SAOSX Blog - Markdown Editor and Related Tools" />
+        <meta property="og:title" content="SAOSX Blog - Mercurial Useful Commands" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="http://host.com/markdown/online-tools" />
+        <meta property="og:url" content="http://host.com/posts/mercurial" />
         <!-- TODO: More social graph meta tags -->
 
         
@@ -56,10 +56,9 @@
                                 <!-- Collect the nav links, forms, and other content for toggling -->
                                 <div class="collapse navbar-collapse" id="navbar-collapse">
                                         <ul class="nav navbar-nav navbar-right">
-                                                        <li><a href="/about">About Me</a></li>
-        <li><a href="/markdown/online-tools">Markdown Editor and Related Tools</a></li>
-        <li><a href="/source-control/mercurial">Mercurial Useful Commands</a></li>
-        <li><a href="/programming-languages/python3">Python Language Reference</a></li>
+                                                        <li><a href="/posts">Archive</a></li>
+        <li><a href="/tags">Tags</a></li>
+        <li><a href="/about">About Me</a></li>
  
                                         </ul>
                                 </div>
@@ -73,9 +72,17 @@
                         <div class="container">
                                 <div class="row">
                                         <div class="col-md-12">
-<div class="site-heading">
-    <h1>Markdown Editor and Related Tools</h1>
-</div>                                            </div>
+
+    
+<div class="post-heading">
+    <h1>Mercurial Useful Commands</h1>
+    <div class="meta">        
+Published on Thursday, November 14, 2019<br>    </div>
+        <div class="tags">
+                    <a role="button" href="/tags/Mercurial,-Source-Control" class="btn btn-default btn-xs">Mercurial, Source Control</a>
+        </div>     
+</div>
+                                        </div>
                                 </div>
                         </div>
                 </header>
@@ -84,51 +91,141 @@
                 <div class="container">
                         <div class="row">
                                 <div id="content" class="col-md-12">
-                                        <h2 id="document-publishing-using-markdown">Document publishing using markdown</h2>
+                                        
+
+<p>List files changed in previous commit,</p>
+<pre><code>hg show --stat --template 'List of files: \n{files}\n'
+hg show tip~2
+hg show D17531166 --ignore-all-space --ignore-space-change --ignore-blank-lines --ignore-space-at-eol --exclude &quot;materialized_configs/*&quot;
+</code></pre>
+<p><code>hg status</code> has an equivalent. . represents current <code>HEAD</code> of bookmark/repo,</p>
+<pre><code>hg status --rev .~1:.
+</code></pre>
+<p>using alias <code>tip</code> (=HEAD) here's one more example,</p>
+<pre><code>hg status --rev tip~1:tip
+</code></pre>
+<p>rebase example,</p>
+<pre><code>hg rebase --source e630a3b5 --dest -d master
+</code></pre>
+<p>To identify the working directory or specified revision,</p>
+<pre><code>hg identify
+64541997a288 tip events_text_location_node
+</code></pre>
+<h4 id="revert-examples">Revert Examples</h4>
+<p>revert a file to previous commit,</p>
+<pre><code>hg revert --rev tip~1 my_file_path
+</code></pre>
+<p>get a clean state of file
+similar to git reset all,</p>
+<pre><code>hg revert --all
+</code></pre>
+<p>Following seems awesome,</p>
+<pre><code>hg revert --rev .~1 --all
+hg revert --rev .~1 file_path..
+hg revert --rev .~1 file_path
+</code></pre>
+<p>Revert a file to specific revision,</p>
+<pre><code>hg revert -rd48959b331d747a10603ebdbef608ff2080a25a0 users/tests/tests_seti.py
+</code></pre>
+<p>in case of a terrible merge conflict on json files, we can undo that,</p>
+<pre><code>hg revert --rev .~1 materialized_configs/search/*
+</code></pre>
+<h3 id="creating-traditional-diffpatch-file">Creating traditional diff/patch file</h3>
+<p>trying some patch related cmd, but, it's not working,</p>
+<pre><code>hg diff -r tip -p &gt; 'Feature engineering for my awesome project.patch'
+</code></pre>
+<p>Status to see file list changed,</p>
+<pre><code>hg status --rev tip~1:tip
+</code></pre>
+<p>check log,</p>
+<pre><code>hg log -l 10
+</code></pre>
+<p>common cmds,</p>
+<pre><code>hg rebase
+hg fold
+hg forget
+</code></pre>
+<p>this will also delete the file,</p>
+<pre><code>hg remove
+</code></pre>
+<p>hg command line to do checkout with first 9 digits/letters as SHA id of the commit,</p>
+<pre><code>hg checkout 3d5b62937
+</code></pre>
+<p>get hg log upto 10 commits,</p>
+<pre><code>hg log -l 10
+</code></pre>
+<p>show current diff (uncommitted),</p>
+<pre><code>hg diff
+</code></pre>
+<p>checkout to a specific revision and also to delete current change,</p>
+<pre><code>hg checkout d48959b331d747a10603ebdbef608ff2080a25a0 --clean
+</code></pre>
+<p>bring current changes,</p>
+<pre><code>hg pull
+</code></pre>
+<h3 id="bookmarks">Bookmarks</h3>
+<p>The other name of branches,
+to create and checkout,</p>
+<pre><code>hg checkout --rev master --bookmark pages_text_location_node
+</code></pre>
+<p>rename,</p>
+<pre><code>hg bookmark --rename old_name new_name
+</code></pre>
+<p>And we can use <code>--force</code> in case of a conflict.</p>
+<p>Just create,</p>
+<pre><code>hg bookmark --rev master trebek_rule_filter_loc_pages
+</code></pre>
+<p>mercurial and webrev (diffs)
+Some commands</p>
+<pre><code>hg config --edit
+</code></pre>
+<p>During webRTI, we do,</p>
+<pre><code>hg commit -m '22720551 aalib should switch from slang to ncurses'
+</code></pre>
+<p>Searching inside component projects
+We automate some stuff for components using <code>/opt/onbld/bin/pbchk</code>,</p>
+<pre><code>hg pbchk
+hg: unknown command 'pbchk'
+Mercurial Distributed SCM
+
+hg config --edit
+the user name first hg edit --
+
+$ pbchk
+-ksh: pbchk: not found [No such file or directory]
+
+hg commit -m remove
+hg recommit
+hg push ssh://user&#64;domain.com//gates/incoming
+</code></pre>
+<p>mercurial on Solaris (2017-02)
+some examples,</p>
+<pre><code>hg log
+hg serve
+hg view
+hg log -G
+
+hg tip - absolute
+hg parent
+hg summary - working dir and tons of other thing
+hg reconnect
+</code></pre>
+<p>Rewriting history
+hash will change for changing some of the fields
+There are phases</p>
 <ul>
-<li><a href="https://docs.microsoft.com/en-us/contribute/how-to-write-use-markdown">https://docs.microsoft.com/en-us/contribute/how-to-write-use-markdown</a></li>
-<li><a href="https://github.com/lunet-io/markdig">https://github.com/lunet-io/markdig</a></li>
+<li>public is immutable and others not</li>
 </ul>
-<p>Example markdown doc from msdn <a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/">async programming C#</a>,</p>
-<p>While blogging using markdown on wordpress <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">adam P's Markdown Cheatsheet</a> is handy.</p>
-<h2 id="markdown-editors-online">Markdown Editors Online</h2>
-<p>Here are few online tools available directly for editing in markdown syntax,</p>
-<ul>
-<li><a href="https://www.maketecheasier.com/best-markdown-editor-web/">https://www.maketecheasier.com/best-markdown-editor-web/</a></li>
-<li><a href="https://stackedit-beta.herokuapp.com/">https://stackedit-beta.herokuapp.com/</a></li>
-<li><a href="https://stackedit.io/app">https://stackedit.io/app</a></li>
-<li><a href="https://dillinger.io/">https://dillinger.io/</a></li>
-<li><a href="https://markable.in/">https://markable.in/</a></li>
-<li><a href="https://www.slant.co/topics/2196/%7Eonline-markdown-editor">slant</a></li>
-<li><a href="https://gist.github.com/palimadra/87e7c294be6447bac96b">stackedit markdown</a></li>
-<li><a href="https://libraries.io/bower/stackedit">https://libraries.io/bower/stackedit</a></li>
-<li><a href="https://hackmd.io/C3iKwt4XSmaiAZtqWn7JBw">https://hackmd.io/C3iKwt4XSmaiAZtqWn7JBw</a></li>
-<li><a href="https://simplemde.com/">https://simplemde.com/</a></li>
-</ul>
-<p>blogifier now has markdown as default editor, try a demo!</p>
-<h2 id="markdown-in-blogging-platforms">Markdown in Blogging Platforms</h2>
-<p>markdown in blog services such as in blogger usually requires manually converting the markdown source to html. After we get the html we can post them in the blog using html source view. Some people use an alternative solution: a mix of github and javascript to solve this problem. First one below uses this to render markdown along with scientific equations.</p>
-<h3 id="markdown-in-wordpress">Markdown in wordpress</h3>
-<p>wordpress recently added the feature of enabling markdown syntax for writing. This is pretty neat. <a href="https://en.support.wordpress.com/markdown/">wordpress.com - support</a> provides instruction how to enable the feature. They also provide a <a href="https://en.support.wordpress.com/markdown-quick-reference/">Markdown quick reference</a></p>
-<p>However, if you are writing scientific equations you can find troubles.</p>
-<p><em>Scientific equation writing in Markdown solution for Wordpress</em>
-<a href="http://mathalope.co.uk/2015/03/29/how-i-write-scientific-blog-posts-that-contains-codes-and-mathematical-expressions-a-quick-reference-with-wordpress-gist-and-mathjax/">mathalope</a>
-shows how to do it using the combination of self-hosted wordpress and javascript mathjax.</p>
-<h3 id="markdown-in-blogger">Markdown in blogger</h3>
-<p><a href="http://blog.saliya.org/2014/08/blogging-with-markdown-in-blogger.html">Saliya's Blogs - Blogging with Markdown in Blogger</a> shows how to do this in blogger.</p>
-<h2 id="markdown-in-wiki-systems">Markdown in Wiki Systems</h2>
-<p><a href="http://pandoc.org/try/">pandoc</a> allows viewing wiki syntax differences along with markdown.</p>
-<h2 id="markdown-related-resources-2018-07">Markdown related resources 2018-07</h2>
-<p>Projects on github,
-<a href="https://github.com/sparksuite/simplemde-markdown-editor">https://github.com/sparksuite/simplemde-markdown-editor</a></p>
-<p>stackexchange's C# markdown, Which Markdown library is used?
-<a href="https://math.meta.stackexchange.com/questions/9648/which-markdown-library-is-used">https://math.meta.stackexchange.com/questions/9648/which-markdown-library-is-used</a></p>
-<p>On MarkdownSharp,
-<a href="https://github.com/StackExchange/MarkdownSharp/blob/master/MarkdownSharp/Markdown.cs">https://github.com/StackExchange/MarkdownSharp/blob/master/MarkdownSharp/Markdown.cs</a></p>
-<p><a href="https://github.com/mundimark/awesome-markdown-editors">https://github.com/mundimark/awesome-markdown-editors</a>
-<a href="https://github.com/linezero/Blog">https://github.com/linezero/Blog</a></p>
-<p><a href="https://github.com/search?q=markdown+editor">https://github.com/search?q=markdown+editor</a></p>
-<p><a href="https://github.com/benweet/stackedit/blob/master/src/components/Editor.vue">https://github.com/benweet/stackedit/blob/master/src/components/Editor.vue</a></p>
+<p>amend example,</p>
+<pre><code>hg commit --amend -m &quot;git 2.7.5&quot;
+</code></pre>
+<p>Rebasing,
+like fast forward merge, can go to merge tool</p>
+<pre><code>hg pull --rebase
++1 heads
+</code></pre>
+
+
 
                                 </div>
                         </div>
