@@ -2,16 +2,16 @@
 <rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
 	<channel>
 		<title>SAOSX Blog</title>
-		<link>http://host.com/</link>
-		<description>Heads in the cloud! A blog by Atiq Rahman!</description>
+		<link>http://blog.saosx.com/</link>
+		<description>Heads in the cloud! A Blog by Atiq Rahman!</description>
 		<copyright>2019</copyright>
-		<pubDate>Fri, 22 Nov 2019 18:24:03 GMT</pubDate>
-		<lastBuildDate>Fri, 22 Nov 2019 18:24:03 GMT</lastBuildDate>
+		<pubDate>Fri, 22 Nov 2019 18:36:48 GMT</pubDate>
+		<lastBuildDate>Fri, 22 Nov 2019 18:36:48 GMT</lastBuildDate>
 		<item>
 			<title>Math Notation Test</title>
-			<link>http://host.com/posts/math</link>
+			<link>http://blog.saosx.com/posts/math</link>
 			<description>&lt;p&gt;This is a &lt;span class="math"&gt;\(math block\)&lt;/span&gt;&lt;/p&gt;</description>
-			<guid>http://host.com/posts/math</guid>
+			<guid>http://blog.saosx.com/posts/math</guid>
 			<pubDate>Fri, 22 Nov 2019 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;This is a &lt;span class="math"&gt;\(math block\)&lt;/span&gt;&lt;/p&gt;
 &lt;div class="math"&gt;
@@ -25,9 +25,9 @@
 		</item>
 		<item>
 			<title>pwsh Command Cache</title>
-			<link>http://host.com/posts/pwsh</link>
+			<link>http://blog.saosx.com/posts/pwsh</link>
 			<description>&lt;p&gt;&lt;em&gt;This article formerly titled as 'Powershell Command Cache'&lt;/em&gt;&lt;/p&gt;</description>
-			<guid>http://host.com/posts/pwsh</guid>
+			<guid>http://blog.saosx.com/posts/pwsh</guid>
 			<pubDate>Tue, 19 Nov 2019 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;&lt;em&gt;This article formerly titled as 'Powershell Command Cache'&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Please be aware of notation below in command outlines. &lt;code&gt;$&lt;/code&gt; represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for exxample, &lt;code&gt;takeown&lt;/code&gt;.&lt;/p&gt;
@@ -140,9 +140,9 @@ True     True     String                                   System.Object
 		</item>
 		<item>
 			<title>Mercurial Useful Commands</title>
-			<link>http://host.com/posts/mercurial</link>
+			<link>http://blog.saosx.com/posts/mercurial</link>
 			<description>&lt;p&gt;List files changed in previous commit,&lt;/p&gt;</description>
-			<guid>http://host.com/posts/mercurial</guid>
+			<guid>http://blog.saosx.com/posts/mercurial</guid>
 			<pubDate>Thu, 14 Nov 2019 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;List files changed in previous commit,&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;hg show --stat --template 'List of files: \n{files}\n'
@@ -279,9 +279,9 @@ like fast forward merge, can go to merge tool&lt;/p&gt;
 		</item>
 		<item>
 			<title>Python Language Reference</title>
-			<link>http://host.com/posts/python3</link>
+			<link>http://blog.saosx.com/posts/python3</link>
 			<description>&lt;p&gt;ref: &lt;a href="https://stackoverflow.com/q/354883"&gt;so&lt;/a&gt;&lt;/p&gt;</description>
-			<guid>http://host.com/posts/python3</guid>
+			<guid>http://blog.saosx.com/posts/python3</guid>
 			<pubDate>Thu, 14 Nov 2019 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;h4 id="how-do-i-return-multiple-values-from-a-function"&gt;How do I return multiple values from a function?&lt;/h4&gt;
 &lt;p&gt;ref: &lt;a href="https://stackoverflow.com/q/354883"&gt;so&lt;/a&gt;&lt;/p&gt;
@@ -291,9 +291,9 @@ like fast forward merge, can go to merge tool&lt;/p&gt;
 		</item>
 		<item>
 			<title>Markdown Editor and Related Tools</title>
-			<link>http://host.com/posts/online-tools</link>
+			<link>http://blog.saosx.com/posts/online-tools</link>
 			<description>&lt;p&gt;Example markdown doc from msdn &lt;a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/"&gt;async programming C#&lt;/a&gt;,&lt;/p&gt;</description>
-			<guid>http://host.com/posts/online-tools</guid>
+			<guid>http://blog.saosx.com/posts/online-tools</guid>
 			<pubDate>Sun, 04 Feb 2018 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;h2 id="document-publishing-using-markdown"&gt;Document publishing using markdown&lt;/h2&gt;
 &lt;ul&gt;

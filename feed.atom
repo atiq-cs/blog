@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<id>http://host.com/</id>
+	<id>http://blog.saosx.com/</id>
 	<title>SAOSX Blog</title>
-	<link rel="self" href="http://host.com/" />
+	<link rel="self" href="http://blog.saosx.com/" />
 	<rights>2019</rights>
-	<updated>2019-11-22T18:24:03Z</updated>
-	<subtitle>Heads in the cloud! A blog by Atiq Rahman!</subtitle>
+	<updated>2019-11-22T18:36:48Z</updated>
+	<subtitle>Heads in the cloud! A Blog by Atiq Rahman!</subtitle>
 	<entry>
-		<id>http://host.com/posts/math</id>
+		<id>http://blog.saosx.com/posts/math</id>
 		<title>Math Notation Test</title>
-		<link href="http://host.com/posts/math" />
+		<link href="http://blog.saosx.com/posts/math" />
 		<updated>2019-11-22T00:00:00Z</updated>
 		<content>&lt;p&gt;This is a &lt;span class="math"&gt;\(math block\)&lt;/span&gt;&lt;/p&gt;
 &lt;div class="math"&gt;
@@ -23,9 +23,9 @@
 		<summary>&lt;p&gt;This is a &lt;span class="math"&gt;\(math block\)&lt;/span&gt;&lt;/p&gt;</summary>
 	</entry>
 	<entry>
-		<id>http://host.com/posts/pwsh</id>
+		<id>http://blog.saosx.com/posts/pwsh</id>
 		<title>pwsh Command Cache</title>
-		<link href="http://host.com/posts/pwsh" />
+		<link href="http://blog.saosx.com/posts/pwsh" />
 		<updated>2019-11-19T00:00:00Z</updated>
 		<content>&lt;p&gt;&lt;em&gt;This article formerly titled as 'Powershell Command Cache'&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Please be aware of notation below in command outlines. &lt;code&gt;$&lt;/code&gt; represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for exxample, &lt;code&gt;takeown&lt;/code&gt;.&lt;/p&gt;
@@ -138,9 +138,9 @@ True     True     String                                   System.Object
 		<summary>&lt;p&gt;&lt;em&gt;This article formerly titled as 'Powershell Command Cache'&lt;/em&gt;&lt;/p&gt;</summary>
 	</entry>
 	<entry>
-		<id>http://host.com/posts/mercurial</id>
+		<id>http://blog.saosx.com/posts/mercurial</id>
 		<title>Mercurial Useful Commands</title>
-		<link href="http://host.com/posts/mercurial" />
+		<link href="http://blog.saosx.com/posts/mercurial" />
 		<updated>2019-11-14T00:00:00Z</updated>
 		<content>&lt;p&gt;List files changed in previous commit,&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;hg show --stat --template 'List of files: \n{files}\n'
@@ -277,9 +277,9 @@ like fast forward merge, can go to merge tool&lt;/p&gt;
 		<summary>&lt;p&gt;List files changed in previous commit,&lt;/p&gt;</summary>
 	</entry>
 	<entry>
-		<id>http://host.com/posts/python3</id>
+		<id>http://blog.saosx.com/posts/python3</id>
 		<title>Python Language Reference</title>
-		<link href="http://host.com/posts/python3" />
+		<link href="http://blog.saosx.com/posts/python3" />
 		<updated>2019-11-14T00:00:00Z</updated>
 		<content>&lt;h4 id="how-do-i-return-multiple-values-from-a-function"&gt;How do I return multiple values from a function?&lt;/h4&gt;
 &lt;p&gt;ref: &lt;a href="https://stackoverflow.com/q/354883"&gt;so&lt;/a&gt;&lt;/p&gt;
@@ -289,9 +289,9 @@ like fast forward merge, can go to merge tool&lt;/p&gt;
 		<summary>&lt;p&gt;ref: &lt;a href="https://stackoverflow.com/q/354883"&gt;so&lt;/a&gt;&lt;/p&gt;</summary>
 	</entry>
 	<entry>
-		<id>http://host.com/posts/online-tools</id>
+		<id>http://blog.saosx.com/posts/online-tools</id>
 		<title>Markdown Editor and Related Tools</title>
-		<link href="http://host.com/posts/online-tools" />
+		<link href="http://blog.saosx.com/posts/online-tools" />
 		<updated>2018-02-04T00:00:00Z</updated>
 		<content>&lt;h2 id="document-publishing-using-markdown"&gt;Document publishing using markdown&lt;/h2&gt;
 &lt;ul&gt;
