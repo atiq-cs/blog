@@ -4,8 +4,135 @@
 	<title>SAOSX Blog</title>
 	<link rel="self" href="http://host.com/" />
 	<rights>2019</rights>
-	<updated>2019-11-19T21:41:40Z</updated>
+	<updated>2019-11-22T03:00:53Z</updated>
 	<subtitle>Heads in the cloud! A blog by Atiq Rahman!</subtitle>
+	<entry>
+		<id>http://host.com/posts/pwsh</id>
+		<title>pwsh Command Cache</title>
+		<link href="http://host.com/posts/pwsh" />
+		<updated>2019-11-19T00:00:00Z</updated>
+		<content>&lt;p&gt;&lt;em&gt;This article formerly titled as 'Powershell Command Cache'&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Please be aware of notation below in command outlines. &lt;code&gt;$&lt;/code&gt; represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for exxample, &lt;code&gt;takeown&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id="initialization-of-shell"&gt;Initialization of Shell&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;This section is for my personalized shell; please feel free to skip it.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Since move to pwsh this has changed to this (sorry for replacing simple Console, but it uses an inconvenient Env:WinDir/ symbolic link),&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pwsh -NoExit D:\Code\fftsys_ws\PowerShell\Init.ps1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For Machine Learning customized shell, I try adding an arg,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pwsh -NoExit D:\Code\fftsys_ws\PowerShell\Init.ps1 ML
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Bluetooth cmds are replaced by,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Powershell.exe -NoProfile -File Bluetooth.ps1 Off / On
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id="new-to-pwsh"&gt;New to pwsh?&lt;/h2&gt;
+&lt;p&gt;clear-host is equivalent to cls
+&lt;code&gt;Get-Location&lt;/code&gt; instead of pwd`
+ls, cat, popd, pushd etc still work&lt;/p&gt;
+&lt;p&gt;Write-Host is equivalent to echo. Example,
+echo 'hello'
+ps is equivalent to Get-Process or to List processes or doing &lt;code&gt;tasklist&lt;/code&gt;.
+Stop-Proccess instead of taskkill&lt;/p&gt;
+&lt;h2 id="application-run-examples"&gt;Application Run Examples&lt;/h2&gt;
+&lt;p&gt;Here are some handy cmds,  Access sys properties,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Start DevEnv /Edit, Stream-Converter.ps1
+Start Skype:
+
+Start CVpn-Client
+
+Start Atom
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;where CVpn-Client usually links to &lt;code&gt;C:\Program Files (x86)\Cisco\Cisco AnyConnect Secure Mobility Client\vpnui.exe&lt;/code&gt;
+where atom is usually linked to &lt;code&gt;C:\Users\atiq\AppData\Local\atom\atom.exe&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id="balanced-power-options"&gt;Balanced Power options&lt;/h2&gt;
+&lt;p&gt;Turn hibernation off (run from elevated PS),&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;powercfg.exe /h off
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Open Power Options Window,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Show-ControlPanelItem -Name &amp;quot;Power Options&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;List Power plans,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ powercfg list
+Existing Power Schemes (* Active)
+-----------------------------------
+Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced) *
+Power Scheme GUID: 433299bd-efc0-474e-a61e-4a940c85e632  (Timers off (Presentation))
+Power Scheme GUID: 496d75e1-8cba-4d72-b778-535d67c976ea  (Airplane)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;How to export Balanced plan (we copy paste id from output of above command),&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Powercfg -Export D:\Efficient_BP.pow 381b4222-f694-41f0-9685-ff5bb260df2e
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;automate importing registry (requires privilege) ref,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;reg import 'D:\Soft\reg files soft settings\app_paths\KeePass.reg'
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Control Panel Cmdlet
+Handy cmds follow, &lt;a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/show-controlpanelitem"&gt;ref&lt;/a&gt; to access sys properties,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Show-ControlPanelItem -Name System
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Names supported by &lt;code&gt;Show-ControlPanelItem&lt;/code&gt;,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Network and Sharing Center&lt;/li&gt;
+&lt;li&gt;Device Manager&lt;/li&gt;
+&lt;li&gt;Programs and Features&lt;/li&gt;
+&lt;li&gt;Default Programs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For, Sound mouse etc we do,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sound&lt;/li&gt;
+&lt;li&gt;Mouse&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="other-cmdlets"&gt;Other Cmdlets&lt;/h2&gt;
+&lt;p&gt;Rename Machine,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Rename-Computer -NewName JohnPC -Restart
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Event Log,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Show-EventLog
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id="service-management"&gt;Service Management&lt;/h2&gt;
+&lt;p&gt;Managing services,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Stop-Service -Name VPNAgent
+Start-Service -Name VPNAgent
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id="scripting-using-pwsh"&gt;Scripting using pwsh&lt;/h2&gt;
+&lt;p&gt;These basic stuffs might come handy,&lt;/p&gt;
+&lt;h3 id="type-conversion"&gt;Type Conversion&lt;/h3&gt;
+&lt;p&gt;command to find ascii number of a bunch of characters,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ [int[]][char[]] 'abcd'
+97
+98
+99
+100
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;to find ascii number of single char,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ [int][char] 'z'
+122
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Array Sort,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$a = [int[]] &amp;#64;(9,5)
+[Array]::Sort($a)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Probably because ‘z’ in powershell is not considered as a character literal.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ 'z'.gettype()
+IsPublic IsSerial Name                                     BaseType
+-------- -------- ----                                     --------
+True     True     String                                   System.Object
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+		<summary>&lt;p&gt;&lt;em&gt;This article formerly titled as 'Powershell Command Cache'&lt;/em&gt;&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>http://host.com/posts/python3</id>
+		<title>Python Language Reference</title>
+		<link href="http://host.com/posts/python3" />
+		<updated>2019-11-14T00:00:00Z</updated>
+		<content>&lt;h4 id="how-do-i-return-multiple-values-from-a-function"&gt;How do I return multiple values from a function?&lt;/h4&gt;
+&lt;p&gt;ref: &lt;a href="https://stackoverflow.com/q/354883"&gt;so&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id="typing-python-on-windows-10-version-1903-command-prompt-opens-microsoft-store"&gt;Typing “python” on Windows 10 (version 1903) command prompt opens Microsoft store&lt;/h4&gt;
+&lt;p&gt;ref &lt;a href="https://superuser.com/q/1437590"&gt;so&lt;/a&gt;&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;ref: &lt;a href="https://stackoverflow.com/q/354883"&gt;so&lt;/a&gt;&lt;/p&gt;</summary>
+	</entry>
 	<entry>
 		<id>http://host.com/posts/mercurial</id>
 		<title>Mercurial Useful Commands</title>
@@ -144,18 +271,6 @@ like fast forward merge, can go to merge tool&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;
 </content>
 		<summary>&lt;p&gt;List files changed in previous commit,&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>http://host.com/posts/python3</id>
-		<title>Python Language Reference</title>
-		<link href="http://host.com/posts/python3" />
-		<updated>2019-11-14T00:00:00Z</updated>
-		<content>&lt;h4 id="how-do-i-return-multiple-values-from-a-function"&gt;How do I return multiple values from a function?&lt;/h4&gt;
-&lt;p&gt;ref: &lt;a href="https://stackoverflow.com/q/354883"&gt;so&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id="typing-python-on-windows-10-version-1903-command-prompt-opens-microsoft-store"&gt;Typing “python” on Windows 10 (version 1903) command prompt opens Microsoft store&lt;/h4&gt;
-&lt;p&gt;ref &lt;a href="https://superuser.com/q/1437590"&gt;so&lt;/a&gt;&lt;/p&gt;
-</content>
-		<summary>&lt;p&gt;ref: &lt;a href="https://stackoverflow.com/q/354883"&gt;so&lt;/a&gt;&lt;/p&gt;</summary>
 	</entry>
 	<entry>
 		<id>http://host.com/posts/online-tools</id>

@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 
-        <title>SAOSX Blog - Markdown</title>
+        <title>SAOSX Blog - pwsh Command Cache</title>
         <meta name="description" content="Heads in the cloud! A blog by Atiq Rahman!" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">        
 
@@ -28,9 +28,9 @@
         <meta name="msapplication-tooltip" content="SAOSX Blog" />
         <meta name="msapplication-starturl" content="/" />
 
-        <meta property="og:title" content="SAOSX Blog - Markdown" />
+        <meta property="og:title" content="SAOSX Blog - pwsh Command Cache" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="http://host.com/tags/Markdown" />
+        <meta property="og:url" content="http://host.com/posts/pwsh" />
         <!-- TODO: More social graph meta tags -->
 
         
@@ -72,9 +72,17 @@
                         <div class="container">
                                 <div class="row">
                                         <div class="col-md-12">
-<div class="site-heading">
-    <h1>Markdown</h1>
-</div>                                            </div>
+
+    
+<div class="post-heading">
+    <h1>pwsh Command Cache</h1>
+    <div class="meta">        
+Published on Tuesday, November 19, 2019<br>    </div>
+        <div class="tags">
+                    <a role="button" href="/tags/Powershell-Core,-pwsh,-Shell" class="btn btn-default btn-xs">Powershell Core, pwsh, Shell</a>
+        </div>     
+</div>
+                                        </div>
                                 </div>
                         </div>
                 </header>
@@ -83,36 +91,118 @@
                 <div class="container">
                         <div class="row">
                                 <div id="content" class="col-md-12">
-                                        <div class="container-sm-height">
-    <div class="row row-sm-height">
-        <div class="col-sm-8 right-border col-sm-height">
-            
-        <div class="post-list">
-            <a href="/posts/online-tools">
-                <h3 class="post-title">Markdown Editor and Related Tools</h3>
-            </a>
-            <p class="post-meta">Posted on Sunday, February 4, 2018</p>      
-        </div>   
+                                        
+
+<p><em>This article formerly titled as 'Powershell Command Cache'</em></p>
+<p>Please be aware of notation below in command outlines. <code>$</code> represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for exxample, <code>takeown</code>.</p>
+<h2 id="initialization-of-shell">Initialization of Shell</h2>
+<p><em>This section is for my personalized shell; please feel free to skip it.</em></p>
+<p>Since move to pwsh this has changed to this (sorry for replacing simple Console, but it uses an inconvenient Env:WinDir/ symbolic link),</p>
+<pre><code>pwsh -NoExit D:\Code\fftsys_ws\PowerShell\Init.ps1
+</code></pre>
+<p>For Machine Learning customized shell, I try adding an arg,</p>
+<pre><code>pwsh -NoExit D:\Code\fftsys_ws\PowerShell\Init.ps1 ML
+</code></pre>
+<p>Bluetooth cmds are replaced by,</p>
+<pre><code>Powershell.exe -NoProfile -File Bluetooth.ps1 Off / On
+</code></pre>
+<h2 id="new-to-pwsh">New to pwsh?</h2>
+<p>clear-host is equivalent to cls
+<code>Get-Location</code> instead of pwd`
+ls, cat, popd, pushd etc still work</p>
+<p>Write-Host is equivalent to echo. Example,
+echo 'hello'
+ps is equivalent to Get-Process or to List processes or doing <code>tasklist</code>.
+Stop-Proccess instead of taskkill</p>
+<h2 id="application-run-examples">Application Run Examples</h2>
+<p>Here are some handy cmds,  Access sys properties,</p>
+<pre><code>Start DevEnv /Edit, Stream-Converter.ps1
+Start Skype:
+
+Start CVpn-Client
+
+Start Atom
+</code></pre>
+<p>where CVpn-Client usually links to <code>C:\Program Files (x86)\Cisco\Cisco AnyConnect Secure Mobility Client\vpnui.exe</code>
+where atom is usually linked to <code>C:\Users\atiq\AppData\Local\atom\atom.exe</code></p>
+<h2 id="balanced-power-options">Balanced Power options</h2>
+<p>Turn hibernation off (run from elevated PS),</p>
+<pre><code>powercfg.exe /h off
+</code></pre>
+<p>Open Power Options Window,</p>
+<pre><code>Show-ControlPanelItem -Name &quot;Power Options&quot;
+</code></pre>
+<pre><code>
+</code></pre>
+<p>List Power plans,</p>
+<pre><code>$ powercfg list
+Existing Power Schemes (* Active)
+-----------------------------------
+Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced) *
+Power Scheme GUID: 433299bd-efc0-474e-a61e-4a940c85e632  (Timers off (Presentation))
+Power Scheme GUID: 496d75e1-8cba-4d72-b778-535d67c976ea  (Airplane)
+</code></pre>
+<p>How to export Balanced plan (we copy paste id from output of above command),</p>
+<pre><code>Powercfg -Export D:\Efficient_BP.pow 381b4222-f694-41f0-9685-ff5bb260df2e
+</code></pre>
+<p>automate importing registry (requires privilege) ref,</p>
+<pre><code>reg import 'D:\Soft\reg files soft settings\app_paths\KeePass.reg'
+</code></pre>
+<p>Control Panel Cmdlet
+Handy cmds follow, <a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/show-controlpanelitem">ref</a> to access sys properties,</p>
+<pre><code>Show-ControlPanelItem -Name System
+</code></pre>
+<p>Names supported by <code>Show-ControlPanelItem</code>,</p>
+<ul>
+<li>Network and Sharing Center</li>
+<li>Device Manager</li>
+<li>Programs and Features</li>
+<li>Default Programs</li>
+</ul>
+<p>For, Sound mouse etc we do,</p>
+<ul>
+<li>Sound</li>
+<li>Mouse</li>
+</ul>
+<h2 id="other-cmdlets">Other Cmdlets</h2>
+<p>Rename Machine,</p>
+<pre><code>Rename-Computer -NewName JohnPC -Restart
+</code></pre>
+<p>Event Log,</p>
+<pre><code>Show-EventLog
+</code></pre>
+<h2 id="service-management">Service Management</h2>
+<p>Managing services,</p>
+<pre><code>Stop-Service -Name VPNAgent
+Start-Service -Name VPNAgent
+</code></pre>
+<h2 id="scripting-using-pwsh">Scripting using pwsh</h2>
+<p>These basic stuffs might come handy,</p>
+<h3 id="type-conversion">Type Conversion</h3>
+<p>command to find ascii number of a bunch of characters,</p>
+<pre><code>$ [int[]][char[]] 'abcd'
+97
+98
+99
+100
+</code></pre>
+<p>to find ascii number of single char,</p>
+<pre><code>$ [int][char] 'z'
+122
+</code></pre>
+<p>Array Sort,</p>
+<pre><code>$a = [int[]] &#64;(9,5)
+[Array]::Sort($a)
+</code></pre>
+<p>Probably because ‘z’ in powershell is not considered as a character literal.</p>
+<pre><code>$ 'z'.gettype()
+IsPublic IsSerial Name                                     BaseType
+-------- -------- ----                                     --------
+True     True     String                                   System.Object
+</code></pre>
 
 
-            <nav>
-                <ul class="pager">
-                    <li class="previous">                
-                    </li>
-                    <li class="next">
-                    </li>
-                </ul>
-            </nav>
-            <hr class="visible-xs-block" />
-        </div>
-		
-        <div class="col-sm-4 col-sm-height">
-                <a role="button" href="/tags/Mercurial,-Source-Control" class="btn btn-default btn-xs">Mercurial, Source Control (2)</a>
-                <a role="button" href="/tags/Powershell-Core,-pwsh,-Shell" class="btn btn-default btn-xs">Powershell Core, pwsh, Shell (1)</a>
-                <a role="button" href="/tags/Markdown" class="btn btn-primary btn-xs">Markdown (1)</a>
-        </div>
-    </div>
-</div>
+
                                 </div>
                         </div>
                 </div>
