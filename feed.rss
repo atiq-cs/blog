@@ -5,8 +5,24 @@
 		<link>http://host.com/</link>
 		<description>Heads in the cloud! A blog by Atiq Rahman!</description>
 		<copyright>2019</copyright>
-		<pubDate>Fri, 22 Nov 2019 03:00:53 GMT</pubDate>
-		<lastBuildDate>Fri, 22 Nov 2019 03:00:53 GMT</lastBuildDate>
+		<pubDate>Fri, 22 Nov 2019 18:07:48 GMT</pubDate>
+		<lastBuildDate>Fri, 22 Nov 2019 18:07:48 GMT</lastBuildDate>
+		<item>
+			<title>Math Notation Test</title>
+			<link>http://host.com/posts/math</link>
+			<description>&lt;p&gt;This is a &lt;span class="math"&gt;\(math block\)&lt;/span&gt;&lt;/p&gt;</description>
+			<guid>http://host.com/posts/math</guid>
+			<pubDate>Fri, 22 Nov 2019 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;This is a &lt;span class="math"&gt;\(math block\)&lt;/span&gt;&lt;/p&gt;
+&lt;div class="math"&gt;
+\[
+\begin{equation}
+  \int_0^\infty \frac{x^3}{e^x-1}\,dx = \frac{\pi^4}{15}
+  \label{eq:sample}
+\end{equation}
+\]&lt;/div&gt;
+</content:encoded>
+		</item>
 		<item>
 			<title>pwsh Command Cache</title>
 			<link>http://host.com/posts/pwsh</link>
@@ -120,18 +136,6 @@ IsPublic IsSerial Name                                     BaseType
 -------- -------- ----                                     --------
 True     True     String                                   System.Object
 &lt;/code&gt;&lt;/pre&gt;
-</content:encoded>
-		</item>
-		<item>
-			<title>Python Language Reference</title>
-			<link>http://host.com/posts/python3</link>
-			<description>&lt;p&gt;ref: &lt;a href="https://stackoverflow.com/q/354883"&gt;so&lt;/a&gt;&lt;/p&gt;</description>
-			<guid>http://host.com/posts/python3</guid>
-			<pubDate>Thu, 14 Nov 2019 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;h4 id="how-do-i-return-multiple-values-from-a-function"&gt;How do I return multiple values from a function?&lt;/h4&gt;
-&lt;p&gt;ref: &lt;a href="https://stackoverflow.com/q/354883"&gt;so&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id="typing-python-on-windows-10-version-1903-command-prompt-opens-microsoft-store"&gt;Typing “python” on Windows 10 (version 1903) command prompt opens Microsoft store&lt;/h4&gt;
-&lt;p&gt;ref &lt;a href="https://superuser.com/q/1437590"&gt;so&lt;/a&gt;&lt;/p&gt;
 </content:encoded>
 		</item>
 		<item>
@@ -271,6 +275,18 @@ like fast forward merge, can go to merge tool&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;hg pull --rebase
 +1 heads
 &lt;/code&gt;&lt;/pre&gt;
+</content:encoded>
+		</item>
+		<item>
+			<title>Python Language Reference</title>
+			<link>http://host.com/posts/python3</link>
+			<description>&lt;p&gt;ref: &lt;a href="https://stackoverflow.com/q/354883"&gt;so&lt;/a&gt;&lt;/p&gt;</description>
+			<guid>http://host.com/posts/python3</guid>
+			<pubDate>Thu, 14 Nov 2019 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;h4 id="how-do-i-return-multiple-values-from-a-function"&gt;How do I return multiple values from a function?&lt;/h4&gt;
+&lt;p&gt;ref: &lt;a href="https://stackoverflow.com/q/354883"&gt;so&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id="typing-python-on-windows-10-version-1903-command-prompt-opens-microsoft-store"&gt;Typing “python” on Windows 10 (version 1903) command prompt opens Microsoft store&lt;/h4&gt;
+&lt;p&gt;ref &lt;a href="https://superuser.com/q/1437590"&gt;so&lt;/a&gt;&lt;/p&gt;
 </content:encoded>
 		</item>
 		<item>

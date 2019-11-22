@@ -4,8 +4,24 @@
 	<title>SAOSX Blog</title>
 	<link rel="self" href="http://host.com/" />
 	<rights>2019</rights>
-	<updated>2019-11-22T03:00:53Z</updated>
+	<updated>2019-11-22T18:07:48Z</updated>
 	<subtitle>Heads in the cloud! A blog by Atiq Rahman!</subtitle>
+	<entry>
+		<id>http://host.com/posts/math</id>
+		<title>Math Notation Test</title>
+		<link href="http://host.com/posts/math" />
+		<updated>2019-11-22T00:00:00Z</updated>
+		<content>&lt;p&gt;This is a &lt;span class="math"&gt;\(math block\)&lt;/span&gt;&lt;/p&gt;
+&lt;div class="math"&gt;
+\[
+\begin{equation}
+  \int_0^\infty \frac{x^3}{e^x-1}\,dx = \frac{\pi^4}{15}
+  \label{eq:sample}
+\end{equation}
+\]&lt;/div&gt;
+</content>
+		<summary>&lt;p&gt;This is a &lt;span class="math"&gt;\(math block\)&lt;/span&gt;&lt;/p&gt;</summary>
+	</entry>
 	<entry>
 		<id>http://host.com/posts/pwsh</id>
 		<title>pwsh Command Cache</title>
@@ -120,18 +136,6 @@ True     True     String                                   System.Object
 &lt;/code&gt;&lt;/pre&gt;
 </content>
 		<summary>&lt;p&gt;&lt;em&gt;This article formerly titled as 'Powershell Command Cache'&lt;/em&gt;&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>http://host.com/posts/python3</id>
-		<title>Python Language Reference</title>
-		<link href="http://host.com/posts/python3" />
-		<updated>2019-11-14T00:00:00Z</updated>
-		<content>&lt;h4 id="how-do-i-return-multiple-values-from-a-function"&gt;How do I return multiple values from a function?&lt;/h4&gt;
-&lt;p&gt;ref: &lt;a href="https://stackoverflow.com/q/354883"&gt;so&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id="typing-python-on-windows-10-version-1903-command-prompt-opens-microsoft-store"&gt;Typing “python” on Windows 10 (version 1903) command prompt opens Microsoft store&lt;/h4&gt;
-&lt;p&gt;ref &lt;a href="https://superuser.com/q/1437590"&gt;so&lt;/a&gt;&lt;/p&gt;
-</content>
-		<summary>&lt;p&gt;ref: &lt;a href="https://stackoverflow.com/q/354883"&gt;so&lt;/a&gt;&lt;/p&gt;</summary>
 	</entry>
 	<entry>
 		<id>http://host.com/posts/mercurial</id>
@@ -271,6 +275,18 @@ like fast forward merge, can go to merge tool&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;
 </content>
 		<summary>&lt;p&gt;List files changed in previous commit,&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>http://host.com/posts/python3</id>
+		<title>Python Language Reference</title>
+		<link href="http://host.com/posts/python3" />
+		<updated>2019-11-14T00:00:00Z</updated>
+		<content>&lt;h4 id="how-do-i-return-multiple-values-from-a-function"&gt;How do I return multiple values from a function?&lt;/h4&gt;
+&lt;p&gt;ref: &lt;a href="https://stackoverflow.com/q/354883"&gt;so&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id="typing-python-on-windows-10-version-1903-command-prompt-opens-microsoft-store"&gt;Typing “python” on Windows 10 (version 1903) command prompt opens Microsoft store&lt;/h4&gt;
+&lt;p&gt;ref &lt;a href="https://superuser.com/q/1437590"&gt;so&lt;/a&gt;&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;ref: &lt;a href="https://stackoverflow.com/q/354883"&gt;so&lt;/a&gt;&lt;/p&gt;</summary>
 	</entry>
 	<entry>
 		<id>http://host.com/posts/online-tools</id>
