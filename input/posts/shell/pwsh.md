@@ -23,7 +23,6 @@ Bluetooth cmds are replaced by,
 Powershell.exe -NoProfile -File Bluetooth.ps1 Off / On
 ```
 
-
 ## New to pwsh?
 clear-host is equivalent to cls
 `Get-Location` instead of pwd`
@@ -39,6 +38,7 @@ Stop-Proccess instead of taskkill
 Here are some handy cmds,  Access sys properties,
 ```
 Start DevEnv /Edit, Stream-Converter.ps1
+Start Microsoft-Edge:https://google.com
 Start Skype:
 
 Start CVpn-Client
@@ -98,6 +98,12 @@ For, Sound mouse etc we do,
 - Mouse
 
 ## Other Cmdlets
+Get list of running processes (unique),
+```
+Get-Process | Select-Object -Unique Path
+```
+
+
 Rename Machine,
 ```
 Rename-Computer -NewName JohnPC -Restart
@@ -141,10 +147,18 @@ $a = [int[]] @(9,5)
 [Array]::Sort($a)
 ```
 
-Probably because ‘z’ in powershell is not considered as a character literal.
+Because these literatls i.e., 'xxx' in powershell is considered as string literal like python.
 ```
 $ 'z'.gettype()
 IsPublic IsSerial Name                                     BaseType
 -------- -------- ----                                     --------
 True     True     String                                   System.Object
+```
+
+#### String Helpers
+nll or empty related where `$ConfigName` is an example variable,
+```
+[string]::IsNullOrEmpty($ConfigName)
+[string]::IsEmpty($ConfigName)
+[string]::Empty($ConfigName)
 ```

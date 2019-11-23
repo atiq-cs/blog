@@ -5,6 +5,6 @@ Settings[Keys.Host] = "blog.saosx.com";
 Settings[BlogKeys.Title] = "SAOSX Blog";
 Settings[BlogKeys.Description] = "Heads in the cloud! A Blog by Atiq Rahman!";
 Settings[BlogKeys.Intro] = "A short intro for the blog!";
-Settings[BlogKeys.MarkdownConfiguration] = "advanced+bootstrap+Mathematics";
+// Settings[BlogKeys.MarkdownConfiguration] = "advanced+bootstrap+Mathematics";
 
 // Add any pipeline customizations here
