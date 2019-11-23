@@ -1,0 +1,349 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+
+        <title>SAOSX Blog - WiFi Networking with Powershell and netsh</title>
+        <meta name="description" content="Heads in the cloud! A Blog by Atiq Rahman!" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+
+        <link type="application/rss+xml" rel="alternate" title="SAOSX Blog" href="/feed.rss" />
+                <link type="application/atom+xml" rel="alternate" title="SAOSX Blog" href="/feed.atom" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+        <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="/assets/css/highlight.css" rel="stylesheet">
+        <link href="/assets/css/clean-blog.css" rel="stylesheet" />
+        <link href="/assets/css/master.css" rel="stylesheet" />
+        <link href="/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+        <link href="/assets/css/override.css" rel="stylesheet" />
+
+
+        <meta name="application-name" content="SAOSX Blog" />
+        <meta name="msapplication-tooltip" content="SAOSX Blog" />
+        <meta name="msapplication-starturl" content="/" />
+
+        <meta property="og:title" content="SAOSX Blog - WiFi Networking with Powershell and netsh" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://blog.saosx.com/posts/wifi-cmd" />
+        <!-- TODO: More social graph meta tags -->
+
+        
+
+
+        </head>
+        <body>
+                
+                <!-- Navigation -->
+                <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+                        <div class="container-fluid">
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                                <div class="navbar-header page-scroll">
+                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        </button>
+                                        <a class="navbar-brand" href="/">SAOSX Blog</a>
+                                </div>
+                        
+                                <!-- Collect the nav links, forms, and other content for toggling -->
+                                <div class="collapse navbar-collapse" id="navbar-collapse">
+                                        <ul class="nav navbar-nav navbar-right">
+                                                        <li><a href="/posts">Archive</a></li>
+        <li><a href="/tags">Tags</a></li>
+        <li><a href="/about">About Me</a></li>
+ 
+                                        </ul>
+                                </div>
+                                <!-- /.navbar-collapse -->
+                        </div>
+                        <!-- /.container -->
+                </nav>
+                
+                <!-- Page Header -->
+                <header class="intro-header" id="intro-header">
+                        <div class="container">
+                                <div class="row">
+                                        <div class="col-md-12">
+
+    
+<div class="post-heading">
+    <h1>WiFi Networking with Powershell and netsh</h1>
+    <div class="meta">        
+Published on Friday, November 22, 2019<br>    </div>
+        <div class="tags">
+                    <a role="button" href="/tags/Powershell-Core,-pwsh,-netsh,-Network,-System-Administration" class="btn btn-default btn-xs">Powershell Core, pwsh, netsh, Network, System Administration</a>
+        </div>     
+</div>
+                                        </div>
+                                </div>
+                        </div>
+                </header>
+                
+                <!-- Main Content -->
+                <div class="container">
+                        <div class="row">
+                                <div id="content" class="col-md-12">
+                                        
+
+<p>Please be aware of notation below in command outlines. <code>$</code> represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for exxample, <code>takeown</code>.</p>
+<h1 id="introduction">Introduction</h1>
+<p><em>To connect to a specific network or SSID</em></p>
+<pre><code>netsh wlan connect name='Google Starbucks'
+</code></pre>
+<p><em>To disconnect from WiFi</em></p>
+<pre><code>$ netsh wlan disconnect interface=Wi-Fi
+Disconnection request was completed successfully for interface &quot;Wi-Fi&quot;.
+</code></pre>
+<p><em>To disable Net WiFi Adapter (requires admin privilege),</em></p>
+<pre><code>Disable-NetAdapter -Name Wi-Fi -Confirm:$false
+</code></pre>
+<p><em>To disable Net WiFi Adapter (requires admin privilege),</em></p>
+<pre><code>Enable-NetAdapter -Name Wi-Fi
+</code></pre>
+<p>To provide more context, new cmdlets and netsh features enable us to control network interfaces of the PC. Here's a netsh example to list WiFi SSIDs,</p>
+<pre><code>$ netsh wlan show profiles
+
+Profiles on interface Wi-Fi:
+
+Group policy profiles (read only)
+---------------------------------
+
+User profiles
+-------------
+    All User Profile     : CSC-Public
+    All User Profile     : Google Starbucks
+    All User Profile     : VTA Free WiFi
+    All User Profile     : Philz Tesora
+    All User Profile     : PEETS
+.......
+</code></pre>
+<p>This command does not show currently available WiFi Networks. It only shows the networks that are saved in the System because it has connected to those in the past.</p>
+<p>Following shows pretty much the same list probably because most WiFi have clear type Key,</p>
+<pre><code>$ netsh wlan show profiles key=clear
+</code></pre>
+<p><em>To view information on the currently connect WiFi network</em></p>
+<pre><code>$ Get-NetConnectionProfile
+Name             : Google Starbucks  12
+InterfaceAlias   : Wi-Fi
+InterfaceIndex   : 16
+NetworkCategory  : Public
+IPv4Connectivity : Internet
+IPv6Connectivity : NoTraffic
+</code></pre>
+<p>Applying above command on a specific SSID provides us more info,</p>
+<pre><code>$ netsh wlan show profiles name='Google Starbucks'
+
+Profile Google Starbucks on interface Wi-Fi:
+=======================================================================
+
+Applied: All User Profile
+
+Profile information
+-------------------
+    Version                : 1
+    Type                   : Wireless LAN
+    Name                   : Google Starbucks
+    Control options        :
+        Connection mode    : Connect automatically
+        Network broadcast  : Connect only if this network is broadcasting
+        AutoSwitch         : Do not switch to other networks
+        MAC Randomization  : Disabled
+
+Connectivity settings
+---------------------
+    Number of SSIDs        : 1
+    SSID name              : &quot;Google Starbucks&quot;
+    Network type           : Infrastructure
+    Radio type             : [ Any Radio Type ]
+    Vendor extension          : Not present
+
+Security settings
+-----------------
+    Authentication         : Open
+    Cipher                 : None
+    Security key           : Absent
+    Key Index              : 1
+
+Cost settings
+-------------
+    Cost                   : Unrestricted
+    Congested              : No
+    Approaching Data Limit : No
+    Over Data Limit        : No
+    Roaming                : No
+    Cost Source            : Default
+</code></pre>
+<p>Following is equivalent,</p>
+<pre><code>$ netsh wlan show profiles name='Google Starbucks' key=clear
+</code></pre>
+<h3 id="other-commands">Other Commands</h3>
+<p>To view currently connected SSID etc,</p>
+<pre><code>$ netsh wlan show interfaces
+
+There is 1 interface on the system:
+
+    Name                   : Wi-Fi
+    Description            : Dell Wireless 1830 802.11ac
+    GUID                   : ebf95ed0-e6b2-455b-b863-291169f3ffb3
+    Physical address       : 6a:ca:81:ee:ce:d6
+    State                  : connected
+    SSID                   : PEETS
+    BSSID                  : 8a:15:14:b2:c4:50
+    Network type           : Infrastructure
+    Radio type             : 802.11ac
+    Authentication         : Open
+    Cipher                 : None
+    Connection mode        : Profile
+    Channel                : 157
+    Receive rate (Mbps)    : 216.5
+    Transmit rate (Mbps)   : 866.5
+    Signal                 : 87%
+    Profile                : PEETS
+
+    Hosted network status  : Not available
+</code></pre>
+<h4 id="show-interfaces-info">Show Interfaces Info</h4>
+<p>Using powershell cmdlet,</p>
+<p>View information on all network interfaces in the system,</p>
+<pre><code>$ Get-NetAdapter
+
+Name                      InterfaceDescription                    ifIndex Status       MacAddress             LinkSpeed
+----                      --------------------                    ------- ------       ----------             ---------
+Wi-Fi                     Intel(R) Dual Band Wireless-AC 8265           5 Disconnected 1C-4D-70-1F-A5-C2         6 Mbps
+Ethernet                  Intel(R) Ethernet Connection (5) I21...      15 Disconnected A4-4C-C8-20-10-DE          0 bps
+</code></pre>
+<p>to view information of the WiFi network interface,</p>
+<pre><code>$ Get-NetAdapter -Name Wi-Fi
+
+Name                      InterfaceDescription                    ifIndex Status       MacAddress             LinkSpeed
+----                      --------------------                    ------- ------       ----------             ---------
+Wi-Fi                     Intel(R) Dual Band Wireless-AC 8265           5 Up           1C-4D-70-1F-A5-C2       130 Mbps
+</code></pre>
+<p>Show cmdlets related to net adapter,</p>
+<pre><code>$ gcm -Noun netadapter | select name, modulename
+
+Name               ModuleName
+----               ----------
+Disable-NetAdapter NetAdapter
+Enable-NetAdapter  NetAdapter
+Get-NetAdapter     NetAdapter
+Rename-NetAdapter  NetAdapter
+Restart-NetAdapter NetAdapter
+Set-NetAdapter     NetAdapter
+</code></pre>
+<p>Using netsh,</p>
+<pre><code>$ netsh wlan show networks mode=bssid
+
+Interface name : Wi-Fi
+There are 2 networks currently visible.
+
+SSID 1 : S H Hall 3
+    Network type            : Infrastructure
+    Authentication          : Open
+    Encryption              : None
+    BSSID 1                 : e0:91:f5:f5:16:28
+         Signal             : 60%
+         Radio type         : 802.11g
+         Channel            : 6
+         Basic rates (Mbps) : 1 2
+         Other rates (Mbps) : 5.5 6 9 11 12 18 24 36 48 54
+
+SSID 2 : S H Hall 1
+    Network type            : Infrastructure
+    Authentication          : Open
+    Encryption              : None
+    BSSID 1                 : a0:21:b7:7b:2b:be
+         Signal             : 18%
+         Radio type         : 802.11g
+         Channel            : 6
+         Basic rates (Mbps) : 1 2
+         Other rates (Mbps) : 5.5 6 9 11 12 18 24 36 48 54
+</code></pre>
+<h2 id="references">References</h2>
+<ol>
+<li><a href="https://blogs.technet.microsoft.com/heyscriptingguy/2015/11/23/get-wireless-network-ssid-and-password-with-powershell/">ms technet - Get Wireless Network SSID and Password with PowerShell</a></li>
+<li><a href="https://marckean.com/2017/03/16/auto-connect-to-wifi-access-points/">netsh wlan commands</a></li>
+<li><a href="https://blogs.technet.microsoft.com/heyscriptingguy/2013/06/15/weekend-scripter-use-powershell-to-find-auto-connect-wireless-networks/">changing autoconnect properties for some networks</a></li>
+<li><a href="https://blogs.technet.microsoft.com/heyscriptingguy/2014/01/13/enabling-and-disabling-network-adapters-with-powershell/">disabling unnecessary network adapters</a></li>
+<li><a href="https://www.xfinity.com/support/internet/comcast-supported-routers-gateways-adapters/">Some possible default passwords for networks / routers / gateways</a></li>
+</ol>
+
+
+
+                                </div>
+                        </div>
+                </div>
+                
+                <hr>
+                
+                <!-- Footer -->
+                <footer>
+                        <div class="container">
+        <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="copyright text-muted">
+                        Copyright © 2019
+                        <br />
+                            <a href="/feed.rss"><i class="fa fa-rss"></i> RSS Feed</a>
+                        |
+                            <a href="/feed.atom"><i class="fa fa-rss"></i> Atom Feed</a>
+                        <br />
+                        <strong><a href="https://wyam.io">Generated by Wyam</a></strong>
+                    </p>
+                </div>
+        </div>
+</div>
+
+                </footer> 
+
+                <script src="/assets/js/jquery.min.js"></script>
+                <script src="/assets/js/bootstrap.min.js"></script>     
+                <script src="/assets/js/highlight.pack.js"></script>   
+                <script src="/assets/js/clean-blog.js"></script>
+                <script src="/assets/js/d3.v3.min.js"></script>
+                <script src="/assets/js/trianglify.min.js"></script>
+                <script src="/assets/js/Please-compressed.js"></script>
+                <script src="/assets/js/background-check.min.js"></script>
+
+                <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+                <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+                <!--[if lt IE 9]>
+                        <script src="/assets/js/html5shiv.js"></script>
+                        <script src="/assets/js/respond.min.js"></script>
+                <![endif]-->
+                
+                
+                <script>hljs.initHighlightingOnLoad();</script>
+
+                        <script type="text/javascript">                
+                                // Header background                        
+                                var colors = Please.make_color({
+                                        colors_returned: 3,
+                                        saturation: .6
+                                });
+                                var t = new Trianglify({
+                                        x_gradient: colors,
+                                        y_gradient: ["#FFFFFF"]
+                                });
+                                var header = document.getElementById("intro-header");
+                                var pattern = t.generate(header.clientWidth, header.clientHeight);
+                                header.setAttribute('style', 'background-image: ' + pattern.dataUrl);                        
+                        </script>
+
+                <script>
+                        BackgroundCheck.init({
+                                targets: '.intro-header,.navbar',
+                                images: '.intro-header'
+                        });
+                </script>
+        </body>
+</html>
+

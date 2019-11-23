@@ -117,6 +117,7 @@ Stop-Proccess instead of taskkill</p>
 <h2 id="application-run-examples">Application Run Examples</h2>
 <p>Here are some handy cmds,  Access sys properties,</p>
 <pre><code>Start DevEnv /Edit, Stream-Converter.ps1
+Start Microsoft-Edge:https://google.com
 Start Skype:
 
 Start CVpn-Client
@@ -165,6 +166,9 @@ Handy cmds follow, <a href="https://docs.microsoft.com/en-us/powershell/module/m
 <li>Mouse</li>
 </ul>
 <h2 id="other-cmdlets">Other Cmdlets</h2>
+<p>Get list of running processes (unique),</p>
+<pre><code>Get-Process | Select-Object -Unique Path
+</code></pre>
 <p>Rename Machine,</p>
 <pre><code>Rename-Computer -NewName JohnPC -Restart
 </code></pre>
@@ -194,11 +198,17 @@ Start-Service -Name VPNAgent
 <pre><code>$a = [int[]] &#64;(9,5)
 [Array]::Sort($a)
 </code></pre>
-<p>Probably because ‘z’ in powershell is not considered as a character literal.</p>
+<p>Because these literatls i.e., 'xxx' in powershell is considered as string literal like python.</p>
 <pre><code>$ 'z'.gettype()
 IsPublic IsSerial Name                                     BaseType
 -------- -------- ----                                     --------
 True     True     String                                   System.Object
+</code></pre>
+<h4 id="string-helpers">String Helpers</h4>
+<p>nll or empty related where <code>$ConfigName</code> is an example variable,</p>
+<pre><code>[string]::IsNullOrEmpty($ConfigName)
+[string]::IsEmpty($ConfigName)
+[string]::Empty($ConfigName)
 </code></pre>
 
 
