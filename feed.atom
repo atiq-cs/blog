@@ -4,14 +4,15 @@
 	<title>SAOSX Blog</title>
 	<link rel="self" href="http://blog.saosx.com/" />
 	<rights>2019</rights>
-	<updated>2019-11-23T22:00:25Z</updated>
+	<updated>2019-11-24T23:05:34Z</updated>
 	<subtitle>Heads in the cloud! A Blog by Atiq Rahman!</subtitle>
 	<entry>
 		<id>http://blog.saosx.com/posts/math</id>
 		<title>Math Notation Test</title>
 		<link href="http://blog.saosx.com/posts/math" />
 		<updated>2019-11-22T00:00:00Z</updated>
-		<content>&lt;p&gt;This is a &lt;span class="math"&gt;\(math block\)&lt;/span&gt;&lt;/p&gt;
+		<content>&lt;p&gt;This is a &lt;span class="math"&gt;\(\infty \frac{x^3}{e^x-1}\)&lt;/span&gt; with few symbols.&lt;/p&gt;
+&lt;p&gt;Eq 1,&lt;/p&gt;
 &lt;div class="math"&gt;
 \[
 \begin{equation}
@@ -19,8 +20,13 @@
   \label{eq:sample}
 \end{equation}
 \]&lt;/div&gt;
+&lt;p&gt;Eq 2 without starting with beginning equation tagger,&lt;/p&gt;
+&lt;div class="math"&gt;
+\[
+\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
+\]&lt;/div&gt;
 </content>
-		<summary>&lt;p&gt;This is a &lt;span class="math"&gt;\(math block\)&lt;/span&gt;&lt;/p&gt;</summary>
+		<summary>&lt;p&gt;This is a &lt;span class="math"&gt;\(\infty \frac{x^3}{e^x-1}\)&lt;/span&gt; with few symbols.&lt;/p&gt;</summary>
 	</entry>
 	<entry>
 		<id>http://blog.saosx.com/posts/wifi-cmd</id>

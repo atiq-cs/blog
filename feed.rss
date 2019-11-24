@@ -5,21 +5,27 @@
 		<link>http://blog.saosx.com/</link>
 		<description>Heads in the cloud! A Blog by Atiq Rahman!</description>
 		<copyright>2019</copyright>
-		<pubDate>Sat, 23 Nov 2019 22:00:25 GMT</pubDate>
-		<lastBuildDate>Sat, 23 Nov 2019 22:00:25 GMT</lastBuildDate>
+		<pubDate>Sun, 24 Nov 2019 23:05:34 GMT</pubDate>
+		<lastBuildDate>Sun, 24 Nov 2019 23:05:34 GMT</lastBuildDate>
 		<item>
 			<title>Math Notation Test</title>
 			<link>http://blog.saosx.com/posts/math</link>
-			<description>&lt;p&gt;This is a &lt;span class="math"&gt;\(math block\)&lt;/span&gt;&lt;/p&gt;</description>
+			<description>&lt;p&gt;This is a &lt;span class="math"&gt;\(\infty \frac{x^3}{e^x-1}\)&lt;/span&gt; with few symbols.&lt;/p&gt;</description>
 			<guid>http://blog.saosx.com/posts/math</guid>
 			<pubDate>Fri, 22 Nov 2019 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;This is a &lt;span class="math"&gt;\(math block\)&lt;/span&gt;&lt;/p&gt;
+			<content:encoded>&lt;p&gt;This is a &lt;span class="math"&gt;\(\infty \frac{x^3}{e^x-1}\)&lt;/span&gt; with few symbols.&lt;/p&gt;
+&lt;p&gt;Eq 1,&lt;/p&gt;
 &lt;div class="math"&gt;
 \[
 \begin{equation}
   \int_0^\infty \frac{x^3}{e^x-1}\,dx = \frac{\pi^4}{15}
   \label{eq:sample}
 \end{equation}
+\]&lt;/div&gt;
+&lt;p&gt;Eq 2 without starting with beginning equation tagger,&lt;/p&gt;
+&lt;div class="math"&gt;
+\[
+\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
 \]&lt;/div&gt;
 </content:encoded>
 		</item>
