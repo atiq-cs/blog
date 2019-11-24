@@ -96,7 +96,9 @@ Published on Thursday, November 14, 2019<br>    </div>
 <p>List files changed in previous commit,</p>
 <pre><code>hg show --stat --template 'List of files: \n{files}\n'
 hg show tip~2
-hg show D17531166 --ignore-all-space --ignore-space-change --ignore-blank-lines --ignore-space-at-eol --exclude &quot;materialized_configs/*&quot;
+</code></pre>
+<p>Fancy syntax, demonstrating spaces, blank lines etc</p>
+<pre><code>hg show D123456 --ignore-all-space --ignore-space-change --ignore-blank-lines --ignore-space-at-eol --exclude &quot;extra_configs/*&quot;
 </code></pre>
 <p><code>hg status</code> has an equivalent. . represents current <code>HEAD</code> of bookmark/repo,</p>
 <pre><code>hg status --rev .~1:.
@@ -104,16 +106,41 @@ hg show D17531166 --ignore-all-space --ignore-space-change --ignore-blank-lines 
 <p>using alias <code>tip</code> (=HEAD) here's one more example,</p>
 <pre><code>hg status --rev tip~1:tip
 </code></pre>
-<p>rebase example,</p>
+<h4 id="examining-differentials">Examining differentials</h4>
+<p>show current diff (uncommitted),</p>
+<pre><code>hg diff
+</code></pre>
+<p>show difference w.r.t revisions,</p>
+<pre><code>hg diff --rev tip~1::tip
+</code></pre>
+<p>same as above, but with exclude syntax and demonstrate whilte-space and newline changes,</p>
+<pre><code>hg diff --rev tip~1::tip --ignore-all-space --ignore-space-change --ignore-blank-lines --ignore-space-at-eol --exclude &quot;extra_configs/*&quot;
+</code></pre>
+<p>supparts naming to bookmarks,</p>
+<pre><code>hg diff --rev D12345~1::D12345
+</code></pre>
+<p><em>Creating traditional diff/patch file</em>
+trying some patch related cmd, but, it's not working,</p>
+<pre><code>hg diff --rev tip -p &gt; 'Feature engineering for my awesome project.patch'
+</code></pre>
+<p>Status to see file list changed,</p>
+<pre><code>hg status --rev tip~1:tip
+</code></pre>
+<h4 id="rebasing">Rebasing</h4>
+<p>specifying soure of rebase toward a destination,</p>
 <pre><code>hg rebase --source e630a3b5 --dest -d master
+</code></pre>
+<p>revisions can be named using bookmarks,</p>
+<pre><code>hg rebase --source D12345-MyCoolFeature --dest master
 </code></pre>
 <p>To identify the working directory or specified revision,</p>
 <pre><code>hg identify
 64541997a288 tip events_text_location_node
 </code></pre>
-<h4 id="revert-examples">Revert Examples</h4>
-<p>revert a file to previous commit,</p>
+<h4 id="revert">Revert</h4>
+<p>Example to revert a file to previous commit,</p>
 <pre><code>hg revert --rev tip~1 my_file_path
+hg revert --rev master file_path
 </code></pre>
 <p>get a clean state of file
 similar to git reset all,</p>
@@ -130,13 +157,7 @@ hg revert --rev .~1 file_path
 <p>in case of a terrible merge conflict on json files, we can undo that,</p>
 <pre><code>hg revert --rev .~1 materialized_configs/search/*
 </code></pre>
-<h3 id="creating-traditional-diffpatch-file">Creating traditional diff/patch file</h3>
-<p>trying some patch related cmd, but, it's not working,</p>
-<pre><code>hg diff -r tip -p &gt; 'Feature engineering for my awesome project.patch'
-</code></pre>
-<p>Status to see file list changed,</p>
-<pre><code>hg status --rev tip~1:tip
-</code></pre>
+<h4 id="misc">Misc</h4>
 <p>check log,</p>
 <pre><code>hg log -l 10
 </code></pre>
@@ -153,9 +174,6 @@ hg forget
 </code></pre>
 <p>get hg log upto 10 commits,</p>
 <pre><code>hg log -l 10
-</code></pre>
-<p>show current diff (uncommitted),</p>
-<pre><code>hg diff
 </code></pre>
 <p>checkout to a specific revision and also to delete current change,</p>
 <pre><code>hg checkout d48959b331d747a10603ebdbef608ff2080a25a0 --clean
