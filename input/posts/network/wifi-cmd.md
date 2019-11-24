@@ -1,6 +1,6 @@
 Title: WiFi Networking with Powershell and netsh
 Published: 11/22/2019
-Tags: Powershell Core, pwsh, netsh, Network, System Administration
+Tags: Powershell Core; pwsh; netsh; Network; System Administration
 ---
 Please be aware of notation below in command outlines. `$` represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for exxample, `takeown`.
 
@@ -166,7 +166,55 @@ Show cmdlets related to net adapter,
     Restart-NetAdapter NetAdapter
     Set-NetAdapter     NetAdapter
 
-Using netsh,
+Additionally, now, we have cmdlet to show IP Address info without sing `netsh`,
+
+    $ Get-NetIPAddress
+
+    IPAddress         : fe80::1d40:6866:1418:1efe%22
+    InterfaceIndex    : 22
+    InterfaceAlias    : vEthernet (Default Switch)
+    AddressFamily     : IPv6
+    Type              : Unicast
+    PrefixLength      : 64
+    PrefixOrigin      : WellKnown
+    SuffixOrigin      : Link
+    AddressState      : Preferred
+    ValidLifetime     : Infinite ([TimeSpan]::MaxValue)
+    PreferredLifetime : Infinite ([TimeSpan]::MaxValue)
+    SkipAsSource      : False
+    PolicyStore       : ActiveStore
+
+    IPAddress         : fe80::61e3:ae79:980e:1c5d%8
+    InterfaceIndex    : 8
+    InterfaceAlias    : Wi-Fi
+    AddressFamily     : IPv6
+    Type              : Unicast
+    PrefixLength      : 64
+    ... ...
+
+    ... ...
+    IPAddress         : 172.31.98.36
+    InterfaceIndex    : 8
+    InterfaceAlias    : Wi-Fi
+    AddressFamily     : IPv4
+    Type              : Unicast
+    PrefixLength      : 23
+    PrefixOrigin      : Dhcp
+    SuffixOrigin      : Dhcp
+    AddressState      : Preferred
+    ValidLifetime     : 00:38:38
+    PreferredLifetime : 00:38:38
+    SkipAsSource      : False
+    PolicyStore       : ActiveStore
+
+    IPAddress         : 127.0.0.1
+    InterfaceIndex    : 1
+    InterfaceAlias    : Loopback Pseudo-Interface 1
+    AddressFamily     : IPv4
+    ... ...
+
+
+Using `netsh`,
 
     $ netsh wlan show networks mode=bssid
 
