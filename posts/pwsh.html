@@ -175,6 +175,19 @@ Handy cmds follow, <a href="https://docs.microsoft.com/en-us/powershell/module/m
 <p>Event Log,</p>
 <pre><code>Show-EventLog
 </code></pre>
+<p>Show console host info,</p>
+<pre><code>$ Get-Host
+Name             : ConsoleHost
+Version          : 6.2.3
+InstanceId       : cddce532-924c-4a66-a671-bbea53caf430
+UI               : System.Management.Automation.Internal.Host.InternalHostUserInterface
+CurrentCulture   : en-US
+CurrentUICulture : en-US
+PrivateData      : Microsoft.PowerShell.ConsoleHost+ConsoleColorProxy
+DebuggerEnabled  : True
+IsRunspacePushed : False
+Runspace         : System.Management.Automation.Runspaces.LocalRunspace
+</code></pre>
 <h2 id="service-management">Service Management</h2>
 <p>Managing services,</p>
 <pre><code>Stop-Service -Name VPNAgent
@@ -209,6 +222,24 @@ True     True     String                                   System.Object
 <pre><code>[string]::IsNullOrEmpty($ConfigName)
 [string]::IsEmpty($ConfigName)
 [string]::Empty($ConfigName)
+</code></pre>
+<h2 id="show-os-version">Show OS Version</h2>
+<p>Using Net Framework Library,</p>
+<pre><code>$ [Environment]::OSVersion
+Platform ServicePack Version      VersionString
+-------- ----------- -------      -------------
+Win32NT             10.0.18362.0 Microsoft Windows NT 10.0.18362.0
+
+$ [Environment]::OSVersion.Version
+Major  Minor  Build  Revision
+-----  -----  -----  --------
+10     0      18362  0
+</code></pre>
+<p>Additionally, we can do this inspecting <code>hal.dll</code>,</p>
+<pre><code>$ [Version](Get-ItemProperty -Path &quot;$($Env:Windir)\System32\hal.dll&quot; -ErrorAction SilentlyContinue).VersionInfo.FileVersion.Split()[0]
+Major  Minor  Build  Revision
+-----  -----  -----  --------
+10     0      18362  356
 </code></pre>
 
 
