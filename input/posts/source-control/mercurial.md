@@ -1,12 +1,16 @@
 Title: Mercurial Useful Commands
 Published: 11/14/2019
-Tags: Mercurial, Source Control
+Tags: Mercurial+Source Control+Version Control
 ---
 List files changed in previous commit,
 ```
 hg show --stat --template 'List of files: \n{files}\n'
 hg show tip~2
-hg show D17531166 --ignore-all-space --ignore-space-change --ignore-blank-lines --ignore-space-at-eol --exclude "materialized_configs/*"
+```
+
+Fancy syntax, demonstrating spaces, blank lines etc
+```
+hg show D123456 --ignore-all-space --ignore-space-change --ignore-blank-lines --ignore-space-at-eol --exclude "extra_configs/*"
 ```
 
 `hg status` has an equivalent. . represents current `HEAD` of bookmark/repo,
@@ -18,9 +22,48 @@ using alias `tip` (=HEAD) here's one more example,
 hg status --rev tip~1:tip
 ```
 
-rebase example,
+#### Examining differentials
+show current diff (uncommitted),
+```
+hg diff
+```
+
+show difference w.r.t revisions,
+```
+hg diff --rev tip~1::tip
+```
+
+same as above, but with exclude syntax and demonstrate whilte-space and newline changes,
+```
+hg diff --rev tip~1::tip --ignore-all-space --ignore-space-change --ignore-blank-lines --ignore-space-at-eol --exclude "extra_configs/*"
+```
+
+supparts naming to bookmarks,
+```
+hg diff --rev D12345~1::D12345
+```
+
+
+_Creating traditional diff/patch file_
+trying some patch related cmd, but, it's not working,
+```
+hg diff --rev tip -p > 'Feature engineering for my awesome project.patch'
+```
+
+Status to see file list changed,
+```
+hg status --rev tip~1:tip
+```
+
+#### Rebasing
+specifying soure of rebase toward a destination,
 ```
 hg rebase --source e630a3b5 --dest -d master
+```
+
+revisions can be named using bookmarks,
+```
+hg rebase --source D12345-MyCoolFeature --dest master
 ```
 
 To identify the working directory or specified revision,
@@ -29,10 +72,11 @@ hg identify
 64541997a288 tip events_text_location_node
 ```
 
-#### Revert Examples
-revert a file to previous commit,
+#### Revert
+Example to revert a file to previous commit,
 ```
 hg revert --rev tip~1 my_file_path
+hg revert --rev master file_path
 ```
 
 get a clean state of file
@@ -58,16 +102,7 @@ in case of a terrible merge conflict on json files, we can undo that,
 hg revert --rev .~1 materialized_configs/search/*
 ```
 
-### Creating traditional diff/patch file
-trying some patch related cmd, but, it's not working,
-```
-hg diff -r tip -p > 'Feature engineering for my awesome project.patch'
-```
-
-Status to see file list changed,
-```
-hg status --rev tip~1:tip
-```
+#### Misc
 check log,
 ```
 hg log -l 10
@@ -93,11 +128,6 @@ hg checkout 3d5b62937
 get hg log upto 10 commits,
 ```
 hg log -l 10
-```
-
-show current diff (uncommitted),
-```
-hg diff
 ```
 
 checkout to a specific revision and also to delete current change,
