@@ -114,6 +114,20 @@ Event Log,
 Show-EventLog
 ```
 
+Show console host info,
+
+    $ Get-Host
+    Name             : ConsoleHost
+    Version          : 6.2.3
+    InstanceId       : cddce532-924c-4a66-a671-bbea53caf430
+    UI               : System.Management.Automation.Internal.Host.InternalHostUserInterface
+    CurrentCulture   : en-US
+    CurrentUICulture : en-US
+    PrivateData      : Microsoft.PowerShell.ConsoleHost+ConsoleColorProxy
+    DebuggerEnabled  : True
+    IsRunspacePushed : False
+    Runspace         : System.Management.Automation.Runspaces.LocalRunspace
+
 ## Service Management
 Managing services,
 ```
@@ -162,3 +176,23 @@ nll or empty related where `$ConfigName` is an example variable,
 [string]::IsEmpty($ConfigName)
 [string]::Empty($ConfigName)
 ```
+
+## Show OS Version
+Using Net Framework Library,
+
+    $ [Environment]::OSVersion
+    Platform ServicePack Version      VersionString
+    -------- ----------- -------      -------------
+    Win32NT             10.0.18362.0 Microsoft Windows NT 10.0.18362.0
+
+    $ [Environment]::OSVersion.Version
+    Major  Minor  Build  Revision
+    -----  -----  -----  --------
+    10     0      18362  0
+
+Additionally, we can do this inspecting `hal.dll`,
+
+    $ [Version](Get-ItemProperty -Path "$($Env:Windir)\System32\hal.dll" -ErrorAction SilentlyContinue).VersionInfo.FileVersion.Split()[0]
+    Major  Minor  Build  Revision
+    -----  -----  -----  --------
+    10     0      18362  356
