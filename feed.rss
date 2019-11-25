@@ -5,8 +5,84 @@
 		<link>https://blog.saosx.com/</link>
 		<description>Heads in the cloud! A Blog by Atiq Rahman!</description>
 		<copyright>2019</copyright>
-		<pubDate>Mon, 25 Nov 2019 16:16:40 GMT</pubDate>
-		<lastBuildDate>Mon, 25 Nov 2019 16:16:40 GMT</lastBuildDate>
+		<pubDate>Mon, 25 Nov 2019 16:19:25 GMT</pubDate>
+		<lastBuildDate>Mon, 25 Nov 2019 16:19:25 GMT</lastBuildDate>
+		<item>
+			<title>Math Notation Test</title>
+			<link>https://blog.saosx.com/posts/math</link>
+			<description>&lt;p&gt;This is a &lt;span class="math"&gt;\(\infty \frac{x^3}{e^x-1}\)&lt;/span&gt; with few symbols.&lt;/p&gt;</description>
+			<guid>https://blog.saosx.com/posts/math</guid>
+			<pubDate>Fri, 22 Nov 2019 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;This is a &lt;span class="math"&gt;\(\infty \frac{x^3}{e^x-1}\)&lt;/span&gt; with few symbols.&lt;/p&gt;
+&lt;p&gt;Eq 1,&lt;/p&gt;
+&lt;div class="math"&gt;
+\[
+\begin{equation}
+  \int_0^\infty \frac{x^3}{e^x-1}\,dx = \frac{\pi^4}{15}
+  \label{eq:sample}
+\end{equation}
+\]&lt;/div&gt;
+&lt;p&gt;Eq 2 without starting with beginning equation tagger,&lt;/p&gt;
+&lt;div class="math"&gt;
+\[
+\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
+\]&lt;/div&gt;
+</content:encoded>
+		</item>
+		<item>
+			<title>Wyam with Cake Build, Github pages and Azure Pipeline (Windows Server 2019)</title>
+			<link>https://blog.saosx.com/posts/wyam</link>
+			<description>&lt;p&gt;Example markdown doc from msdn &lt;a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/"&gt;async programming C#&lt;/a&gt;,&lt;/p&gt;</description>
+			<guid>https://blog.saosx.com/posts/wyam</guid>
+			<pubDate>Fri, 22 Nov 2019 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;h2 id="document-publishing-using-markdown"&gt;Document publishing using markdown&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/contribute/how-to-write-use-markdown"&gt;https://docs.microsoft.com/en-us/contribute/how-to-write-use-markdown&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/lunet-io/markdig"&gt;https://github.com/lunet-io/markdig&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Example markdown doc from msdn &lt;a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/"&gt;async programming C#&lt;/a&gt;,&lt;/p&gt;
+&lt;p&gt;While blogging using markdown on wordpress &lt;a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet"&gt;adam P's Markdown Cheatsheet&lt;/a&gt; is handy.&lt;/p&gt;
+&lt;h2 id="markdown-editors-online"&gt;Markdown Editors Online&lt;/h2&gt;
+&lt;p&gt;Here are few online tools available directly for editing in markdown syntax,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.maketecheasier.com/best-markdown-editor-web/"&gt;https://www.maketecheasier.com/best-markdown-editor-web/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://stackedit-beta.herokuapp.com/"&gt;https://stackedit-beta.herokuapp.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://stackedit.io/app"&gt;https://stackedit.io/app&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dillinger.io/"&gt;https://dillinger.io/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://markable.in/"&gt;https://markable.in/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.slant.co/topics/2196/%7Eonline-markdown-editor"&gt;slant&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://gist.github.com/palimadra/87e7c294be6447bac96b"&gt;stackedit markdown&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://libraries.io/bower/stackedit"&gt;https://libraries.io/bower/stackedit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://hackmd.io/C3iKwt4XSmaiAZtqWn7JBw"&gt;https://hackmd.io/C3iKwt4XSmaiAZtqWn7JBw&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://simplemde.com/"&gt;https://simplemde.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;blogifier now has markdown as default editor, try a demo!&lt;/p&gt;
+&lt;h2 id="markdown-in-blogging-platforms"&gt;Markdown in Blogging Platforms&lt;/h2&gt;
+&lt;p&gt;markdown in blog services such as in blogger usually requires manually converting the markdown source to html. After we get the html we can post them in the blog using html source view. Some people use an alternative solution: a mix of github and javascript to solve this problem. First one below uses this to render markdown along with scientific equations.&lt;/p&gt;
+&lt;h3 id="markdown-in-wordpress"&gt;Markdown in wordpress&lt;/h3&gt;
+&lt;p&gt;wordpress recently added the feature of enabling markdown syntax for writing. This is pretty neat. &lt;a href="https://en.support.wordpress.com/markdown/"&gt;wordpress.com - support&lt;/a&gt; provides instruction how to enable the feature. They also provide a &lt;a href="https://en.support.wordpress.com/markdown-quick-reference/"&gt;Markdown quick reference&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;However, if you are writing scientific equations you can find troubles.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Scientific equation writing in Markdown solution for Wordpress&lt;/em&gt;
+&lt;a href="http://mathalope.co.uk/2015/03/29/how-i-write-scientific-blog-posts-that-contains-codes-and-mathematical-expressions-a-quick-reference-with-wordpress-gist-and-mathjax/"&gt;mathalope&lt;/a&gt;
+shows how to do it using the combination of self-hosted wordpress and javascript mathjax.&lt;/p&gt;
+&lt;h3 id="markdown-in-blogger"&gt;Markdown in blogger&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://blog.saliya.org/2014/08/blogging-with-markdown-in-blogger.html"&gt;Saliya's Blogs - Blogging with Markdown in Blogger&lt;/a&gt; shows how to do this in blogger.&lt;/p&gt;
+&lt;h2 id="markdown-in-wiki-systems"&gt;Markdown in Wiki Systems&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://pandoc.org/try/"&gt;pandoc&lt;/a&gt; allows viewing wiki syntax differences along with markdown.&lt;/p&gt;
+&lt;h4 id="markdown-related-resources-2018-07"&gt;Markdown related resources 2018-07&lt;/h4&gt;
+&lt;p&gt;Projects on github,
+&lt;a href="https://github.com/sparksuite/simplemde-markdown-editor"&gt;simplemde-markdown-editor&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;stackexchange's C# markdown, Which Markdown library is used? &lt;a href="https://math.meta.stackexchange.com/questions/9648/which-markdown-library-is-used"&gt;ref&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/StackExchange/MarkdownSharp/blob/master/MarkdownSharp/Markdown.cs"&gt;MarkdownSharp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;More&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/mundimark/awesome-markdown-editors"&gt;https://github.com/mundimark/awesome-markdown-editors&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/linezero/Blog"&gt;https://github.com/linezero/Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/search?q=markdown+editor"&gt;https://github.com/search?q=markdown+editor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/benweet/stackedit/blob/master/src/components/Editor.vue"&gt;https://github.com/benweet/stackedit/blob/master/src/components/Editor.vue&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+		</item>
 		<item>
 			<title>WiFi Networking with Powershell and netsh</title>
 			<link>https://blog.saosx.com/posts/wifi-cmd</link>
@@ -233,6 +309,13 @@ SSID 2 : S H Hall 1
          Basic rates (Mbps) : 1 2
          Other rates (Mbps) : 5.5 6 9 11 12 18 24 36 48 54
 &lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id="wifi-modem-best-practices"&gt;WiFI Modem Best Practices&lt;/h2&gt;
+&lt;p&gt;Few points,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Reboot modem every few months&lt;/li&gt;
+&lt;li&gt;Hopefully carrier provides firmware udpates if not update every few months&lt;/li&gt;
+&lt;li&gt;Keep in touch with carrier's customer service in case of slow speed, give good complaints coz they owe you the speed you deserve.&lt;/li&gt;
+&lt;/ol&gt;
 &lt;h2 id="references"&gt;References&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href="https://blogs.technet.microsoft.com/heyscriptingguy/2015/11/23/get-wireless-network-ssid-and-password-with-powershell/"&gt;ms technet - Get Wireless Network SSID and Password with PowerShell&lt;/a&gt;&lt;/li&gt;
@@ -244,34 +327,46 @@ SSID 2 : S H Hall 1
 </content:encoded>
 		</item>
 		<item>
-			<title>Math Notation Test</title>
-			<link>https://blog.saosx.com/posts/math</link>
-			<description>&lt;p&gt;This is a &lt;span class="math"&gt;\(\infty \frac{x^3}{e^x-1}\)&lt;/span&gt; with few symbols.&lt;/p&gt;</description>
-			<guid>https://blog.saosx.com/posts/math</guid>
-			<pubDate>Fri, 22 Nov 2019 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;This is a &lt;span class="math"&gt;\(\infty \frac{x^3}{e^x-1}\)&lt;/span&gt; with few symbols.&lt;/p&gt;
-&lt;p&gt;Eq 1,&lt;/p&gt;
-&lt;div class="math"&gt;
-\[
-\begin{equation}
-  \int_0^\infty \frac{x^3}{e^x-1}\,dx = \frac{\pi^4}{15}
-  \label{eq:sample}
-\end{equation}
-\]&lt;/div&gt;
-&lt;p&gt;Eq 2 without starting with beginning equation tagger,&lt;/p&gt;
-&lt;div class="math"&gt;
-\[
-\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
-\]&lt;/div&gt;
+			<title>Generic Windows Command Cache</title>
+			<link>https://blog.saosx.com/posts/dos</link>
+			<description>&lt;p&gt;Please be aware of notation below in command outlines. &lt;code&gt;$&lt;/code&gt; represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for exxample, &lt;code&gt;takeown&lt;/code&gt;.&lt;/p&gt;</description>
+			<guid>https://blog.saosx.com/posts/dos</guid>
+			<pubDate>Tue, 19 Nov 2019 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Please be aware of notation below in command outlines. &lt;code&gt;$&lt;/code&gt; represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for exxample, &lt;code&gt;takeown&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id="misc"&gt;Misc&lt;/h2&gt;
+&lt;p&gt;Customized ping command, waits 20 seconds for reply and keep pinging non-stop &lt;a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/ping"&gt;ping ref&lt;/a&gt;,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ping -w 20000 -t myserver.company.com
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Enable or disable Linux Subsystem feture,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+Disable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Get host name,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;HOSTNAME
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;associating file type for extension &lt;code&gt;.fob&lt;/code&gt;,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cmd /c assoc .fob=foobarfile
+cmd /c ftype foobarfile=powershell.exe -File `&amp;quot;C:\path\to\your.ps1`&amp;quot; `&amp;quot;%1`&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Find files with hidden attributes,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;dir /A:H general-solving\lintcode
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Modify files to remove hidden attributes using attrib&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;attrib -h my-hidden-file.txt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/commands-by-server-role"&gt;MS Docs - Windows Commands&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </content:encoded>
 		</item>
 		<item>
 			<title>pwsh Command Cache</title>
 			<link>https://blog.saosx.com/posts/pwsh</link>
-			<description>&lt;p&gt;&lt;em&gt;This article formerly titled as 'Powershell Command Cache'&lt;/em&gt;&lt;/p&gt;</description>
+			<description>&lt;p&gt;&lt;em&gt;This article formerly titled as 'Powershell Frequently Used Commands'&lt;/em&gt;&lt;/p&gt;</description>
 			<guid>https://blog.saosx.com/posts/pwsh</guid>
 			<pubDate>Tue, 19 Nov 2019 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;&lt;em&gt;This article formerly titled as 'Powershell Command Cache'&lt;/em&gt;&lt;/p&gt;
+			<content:encoded>&lt;p&gt;&lt;em&gt;This article formerly titled as 'Powershell Frequently Used Commands'&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Please be aware of notation below in command outlines. &lt;code&gt;$&lt;/code&gt; represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for exxample, &lt;code&gt;takeown&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id="initialization-of-shell"&gt;Initialization of Shell&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;This section is for my personalized shell; please feel free to skip it.&lt;/em&gt;&lt;/p&gt;
@@ -452,8 +547,8 @@ Major  Minor  Build  Revision
 &lt;p&gt;Say you have a script named &lt;code&gt;Bluetooth.ps1&lt;/code&gt; that uses Windows features. Hence, it requires Powershell.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Powershell -NoProfile -File Bluetooth.ps1 On
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="unblocking-pwsh-in-a-new-machine"&gt;Unblocking pwsh in a new machine&lt;/h2&gt;
-&lt;p&gt;Using Net Framework Library,&lt;/p&gt;
+&lt;h2 id="fixing-permission-for-pwsh-in-a-new-machine"&gt;Fixing permission for pwsh in a new machine&lt;/h2&gt;
+&lt;p&gt;Set execution policy for current user &lt;a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy"&gt;ref&lt;/a&gt;,&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Set-Executionpolicy Unrestricted -scope CurrentUser
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;In old days, that used to be enough. If you get following,&lt;/p&gt;
@@ -485,40 +580,6 @@ At line:1 char:3
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id="continue"&gt;continue&lt;/h2&gt;
 &lt;p&gt;rest of the contents yet to be appended..&lt;/p&gt;
-</content:encoded>
-		</item>
-		<item>
-			<title>Generic Windows Command Cache</title>
-			<link>https://blog.saosx.com/posts/dos</link>
-			<description>&lt;p&gt;Please be aware of notation below in command outlines. &lt;code&gt;$&lt;/code&gt; represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for exxample, &lt;code&gt;takeown&lt;/code&gt;.&lt;/p&gt;</description>
-			<guid>https://blog.saosx.com/posts/dos</guid>
-			<pubDate>Tue, 19 Nov 2019 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;Please be aware of notation below in command outlines. &lt;code&gt;$&lt;/code&gt; represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for exxample, &lt;code&gt;takeown&lt;/code&gt;.&lt;/p&gt;
-&lt;h2 id="misc"&gt;Misc&lt;/h2&gt;
-&lt;p&gt;Customized ping command, waits 20 seconds for reply and keep pinging non-stop &lt;a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/ping"&gt;ping ref&lt;/a&gt;,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;ping -w 20000 -t myserver.company.com
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Enable or disable Linux Subsystem feture,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-Disable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Get host name,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;HOSTNAME
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;associating file type for extension &lt;code&gt;.fob&lt;/code&gt;,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;cmd /c assoc .fob=foobarfile
-cmd /c ftype foobarfile=powershell.exe -File `&amp;quot;C:\path\to\your.ps1`&amp;quot; `&amp;quot;%1`&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Find files with hidden attributes,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;dir /A:H general-solving\lintcode
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Modify files to remove hidden attributes using attrib&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;attrib -h my-hidden-file.txt
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="references"&gt;References&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/commands-by-server-role"&gt;MS Docs - Windows Commands&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </content:encoded>
 		</item>
 		<item>

@@ -95,7 +95,7 @@ Published on Tuesday, November 19, 2019<br>    </div>
                                 <div id="content" class="col-md-12">
                                         
 
-<p><em>This article formerly titled as 'Powershell Command Cache'</em></p>
+<p><em>This article formerly titled as 'Powershell Frequently Used Commands'</em></p>
 <p>Please be aware of notation below in command outlines. <code>$</code> represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for exxample, <code>takeown</code>.</p>
 <h2 id="initialization-of-shell">Initialization of Shell</h2>
 <p><em>This section is for my personalized shell; please feel free to skip it.</em></p>
@@ -276,8 +276,8 @@ Major  Minor  Build  Revision
 <p>Say you have a script named <code>Bluetooth.ps1</code> that uses Windows features. Hence, it requires Powershell.</p>
 <pre><code>Powershell -NoProfile -File Bluetooth.ps1 On
 </code></pre>
-<h2 id="unblocking-pwsh-in-a-new-machine">Unblocking pwsh in a new machine</h2>
-<p>Using Net Framework Library,</p>
+<h2 id="fixing-permission-for-pwsh-in-a-new-machine">Fixing permission for pwsh in a new machine</h2>
+<p>Set execution policy for current user <a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy">ref</a>,</p>
 <pre><code>Set-Executionpolicy Unrestricted -scope CurrentUser
 </code></pre>
 <p>In old days, that used to be enough. If you get following,</p>
