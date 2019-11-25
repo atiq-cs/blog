@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 
-        <title>SAOSX Blog - programming languages</title>
+        <title>SAOSX Blog - Generic Windows Command Cache</title>
         <meta name="description" content="Heads in the cloud! A Blog by Atiq Rahman!" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">        
 
@@ -28,9 +28,9 @@
         <meta name="msapplication-tooltip" content="SAOSX Blog" />
         <meta name="msapplication-starturl" content="/" />
 
-        <meta property="og:title" content="SAOSX Blog - programming languages" />
+        <meta property="og:title" content="SAOSX Blog - Generic Windows Command Cache" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://blog.saosx.com/tags/programming-languages" />
+        <meta property="og:url" content="https://blog.saosx.com/posts/dos" />
         <!-- TODO: More social graph meta tags -->
 
         
@@ -72,9 +72,18 @@
                         <div class="container">
                                 <div class="row">
                                         <div class="col-md-12">
-<div class="site-heading">
-    <h1>programming languages</h1>
-</div>                                            </div>
+
+    
+<div class="post-heading">
+    <h1>Generic Windows Command Cache</h1>
+    <div class="meta">        
+Published on Tuesday, November 19, 2019<br>    </div>
+        <div class="tags">
+                    <a role="button" href="/tags/system-administration" class="btn btn-default btn-xs">system administration</a>
+                    <a role="button" href="/tags/windows-command-prompt" class="btn btn-default btn-xs">windows command prompt</a>
+        </div>     
+</div>
+                                        </div>
                                 </div>
                         </div>
                 </header>
@@ -83,47 +92,37 @@
                 <div class="container">
                         <div class="row">
                                 <div id="content" class="col-md-12">
-                                        <div class="container-sm-height">
-    <div class="row row-sm-height">
-        <div class="col-sm-8 right-border col-sm-height">
-            
-        <div class="post-list">
-            <a href="/posts/python3">
-                <h3 class="post-title">Python Language Reference</h3>
-            </a>
-            <p class="post-meta">Posted on Thursday, November 14, 2019</p>      
-        </div>   
+                                        
+
+<p>Please be aware of notation below in command outlines. <code>$</code> represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for exxample, <code>takeown</code>.</p>
+<h2 id="misc">Misc</h2>
+<p>Customized ping command, waits 20 seconds for reply and keep pinging non-stop <a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/ping">ping ref</a>,</p>
+<pre><code>ping -w 20000 -t myserver.company.com
+</code></pre>
+<p>Enable or disable Linux Subsystem feture,</p>
+<pre><code>Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+Disable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+</code></pre>
+<p>Get host name,</p>
+<pre><code>HOSTNAME
+</code></pre>
+<p>associating file type for extension <code>.fob</code>,</p>
+<pre><code>cmd /c assoc .fob=foobarfile
+cmd /c ftype foobarfile=powershell.exe -File `&quot;C:\path\to\your.ps1`&quot; `&quot;%1`&quot;
+</code></pre>
+<p>Find files with hidden attributes,</p>
+<pre><code>dir /A:H general-solving\lintcode
+</code></pre>
+<p>Modify files to remove hidden attributes using attrib</p>
+<pre><code>attrib -h my-hidden-file.txt
+</code></pre>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/commands-by-server-role">MS Docs - Windows Commands</a></li>
+</ul>
 
 
-            <nav>
-                <ul class="pager">
-                    <li class="previous">                
-                    </li>
-                    <li class="next">
-                    </li>
-                </ul>
-            </nav>
-            <hr class="visible-xs-block" />
-        </div>
-		
-        <div class="col-sm-4 col-sm-height">
-                <a role="button" href="/tags/system-administration" class="btn btn-default btn-xs">system administration (3)</a>
-                <a role="button" href="/tags/Powershell-Core" class="btn btn-default btn-xs">Powershell Core (2)</a>
-                <a role="button" href="/tags/pwsh" class="btn btn-default btn-xs">pwsh (2)</a>
-                <a role="button" href="/tags/windows-command-prompt" class="btn btn-default btn-xs">windows command prompt (1)</a>
-                <a role="button" href="/tags/python" class="btn btn-default btn-xs">python (1)</a>
-                <a role="button" href="/tags/programming-languages" class="btn btn-primary btn-xs">programming languages (1)</a>
-                <a role="button" href="/tags/netsh" class="btn btn-default btn-xs">netsh (1)</a>
-                <a role="button" href="/tags/mercurial" class="btn btn-default btn-xs">mercurial (1)</a>
-                <a role="button" href="/tags/network" class="btn btn-default btn-xs">network (1)</a>
-                <a role="button" href="/tags/source-Control" class="btn btn-default btn-xs">source Control (1)</a>
-                <a role="button" href="/tags/version-Control" class="btn btn-default btn-xs">version Control (1)</a>
-                <a role="button" href="/tags/math" class="btn btn-default btn-xs">math (1)</a>
-                <a role="button" href="/tags/markdown" class="btn btn-default btn-xs">markdown (1)</a>
-                <a role="button" href="/tags/latex" class="btn btn-default btn-xs">latex (1)</a>
-        </div>
-    </div>
-</div>
+
                                 </div>
                         </div>
                 </div>

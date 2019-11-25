@@ -4,30 +4,8 @@
 	<title>SAOSX Blog</title>
 	<link rel="self" href="https://blog.saosx.com/" />
 	<rights>2019</rights>
-	<updated>2019-11-25T04:13:21Z</updated>
+	<updated>2019-11-25T16:16:40Z</updated>
 	<subtitle>Heads in the cloud! A Blog by Atiq Rahman!</subtitle>
-	<entry>
-		<id>https://blog.saosx.com/posts/math</id>
-		<title>Math Notation Test</title>
-		<link href="https://blog.saosx.com/posts/math" />
-		<updated>2019-11-22T00:00:00Z</updated>
-		<content>&lt;p&gt;This is a &lt;span class="math"&gt;\(\infty \frac{x^3}{e^x-1}\)&lt;/span&gt; with few symbols.&lt;/p&gt;
-&lt;p&gt;Eq 1,&lt;/p&gt;
-&lt;div class="math"&gt;
-\[
-\begin{equation}
-  \int_0^\infty \frac{x^3}{e^x-1}\,dx = \frac{\pi^4}{15}
-  \label{eq:sample}
-\end{equation}
-\]&lt;/div&gt;
-&lt;p&gt;Eq 2 without starting with beginning equation tagger,&lt;/p&gt;
-&lt;div class="math"&gt;
-\[
-\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
-\]&lt;/div&gt;
-</content>
-		<summary>&lt;p&gt;This is a &lt;span class="math"&gt;\(\infty \frac{x^3}{e^x-1}\)&lt;/span&gt; with few symbols.&lt;/p&gt;</summary>
-	</entry>
 	<entry>
 		<id>https://blog.saosx.com/posts/wifi-cmd</id>
 		<title>WiFi Networking with Powershell and netsh</title>
@@ -265,6 +243,28 @@ SSID 2 : S H Hall 1
 		<summary>&lt;p&gt;Please be aware of notation below in command outlines. &lt;code&gt;$&lt;/code&gt; represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for exxample, &lt;code&gt;takeown&lt;/code&gt;.&lt;/p&gt;</summary>
 	</entry>
 	<entry>
+		<id>https://blog.saosx.com/posts/math</id>
+		<title>Math Notation Test</title>
+		<link href="https://blog.saosx.com/posts/math" />
+		<updated>2019-11-22T00:00:00Z</updated>
+		<content>&lt;p&gt;This is a &lt;span class="math"&gt;\(\infty \frac{x^3}{e^x-1}\)&lt;/span&gt; with few symbols.&lt;/p&gt;
+&lt;p&gt;Eq 1,&lt;/p&gt;
+&lt;div class="math"&gt;
+\[
+\begin{equation}
+  \int_0^\infty \frac{x^3}{e^x-1}\,dx = \frac{\pi^4}{15}
+  \label{eq:sample}
+\end{equation}
+\]&lt;/div&gt;
+&lt;p&gt;Eq 2 without starting with beginning equation tagger,&lt;/p&gt;
+&lt;div class="math"&gt;
+\[
+\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
+\]&lt;/div&gt;
+</content>
+		<summary>&lt;p&gt;This is a &lt;span class="math"&gt;\(\infty \frac{x^3}{e^x-1}\)&lt;/span&gt; with few symbols.&lt;/p&gt;</summary>
+	</entry>
+	<entry>
 		<id>https://blog.saosx.com/posts/pwsh</id>
 		<title>pwsh Command Cache</title>
 		<link href="https://blog.saosx.com/posts/pwsh" />
@@ -278,9 +278,6 @@ SSID 2 : S H Hall 1
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;For Machine Learning customized shell, I try adding an arg,&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;pwsh -NoExit D:\Code\fftsys_ws\PowerShell\Init.ps1 ML
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Bluetooth cmds are replaced by,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Powershell.exe -NoProfile -File Bluetooth.ps1 Off / On
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id="new-to-pwsh"&gt;New to pwsh?&lt;/h2&gt;
 &lt;p&gt;clear-host is equivalent to cls
@@ -308,8 +305,6 @@ where atom is usually linked to &lt;code&gt;C:\Users\atiq\AppData\Local\atom\ato
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Open Power Options Window,&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Show-ControlPanelItem -Name &amp;quot;Power Options&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;List Power plans,&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;$ powercfg list
@@ -345,6 +340,15 @@ Handy cmds follow, &lt;a href="https://docs.microsoft.com/en-us/powershell/modul
 &lt;p&gt;Get list of running processes (unique),&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Get-Process | Select-Object -Unique Path
 &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;When Windows Explorer or taskbar has trouble,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Stop-Process -Name explorer
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Create directory,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;New-Item c:\scripts\Windows PowerShell -type directory
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Create file,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;New-Item c:\scripts\new_file.txt -type file
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Rename Machine,&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Rename-Computer -NewName JohnPC -Restart
 &lt;/code&gt;&lt;/pre&gt;
@@ -363,6 +367,24 @@ PrivateData      : Microsoft.PowerShell.ConsoleHost+ConsoleColorProxy
 DebuggerEnabled  : True
 IsRunspacePushed : False
 Runspace         : System.Management.Automation.Runspaces.LocalRunspace
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Ping hosts,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Test-Connection -Count 64 bing.com
+Test-Connection -Count 1024 bing.com
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;if help modules are outdated this updates it,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Update-Help
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;More network related cmdlets or commands are at &lt;a href="wifi-cmd"&gt;wifi cmd article&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;How to uninstall store application i.e., skype&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Get-AppxPackage Microsoft.SkypeApp | Remove-AppxPackage
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Get Software List,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Get-WmiObject -Class Win32_Product -Filter &amp;quot;Name = 'Java 8 (64 bit)'&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;How to uninstall application,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$app = Get-WmiObject -Class Win32_Product -Filter &amp;quot;Name = 'Java 8 (64-bit)'&amp;quot;
+$app.Uninstall()
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id="service-management"&gt;Service Management&lt;/h2&gt;
 &lt;p&gt;Managing services,&lt;/p&gt;
@@ -393,6 +415,13 @@ IsPublic IsSerial Name                                     BaseType
 -------- -------- ----                                     --------
 True     True     String                                   System.Object
 &lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id="mathematics-library"&gt;Mathematics Library&lt;/h4&gt;
+&lt;p&gt;Example usage of .net math library, using old friend the &lt;code&gt;power&lt;/code&gt; method,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[Math]::Pow(2,13)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Or finding a square root,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[Math]::Sqrt(9)
+&lt;/code&gt;&lt;/pre&gt;
 &lt;h4 id="string-helpers"&gt;String Helpers&lt;/h4&gt;
 &lt;p&gt;nll or empty related where &lt;code&gt;$ConfigName&lt;/code&gt; is an example variable,&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;[string]::IsNullOrEmpty($ConfigName)
@@ -417,8 +446,79 @@ Major  Minor  Build  Revision
 -----  -----  -----  --------
 10     0      18362  356
 &lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id="inception-to-powershell-from-pwsh"&gt;Inception to Powershell from pwsh&lt;/h2&gt;
+&lt;p&gt;Say you have a script named &lt;code&gt;Bluetooth.ps1&lt;/code&gt; that uses Windows features. Hence, it requires Powershell.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Powershell -NoProfile -File Bluetooth.ps1 On
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id="unblocking-pwsh-in-a-new-machine"&gt;Unblocking pwsh in a new machine&lt;/h2&gt;
+&lt;p&gt;Using Net Framework Library,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Set-Executionpolicy Unrestricted -scope CurrentUser
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In old days, that used to be enough. If you get following,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;PowerShell 6.2.3
+Copyright (c) Microsoft Corporation. All rights reserved.
+
+https://aka.ms/pscore6-docs
+Type 'help' to get help.
+
+Security warning
+Run only scripts that you trust. While scripts from the internet can be useful, this script can potentially harm your computer. If you trust this script, use the Unblock-File cmdlet to allow the script to run without this warning
+message. Do you want to run D:\Doc\PowerShell\Microsoft.PowerShell_profile.ps1?
+[D] Do not run  [R] Run once  [S] Suspend  [?] Help (default is &amp;quot;D&amp;quot;): R
+Loading personal and system profiles took 4862ms.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;try unblocking,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Unblock-File D:\Doc\PowerShell\Microsoft.PowerShell_profile.ps1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In worst situation, in corporate environments if that still does not work,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;File D:\Doc\PowerShell\Microsoft.PowerShell_profile.ps1 cannot be loaded. The file D:\Doc\PowerShell\Microsoft.PowerShell_profile.ps1 is not digitally signed. You cannot run this script on the current system. For more information about running scripts and setting execution policy, see about_Execution_Policies at https://go.microsoft.com/fwlink/?LinkID=135170.
+At line:1 char:3
++ . 'D:\Doc\PowerShell\Microsoft.PowerShell_profile.ps1'
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
++ CategoryInfo          : SecurityError: (:) [], PSSecurityException
++ FullyQualifiedErrorId : UnauthorizedAccess
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;we can apply bypass changing Registry,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Set-ItemProperty -Path HKLM:\Software\Policies\Microsoft\Windows\PowerShell -Name ExecutionPolicy -Value ByPass
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id="continue"&gt;continue&lt;/h2&gt;
+&lt;p&gt;rest of the contents yet to be appended..&lt;/p&gt;
 </content>
 		<summary>&lt;p&gt;&lt;em&gt;This article formerly titled as 'Powershell Command Cache'&lt;/em&gt;&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>https://blog.saosx.com/posts/dos</id>
+		<title>Generic Windows Command Cache</title>
+		<link href="https://blog.saosx.com/posts/dos" />
+		<updated>2019-11-19T00:00:00Z</updated>
+		<content>&lt;p&gt;Please be aware of notation below in command outlines. &lt;code&gt;$&lt;/code&gt; represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for exxample, &lt;code&gt;takeown&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id="misc"&gt;Misc&lt;/h2&gt;
+&lt;p&gt;Customized ping command, waits 20 seconds for reply and keep pinging non-stop &lt;a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/ping"&gt;ping ref&lt;/a&gt;,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ping -w 20000 -t myserver.company.com
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Enable or disable Linux Subsystem feture,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+Disable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Get host name,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;HOSTNAME
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;associating file type for extension &lt;code&gt;.fob&lt;/code&gt;,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cmd /c assoc .fob=foobarfile
+cmd /c ftype foobarfile=powershell.exe -File `&amp;quot;C:\path\to\your.ps1`&amp;quot; `&amp;quot;%1`&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Find files with hidden attributes,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;dir /A:H general-solving\lintcode
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Modify files to remove hidden attributes using attrib&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;attrib -h my-hidden-file.txt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/commands-by-server-role"&gt;MS Docs - Windows Commands&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>&lt;p&gt;Please be aware of notation below in command outlines. &lt;code&gt;$&lt;/code&gt; represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for exxample, &lt;code&gt;takeown&lt;/code&gt;.&lt;/p&gt;</summary>
 	</entry>
 	<entry>
 		<id>https://blog.saosx.com/posts/python3</id>
