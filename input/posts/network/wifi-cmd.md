@@ -2,7 +2,6 @@ Title: WiFi Networking with Powershell and netsh
 Published: 11/22/2019
 Tags:
   - Powershell Core
-  - pwsh
   - netsh
   - network
   - system administration
@@ -247,6 +246,12 @@ Using `netsh`,
              Channel            : 6
              Basic rates (Mbps) : 1 2
              Other rates (Mbps) : 5.5 6 9 11 12 18 24 36 48 54
+
+## WiFI Modem Best Practices
+Few points,
+1. Reboot modem every few months
+2. Hopefully carrier provides firmware udpates if not update every few months
+3. Keep in touch with carrier's customer service in case of slow speed, give good complaints coz they owe you the speed you deserve.
 
 ## References
  1. [ms technet - Get Wireless Network SSID and Password with PowerShell](https://blogs.technet.microsoft.com/heyscriptingguy/2015/11/23/get-wireless-network-ssid-and-password-with-powershell/)

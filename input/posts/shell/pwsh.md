@@ -5,7 +5,7 @@ Tags:
   - pwsh
   - system administration
 ---
-_This article formerly titled as 'Powershell Command Cache'_
+_This article formerly titled as 'Powershell Frequently Used Commands'_
 
 Please be aware of notation below in command outlines. `$` represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for exxample, `takeown`.
 
@@ -243,8 +243,8 @@ Say you have a script named `Bluetooth.ps1` that uses Windows features. Hence, i
 
     Powershell -NoProfile -File Bluetooth.ps1 On
 
-## Unblocking pwsh in a new machine
-Using Net Framework Library,
+## Fixing permission for pwsh in a new machine
+Set execution policy for current user [ref](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy),
 
     Set-Executionpolicy Unrestricted -scope CurrentUser
 
