@@ -5,84 +5,8 @@
 		<link>https://blog.saosx.com/</link>
 		<description>Heads in the cloud! A Blog by Atiq Rahman!</description>
 		<copyright>2019</copyright>
-		<pubDate>Mon, 25 Nov 2019 16:19:25 GMT</pubDate>
-		<lastBuildDate>Mon, 25 Nov 2019 16:19:25 GMT</lastBuildDate>
-		<item>
-			<title>Math Notation Test</title>
-			<link>https://blog.saosx.com/posts/math</link>
-			<description>&lt;p&gt;This is a &lt;span class="math"&gt;\(\infty \frac{x^3}{e^x-1}\)&lt;/span&gt; with few symbols.&lt;/p&gt;</description>
-			<guid>https://blog.saosx.com/posts/math</guid>
-			<pubDate>Fri, 22 Nov 2019 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;This is a &lt;span class="math"&gt;\(\infty \frac{x^3}{e^x-1}\)&lt;/span&gt; with few symbols.&lt;/p&gt;
-&lt;p&gt;Eq 1,&lt;/p&gt;
-&lt;div class="math"&gt;
-\[
-\begin{equation}
-  \int_0^\infty \frac{x^3}{e^x-1}\,dx = \frac{\pi^4}{15}
-  \label{eq:sample}
-\end{equation}
-\]&lt;/div&gt;
-&lt;p&gt;Eq 2 without starting with beginning equation tagger,&lt;/p&gt;
-&lt;div class="math"&gt;
-\[
-\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
-\]&lt;/div&gt;
-</content:encoded>
-		</item>
-		<item>
-			<title>Wyam with Cake Build, Github pages and Azure Pipeline (Windows Server 2019)</title>
-			<link>https://blog.saosx.com/posts/wyam</link>
-			<description>&lt;p&gt;Example markdown doc from msdn &lt;a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/"&gt;async programming C#&lt;/a&gt;,&lt;/p&gt;</description>
-			<guid>https://blog.saosx.com/posts/wyam</guid>
-			<pubDate>Fri, 22 Nov 2019 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;h2 id="document-publishing-using-markdown"&gt;Document publishing using markdown&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/contribute/how-to-write-use-markdown"&gt;https://docs.microsoft.com/en-us/contribute/how-to-write-use-markdown&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/lunet-io/markdig"&gt;https://github.com/lunet-io/markdig&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Example markdown doc from msdn &lt;a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/"&gt;async programming C#&lt;/a&gt;,&lt;/p&gt;
-&lt;p&gt;While blogging using markdown on wordpress &lt;a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet"&gt;adam P's Markdown Cheatsheet&lt;/a&gt; is handy.&lt;/p&gt;
-&lt;h2 id="markdown-editors-online"&gt;Markdown Editors Online&lt;/h2&gt;
-&lt;p&gt;Here are few online tools available directly for editing in markdown syntax,&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.maketecheasier.com/best-markdown-editor-web/"&gt;https://www.maketecheasier.com/best-markdown-editor-web/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://stackedit-beta.herokuapp.com/"&gt;https://stackedit-beta.herokuapp.com/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://stackedit.io/app"&gt;https://stackedit.io/app&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://dillinger.io/"&gt;https://dillinger.io/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://markable.in/"&gt;https://markable.in/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.slant.co/topics/2196/%7Eonline-markdown-editor"&gt;slant&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://gist.github.com/palimadra/87e7c294be6447bac96b"&gt;stackedit markdown&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://libraries.io/bower/stackedit"&gt;https://libraries.io/bower/stackedit&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://hackmd.io/C3iKwt4XSmaiAZtqWn7JBw"&gt;https://hackmd.io/C3iKwt4XSmaiAZtqWn7JBw&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://simplemde.com/"&gt;https://simplemde.com/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;blogifier now has markdown as default editor, try a demo!&lt;/p&gt;
-&lt;h2 id="markdown-in-blogging-platforms"&gt;Markdown in Blogging Platforms&lt;/h2&gt;
-&lt;p&gt;markdown in blog services such as in blogger usually requires manually converting the markdown source to html. After we get the html we can post them in the blog using html source view. Some people use an alternative solution: a mix of github and javascript to solve this problem. First one below uses this to render markdown along with scientific equations.&lt;/p&gt;
-&lt;h3 id="markdown-in-wordpress"&gt;Markdown in wordpress&lt;/h3&gt;
-&lt;p&gt;wordpress recently added the feature of enabling markdown syntax for writing. This is pretty neat. &lt;a href="https://en.support.wordpress.com/markdown/"&gt;wordpress.com - support&lt;/a&gt; provides instruction how to enable the feature. They also provide a &lt;a href="https://en.support.wordpress.com/markdown-quick-reference/"&gt;Markdown quick reference&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;However, if you are writing scientific equations you can find troubles.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Scientific equation writing in Markdown solution for Wordpress&lt;/em&gt;
-&lt;a href="http://mathalope.co.uk/2015/03/29/how-i-write-scientific-blog-posts-that-contains-codes-and-mathematical-expressions-a-quick-reference-with-wordpress-gist-and-mathjax/"&gt;mathalope&lt;/a&gt;
-shows how to do it using the combination of self-hosted wordpress and javascript mathjax.&lt;/p&gt;
-&lt;h3 id="markdown-in-blogger"&gt;Markdown in blogger&lt;/h3&gt;
-&lt;p&gt;&lt;a href="http://blog.saliya.org/2014/08/blogging-with-markdown-in-blogger.html"&gt;Saliya's Blogs - Blogging with Markdown in Blogger&lt;/a&gt; shows how to do this in blogger.&lt;/p&gt;
-&lt;h2 id="markdown-in-wiki-systems"&gt;Markdown in Wiki Systems&lt;/h2&gt;
-&lt;p&gt;&lt;a href="http://pandoc.org/try/"&gt;pandoc&lt;/a&gt; allows viewing wiki syntax differences along with markdown.&lt;/p&gt;
-&lt;h4 id="markdown-related-resources-2018-07"&gt;Markdown related resources 2018-07&lt;/h4&gt;
-&lt;p&gt;Projects on github,
-&lt;a href="https://github.com/sparksuite/simplemde-markdown-editor"&gt;simplemde-markdown-editor&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;stackexchange's C# markdown, Which Markdown library is used? &lt;a href="https://math.meta.stackexchange.com/questions/9648/which-markdown-library-is-used"&gt;ref&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/StackExchange/MarkdownSharp/blob/master/MarkdownSharp/Markdown.cs"&gt;MarkdownSharp&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;More&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/mundimark/awesome-markdown-editors"&gt;https://github.com/mundimark/awesome-markdown-editors&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/linezero/Blog"&gt;https://github.com/linezero/Blog&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/search?q=markdown+editor"&gt;https://github.com/search?q=markdown+editor&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/benweet/stackedit/blob/master/src/components/Editor.vue"&gt;https://github.com/benweet/stackedit/blob/master/src/components/Editor.vue&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-		</item>
+		<pubDate>Mon, 25 Nov 2019 16:19:39 GMT</pubDate>
+		<lastBuildDate>Mon, 25 Nov 2019 16:19:39 GMT</lastBuildDate>
 		<item>
 			<title>WiFi Networking with Powershell and netsh</title>
 			<link>https://blog.saosx.com/posts/wifi-cmd</link>
@@ -324,6 +248,28 @@ SSID 2 : S H Hall 1
 &lt;li&gt;&lt;a href="https://blogs.technet.microsoft.com/heyscriptingguy/2014/01/13/enabling-and-disabling-network-adapters-with-powershell/"&gt;disabling unnecessary network adapters&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.xfinity.com/support/internet/comcast-supported-routers-gateways-adapters/"&gt;Some possible default passwords for networks / routers / gateways&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
+</content:encoded>
+		</item>
+		<item>
+			<title>Math Notation Test</title>
+			<link>https://blog.saosx.com/posts/math</link>
+			<description>&lt;p&gt;This is a &lt;span class="math"&gt;\(\infty \frac{x^3}{e^x-1}\)&lt;/span&gt; with few symbols.&lt;/p&gt;</description>
+			<guid>https://blog.saosx.com/posts/math</guid>
+			<pubDate>Fri, 22 Nov 2019 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;This is a &lt;span class="math"&gt;\(\infty \frac{x^3}{e^x-1}\)&lt;/span&gt; with few symbols.&lt;/p&gt;
+&lt;p&gt;Eq 1,&lt;/p&gt;
+&lt;div class="math"&gt;
+\[
+\begin{equation}
+  \int_0^\infty \frac{x^3}{e^x-1}\,dx = \frac{\pi^4}{15}
+  \label{eq:sample}
+\end{equation}
+\]&lt;/div&gt;
+&lt;p&gt;Eq 2 without starting with beginning equation tagger,&lt;/p&gt;
+&lt;div class="math"&gt;
+\[
+\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
+\]&lt;/div&gt;
 </content:encoded>
 		</item>
 		<item>
@@ -583,18 +529,6 @@ At line:1 char:3
 </content:encoded>
 		</item>
 		<item>
-			<title>Python Language Reference</title>
-			<link>https://blog.saosx.com/posts/python3</link>
-			<description>&lt;p&gt;ref: &lt;a href="https://stackoverflow.com/q/354883"&gt;so&lt;/a&gt;&lt;/p&gt;</description>
-			<guid>https://blog.saosx.com/posts/python3</guid>
-			<pubDate>Thu, 14 Nov 2019 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;h4 id="how-do-i-return-multiple-values-from-a-function"&gt;How do I return multiple values from a function?&lt;/h4&gt;
-&lt;p&gt;ref: &lt;a href="https://stackoverflow.com/q/354883"&gt;so&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id="typing-python-on-windows-10-version-1903-command-prompt-opens-microsoft-store"&gt;Typing “python” on Windows 10 (version 1903) command prompt opens Microsoft store&lt;/h4&gt;
-&lt;p&gt;ref &lt;a href="https://superuser.com/q/1437590"&gt;so&lt;/a&gt;&lt;/p&gt;
-</content:encoded>
-		</item>
-		<item>
 			<title>Mercurial Useful Commands</title>
 			<link>https://blog.saosx.com/posts/mercurial</link>
 			<description>&lt;p&gt;List files changed in previous commit,&lt;/p&gt;</description>
@@ -749,6 +683,18 @@ like fast forward merge, can go to merge tool&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;hg pull --rebase
 +1 heads
 &lt;/code&gt;&lt;/pre&gt;
+</content:encoded>
+		</item>
+		<item>
+			<title>Python Language Reference</title>
+			<link>https://blog.saosx.com/posts/python3</link>
+			<description>&lt;p&gt;ref: &lt;a href="https://stackoverflow.com/q/354883"&gt;so&lt;/a&gt;&lt;/p&gt;</description>
+			<guid>https://blog.saosx.com/posts/python3</guid>
+			<pubDate>Thu, 14 Nov 2019 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;h4 id="how-do-i-return-multiple-values-from-a-function"&gt;How do I return multiple values from a function?&lt;/h4&gt;
+&lt;p&gt;ref: &lt;a href="https://stackoverflow.com/q/354883"&gt;so&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id="typing-python-on-windows-10-version-1903-command-prompt-opens-microsoft-store"&gt;Typing “python” on Windows 10 (version 1903) command prompt opens Microsoft store&lt;/h4&gt;
+&lt;p&gt;ref &lt;a href="https://superuser.com/q/1437590"&gt;so&lt;/a&gt;&lt;/p&gt;
 </content:encoded>
 		</item>
 		<item>
