@@ -1,6 +1,9 @@
 Title: pwsh Command Cache
 Published: 11/19/2019
-Tags: Powershell Core; pwsh; Shell
+Tags:
+  - Powershell Core
+  - pwsh
+  - system administration
 ---
 _This article formerly titled as 'Powershell Command Cache'_
 
@@ -16,11 +19,6 @@ pwsh -NoExit D:\Code\fftsys_ws\PowerShell\Init.ps1
 For Machine Learning customized shell, I try adding an arg,
 ```
 pwsh -NoExit D:\Code\fftsys_ws\PowerShell\Init.ps1 ML
-```
-
-Bluetooth cmds are replaced by,
-```
-Powershell.exe -NoProfile -File Bluetooth.ps1 Off / On
 ```
 
 ## New to pwsh?
@@ -59,9 +57,6 @@ Open Power Options Window,
 Show-ControlPanelItem -Name "Power Options"
 ```
 
-```
-
-```
 List Power plans,
 ```
 $ powercfg list
@@ -103,6 +98,18 @@ Get list of running processes (unique),
 Get-Process | Select-Object -Unique Path
 ```
 
+When Windows Explorer or taskbar has trouble,
+
+    Stop-Process -Name explorer
+
+Create directory,
+
+    New-Item c:\scripts\Windows PowerShell -type directory
+
+Create file,
+
+    New-Item c:\scripts\new_file.txt -type file
+
 
 Rename Machine,
 ```
@@ -127,6 +134,31 @@ Show console host info,
     DebuggerEnabled  : True
     IsRunspacePushed : False
     Runspace         : System.Management.Automation.Runspaces.LocalRunspace
+
+Ping hosts,
+
+    Test-Connection -Count 64 bing.com
+    Test-Connection -Count 1024 bing.com
+
+if help modules are outdated this updates it,
+
+    Update-Help
+
+More network related cmdlets or commands are at [wifi cmd article](wifi-cmd)
+
+How to uninstall store application i.e., skype
+
+    Get-AppxPackage Microsoft.SkypeApp | Remove-AppxPackage
+
+Get Software List,
+
+    Get-WmiObject -Class Win32_Product -Filter "Name = 'Java 8 (64 bit)'"
+
+How to uninstall application,
+
+    $app = Get-WmiObject -Class Win32_Product -Filter "Name = 'Java 8 (64-bit)'"
+    $app.Uninstall()
+
 
 ## Service Management
 Managing services,
@@ -169,6 +201,15 @@ IsPublic IsSerial Name                                     BaseType
 True     True     String                                   System.Object
 ```
 
+#### Mathematics Library
+Example usage of .net math library, using old friend the `power` method,
+
+    [Math]::Pow(2,13)
+
+Or finding a square root,
+
+    [Math]::Sqrt(9)
+
 #### String Helpers
 nll or empty related where `$ConfigName` is an example variable,
 ```
@@ -196,3 +237,48 @@ Additionally, we can do this inspecting `hal.dll`,
     Major  Minor  Build  Revision
     -----  -----  -----  --------
     10     0      18362  356
+
+## Inception to Powershell from pwsh
+Say you have a script named `Bluetooth.ps1` that uses Windows features. Hence, it requires Powershell.
+
+    Powershell -NoProfile -File Bluetooth.ps1 On
+
+## Unblocking pwsh in a new machine
+Using Net Framework Library,
+
+    Set-Executionpolicy Unrestricted -scope CurrentUser
+
+In old days, that used to be enough. If you get following,
+
+    PowerShell 6.2.3
+    Copyright (c) Microsoft Corporation. All rights reserved.
+
+    https://aka.ms/pscore6-docs
+    Type 'help' to get help.
+
+    Security warning
+    Run only scripts that you trust. While scripts from the internet can be useful, this script can potentially harm your computer. If you trust this script, use the Unblock-File cmdlet to allow the script to run without this warning
+    message. Do you want to run D:\Doc\PowerShell\Microsoft.PowerShell_profile.ps1?
+    [D] Do not run  [R] Run once  [S] Suspend  [?] Help (default is "D"): R
+    Loading personal and system profiles took 4862ms.
+
+ try unblocking,
+
+    Unblock-File D:\Doc\PowerShell\Microsoft.PowerShell_profile.ps1
+
+In worst situation, in corporate environments if that still does not work,
+
+    File D:\Doc\PowerShell\Microsoft.PowerShell_profile.ps1 cannot be loaded. The file D:\Doc\PowerShell\Microsoft.PowerShell_profile.ps1 is not digitally signed. You cannot run this script on the current system. For more information about running scripts and setting execution policy, see about_Execution_Policies at https://go.microsoft.com/fwlink/?LinkID=135170.
+    At line:1 char:3
+    + . 'D:\Doc\PowerShell\Microsoft.PowerShell_profile.ps1'
+    +   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : SecurityError: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+
+
+we can apply bypass changing Registry,
+
+    Set-ItemProperty -Path HKLM:\Software\Policies\Microsoft\Windows\PowerShell -Name ExecutionPolicy -Value ByPass
+
+## continue
+rest of the contents yet to be appended..
