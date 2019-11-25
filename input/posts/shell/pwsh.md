@@ -1,6 +1,6 @@
 Title: pwsh Command Cache
 Published: 11/19/2019
-Tags: Powershell Core, pwsh, Shell
+Tags: Powershell Core; pwsh; Shell
 ---
 _This article formerly titled as 'Powershell Command Cache'_
 

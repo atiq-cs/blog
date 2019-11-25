@@ -1,6 +1,8 @@
 Title: Math Notation Test
 Published: 11/22/2019
-Tags: math, latex
+Tags:
+  - math
+  - latex
 ---
 This is a $\infty \frac{x^3}{e^x-1}$ with few symbols.
 

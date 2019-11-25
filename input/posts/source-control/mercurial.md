@@ -1,6 +1,9 @@
 Title: Mercurial Useful Commands
 Published: 11/14/2019
-Tags: Mercurial+Source Control+Version Control
+Tags:
+  - mercurial
+  - source Control
+  - version Control
 ---
 List files changed in previous commit,
 ```

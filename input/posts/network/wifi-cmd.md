@@ -1,6 +1,11 @@
 Title: WiFi Networking with Powershell and netsh
 Published: 11/22/2019
-Tags: Powershell Core; pwsh; netsh; Network; System Administration
+Tags:
+  - Powershell Core
+  - pwsh
+  - netsh
+  - network
+  - system administration
 ---
 Please be aware of notation below in command outlines. `$` represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for exxample, `takeown`.
 

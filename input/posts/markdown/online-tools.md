@@ -1,6 +1,6 @@
 Title: Markdown Editor and Related Tools
 Published: 02/04/2018
-Tags: Markdown
+Tags: markdown
 ---
 ## Document publishing using markdown
 

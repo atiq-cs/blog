@@ -1,6 +1,8 @@
 Title: Python Language Reference
 Published: 11/14/2019
-Tags: Mercurial, Source Control
+Tags:
+  - python
+  - programming languages
 ---
 #### How do I return multiple values from a function?
 ref: [so](https://stackoverflow.com/q/354883)
