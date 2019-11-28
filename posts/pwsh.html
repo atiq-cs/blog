@@ -109,15 +109,17 @@ Published on Tuesday, November 19, 2019<br>    </div>
 <p>clear-host is equivalent to cls
 <code>Get-Location</code> instead of pwd`
 ls, cat, popd, pushd etc still work</p>
-<p>Write-Host is equivalent to echo. Example,
-echo 'hello'
-ps is equivalent to Get-Process or to List processes or doing <code>tasklist</code>.
+<p>Write-Host is equivalent to echo. For example,</p>
+<pre><code>echo 'hello'
+</code></pre>
+<p>works just fine.</p>
+<p>ps is equivalent to Get-Process or to List processes or doing <code>tasklist</code>.
 Stop-Proccess instead of taskkill</p>
 <h2 id="application-run-examples">Application Run Examples</h2>
-<p>Here are some handy cmds,  Access sys properties,</p>
+<p><code>Start</code> is an alias of <code>Start-Process</code></p>
+<h3 id="start-process">Start-Process</h3>
+<p>Here are some handy cmds,</p>
 <pre><code>Start DevEnv /Edit, Stream-Converter.ps1
-Start Microsoft-Edge:https://google.com
-Start Skype:
 
 Start CVpn-Client
 
@@ -125,6 +127,20 @@ Start Atom
 </code></pre>
 <p>where CVpn-Client usually links to <code>C:\Program Files (x86)\Cisco\Cisco AnyConnect Secure Mobility Client\vpnui.exe</code>
 where atom is usually linked to <code>C:\Users\atiq\AppData\Local\atom\atom.exe</code></p>
+<p>Syntax for microsoft store apps,</p>
+<pre><code>Start Microsoft-Edge:https://google.com
+Start Skype:
+</code></pre>
+<p>For passing arguments to an application we can either add it right after the app name with a seperating space,</p>
+<pre><code>Start Notepad++ file_path
+</code></pre>
+<p>Or, specify it in <code>ArgumentList</code>,</p>
+<pre><code>Start Notepad++ -ArgumentList file_path
+</code></pre>
+<p>However, it's tricky if passed argument for example, <code>file_path</code> above contains a space character.</p>
+<p>To make it work, we need to double quote them <a href="https://stackoverflow.com/questions/22840882/powershell-opening-file-path-with-spaces">ref</a>,</p>
+<pre><code>Start Notepad++ -ArgumentList &quot;`&quot;D:\Cool Soft\my awesome file.txt`&quot;&quot;
+</code></pre>
 <h2 id="balanced-power-options">Balanced Power options</h2>
 <p>Turn hibernation off (run from elevated PS),</p>
 <pre><code>powercfg.exe /h off
@@ -141,7 +157,7 @@ Power Scheme GUID: 433299bd-efc0-474e-a61e-4a940c85e632  (Timers off (Presentati
 Power Scheme GUID: 496d75e1-8cba-4d72-b778-535d67c976ea  (Airplane)
 </code></pre>
 <p>How to export Balanced plan (we copy paste id from output of above command),</p>
-<pre><code>Powercfg -Export D:\Efficient_BP.pow 381b4222-f694-41f0-9685-ff5bb260df2e
+<pre><code>powercfg -Export D:\Efficient_BP.pow 381b4222-f694-41f0-9685-ff5bb260df2e
 </code></pre>
 <p>automate importing registry (requires privilege) ref,</p>
 <pre><code>reg import 'D:\Soft\reg files soft settings\app_paths\KeePass.reg'
