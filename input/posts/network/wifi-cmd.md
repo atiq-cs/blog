@@ -9,9 +9,10 @@ Tags:
 Please be aware of notation below in command outlines. `$` represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for exxample, `takeown`.
 
 # Introduction
+We still need to use `netsh` till we have cmdlets support
 *To connect to a specific network or SSID*
 
-    netsh wlan connect name='Google Starbucks'
+    netsh wlan connect name='Starbucks WiFi'
 
 *To disconnect from WiFi*
 
@@ -39,7 +40,7 @@ To provide more context, new cmdlets and netsh features enable us to control net
     User profiles
     -------------
         All User Profile     : CSC-Public
-        All User Profile     : Google Starbucks
+        All User Profile     : Starbucks WiFi
         All User Profile     : VTA Free WiFi
         All User Profile     : Philz Tesora
         All User Profile     : PEETS
@@ -54,7 +55,7 @@ Following shows pretty much the same list probably because most WiFi have clear 
 *To view information on the currently connect WiFi network*
 
     $ Get-NetConnectionProfile
-    Name             : Google Starbucks  12
+    Name             : Starbucks WiFi  12
     InterfaceAlias   : Wi-Fi
     InterfaceIndex   : 16
     NetworkCategory  : Public
@@ -63,9 +64,9 @@ Following shows pretty much the same list probably because most WiFi have clear 
 
 Applying above command on a specific SSID provides us more info,
 
-    $ netsh wlan show profiles name='Google Starbucks'
+    $ netsh wlan show profiles name='Starbucks WiFi'
 
-    Profile Google Starbucks on interface Wi-Fi:
+    Profile Starbucks WiFi on interface Wi-Fi:
     =======================================================================
 
     Applied: All User Profile
@@ -74,7 +75,7 @@ Applying above command on a specific SSID provides us more info,
     -------------------
         Version                : 1
         Type                   : Wireless LAN
-        Name                   : Google Starbucks
+        Name                   : Starbucks WiFi
         Control options        :
             Connection mode    : Connect automatically
             Network broadcast  : Connect only if this network is broadcasting
@@ -84,7 +85,7 @@ Applying above command on a specific SSID provides us more info,
     Connectivity settings
     ---------------------
         Number of SSIDs        : 1
-        SSID name              : "Google Starbucks"
+        SSID name              : "Starbucks WiFi"
         Network type           : Infrastructure
         Radio type             : [ Any Radio Type ]
         Vendor extension          : Not present
@@ -107,55 +108,51 @@ Applying above command on a specific SSID provides us more info,
 
 Following is equivalent,
 
-    $ netsh wlan show profiles name='Google Starbucks' key=clear
+    $ netsh wlan show profiles name='Starbucks WiFi' key=clear
 
-### Other Commands
+#### Show Interfaces Info
 To view currently connected SSID etc,
 
     $ netsh wlan show interfaces
-
     There is 1 interface on the system:
 
-        Name                   : Wi-Fi
-        Description            : Dell Wireless 1830 802.11ac
-        GUID                   : ebf95ed0-e6b2-455b-b863-291169f3ffb3
-        Physical address       : 6a:ca:81:ee:ce:d6
-        State                  : connected
-        SSID                   : PEETS
-        BSSID                  : 8a:15:14:b2:c4:50
-        Network type           : Infrastructure
-        Radio type             : 802.11ac
-        Authentication         : Open
-        Cipher                 : None
-        Connection mode        : Profile
-        Channel                : 157
-        Receive rate (Mbps)    : 216.5
-        Transmit rate (Mbps)   : 866.5
-        Signal                 : 87%
-        Profile                : PEETS
+    Name                   : Wi-Fi
+    Description            : Intel(R) Wi-Fi 6 AX200 160MHz
+    GUID                   : 605a0ad1-b96b-4f4e-b5a9-782623d6d797
+    Physical address       : 04:ed:33:4c:9e:1f
+    State                  : connected
+    SSID                   : SAOS_House
+    BSSID                  : 44:48:c1:a4:f5:11
+    Network type           : Infrastructure
+    Radio type             : 802.11ac
+    Authentication         : WPA2-Enterprise
+    Cipher                 : CCMP
+    Connection mode        : Auto Connect
+    Channel                : 112
+    Receive rate (Mbps)    : 400
+    Transmit rate (Mbps)   : 400
+    Signal                 : 88%
+    Profile                : SAOS_House
 
-        Hosted network status  : Not available
+    Hosted network status  : Not available
 
-#### Show Interfaces Info
-Using powershell cmdlet,
-
-View information on all network interfaces in the system,
+Using powershell cmdlet, we can view information on all network interfaces in the system,
 
     $ Get-NetAdapter
 
+    $ Get-NetAdapter
     Name                      InterfaceDescription                    ifIndex Status       MacAddress             LinkSpeed
     ----                      --------------------                    ------- ------       ----------             ---------
-    Wi-Fi                     Intel(R) Dual Band Wireless-AC 8265           5 Disconnected 1C-4D-70-1F-A5-C2         6 Mbps
-    Ethernet                  Intel(R) Ethernet Connection (5) I21...      15 Disconnected A4-4C-C8-20-10-DE          0 bps
+    Ethernet 2                Cisco AnyConnect Secure Mobility Clien…      14 Not Present  00-05-9A-3C-7A-00          0 bps
+    Wi-Fi                     Intel(R) Wi-Fi 6 AX200 160MHz                10 Up           04-ED-33-4C-9E-1F       400 Mbps
+    vEthernet (Default Switc… Hyper-V Virtual Ethernet Adapter             23 Up           00-15-5D-5F-1A-CB        10 Gbps
 
-to view information of the WiFi network interface,
+To view information on the WiFi network interface,
 
     $ Get-NetAdapter -Name Wi-Fi
-
     Name                      InterfaceDescription                    ifIndex Status       MacAddress             LinkSpeed
     ----                      --------------------                    ------- ------       ----------             ---------
-    Wi-Fi                     Intel(R) Dual Band Wireless-AC 8265           5 Up           1C-4D-70-1F-A5-C2       130 Mbps
-
+    Wi-Fi                     Intel(R) Wi-Fi 6 AX200 160MHz                10 Up           04-ED-33-4C-9E-1F       400 Mbps
 
 Show cmdlets related to net adapter,
 
@@ -218,34 +215,48 @@ Additionally, now, we have cmdlet to show IP Address info without sing `netsh`,
     ... ...
 
 
-Using `netsh`,
+Show available WiFi Networks using `netsh`,
 
     $ netsh wlan show networks mode=bssid
 
     Interface name : Wi-Fi
-    There are 2 networks currently visible.
+    There are 3 networks currently visible.
 
-    SSID 1 : S H Hall 3
+    SSID 1 : SAOS_Guest
         Network type            : Infrastructure
-        Authentication          : Open
-        Encryption              : None
-        BSSID 1                 : e0:91:f5:f5:16:28
-             Signal             : 60%
-             Radio type         : 802.11g
-             Channel            : 6
-             Basic rates (Mbps) : 1 2
-             Other rates (Mbps) : 5.5 6 9 11 12 18 24 36 48 54
+        Authentication          : WPA2-Personal
+        Encryption              : CCMP
+        BSSID 1                 : 20:a6:cd:32:fe:e1
+            Signal             : 50%
+            Radio type         : 802.11n
+            Channel            : 6
+            Basic rates (Mbps) : 24
+            Other rates (Mbps) : 36 48 54
+        BSSID 2                 : 44:48:c1:a5:08:81
+            Signal             : 81%
+            Radio type         : 802.11n
+            Channel            : 6
+            Basic rates (Mbps) : 24
+            Other rates (Mbps) : 36 48 54
+        BSSID 3                ... ...
 
-    SSID 2 : S H Hall 1
+    SSID 2 : SAOS_House
         Network type            : Infrastructure
-        Authentication          : Open
-        Encryption              : None
-        BSSID 1                 : a0:21:b7:7b:2b:be
-             Signal             : 18%
-             Radio type         : 802.11g
-             Channel            : 6
-             Basic rates (Mbps) : 1 2
-             Other rates (Mbps) : 5.5 6 9 11 12 18 24 36 48 54
+        Authentication          : WPA2-Enterprise
+        Encryption              : CCMP
+        BSSID 1                 : 44:48:c1:a4:f0:b1
+            Signal             : 62%
+            Radio type         : 802.11ac
+            Channel            : 157
+            Basic rates (Mbps) : 24
+            Other rates (Mbps) : 36 48 54
+        BSSID 2                ... ...
+
+    SSID 3 : hello_kitty
+        Network type            : Infrastructure
+        Authentication          : WPA2-Personal
+        Encryption              : CCMP
+        BSSID 1                ... ...
 
 ## WiFI Modem Best Practices
 Few points,
@@ -259,3 +270,4 @@ Few points,
  3. [changing autoconnect properties for some networks](https://blogs.technet.microsoft.com/heyscriptingguy/2013/06/15/weekend-scripter-use-powershell-to-find-auto-connect-wireless-networks/)
  4. [disabling unnecessary network adapters](https://blogs.technet.microsoft.com/heyscriptingguy/2014/01/13/enabling-and-disabling-network-adapters-with-powershell/)
  5. [Some possible default passwords for networks / routers / gateways](https://www.xfinity.com/support/internet/comcast-supported-routers-gateways-adapters/)
+6. [MS devblogs - Get Wireless Network SSID and Password with PowerShell](https://devblogs.microsoft.com/scripting/get-wireless-network-ssid-and-password-with-powershell/)
