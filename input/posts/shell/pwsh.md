@@ -26,18 +26,23 @@ clear-host is equivalent to cls
 `Get-Location` instead of pwd`
 ls, cat, popd, pushd etc still work
 
-Write-Host is equivalent to echo. Example,
-echo 'hello'
+Write-Host is equivalent to echo. For example,
+
+    echo 'hello'
+
+works just fine.
+
 ps is equivalent to Get-Process or to List processes or doing `tasklist`.
 Stop-Proccess instead of taskkill
 
 
 ## Application Run Examples
-Here are some handy cmds,  Access sys properties,
+`Start` is an alias of `Start-Process`
+
+### Start-Process
+Here are some handy cmds,
 ```
 Start DevEnv /Edit, Stream-Converter.ps1
-Start Microsoft-Edge:https://google.com
-Start Skype:
 
 Start CVpn-Client
 
@@ -45,6 +50,25 @@ Start Atom
 ```
 where CVpn-Client usually links to `C:\Program Files (x86)\Cisco\Cisco AnyConnect Secure Mobility Client\vpnui.exe`
 where atom is usually linked to `C:\Users\atiq\AppData\Local\atom\atom.exe`
+
+Syntax for microsoft store apps,
+
+    Start Microsoft-Edge:https://google.com
+    Start Skype:
+
+For passing arguments to an application we can either add it right after the app name with a seperating space,
+
+    Start Notepad++ file_path
+
+Or, specify it in `ArgumentList`,
+
+    Start Notepad++ -ArgumentList file_path
+
+However, it's tricky if passed argument for example, `file_path` above contains a space character.
+
+To make it work, we need to double quote them [ref](https://stackoverflow.com/questions/22840882/powershell-opening-file-path-with-spaces),
+
+    Start Notepad++ -ArgumentList "`"D:\Cool Soft\my awesome file.txt`""
 
 ## Balanced Power options
 Turn hibernation off (run from elevated PS),
