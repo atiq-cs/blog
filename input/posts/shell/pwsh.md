@@ -72,9 +72,8 @@ To make it work, we need to double quote them [ref](https://stackoverflow.com/qu
 
 ## Balanced Power options
 Turn hibernation off (run from elevated PS),
-```
-powercfg.exe /h off
-```
+
+    powercfg.exe /h off
 
 Open Power Options Window,
 ```
@@ -93,7 +92,7 @@ Power Scheme GUID: 496d75e1-8cba-4d72-b778-535d67c976ea  (Airplane)
 
 How to export Balanced plan (we copy paste id from output of above command),
 ```
-Powercfg -Export D:\Efficient_BP.pow 381b4222-f694-41f0-9685-ff5bb260df2e
+powercfg -Export D:\Efficient_BP.pow 381b4222-f694-41f0-9685-ff5bb260df2e
 ```
 
 automate importing registry (requires privilege) ref,
@@ -118,9 +117,8 @@ For, Sound mouse etc we do,
 
 ## Other Cmdlets
 Get list of running processes (unique),
-```
-Get-Process | Select-Object -Unique Path
-```
+
+    Get-Process | Select-Object -Unique Path
 
 When Windows Explorer or taskbar has trouble,
 
@@ -133,7 +131,6 @@ Create directory,
 Create file,
 
     New-Item c:\scripts\new_file.txt -type file
-
 
 Rename Machine,
 ```
