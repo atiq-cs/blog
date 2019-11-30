@@ -70,6 +70,19 @@ To make it work, we need to double quote them [ref](https://stackoverflow.com/qu
 
     Start Notepad++ -ArgumentList "`"D:\Cool Soft\my awesome file.txt`""
 
+## File Management
+Filter files containing name pattern,
+
+    gci -filter '*word*'
+
+Create directory,
+
+    New-Item c:\scripts\Windows PowerShell -type directory
+
+Create file,
+
+    New-Item c:\scripts\new_file.txt -type file
+
 ## Balanced Power options
 Turn hibernation off (run from elevated PS),
 
@@ -100,7 +113,7 @@ automate importing registry (requires privilege) ref,
 reg import 'D:\Soft\reg files soft settings\app_paths\KeePass.reg'
 ```
 
-Control Panel Cmdlet
+## Control Panel Cmdlet
 Handy cmds follow, [ref](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/show-controlpanelitem) to access sys properties,
 ```
 Show-ControlPanelItem -Name System
@@ -124,18 +137,9 @@ When Windows Explorer or taskbar has trouble,
 
     Stop-Process -Name explorer
 
-Create directory,
-
-    New-Item c:\scripts\Windows PowerShell -type directory
-
-Create file,
-
-    New-Item c:\scripts\new_file.txt -type file
-
 Rename Machine,
-```
-Rename-Computer -NewName JohnPC -Restart
-```
+
+    Rename-Computer -NewName JohnPC -Restart
 
 Event Log,
 ```
@@ -258,6 +262,11 @@ Additionally, we can do this inspecting `hal.dll`,
     Major  Minor  Build  Revision
     -----  -----  -----  --------
     10     0      18362  356
+
+## Misc
+To delete all contents of USB drive (this is dangerous as it deletea all contents and files/dirs from a drive),
+
+    Remove-Item -force l:\*
 
 ## Inception to Powershell from pwsh
 Say you have a script named `Bluetooth.ps1` that uses Windows features. Hence, it requires Powershell.

@@ -43,7 +43,7 @@ I would bet on Hospitals on Delhi and Mumbai.
 
 - Lilavati Hospital and Research Centre, Mumbai
 - P. D. Hinduja National Hospital & Medical Research Centre, Mumbai
-
+- Appolo Hospital, Chennai
 My understanding is that Delhi have AIIMS and Mumbai in general have good hospitals.
 
 
