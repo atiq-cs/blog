@@ -77,9 +77,11 @@
 <div class="post-heading">
     <h1>Wyam with Cake Build, Github pages and Azure Pipeline (Windows Server 2019)</h1>
     <div class="meta">        
-Published on Friday, November 22, 2019<br>    </div>
+Published on Wednesday, November 27, 2019<br>    </div>
         <div class="tags">
+                    <a role="button" href="/tags/Cloud" class="btn btn-default btn-xs">Cloud</a>
                     <a role="button" href="/tags/markdown" class="btn btn-default btn-xs">markdown</a>
+                    <a role="button" href="/tags/Pipelines" class="btn btn-default btn-xs">Pipelines</a>
                     <a role="button" href="/tags/wyam" class="btn btn-default btn-xs">wyam</a>
         </div>     
 </div>
@@ -114,10 +116,12 @@ git add .gitignore
 git commit -m 'initial commit'
 </code></pre>
 <p>Assume our project dir is <code>D:\Code\wyamBlog</code>.</p>
-<p>pushd D:\Code\wyamBlog
+<pre><code>pushd D:\Code\wyamBlog
 dotnet D:\PFiles_x64\Chocolatey\lib\wyam\Wyam.dll new -r Blog
 dotnet D:\PFiles_x64\Chocolatey\lib\wyam\Wyam.dll build
-dotnet D:\PFiles_x64\Chocolatey\lib\wyam\Wyam.dll preview</p>
+dotnet D:\PFiles_x64\Chocolatey\lib\wyam\Wyam.dll preview
+</code></pre>
+<p>After we add required config file, yml file etc we build on next step. After we are satisfied with local build and previous we push them to the repo.</p>
 <h2 id="cake-build">Cake Build</h2>
 <p>I update package versions in <code>build.cake</code> file,</p>
 <pre><code>#tool nuget:?package=Wyam&amp;version=2.2.9
@@ -365,11 +369,12 @@ Total:                        00:00:18.3127486
 <pre><code>A task is missing. The pipeline references a task called 'cake-build.cake.cake-build-task.Cake'. This usually indicates the task isn't installed, and you may be able to install it from the Marketplace: https://marketplace.visualstudio.com. (Task version 0, job 'Job', step ''.)
 </code></pre>
 <p>The call flow looks like following,</p>
-<p>Deploy
+<pre><code>Deploy
 -&gt; PushMasterBranch
 -&gt; CommitMasterBranch
--&gt; CopyToMasterBranch
--&gt; Build, EmptyMasterBranch</p>
+  -&gt; CopyToMasterBranch
+  -&gt; Build, EmptyMasterBranch
+</code></pre>
 <p>To make wyam work, the first one in references section helped a lot.</p>
 <h2 id="setting-up-a-custom-domain">Setting up a custom domain</h2>
 <p>References for setting up custom domain:</p>
