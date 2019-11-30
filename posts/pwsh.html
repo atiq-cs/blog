@@ -141,6 +141,16 @@ Start Skype:
 <p>To make it work, we need to double quote them <a href="https://stackoverflow.com/questions/22840882/powershell-opening-file-path-with-spaces">ref</a>,</p>
 <pre><code>Start Notepad++ -ArgumentList &quot;`&quot;D:\Cool Soft\my awesome file.txt`&quot;&quot;
 </code></pre>
+<h2 id="file-management">File Management</h2>
+<p>Filter files containing name pattern,</p>
+<pre><code>gci -filter '*word*'
+</code></pre>
+<p>Create directory,</p>
+<pre><code>New-Item c:\scripts\Windows PowerShell -type directory
+</code></pre>
+<p>Create file,</p>
+<pre><code>New-Item c:\scripts\new_file.txt -type file
+</code></pre>
 <h2 id="balanced-power-options">Balanced Power options</h2>
 <p>Turn hibernation off (run from elevated PS),</p>
 <pre><code>powercfg.exe /h off
@@ -162,8 +172,8 @@ Power Scheme GUID: 496d75e1-8cba-4d72-b778-535d67c976ea  (Airplane)
 <p>automate importing registry (requires privilege) ref,</p>
 <pre><code>reg import 'D:\Soft\reg files soft settings\app_paths\KeePass.reg'
 </code></pre>
-<p>Control Panel Cmdlet
-Handy cmds follow, <a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/show-controlpanelitem">ref</a> to access sys properties,</p>
+<h2 id="control-panel-cmdlet">Control Panel Cmdlet</h2>
+<p>Handy cmds follow, <a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/show-controlpanelitem">ref</a> to access sys properties,</p>
 <pre><code>Show-ControlPanelItem -Name System
 </code></pre>
 <p>Names supported by <code>Show-ControlPanelItem</code>,</p>
@@ -184,12 +194,6 @@ Handy cmds follow, <a href="https://docs.microsoft.com/en-us/powershell/module/m
 </code></pre>
 <p>When Windows Explorer or taskbar has trouble,</p>
 <pre><code>Stop-Process -Name explorer
-</code></pre>
-<p>Create directory,</p>
-<pre><code>New-Item c:\scripts\Windows PowerShell -type directory
-</code></pre>
-<p>Create file,</p>
-<pre><code>New-Item c:\scripts\new_file.txt -type file
 </code></pre>
 <p>Rename Machine,</p>
 <pre><code>Rename-Computer -NewName JohnPC -Restart
@@ -287,6 +291,10 @@ Major  Minor  Build  Revision
 Major  Minor  Build  Revision
 -----  -----  -----  --------
 10     0      18362  356
+</code></pre>
+<h2 id="misc">Misc</h2>
+<p>To delete all contents of USB drive (this is dangerous as it deletea all contents and files/dirs from a drive),</p>
+<pre><code>Remove-Item -force l:\*
 </code></pre>
 <h2 id="inception-to-powershell-from-pwsh">Inception to Powershell from pwsh</h2>
 <p>Say you have a script named <code>Bluetooth.ps1</code> that uses Windows features. Hence, it requires Powershell.</p>

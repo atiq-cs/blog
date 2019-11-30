@@ -4,36 +4,8 @@
 	<title>SAOSX Blog</title>
 	<link rel="self" href="https://blog.saosx.com/" />
 	<rights>2019</rights>
-	<updated>2019-11-29T00:18:14Z</updated>
+	<updated>2019-11-30T06:10:01Z</updated>
 	<subtitle>Heads in the cloud! A Blog by Atiq Rahman!</subtitle>
-	<entry>
-		<id>https://blog.saosx.com/posts/hospital-bhagalpur-sadar</id>
-		<title>Bhagalpur Sadar Hospital - A Sad Review</title>
-		<link href="https://blog.saosx.com/posts/hospital-bhagalpur-sadar" />
-		<updated>2019-11-28T00:00:00Z</updated>
-		<content>&lt;p&gt;&lt;a href="https://www.google.com/search?sxsrf=ACYBGNTxpzQ-ysTO-UgzKZfytxeWzZUpOQ%3A1574982720318&amp;amp;source=hp&amp;amp;ei=QFTgXfzBEJXB7gKd7qGYAg&amp;amp;q=sadar+hospital+bhagalpur&amp;amp;oq=hospital-bhagalpur-sadar&amp;amp;gs_l=psy-ab.3.0.0i8i30l3.3599.3599..5039...3.0..0.94.94.1......0....2j1..gws-wiz.....10..35i362i39.2uNumgMaXHs#lrd=0x39f049ff4254cd83:0x2b4e13f4b89e329a,1,,,"&gt;google review link&lt;/a&gt; of Bhagalpur Sadar Hospital.&lt;/p&gt;
-&lt;p&gt;This review is based on recent experience with an elderly patient during Octocber 2019.&lt;/p&gt;
-&lt;p&gt;If you have a complicated disease they have a high chance of wrongly diagnosing and can get you into more trouble. There are not many specialist doctors here.&lt;/p&gt;
-&lt;p&gt;Some of their machines are old and buggy, might actually do harm than good giving you false indication in report!&lt;/p&gt;
-&lt;p&gt;They wrongly diagnosis one of our family members and now he is fighting for life in a hospital in Dhaka going through better diagnosis procedure. The doctor who treated the patient is Golam Hossain. I wish they did not put the patient into powerful doses of medication without understanding what would be implication for the disease he has.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;There is high risk of mis-diagonising a patient in this hospital.&lt;/li&gt;
-&lt;li&gt;There is dialysis facility. But, guess what, for our patient, they were not able to identify the trouble in Kidney and suggested medicines in a different area.&lt;/li&gt;
-&lt;li&gt;If admitted in hospital, for older patients, with complications all they do is apply Saline and injections.&lt;/li&gt;
-&lt;li&gt;A doctor has no desire to see a Patient admitted by another doctor. It's a matter of business. Probably, doctor who admits the patients benefits the most unlike other hospitals and hence, other doctors don't have incentives.&lt;/li&gt;
-&lt;li&gt;Every doctor want to admit the patient under them and wanna do a bunch of tests and reports whether those are repeat or unnecessary.&lt;/li&gt;
-&lt;li&gt;They release the admitted patient in a hurry if they feel they won't be able to handle it. A hefty bill is followed, to be paid by patient's family whether patient is cured or not.&lt;/li&gt;
-&lt;li&gt;They won't be cooperating in providing reports till release, doctors have all those documents in their custody till release.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;In summary,&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;It's an okay Hospital for simple diseases. Don't get admitted just visit doctor in chamber.&lt;/li&gt;
-&lt;li&gt;Cross check prescriptions with specialists in the disease area.&lt;/li&gt;
-&lt;li&gt;Don't ever get admitted if you need specialists from multiple areas, they make this really hard and waste time!!&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>&lt;p&gt;&lt;a href="https://www.google.com/search?sxsrf=ACYBGNTxpzQ-ysTO-UgzKZfytxeWzZUpOQ%3A1574982720318&amp;amp;source=hp&amp;amp;ei=QFTgXfzBEJXB7gKd7qGYAg&amp;amp;q=sadar+hospital+bhagalpur&amp;amp;oq=hospital-bhagalpur-sadar&amp;amp;gs_l=psy-ab.3.0.0i8i30l3.3599.3599..5039...3.0..0.94.94.1......0....2j1..gws-wiz.....10..35i362i39.2uNumgMaXHs#lrd=0x39f049ff4254cd83:0x2b4e13f4b89e329a,1,,,"&gt;google review link&lt;/a&gt; of Bhagalpur Sadar Hospital.&lt;/p&gt;</summary>
-	</entry>
 	<entry>
 		<id>https://blog.saosx.com/posts/hospitals-dhaka</id>
 		<title>Hospitals in Dhaka</title>
@@ -155,8 +127,9 @@ I would bet on Hospitals on Delhi and Mumbai.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
+&lt;li&gt;Appolo Hospital, Chennai
+My understanding is that Delhi have AIIMS and Mumbai in general have good hospitals.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;My understanding is that Delhi have AIIMS and Mumbai in general have good hospitals.&lt;/p&gt;
 &lt;h2 id="other-countries"&gt;Other Countries&lt;/h2&gt;
 &lt;p&gt;[to do: move to another article later]
 &lt;strong&gt;Hospitals in Thailand&lt;/strong&gt;&lt;/p&gt;
@@ -475,6 +448,51 @@ cmd /c ftype foobarfile=powershell.exe -File `&amp;quot;C:\path\to\your.ps1`&amp
 &lt;p&gt;Modify files to remove hidden attributes using attrib&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;attrib -h my-hidden-file.txt
 &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Robust copy&lt;/strong&gt;
+&lt;code&gt;robocopy&lt;/code&gt; is good for copying large numbeer of files (to handle so many different cases: large files, network interruptions, file names). An example cmd,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;robocopy /s /z /v /fp /eta 'D:\Movies' 'H:\' Office.*
+robocopy /s /z /v /fp /eta 'D:\TV Series' 'H:\' Fringe*
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Above cmds copy all files from first one (source dir) matching the pattern.&lt;/p&gt;
+&lt;p&gt;Exmple of copy over network,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;robocopy /s /z /v /fp /eta '\\ENLIGHTENSOUL\Bangla\3RD Person Singular Number' 'i:\'
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;xcopy examples&lt;/strong&gt;
+(prefer &lt;code&gt;robocopy&lt;/code&gt; over this one), some variations below,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;xcopy /C /F /H e:\c O:
+xcopy /s /C /F /H e:\C++ O:\C++
+xcopy /s /C /F /H &amp;quot;e:\FC back up&amp;quot; &amp;quot;o:\FC back up&amp;quot;
+xcopy /s /C /F /H &amp;quot;e:\Net Workspace&amp;quot; &amp;quot;o:\Net Workspace&amp;quot;
+xcopy /s /C /F /H f:\* Q:\*
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Retrieving all cmd history,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;doskey /history &amp;gt; copy_command.txt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;delete everything inside a directory,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;rd /s /q JobDetails_data
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;mklink&lt;/strong&gt;
+To create a symbolic link named MyDocs from the root directory to the \Users\User1\Documents directory,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mklink /d \MyDocs \Users\User1\Documents
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Creates a Directory Junction instead using mklink,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ mklink /j C:\Users\Atique\AppData\Local\Microsoft\Office\15.0\OfficeFileCache H:\OfficeFileCache
+Junction created for C:\Users\Atique\AppData\Local\Microsoft\Office\15.0\OfficeFileCache &amp;lt;&amp;lt;===&amp;gt;&amp;gt; H:\OfficeFileCache
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Network share commands&lt;/strong&gt;
+view curently shared directories,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;net share
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;to delete share (requires admin privilege),&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ net share NewDrama /delete
+Movies      H:\Cool Movies
+Softs        F:\Sourcecodes\Web\Softs
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To share a directory,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;net share listshare=&amp;quot;c:\art list&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;registry&lt;/strong&gt;
+For example usage &lt;code&gt;regsvr32&lt;/code&gt; of check &lt;a href="https://www.codeproject.com/Articles/766246/Windows-Media-Player-Native-Subtitle-Plugin-Cplusp"&gt;codeproject - Windows Media Player Native Subtitle Plugin&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="references"&gt;References&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/commands-by-server-role"&gt;MS Docs - Windows Commands&lt;/a&gt;&lt;/li&gt;
@@ -533,6 +551,16 @@ Start Skype:
 &lt;p&gt;To make it work, we need to double quote them &lt;a href="https://stackoverflow.com/questions/22840882/powershell-opening-file-path-with-spaces"&gt;ref&lt;/a&gt;,&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Start Notepad++ -ArgumentList &amp;quot;`&amp;quot;D:\Cool Soft\my awesome file.txt`&amp;quot;&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id="file-management"&gt;File Management&lt;/h2&gt;
+&lt;p&gt;Filter files containing name pattern,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;gci -filter '*word*'
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Create directory,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;New-Item c:\scripts\Windows PowerShell -type directory
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Create file,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;New-Item c:\scripts\new_file.txt -type file
+&lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id="balanced-power-options"&gt;Balanced Power options&lt;/h2&gt;
 &lt;p&gt;Turn hibernation off (run from elevated PS),&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;powercfg.exe /h off
@@ -554,8 +582,8 @@ Power Scheme GUID: 496d75e1-8cba-4d72-b778-535d67c976ea  (Airplane)
 &lt;p&gt;automate importing registry (requires privilege) ref,&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;reg import 'D:\Soft\reg files soft settings\app_paths\KeePass.reg'
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Control Panel Cmdlet
-Handy cmds follow, &lt;a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/show-controlpanelitem"&gt;ref&lt;/a&gt; to access sys properties,&lt;/p&gt;
+&lt;h2 id="control-panel-cmdlet"&gt;Control Panel Cmdlet&lt;/h2&gt;
+&lt;p&gt;Handy cmds follow, &lt;a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/show-controlpanelitem"&gt;ref&lt;/a&gt; to access sys properties,&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Show-ControlPanelItem -Name System
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Names supported by &lt;code&gt;Show-ControlPanelItem&lt;/code&gt;,&lt;/p&gt;
@@ -576,12 +604,6 @@ Handy cmds follow, &lt;a href="https://docs.microsoft.com/en-us/powershell/modul
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;When Windows Explorer or taskbar has trouble,&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Stop-Process -Name explorer
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Create directory,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;New-Item c:\scripts\Windows PowerShell -type directory
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Create file,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;New-Item c:\scripts\new_file.txt -type file
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Rename Machine,&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Rename-Computer -NewName JohnPC -Restart
@@ -679,6 +701,10 @@ Major  Minor  Build  Revision
 Major  Minor  Build  Revision
 -----  -----  -----  --------
 10     0      18362  356
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id="misc"&gt;Misc&lt;/h2&gt;
+&lt;p&gt;To delete all contents of USB drive (this is dangerous as it deletea all contents and files/dirs from a drive),&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Remove-Item -force l:\*
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id="inception-to-powershell-from-pwsh"&gt;Inception to Powershell from pwsh&lt;/h2&gt;
 &lt;p&gt;Say you have a script named &lt;code&gt;Bluetooth.ps1&lt;/code&gt; that uses Windows features. Hence, it requires Powershell.&lt;/p&gt;
@@ -888,6 +914,34 @@ like fast forward merge, can go to merge tool&lt;/p&gt;
 &lt;p&gt;ref &lt;a href="https://superuser.com/q/1437590"&gt;so&lt;/a&gt;&lt;/p&gt;
 </content>
 		<summary>&lt;p&gt;ref: &lt;a href="https://stackoverflow.com/q/354883"&gt;so&lt;/a&gt;&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>https://blog.saosx.com/posts/hospital-bhagalpur-sadar</id>
+		<title>Bhagalpur Sadar Hospital - A Sad Review</title>
+		<link href="https://blog.saosx.com/posts/hospital-bhagalpur-sadar" />
+		<updated>2019-10-31T00:00:00Z</updated>
+		<content>&lt;p&gt;&lt;a href="https://www.google.com/search?sxsrf=ACYBGNTxpzQ-ysTO-UgzKZfytxeWzZUpOQ%3A1574982720318&amp;amp;source=hp&amp;amp;ei=QFTgXfzBEJXB7gKd7qGYAg&amp;amp;q=sadar+hospital+bhagalpur&amp;amp;oq=hospital-bhagalpur-sadar&amp;amp;gs_l=psy-ab.3.0.0i8i30l3.3599.3599..5039...3.0..0.94.94.1......0....2j1..gws-wiz.....10..35i362i39.2uNumgMaXHs#lrd=0x39f049ff4254cd83:0x2b4e13f4b89e329a,1,,,"&gt;google review link&lt;/a&gt; of Bhagalpur Sadar Hospital.&lt;/p&gt;
+&lt;p&gt;This review is based on recent experience with an elderly patient during Octocber 2019.&lt;/p&gt;
+&lt;p&gt;If you have a complicated disease they have a high chance of wrongly diagnosing and can get you into more trouble. There are not many specialist doctors here.&lt;/p&gt;
+&lt;p&gt;Some of their machines are old and buggy, might actually do harm than good giving you false indication in report!&lt;/p&gt;
+&lt;p&gt;They wrongly diagnosis one of our family members and now he is fighting for life in a hospital in Dhaka going through better diagnosis procedure. The doctor who treated the patient is Golam Hossain. I wish they did not put the patient into powerful doses of medication without understanding what would be implication for the disease he has.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;There is high risk of mis-diagonising a patient in this hospital.&lt;/li&gt;
+&lt;li&gt;There is dialysis facility. But, guess what, for our patient, they were not able to identify the trouble in Kidney and suggested medicines in a different area.&lt;/li&gt;
+&lt;li&gt;If admitted in hospital, for older patients, with complications all they do is apply Saline and injections.&lt;/li&gt;
+&lt;li&gt;A doctor has no desire to see a Patient admitted by another doctor. It's a matter of business. Probably, doctor who admits the patients benefits the most unlike other hospitals and hence, other doctors don't have incentives.&lt;/li&gt;
+&lt;li&gt;Every doctor want to admit the patient under them and wanna do a bunch of tests and reports whether those are repeat or unnecessary.&lt;/li&gt;
+&lt;li&gt;They release the admitted patient in a hurry if they feel they won't be able to handle it. A hefty bill is followed, to be paid by patient's family whether patient is cured or not.&lt;/li&gt;
+&lt;li&gt;They won't be cooperating in providing reports till release, doctors have all those documents in their custody till release.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In summary,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It's an okay Hospital for simple diseases. Don't get admitted just visit doctor in chamber.&lt;/li&gt;
+&lt;li&gt;Cross check prescriptions with specialists in the disease area.&lt;/li&gt;
+&lt;li&gt;Don't ever get admitted if you need specialists from multiple areas, they make this really hard and waste time!!&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>&lt;p&gt;&lt;a href="https://www.google.com/search?sxsrf=ACYBGNTxpzQ-ysTO-UgzKZfytxeWzZUpOQ%3A1574982720318&amp;amp;source=hp&amp;amp;ei=QFTgXfzBEJXB7gKd7qGYAg&amp;amp;q=sadar+hospital+bhagalpur&amp;amp;oq=hospital-bhagalpur-sadar&amp;amp;gs_l=psy-ab.3.0.0i8i30l3.3599.3599..5039...3.0..0.94.94.1......0....2j1..gws-wiz.....10..35i362i39.2uNumgMaXHs#lrd=0x39f049ff4254cd83:0x2b4e13f4b89e329a,1,,,"&gt;google review link&lt;/a&gt; of Bhagalpur Sadar Hospital.&lt;/p&gt;</summary>
 	</entry>
 	<entry>
 		<id>https://blog.saosx.com/posts/online-tools</id>

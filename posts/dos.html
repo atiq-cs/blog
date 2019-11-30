@@ -116,6 +116,51 @@ cmd /c ftype foobarfile=powershell.exe -File `&quot;C:\path\to\your.ps1`&quot; `
 <p>Modify files to remove hidden attributes using attrib</p>
 <pre><code>attrib -h my-hidden-file.txt
 </code></pre>
+<p><strong>Robust copy</strong>
+<code>robocopy</code> is good for copying large numbeer of files (to handle so many different cases: large files, network interruptions, file names). An example cmd,</p>
+<pre><code>robocopy /s /z /v /fp /eta 'D:\Movies' 'H:\' Office.*
+robocopy /s /z /v /fp /eta 'D:\TV Series' 'H:\' Fringe*
+</code></pre>
+<p>Above cmds copy all files from first one (source dir) matching the pattern.</p>
+<p>Exmple of copy over network,</p>
+<pre><code>robocopy /s /z /v /fp /eta '\\ENLIGHTENSOUL\Bangla\3RD Person Singular Number' 'i:\'
+</code></pre>
+<p><strong>xcopy examples</strong>
+(prefer <code>robocopy</code> over this one), some variations below,</p>
+<pre><code>xcopy /C /F /H e:\c O:
+xcopy /s /C /F /H e:\C++ O:\C++
+xcopy /s /C /F /H &quot;e:\FC back up&quot; &quot;o:\FC back up&quot;
+xcopy /s /C /F /H &quot;e:\Net Workspace&quot; &quot;o:\Net Workspace&quot;
+xcopy /s /C /F /H f:\* Q:\*
+</code></pre>
+<p>Retrieving all cmd history,</p>
+<pre><code>doskey /history &gt; copy_command.txt
+</code></pre>
+<p>delete everything inside a directory,</p>
+<pre><code>rd /s /q JobDetails_data
+</code></pre>
+<p><strong>mklink</strong>
+To create a symbolic link named MyDocs from the root directory to the \Users\User1\Documents directory,</p>
+<pre><code>mklink /d \MyDocs \Users\User1\Documents
+</code></pre>
+<p>Creates a Directory Junction instead using mklink,</p>
+<pre><code>$ mklink /j C:\Users\Atique\AppData\Local\Microsoft\Office\15.0\OfficeFileCache H:\OfficeFileCache
+Junction created for C:\Users\Atique\AppData\Local\Microsoft\Office\15.0\OfficeFileCache &lt;&lt;===&gt;&gt; H:\OfficeFileCache
+</code></pre>
+<p><strong>Network share commands</strong>
+view curently shared directories,</p>
+<pre><code>net share
+</code></pre>
+<p>to delete share (requires admin privilege),</p>
+<pre><code>$ net share NewDrama /delete
+Movies      H:\Cool Movies
+Softs        F:\Sourcecodes\Web\Softs
+</code></pre>
+<p>To share a directory,</p>
+<pre><code>net share listshare=&quot;c:\art list&quot;
+</code></pre>
+<p><strong>registry</strong>
+For example usage <code>regsvr32</code> of check <a href="https://www.codeproject.com/Articles/766246/Windows-Media-Player-Native-Subtitle-Plugin-Cplusp">codeproject - Windows Media Player Native Subtitle Plugin</a></p>
 <h2 id="references">References</h2>
 <ul>
 <li><a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/commands-by-server-role">MS Docs - Windows Commands</a></li>
