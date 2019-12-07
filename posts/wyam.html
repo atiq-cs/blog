@@ -420,8 +420,10 @@ Total:                        00:00:18.3127486
 <p>File.Copy ref,</p>
 <pre><code>public static void Copy (string sourceFileName, string destFileName);
 </code></pre>
+<p>After last copy in the code semgent above we add this to add CNAME,</p>
 <p>We can write the CName in following way,</p>
-<pre><code>string CNameContent = &quot;blog.saosx.com&quot;;
+<pre><code>string CNameContent = &quot;blog.domain.com&quot;;
+System.IO.File.WriteAllText(System.IO.Path.Combine(tempDir, CNameFileName), CNameContent);
 </code></pre>
 <h2 id="pipeline-variables">Pipeline Variables</h2>
 <p>Probably these variables reset after we do deploy as below,</p>

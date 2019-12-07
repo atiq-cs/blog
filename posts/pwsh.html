@@ -96,14 +96,14 @@ Published on Tuesday, November 19, 2019<br>    </div>
                                         
 
 <p><em>This article formerly titled as 'Powershell Frequently Used Commands'</em></p>
-<p>Please be aware of notation below in command outlines. <code>$</code> represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for exxample, <code>takeown</code>.</p>
+<p>Please be aware of notation below in command outlines. <code>$</code> represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for example, <code>takeown</code>.</p>
 <h2 id="initialization-of-shell">Initialization of Shell</h2>
 <p><em>This section is for my personalized shell; please feel free to skip it.</em></p>
 <p>Since move to pwsh this has changed to this (sorry for replacing simple Console, but it uses an inconvenient Env:WinDir/ symbolic link),</p>
-<pre><code>pwsh -NoExit D:\Code\fftsys_ws\PowerShell\Init.ps1
+<pre><code>pwsh -NoExit D:\pwsh\Init.ps1
 </code></pre>
 <p>For Machine Learning customized shell, I try adding an arg,</p>
-<pre><code>pwsh -NoExit D:\Code\fftsys_ws\PowerShell\Init.ps1 ML
+<pre><code>pwsh -NoExit D:\pwsh\Init.ps1 ML
 </code></pre>
 <h2 id="new-to-pwsh">New to pwsh?</h2>
 <p>clear-host is equivalent to cls
@@ -120,13 +120,13 @@ Stop-Proccess instead of taskkill</p>
 <h3 id="start-process">Start-Process</h3>
 <p>Here are some handy cmds,</p>
 <pre><code>Start DevEnv /Edit, Stream-Converter.ps1
-
+Start TeamViewer
 Start CVpn-Client
 
 Start Atom
 </code></pre>
-<p>where CVpn-Client usually links to <code>C:\Program Files (x86)\Cisco\Cisco AnyConnect Secure Mobility Client\vpnui.exe</code>
-where atom is usually linked to <code>C:\Users\atiq\AppData\Local\atom\atom.exe</code></p>
+<p>where I link <code>CVpn-Client</code> to <code>C:\Program Files (x86)\Cisco\Cisco AnyConnect Secure Mobility Client\vpnui.exe</code>,</p>
+<p>and, atom is usually linked to <code>C:\Users\atiq\AppData\Local\atom\atom.exe</code></p>
 <p>Syntax for microsoft store apps,</p>
 <pre><code>Start Microsoft-Edge:https://google.com
 Start Skype:
@@ -233,21 +233,30 @@ Test-Connection -Count 1024 bing.com
 $app.Uninstall()
 </code></pre>
 <h2 id="service-management">Service Management</h2>
-<p>Managing services,</p>
+<p>Get list of services currently running,</p>
+<pre><code>    Get-Service | Where-Object {$_.Status -eq &quot;Running&quot;}
+</code></pre>
+<p>Start a service,</p>
+<pre><code>Start-Service -Name VPNAgent
+</code></pre>
+<p>Stop one,</p>
 <pre><code>Stop-Service -Name VPNAgent
-Start-Service -Name VPNAgent
 </code></pre>
 <h2 id="scripting-using-pwsh">Scripting using pwsh</h2>
 <p>These basic stuffs might come handy,</p>
+<p>Passing all arguments, untouched to another script,</p>
+<pre><code>$saArgs = $args[0 .. ($args.Count)]
+&amp; &quot;$Env:HOME\ss.ps1&quot; $saArgs
+</code></pre>
 <h3 id="type-conversion">Type Conversion</h3>
-<p>command to find ascii number of a bunch of characters,</p>
+<p>Command to find ascii number of a bunch of characters,</p>
 <pre><code>$ [int[]][char[]] 'abcd'
 97
 98
 99
 100
 </code></pre>
-<p>to find ascii number of single char,</p>
+<p>To find ascii number of single char,</p>
 <pre><code>$ [int][char] 'z'
 122
 </code></pre>
@@ -274,6 +283,16 @@ True     True     String                                   System.Object
 [string]::IsEmpty($ConfigName)
 [string]::Empty($ConfigName)
 </code></pre>
+<p>substring example,</p>
+<pre><code>if ($loc.EndsWith(&quot;\&quot;)) {
+    return $loc.Substring(0, $loc.Length-1)
+}
+</code></pre>
+<p>which is fine to be replaced with,</p>
+<pre><code>if (($lastindex = [int] $loc.lastindexof('\')) -ne -1) {
+    return $loc.Substring(0, $lastindex)
+}
+</code></pre>
 <h2 id="show-os-version">Show OS Version</h2>
 <p>Using Net Framework Library,</p>
 <pre><code>$ [Environment]::OSVersion
@@ -296,6 +315,14 @@ Major  Minor  Build  Revision
 <p>To delete all contents of USB drive (this is dangerous as it deletea all contents and files/dirs from a drive),</p>
 <pre><code>Remove-Item -force l:\*
 </code></pre>
+<p>On pwsh,</p>
+<pre><code>$ $profile
+DocumentsDir\PowerShell\Microsoft.PowerShell_profile.ps1
+</code></pre>
+<p>On Powershell (Windows),</p>
+<pre><code>$ $profile
+DocumentsDir\\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
+</code></pre>
 <h2 id="inception-to-powershell-from-pwsh">Inception to Powershell from pwsh</h2>
 <p>Say you have a script named <code>Bluetooth.ps1</code> that uses Windows features. Hence, it requires Powershell.</p>
 <pre><code>Powershell -NoProfile -File Bluetooth.ps1 On
@@ -317,7 +344,7 @@ message. Do you want to run D:\Doc\PowerShell\Microsoft.PowerShell_profile.ps1?
 [D] Do not run  [R] Run once  [S] Suspend  [?] Help (default is &quot;D&quot;): R
 Loading personal and system profiles took 4862ms.
 </code></pre>
-<p>try unblocking,</p>
+<p>Try unblocking,</p>
 <pre><code>Unblock-File D:\Doc\PowerShell\Microsoft.PowerShell_profile.ps1
 </code></pre>
 <p>In worst situation, in corporate environments if that still does not work,</p>
@@ -330,6 +357,29 @@ At line:1 char:3
 </code></pre>
 <p>we can apply bypass changing Registry,</p>
 <pre><code>Set-ItemProperty -Path HKLM:\Software\Policies\Microsoft\Windows\PowerShell -Name ExecutionPolicy -Value ByPass
+</code></pre>
+<p>In environments like school computers that are running SINC Site, bypassing in Process scope can be useful,</p>
+<pre><code>Set-ExecutionPolicy Bypass -Scope Process
+</code></pre>
+<h2 id="variables-pwsh-vs-powershell">Variables pwsh vs Powershell</h2>
+<p>Following are new pwsh variables,</p>
+<pre><code>EnabledExperimentalFeatures    {}
+
+IsCoreCLR                      True
+IsLinux                        False
+IsMacOS                        False
+isSinglePS                     True
+IsWindows                      True
+LASTEXITCODE                   0
+
+psConsoleType
+</code></pre>
+<p>The shell modified following previously known Powershell variables,</p>
+<pre><code>OutputEncoding
+PROFILE
+PSCommandPath
+PSEdition
+PSHOME
 </code></pre>
 <h2 id="continue">continue</h2>
 <p>rest of the contents yet to be appended..</p>
