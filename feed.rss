@@ -5,8 +5,8 @@
 		<link>https://blog.saosx.com/</link>
 		<description>Heads in the cloud! A Blog by Atiq Rahman!</description>
 		<copyright>2019</copyright>
-		<pubDate>Sat, 07 Dec 2019 18:52:12 GMT</pubDate>
-		<lastBuildDate>Sat, 07 Dec 2019 18:52:12 GMT</lastBuildDate>
+		<pubDate>Sat, 07 Dec 2019 23:10:36 GMT</pubDate>
+		<lastBuildDate>Sat, 07 Dec 2019 23:10:36 GMT</lastBuildDate>
 		<item>
 			<title>BIRDEM General Hospital Review</title>
 			<link>https://blog.saosx.com/posts/hospital-birdem</link>
@@ -1174,10 +1174,10 @@ For example usage &lt;code&gt;regsvr32&lt;/code&gt; of check &lt;a href="https:/
 &lt;pre&gt;&lt;code&gt;&amp;quot;import this&amp;quot; | python
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;This works on Powershell / pwsh as well.&lt;/p&gt;
-&lt;h4 id="how-do-i-return-multiple-values-from-a-function"&gt;How do I return multiple values from a function?&lt;/h4&gt;
-&lt;p&gt;ref: &lt;a href="https://stackoverflow.com/q/354883"&gt;so&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id="typing-python-on-windows-10-version-1903-command-prompt-opens-microsoft-store"&gt;Typing “python” on Windows 10 (version 1903) command prompt opens Microsoft store&lt;/h4&gt;
-&lt;p&gt;ref &lt;a href="https://superuser.com/q/1437590"&gt;so&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;How do I return multiple values from a function?&lt;/em&gt;
+ref: &lt;a href="https://stackoverflow.com/q/354883"&gt;so&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Typing “python” on Windows 10 (version 1903) command prompt opens Microsoft store&lt;/em&gt;
+ref &lt;a href="https://superuser.com/q/1437590"&gt;so&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id="program-to-find-python-version"&gt;Program to find python version&lt;/h3&gt;
 &lt;p&gt;Example below,&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;import sys
