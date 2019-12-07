@@ -11,10 +11,10 @@ After install, to verify,
 
 This works on Powershell / pwsh as well.
 
-#### How do I return multiple values from a function?
+_How do I return multiple values from a function?_
 ref: [so](https://stackoverflow.com/q/354883)
 
-#### Typing “python” on Windows 10 (version 1903) command prompt opens Microsoft store
+_Typing “python” on Windows 10 (version 1903) command prompt opens Microsoft store_
 ref [so](https://superuser.com/q/1437590)
 
 
@@ -39,5 +39,3 @@ How to print something
 run a script
 
     execfile()
-
-
