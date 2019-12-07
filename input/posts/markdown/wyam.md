@@ -352,9 +352,12 @@ File.Copy ref,
 
     public static void Copy (string sourceFileName, string destFileName);
 
+After last copy in the code semgent above we add this to add CNAME,
+
 We can write the CName in following way,
 
-    string CNameContent = "blog.saosx.com";
+    string CNameContent = "blog.domain.com";
+    System.IO.File.WriteAllText(System.IO.Path.Combine(tempDir, CNameFileName), CNameContent);
 
 ## Pipeline Variables
 Probably these variables reset after we do deploy as below,

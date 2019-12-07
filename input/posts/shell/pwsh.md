@@ -7,19 +7,18 @@ Tags:
 ---
 _This article formerly titled as 'Powershell Frequently Used Commands'_
 
-Please be aware of notation below in command outlines. `$` represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for exxample, `takeown`.
+Please be aware of notation below in command outlines. `$` represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for example, `takeown`.
 
 ## Initialization of Shell
 _This section is for my personalized shell; please feel free to skip it._
 
 Since move to pwsh this has changed to this (sorry for replacing simple Console, but it uses an inconvenient Env:WinDir/ symbolic link),
-```
-pwsh -NoExit D:\Code\fftsys_ws\PowerShell\Init.ps1
-```
+
+    pwsh -NoExit D:\pwsh\Init.ps1
+
 For Machine Learning customized shell, I try adding an arg,
-```
-pwsh -NoExit D:\Code\fftsys_ws\PowerShell\Init.ps1 ML
-```
+
+    pwsh -NoExit D:\pwsh\Init.ps1 ML
 
 ## New to pwsh?
 clear-host is equivalent to cls
@@ -35,21 +34,21 @@ works just fine.
 ps is equivalent to Get-Process or to List processes or doing `tasklist`.
 Stop-Proccess instead of taskkill
 
-
 ## Application Run Examples
 `Start` is an alias of `Start-Process`
 
 ### Start-Process
 Here are some handy cmds,
-```
-Start DevEnv /Edit, Stream-Converter.ps1
 
-Start CVpn-Client
+    Start DevEnv /Edit, Stream-Converter.ps1
+    Start TeamViewer
+    Start CVpn-Client
 
-Start Atom
-```
-where CVpn-Client usually links to `C:\Program Files (x86)\Cisco\Cisco AnyConnect Secure Mobility Client\vpnui.exe`
-where atom is usually linked to `C:\Users\atiq\AppData\Local\atom\atom.exe`
+    Start Atom
+
+where I link `CVpn-Client` to `C:\Program Files (x86)\Cisco\Cisco AnyConnect Secure Mobility Client\vpnui.exe`,
+
+and, atom is usually linked to `C:\Users\atiq\AppData\Local\atom\atom.exe`
 
 Syntax for microsoft store apps,
 
@@ -186,27 +185,36 @@ How to uninstall application,
 
 
 ## Service Management
-Managing services,
-```
-Stop-Service -Name VPNAgent
-Start-Service -Name VPNAgent
-```
+Get list of services currently running,
+
+        Get-Service | Where-Object {$_.Status -eq "Running"}
+
+Start a service,
+
+    Start-Service -Name VPNAgent
+
+Stop one,
+
+    Stop-Service -Name VPNAgent
 
 ## Scripting using pwsh
 These basic stuffs might come handy,
 
+Passing all arguments, untouched to another script,
+
+    $saArgs = $args[0 .. ($args.Count)]
+    & "$Env:HOME\ss.ps1" $saArgs
+
 ### Type Conversion
-command to find ascii number of a bunch of characters,
+Command to find ascii number of a bunch of characters,
 
-```
-$ [int[]][char[]] 'abcd'
-97
-98
-99
-100
-```
+    $ [int[]][char[]] 'abcd'
+    97
+    98
+    99
+    100
 
-to find ascii number of single char,
+To find ascii number of single char,
 ```
 $ [int][char] 'z'
 122
@@ -243,6 +251,18 @@ nll or empty related where `$ConfigName` is an example variable,
 [string]::Empty($ConfigName)
 ```
 
+substring example,
+
+    if ($loc.EndsWith("\")) {
+        return $loc.Substring(0, $loc.Length-1)
+    }
+
+which is fine to be replaced with,
+
+    if (($lastindex = [int] $loc.lastindexof('\')) -ne -1) {
+        return $loc.Substring(0, $lastindex)
+    }
+
 ## Show OS Version
 Using Net Framework Library,
 
@@ -268,6 +288,16 @@ To delete all contents of USB drive (this is dangerous as it deletea all content
 
     Remove-Item -force l:\*
 
+On pwsh,
+
+    $ $profile
+    DocumentsDir\PowerShell\Microsoft.PowerShell_profile.ps1
+
+On Powershell (Windows),
+
+    $ $profile
+    DocumentsDir\\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
+
 ## Inception to Powershell from pwsh
 Say you have a script named `Bluetooth.ps1` that uses Windows features. Hence, it requires Powershell.
 
@@ -292,7 +322,7 @@ In old days, that used to be enough. If you get following,
     [D] Do not run  [R] Run once  [S] Suspend  [?] Help (default is "D"): R
     Loading personal and system profiles took 4862ms.
 
- try unblocking,
+ Try unblocking,
 
     Unblock-File D:\Doc\PowerShell\Microsoft.PowerShell_profile.ps1
 
@@ -305,10 +335,36 @@ In worst situation, in corporate environments if that still does not work,
     + CategoryInfo          : SecurityError: (:) [], PSSecurityException
     + FullyQualifiedErrorId : UnauthorizedAccess
 
-
 we can apply bypass changing Registry,
 
     Set-ItemProperty -Path HKLM:\Software\Policies\Microsoft\Windows\PowerShell -Name ExecutionPolicy -Value ByPass
+
+In environments like school computers that are running SINC Site, bypassing in Process scope can be useful,
+
+    Set-ExecutionPolicy Bypass -Scope Process
+
+## Variables pwsh vs Powershell
+
+Following are new pwsh variables,
+
+    EnabledExperimentalFeatures    {}
+
+    IsCoreCLR                      True
+    IsLinux                        False
+    IsMacOS                        False
+    isSinglePS                     True
+    IsWindows                      True
+    LASTEXITCODE                   0
+
+    psConsoleType
+
+The shell modified following previously known Powershell variables,
+
+    OutputEncoding
+    PROFILE
+    PSCommandPath
+    PSEdition
+    PSHOME
 
 ## continue
 rest of the contents yet to be appended..
