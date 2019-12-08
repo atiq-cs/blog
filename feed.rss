@@ -5,8 +5,8 @@
 		<link>https://blog.saosx.com/</link>
 		<description>Heads in the cloud! A Blog by Atiq Rahman!</description>
 		<copyright>2019</copyright>
-		<pubDate>Sun, 08 Dec 2019 20:47:27 GMT</pubDate>
-		<lastBuildDate>Sun, 08 Dec 2019 20:47:27 GMT</lastBuildDate>
+		<pubDate>Sun, 08 Dec 2019 20:54:18 GMT</pubDate>
+		<lastBuildDate>Sun, 08 Dec 2019 20:54:18 GMT</lastBuildDate>
 		<item>
 			<title>Command Line for Utilities and Tools</title>
 			<link>https://blog.saosx.com/posts/tools-cmd</link>
@@ -49,55 +49,6 @@ Extract subtitle using &lt;code&gt;mkvextract&lt;/code&gt; (referring to &lt;cod
 &lt;p&gt;&lt;code&gt;mkvmerge&lt;/code&gt; (in my system &lt;code&gt;C:\Program Files (x86)\MKVToolNix\mkvmerge.exe&lt;/code&gt;) show info on mkv file,&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;mkvmerge -i D:\Movies\Fences.mkv
 &lt;/code&gt;&lt;/pre&gt;
-</content:encoded>
-		</item>
-		<item>
-			<title>Hospitals in Dhaka</title>
-			<link>https://blog.saosx.com/posts/hospitals-dhaka</link>
-			<description>&lt;p&gt;To find some good Hospitals in Bangladesh we have to look at affluent medical centers in Dhaka. There is no such thing as Best Hospital in Bangladesh. It's a mix of bad and good experience, bit of luck, type of disease and level of in patient.&lt;/p&gt;</description>
-			<guid>https://blog.saosx.com/posts/hospitals-dhaka</guid>
-			<pubDate>Thu, 28 Nov 2019 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;h2 id="best-hospitals-in-dhaka"&gt;Best Hospitals in Dhaka&lt;/h2&gt;
-&lt;p&gt;To find some good Hospitals in Bangladesh we have to look at affluent medical centers in Dhaka. There is no such thing as Best Hospital in Bangladesh. It's a mix of bad and good experience, bit of luck, type of disease and level of in patient.&lt;/p&gt;
-&lt;p&gt;Public hospitals here are rife with negligence, overflow of patients and reputation of not so hygiene place for patients.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Dhaka Medical Hospital&lt;/li&gt;
-&lt;li&gt;PG / BSMMU&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;There is an example of negligence, where an elderly patient died in Dhaka Medical due to not taking so good care of a diabetes patient.&lt;/p&gt;
-&lt;p&gt;To get appointments in most public hospitals, sometimes you need political influence, birbery or power. For some, being part of a nearby school campus helps.&lt;/p&gt;
-&lt;p&gt;Among private hospitals a few mentionables are,&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Green Life&lt;/li&gt;
-&lt;li&gt;Apollo&lt;/li&gt;
-&lt;li&gt;Padma&lt;/li&gt;
-&lt;li&gt;NINS&lt;/li&gt;
-&lt;li&gt;Birdem, &lt;a href="hospital-birdem"&gt;review&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;ABM Abdullah in Central Hospital&lt;/p&gt;
-&lt;p&gt;Specialists are scattered across private and public hospitals.&lt;/p&gt;
-&lt;h3 id="dialysis-facilities"&gt;Dialysis Facilities&lt;/h3&gt;
-&lt;p&gt;For kidney patients, dialysis is like oxygen to breathe. Please, be careful about pneumonia (vaccinate ahead). In foreign countries, there might be stem cell treatments to parmamnently cure Kidney problems.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Sonar Bangla Foundation Bangladesh
-Address: 23/6 RUPAYAN SHELFORD, LEVEL-5,
-Shyamoli, Dhaka 1207
-Phone: +880 2-9143676
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Central Hospital, unfortunately, doesn't have dialysis yet.&lt;/p&gt;
-&lt;h2 id="misc"&gt;Misc&lt;/h2&gt;
-&lt;p&gt;Few points,&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;For kidney related diseases, it might as well be a good idea to consult with neurology and oncology.&lt;/li&gt;
-&lt;li&gt;There are plenty of examples where a poor diagnosis took place or wrong diagnosis did occur which resulted a seriously worse condition of patients or they died.&lt;/li&gt;
-&lt;li&gt;Transportation: Dhaka City is pretty busy and suffers high traffic situations. Hence, be prepared to spend time on the road while travelling to places.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;If you are a foreigner, considering treatment travelling to Bangladesh it's probably not a good idea unless you are just trying to save money.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;You could use a translator if there's language barrier i.e., you don't know Bangla or English language. Please be aware that average demography don't speak English.&lt;/li&gt;
-&lt;li&gt;For acquiring VISA to india for treatment, it might help to provide appointment document with the hospital/specialist.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Data Plans&lt;/strong&gt;
-A good cell phone carrier helps. It's easy to register a SIM card with one of the carriers to make communication easier to make cals to hospitals or local Bangladesh contacts. Few careers are GrameenPhone, Robi, Airtel. Your roaming service might cover you as well for calling and data; however, please note that &lt;em&gt;cellphone plans are cheaper in Bangladesh compared to other countries&lt;/em&gt;. It's better to just utilize that.&lt;/p&gt;
 </content:encoded>
 		</item>
 		<item>
@@ -189,6 +140,55 @@ I would bet on Hospitals on Delhi and Mumbai.&lt;/p&gt;
 &lt;li&gt;Mount Elizabeth Hospitals&lt;/li&gt;
 &lt;li&gt;To add more&lt;/li&gt;
 &lt;/ul&gt;
+</content:encoded>
+		</item>
+		<item>
+			<title>Hospitals in Dhaka</title>
+			<link>https://blog.saosx.com/posts/hospitals-dhaka</link>
+			<description>&lt;p&gt;To find some good Hospitals in Bangladesh we have to look at affluent medical centers in Dhaka. There is no such thing as Best Hospital in Bangladesh. It's a mix of bad and good experience, bit of luck, type of disease and level of in patient.&lt;/p&gt;</description>
+			<guid>https://blog.saosx.com/posts/hospitals-dhaka</guid>
+			<pubDate>Thu, 28 Nov 2019 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;h2 id="best-hospitals-in-dhaka"&gt;Best Hospitals in Dhaka&lt;/h2&gt;
+&lt;p&gt;To find some good Hospitals in Bangladesh we have to look at affluent medical centers in Dhaka. There is no such thing as Best Hospital in Bangladesh. It's a mix of bad and good experience, bit of luck, type of disease and level of in patient.&lt;/p&gt;
+&lt;p&gt;Public hospitals here are rife with negligence, overflow of patients and reputation of not so hygiene place for patients.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dhaka Medical Hospital&lt;/li&gt;
+&lt;li&gt;PG / BSMMU&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There is an example of negligence, where an elderly patient died in Dhaka Medical due to not taking so good care of a diabetes patient.&lt;/p&gt;
+&lt;p&gt;To get appointments in most public hospitals, sometimes you need political influence, birbery or power. For some, being part of a nearby school campus helps.&lt;/p&gt;
+&lt;p&gt;Among private hospitals a few mentionables are,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Green Life&lt;/li&gt;
+&lt;li&gt;Apollo&lt;/li&gt;
+&lt;li&gt;Padma&lt;/li&gt;
+&lt;li&gt;NINS&lt;/li&gt;
+&lt;li&gt;Birdem, &lt;a href="hospital-birdem"&gt;review&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ABM Abdullah in Central Hospital&lt;/p&gt;
+&lt;p&gt;Specialists are scattered across private and public hospitals.&lt;/p&gt;
+&lt;h3 id="dialysis-facilities"&gt;Dialysis Facilities&lt;/h3&gt;
+&lt;p&gt;For kidney patients, dialysis is like oxygen to breathe. Please, be careful about pneumonia (vaccinate ahead). In foreign countries, there might be stem cell treatments to parmamnently cure Kidney problems.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Sonar Bangla Foundation Bangladesh
+Address: 23/6 RUPAYAN SHELFORD, LEVEL-5,
+Shyamoli, Dhaka 1207
+Phone: +880 2-9143676
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Central Hospital, unfortunately, doesn't have dialysis yet.&lt;/p&gt;
+&lt;h2 id="misc"&gt;Misc&lt;/h2&gt;
+&lt;p&gt;Few points,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For kidney related diseases, it might as well be a good idea to consult with neurology and oncology.&lt;/li&gt;
+&lt;li&gt;There are plenty of examples where a poor diagnosis took place or wrong diagnosis did occur which resulted a seriously worse condition of patients or they died.&lt;/li&gt;
+&lt;li&gt;Transportation: Dhaka City is pretty busy and suffers high traffic situations. Hence, be prepared to spend time on the road while travelling to places.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you are a foreigner, considering treatment travelling to Bangladesh it's probably not a good idea unless you are just trying to save money.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You could use a translator if there's language barrier i.e., you don't know Bangla or English language. Please be aware that average demography don't speak English.&lt;/li&gt;
+&lt;li&gt;For acquiring VISA to india for treatment, it might help to provide appointment document with the hospital/specialist.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Data Plans&lt;/strong&gt;
+A good cell phone carrier helps. It's easy to register a SIM card with one of the carriers to make communication easier to make cals to hospitals or local Bangladesh contacts. Few careers are GrameenPhone, Robi, Airtel. Your roaming service might cover you as well for calling and data; however, please note that &lt;em&gt;cellphone plans are cheaper in Bangladesh compared to other countries&lt;/em&gt;. It's better to just utilize that.&lt;/p&gt;
 </content:encoded>
 		</item>
 		<item>
@@ -1482,6 +1482,56 @@ shows how to do it using the combination of self-hosted wordpress and javascript
 &lt;li&gt;&lt;a href="https://github.com/linezero/Blog"&gt;https://github.com/linezero/Blog&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/search?q=markdown+editor"&gt;https://github.com/search?q=markdown+editor&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/benweet/stackedit/blob/master/src/components/Editor.vue"&gt;https://github.com/benweet/stackedit/blob/master/src/components/Editor.vue&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+		</item>
+		<item>
+			<title>Python Editors online</title>
+			<link>https://blog.saosx.com/posts/python-online</link>
+			<description>&lt;p&gt;We list some Python Editors or compilers online&lt;/p&gt;</description>
+			<guid>https://blog.saosx.com/posts/python-online</guid>
+			<pubDate>Sun, 19 Nov 2017 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;We list some Python Editors or compilers online&lt;/p&gt;
+&lt;h3 id="codepad"&gt;codepad&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://codepad.org"&gt;link to online compiler&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is one of the best online collaboration tool with IDE and compilers. Info,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    2.5.1 (r251:54863, May  4 2007, 16:52:23) 
+    [GCC 4.1.2]
+    (2, 5, 1, 'final', 0)
+    33882608
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="ideone"&gt;ideone&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://ideone.com"&gt;link to online compiler&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Info,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    Latest python online 3.4.2
+    3.4.2 (default, Dec 27 2014, 19:25:25) 
+    [GCC 4.9.2]
+    sys.version_info(major=3, minor=4, micro=2, releaselevel='final', serial=0)
+    50594544
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="repl-it"&gt;repl it&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://repl.it/languages/Python3"&gt;link to online compiler&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Info,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    3.4.2 (default, Jan 20 2015, 19:02:53) 
+    [GCC 4.8.3]
+    sys.version_info(major=3, minor=4, micro=2, releaselevel='final', serial=0)
+    50594544
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="melpon"&gt;melpon&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://melpon.org/wandbox/"&gt;link to online compiler&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Info,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    3.5.0a1+ (default:041a27298cf3, Feb 20 2015, 10:07:43) 
+    [GCC 4.6.3]
+    sys.version_info(major=3, minor=5, micro=0, releaselevel='alpha', serial=1)
+    50659489
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="misc"&gt;Misc&lt;/h3&gt;
+&lt;p&gt;Addtionally, we have following available online,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.tutorialspoint.com/ipython_terminal_online.php"&gt;tutorialspoint&lt;/a&gt; - python 2.7.8&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://pythonfiddle.com"&gt;pythonfiddle&lt;/a&gt; - v2.7.2&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://repl.it/languages/Python3"&gt;repl.it&lt;/a&gt; - v3.4.0&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sourcelair.com"&gt;sourcelair&lt;/a&gt;: comes with a fully featured shell and has python v2.7.6&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 		</item>
