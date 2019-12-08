@@ -6,7 +6,7 @@ Tags:
 ## Best Hospitals
 As folk says here are recommended few,
 - CMC - Vallore [register link](https://clin.cmcvellore.ac.in/webapt/New/NewInstr.aspx)
-- [AIIMS](https://www.aiims.edu/)
+- [AIIMS](https://www.aiims.edu/), ref: online, Parth
 
 **Cons**
 
@@ -46,11 +46,13 @@ I would bet on Hospitals on Delhi and Mumbai.
 - P. D. Hinduja National Hospital & Medical Research Centre, Mumbai
 - Appolo Hospital, Chennai
 
-My understanding is that Delhi have AIIMS and Mumbai in general have good hospitals.
+My understanding is that Delhi have AIIMS and Mumbai in general have good hospitals. ref, Parth
 
 
 ## Other Countries
 [to do: move to another article later]
+
+
 **Hospitals in Thailand**
 - "Little expensive but excellent service":  Bumrungrad International Hospital, [site](https://www.bumrungrad.com/en)
 - Bangkok Hospital, [site](https://www.bangkokhospital.com/en)

@@ -11,7 +11,7 @@ An example use of rar (in my system referring to `D:\ProgData\WinRAR\rar.exe`),
 
     rar a -m5 -psa1 -ep1 I:\Doc\docs.rar I:\Doc\Office_Docs\
 
-_without -ep1 it makes a big directory tree_
+_without `-ep1` it makes a big directory tree_
 
 ## gnuwin32 tools
 similar to Unix,
