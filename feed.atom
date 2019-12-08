@@ -4,7 +4,7 @@
 	<title>SAOSX Blog</title>
 	<link rel="self" href="https://blog.saosx.com/" />
 	<rights>2019</rights>
-	<updated>2019-12-08T21:51:07Z</updated>
+	<updated>2019-12-08T22:20:43Z</updated>
 	<subtitle>Heads in the cloud! A Blog by Atiq Rahman!</subtitle>
 	<entry>
 		<id>https://blog.saosx.com/posts/tools-cmd</id>
@@ -1578,9 +1578,9 @@ svn status
 		<summary>&lt;p&gt;Checking out a fresh copy from the remote repo,&lt;/p&gt;</summary>
 	</entry>
 	<entry>
-		<id>https://blog.saosx.com/posts/windows-application-check-window-handle</id>
+		<id>https://blog.saosx.com/posts/win-app-check-window-handle</id>
 		<title>Multi-threaded Windows C++ Application – Check Window Handle before Updating Child Items</title>
-		<link href="https://blog.saosx.com/posts/windows-application-check-window-handle" />
+		<link href="https://blog.saosx.com/posts/win-app-check-window-handle" />
 		<updated>2011-07-08T00:00:00Z</updated>
 		<content>&lt;p&gt;In an MFC Application, you might use a thread to update some control of a dialog box or Window. Now, while this application is running, user may press any of the buttons for example, OK, Cancel or simply close the Windows or Dialog without performing any of the options while your thread is still performing some background operation. After the operation is complete it tries to update Windows/Dialog. In the meantime, because user has already closed the Window an attempt to update the interface will cause application to crash due to invalid handle.&lt;/p&gt;
 &lt;p&gt;Windows will report the crash with a dialog box that your application has stopped working.&lt;/p&gt;
