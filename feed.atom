@@ -4,7 +4,7 @@
 	<title>SAOSX Blog</title>
 	<link rel="self" href="https://blog.saosx.com/" />
 	<rights>2019</rights>
-	<updated>2019-12-08T23:37:20Z</updated>
+	<updated>2019-12-08T23:43:38Z</updated>
 	<subtitle>Heads in the cloud! A Blog by Atiq Rahman!</subtitle>
 	<entry>
 		<id>https://blog.saosx.com/posts/tools-cmd</id>
@@ -16,7 +16,7 @@
 &lt;p&gt;An example use of rar (in my system referring to &lt;code&gt;D:\ProgData\WinRAR\rar.exe&lt;/code&gt;),&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;rar a -m5 -psa1 -ep1 I:\Doc\docs.rar I:\Doc\Office_Docs\
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;em&gt;without -ep1 it makes a big directory tree&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;without &lt;code&gt;-ep1&lt;/code&gt; it makes a big directory tree&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id="gnuwin32-tools"&gt;gnuwin32 tools&lt;/h2&gt;
 &lt;p&gt;similar to Unix,&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&amp;quot;D:\ProgramFiles_x86\GnuWin32\bin\gzip.exe&amp;quot; -d .\bitarray-ex-0.8.1.tar.gz
@@ -80,7 +80,7 @@ As a friend quotes,&lt;/p&gt;</summary>
 &lt;p&gt;As folk says here are recommended few,&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;CMC - Vallore &lt;a href="https://clin.cmcvellore.ac.in/webapt/New/NewInstr.aspx"&gt;register link&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.aiims.edu/"&gt;AIIMS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.aiims.edu/"&gt;AIIMS&lt;/a&gt;, ref: online, Parth&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Cons&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Long waiting for appointments. Sometimes, it takes about one and half months. If patient requires dialysis it might take a while to get appointment for that. Apparently, for emergency treatment requirements like that this might not be suitable.&lt;/p&gt;
@@ -124,10 +124,10 @@ I would bet on Hospitals on Delhi and Mumbai.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;Appolo Hospital, Chennai&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;My understanding is that Delhi have AIIMS and Mumbai in general have good hospitals.&lt;/p&gt;
+&lt;p&gt;My understanding is that Delhi have AIIMS and Mumbai in general have good hospitals. ref, Parth&lt;/p&gt;
 &lt;h2 id="other-countries"&gt;Other Countries&lt;/h2&gt;
-&lt;p&gt;[to do: move to another article later]
-&lt;strong&gt;Hospitals in Thailand&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;[to do: move to another article later]&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hospitals in Thailand&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&amp;quot;Little expensive but excellent service&amp;quot;:  Bumrungrad International Hospital, &lt;a href="https://www.bumrungrad.com/en"&gt;site&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Bangkok Hospital, &lt;a href="https://www.bangkokhospital.com/en"&gt;site&lt;/a&gt;&lt;/li&gt;
@@ -557,28 +557,6 @@ System.IO.File.WriteAllText(System.IO.Path.Combine(tempDir, CNameFileName), CNam
 		<summary>&lt;p&gt;First, we install wyam install locally using pwsh admin,&lt;/p&gt;</summary>
 	</entry>
 	<entry>
-		<id>https://blog.saosx.com/posts/math</id>
-		<title>Math Notation Test</title>
-		<link href="https://blog.saosx.com/posts/math" />
-		<updated>2019-11-22T00:00:00Z</updated>
-		<content>&lt;p&gt;This is a &lt;span class="math"&gt;\(\infty \frac{x^3}{e^x-1}\)&lt;/span&gt; with few symbols.&lt;/p&gt;
-&lt;p&gt;Eq 1,&lt;/p&gt;
-&lt;div class="math"&gt;
-\[
-\begin{equation}
-  \int_0^\infty \frac{x^3}{e^x-1}\,dx = \frac{\pi^4}{15}
-  \label{eq:sample}
-\end{equation}
-\]&lt;/div&gt;
-&lt;p&gt;Eq 2 without starting with beginning equation tagger,&lt;/p&gt;
-&lt;div class="math"&gt;
-\[
-\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
-\]&lt;/div&gt;
-</content>
-		<summary>&lt;p&gt;This is a &lt;span class="math"&gt;\(\infty \frac{x^3}{e^x-1}\)&lt;/span&gt; with few symbols.&lt;/p&gt;</summary>
-	</entry>
-	<entry>
 		<id>https://blog.saosx.com/posts/wifi-cmd</id>
 		<title>WiFi Networking with Powershell and netsh</title>
 		<link href="https://blog.saosx.com/posts/wifi-cmd" />
@@ -834,6 +812,28 @@ SSID 3 : hello_kitty
 &lt;/ol&gt;
 </content>
 		<summary>&lt;p&gt;Please be aware of notation below in command outlines. &lt;code&gt;$&lt;/code&gt; represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for example, &lt;code&gt;takeown&lt;/code&gt;.&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>https://blog.saosx.com/posts/math</id>
+		<title>Math Notation Test</title>
+		<link href="https://blog.saosx.com/posts/math" />
+		<updated>2019-11-22T00:00:00Z</updated>
+		<content>&lt;p&gt;This is a &lt;span class="math"&gt;\(\infty \frac{x^3}{e^x-1}\)&lt;/span&gt; with few symbols.&lt;/p&gt;
+&lt;p&gt;Eq 1,&lt;/p&gt;
+&lt;div class="math"&gt;
+\[
+\begin{equation}
+  \int_0^\infty \frac{x^3}{e^x-1}\,dx = \frac{\pi^4}{15}
+  \label{eq:sample}
+\end{equation}
+\]&lt;/div&gt;
+&lt;p&gt;Eq 2 without starting with beginning equation tagger,&lt;/p&gt;
+&lt;div class="math"&gt;
+\[
+\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
+\]&lt;/div&gt;
+</content>
+		<summary>&lt;p&gt;This is a &lt;span class="math"&gt;\(\infty \frac{x^3}{e^x-1}\)&lt;/span&gt; with few symbols.&lt;/p&gt;</summary>
 	</entry>
 	<entry>
 		<id>https://blog.saosx.com/posts/dos</id>
@@ -1211,41 +1211,6 @@ PSHOME
 		<summary>&lt;p&gt;&lt;em&gt;This article formerly titled as 'Powershell Frequently Used Commands'&lt;/em&gt;&lt;/p&gt;</summary>
 	</entry>
 	<entry>
-		<id>https://blog.saosx.com/posts/python3</id>
-		<title>Python Language Reference</title>
-		<link href="https://blog.saosx.com/posts/python3" />
-		<updated>2019-11-14T00:00:00Z</updated>
-		<content>&lt;h2 id="install"&gt;Install&lt;/h2&gt;
-&lt;p&gt;After install, to verify,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;quot;import this&amp;quot; | python
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This works on Powershell / pwsh as well.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;How do I return multiple values from a function?&lt;/em&gt;
-ref: &lt;a href="https://stackoverflow.com/q/354883"&gt;so&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Typing “python” on Windows 10 (version 1903) command prompt opens Microsoft store&lt;/em&gt;
-ref &lt;a href="https://superuser.com/q/1437590"&gt;so&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id="program-to-find-python-version"&gt;Program to find python version&lt;/h3&gt;
-&lt;p&gt;Example below,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;import sys
-print (sys.version) #parentheses necessary in python 3. 
-print (sys.version_info)
-print (sys.hexversion)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="idle-editor"&gt;IDLE Editor&lt;/h3&gt;
-&lt;p&gt;How to quit,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;quit()
-exit()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;How to print something&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;print(“string”)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;run a script&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;execfile()
-&lt;/code&gt;&lt;/pre&gt;
-</content>
-		<summary>&lt;p&gt;After install, to verify,&lt;/p&gt;</summary>
-	</entry>
-	<entry>
 		<id>https://blog.saosx.com/posts/mercurial</id>
 		<title>Mercurial Useful Commands</title>
 		<link href="https://blog.saosx.com/posts/mercurial" />
@@ -1401,6 +1366,41 @@ like fast forward merge, can go to merge tool&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;
 </content>
 		<summary>&lt;p&gt;List files changed in previous commit,&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>https://blog.saosx.com/posts/python3</id>
+		<title>Python Language Reference</title>
+		<link href="https://blog.saosx.com/posts/python3" />
+		<updated>2019-11-14T00:00:00Z</updated>
+		<content>&lt;h2 id="install"&gt;Install&lt;/h2&gt;
+&lt;p&gt;After install, to verify,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;quot;import this&amp;quot; | python
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This works on Powershell / pwsh as well.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;How do I return multiple values from a function?&lt;/em&gt;
+ref: &lt;a href="https://stackoverflow.com/q/354883"&gt;so&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Typing “python” on Windows 10 (version 1903) command prompt opens Microsoft store&lt;/em&gt;
+ref &lt;a href="https://superuser.com/q/1437590"&gt;so&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="program-to-find-python-version"&gt;Program to find python version&lt;/h3&gt;
+&lt;p&gt;Example below,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;import sys
+print (sys.version) #parentheses necessary in python 3. 
+print (sys.version_info)
+print (sys.hexversion)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="idle-editor"&gt;IDLE Editor&lt;/h3&gt;
+&lt;p&gt;How to quit,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;quit()
+exit()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;How to print something&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;print(“string”)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;run a script&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;execfile()
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+		<summary>&lt;p&gt;After install, to verify,&lt;/p&gt;</summary>
 	</entry>
 	<entry>
 		<id>https://blog.saosx.com/posts/hospital-bhagalpur-sadar</id>
