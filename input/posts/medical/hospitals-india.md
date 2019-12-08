@@ -4,11 +4,12 @@ Tags:
   - health care
 ---
 ## Best Hospitals
-There are some,
+As folk says here are recommended few,
 - CMC - Vallore [register link](https://clin.cmcvellore.ac.in/webapt/New/NewInstr.aspx)
-- AIIMS
+- [AIIMS](https://www.aiims.edu/)
 
 **Cons**
+
 Long waiting for appointments. Sometimes, it takes about one and half months. If patient requires dialysis it might take a while to get appointment for that. Apparently, for emergency treatment requirements like that this might not be suitable.
 
 
@@ -16,7 +17,7 @@ Long waiting for appointments. Sometimes, it takes about one and half months. If
 A few are recommended by a friend in Bangladesh.
 
 1. Manipal Hospital
-I see there are a bunch of them. Which one to contact?
+There are chain of hospital branches for this one. For starter, the main one can be good.
 
 2. Mazumdar Shaw Medical Center, Bommasandra
 
@@ -25,7 +26,7 @@ And other more commercial and expensive hospitals to seek opinions.
 2. Fortis (found a [bad review regarding stent surgery](https://www.dailyo.in/voices/modi-stent-surgery-health-doctors-private-hospitals-india-cheating/story/1/24036.html))
 
 ## Transportation
-City has pretty busy and suffers high traffic situations. Hence, be prepared to spend time on the road while travelling to places.
+The City is busy. It suffers high traffic situations. Hence, be prepared to spend time on the road while travelling to places.
 
 
 ## Data Plans
@@ -44,6 +45,7 @@ I would bet on Hospitals on Delhi and Mumbai.
 - Lilavati Hospital and Research Centre, Mumbai
 - P. D. Hinduja National Hospital & Medical Research Centre, Mumbai
 - Appolo Hospital, Chennai
+
 My understanding is that Delhi have AIIMS and Mumbai in general have good hospitals.
 
 
@@ -54,4 +56,7 @@ My understanding is that Delhi have AIIMS and Mumbai in general have good hospit
 - Bangkok Hospital, [site](https://www.bangkokhospital.com/en)
 - Samitivej Hospital - Bangkok [site](https://www.samitivejhospitals.com)
 
-One of the top in singapore: Mount Elizabeth Hospitals
+**Hospitals in Thailand**
+- Mount Elizabeth Hospitals
+- To add more
+
