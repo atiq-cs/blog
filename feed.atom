@@ -4,7 +4,7 @@
 	<title>SAOSX Blog</title>
 	<link rel="self" href="https://blog.saosx.com/" />
 	<rights>2019</rights>
-	<updated>2019-12-08T20:54:18Z</updated>
+	<updated>2019-12-08T21:51:07Z</updated>
 	<subtitle>Heads in the cloud! A Blog by Atiq Rahman!</subtitle>
 	<entry>
 		<id>https://blog.saosx.com/posts/tools-cmd</id>
@@ -49,6 +49,55 @@ Extract subtitle using &lt;code&gt;mkvextract&lt;/code&gt; (referring to &lt;cod
 &lt;/code&gt;&lt;/pre&gt;
 </content>
 		<summary>&lt;p&gt;Please be aware of notation below in command outlines. &lt;code&gt;$&lt;/code&gt; represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for exxample, &lt;code&gt;takeown&lt;/code&gt;.&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>https://blog.saosx.com/posts/hospitals-dhaka</id>
+		<title>Hospitals in Dhaka</title>
+		<link href="https://blog.saosx.com/posts/hospitals-dhaka" />
+		<updated>2019-11-28T00:00:00Z</updated>
+		<content>&lt;h2 id="best-hospitals-in-dhaka"&gt;Best Hospitals in Dhaka&lt;/h2&gt;
+&lt;p&gt;To find some good Hospitals in Bangladesh we have to look at affluent medical centers in Dhaka. There is no such thing as Best Hospital in Bangladesh. It's a mix of bad and good experience, bit of luck, type of disease and level of in patient.&lt;/p&gt;
+&lt;p&gt;Public hospitals here are rife with negligence, overflow of patients and reputation of not so hygiene place for patients.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dhaka Medical Hospital&lt;/li&gt;
+&lt;li&gt;PG / BSMMU&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There is an example of negligence, where an elderly patient died in Dhaka Medical due to not taking so good care of a diabetes patient.&lt;/p&gt;
+&lt;p&gt;To get appointments in most public hospitals, sometimes you need political influence, birbery or power. For some, being part of a nearby school campus helps.&lt;/p&gt;
+&lt;p&gt;Among private hospitals a few mentionables are,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Green Life&lt;/li&gt;
+&lt;li&gt;Apollo&lt;/li&gt;
+&lt;li&gt;Padma&lt;/li&gt;
+&lt;li&gt;NINS&lt;/li&gt;
+&lt;li&gt;Birdem, &lt;a href="hospital-birdem"&gt;review&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ABM Abdullah in Central Hospital&lt;/p&gt;
+&lt;p&gt;Specialists are scattered across private and public hospitals.&lt;/p&gt;
+&lt;h3 id="dialysis-facilities"&gt;Dialysis Facilities&lt;/h3&gt;
+&lt;p&gt;For kidney patients, dialysis is like oxygen to breathe. Please, be careful about pneumonia (vaccinate ahead). In foreign countries, there might be stem cell treatments to parmamnently cure Kidney problems.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Sonar Bangla Foundation Bangladesh
+Address: 23/6 RUPAYAN SHELFORD, LEVEL-5,
+Shyamoli, Dhaka 1207
+Phone: +880 2-9143676
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Central Hospital, unfortunately, doesn't have dialysis yet.&lt;/p&gt;
+&lt;h2 id="misc"&gt;Misc&lt;/h2&gt;
+&lt;p&gt;Few points,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For kidney related diseases, it might as well be a good idea to consult with neurology and oncology.&lt;/li&gt;
+&lt;li&gt;There are plenty of examples where a poor diagnosis took place or wrong diagnosis did occur which resulted a seriously worse condition of patients or they died.&lt;/li&gt;
+&lt;li&gt;Transportation: Dhaka City is pretty busy and suffers high traffic situations. Hence, be prepared to spend time on the road while travelling to places.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you are a foreigner, considering treatment travelling to Bangladesh it's probably not a good idea unless you are just trying to save money.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You could use a translator if there's language barrier i.e., you don't know Bangla or English language. Please be aware that average demography don't speak English.&lt;/li&gt;
+&lt;li&gt;For acquiring VISA to india for treatment, it might help to provide appointment document with the hospital/specialist.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Data Plans&lt;/strong&gt;
+A good cell phone carrier helps. It's easy to register a SIM card with one of the carriers to make communication easier to make cals to hospitals or local Bangladesh contacts. Few careers are GrameenPhone, Robi, Airtel. Your roaming service might cover you as well for calling and data; however, please note that &lt;em&gt;cellphone plans are cheaper in Bangladesh compared to other countries&lt;/em&gt;. It's better to just utilize that.&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;To find some good Hospitals in Bangladesh we have to look at affluent medical centers in Dhaka. There is no such thing as Best Hospital in Bangladesh. It's a mix of bad and good experience, bit of luck, type of disease and level of in patient.&lt;/p&gt;</summary>
 	</entry>
 	<entry>
 		<id>https://blog.saosx.com/posts/hospital-birdem</id>
@@ -140,55 +189,6 @@ I would bet on Hospitals on Delhi and Mumbai.&lt;/p&gt;
 &lt;/ul&gt;
 </content>
 		<summary>&lt;p&gt;As folk says here are recommended few,&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://blog.saosx.com/posts/hospitals-dhaka</id>
-		<title>Hospitals in Dhaka</title>
-		<link href="https://blog.saosx.com/posts/hospitals-dhaka" />
-		<updated>2019-11-28T00:00:00Z</updated>
-		<content>&lt;h2 id="best-hospitals-in-dhaka"&gt;Best Hospitals in Dhaka&lt;/h2&gt;
-&lt;p&gt;To find some good Hospitals in Bangladesh we have to look at affluent medical centers in Dhaka. There is no such thing as Best Hospital in Bangladesh. It's a mix of bad and good experience, bit of luck, type of disease and level of in patient.&lt;/p&gt;
-&lt;p&gt;Public hospitals here are rife with negligence, overflow of patients and reputation of not so hygiene place for patients.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Dhaka Medical Hospital&lt;/li&gt;
-&lt;li&gt;PG / BSMMU&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;There is an example of negligence, where an elderly patient died in Dhaka Medical due to not taking so good care of a diabetes patient.&lt;/p&gt;
-&lt;p&gt;To get appointments in most public hospitals, sometimes you need political influence, birbery or power. For some, being part of a nearby school campus helps.&lt;/p&gt;
-&lt;p&gt;Among private hospitals a few mentionables are,&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Green Life&lt;/li&gt;
-&lt;li&gt;Apollo&lt;/li&gt;
-&lt;li&gt;Padma&lt;/li&gt;
-&lt;li&gt;NINS&lt;/li&gt;
-&lt;li&gt;Birdem, &lt;a href="hospital-birdem"&gt;review&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;ABM Abdullah in Central Hospital&lt;/p&gt;
-&lt;p&gt;Specialists are scattered across private and public hospitals.&lt;/p&gt;
-&lt;h3 id="dialysis-facilities"&gt;Dialysis Facilities&lt;/h3&gt;
-&lt;p&gt;For kidney patients, dialysis is like oxygen to breathe. Please, be careful about pneumonia (vaccinate ahead). In foreign countries, there might be stem cell treatments to parmamnently cure Kidney problems.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Sonar Bangla Foundation Bangladesh
-Address: 23/6 RUPAYAN SHELFORD, LEVEL-5,
-Shyamoli, Dhaka 1207
-Phone: +880 2-9143676
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Central Hospital, unfortunately, doesn't have dialysis yet.&lt;/p&gt;
-&lt;h2 id="misc"&gt;Misc&lt;/h2&gt;
-&lt;p&gt;Few points,&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;For kidney related diseases, it might as well be a good idea to consult with neurology and oncology.&lt;/li&gt;
-&lt;li&gt;There are plenty of examples where a poor diagnosis took place or wrong diagnosis did occur which resulted a seriously worse condition of patients or they died.&lt;/li&gt;
-&lt;li&gt;Transportation: Dhaka City is pretty busy and suffers high traffic situations. Hence, be prepared to spend time on the road while travelling to places.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;If you are a foreigner, considering treatment travelling to Bangladesh it's probably not a good idea unless you are just trying to save money.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;You could use a translator if there's language barrier i.e., you don't know Bangla or English language. Please be aware that average demography don't speak English.&lt;/li&gt;
-&lt;li&gt;For acquiring VISA to india for treatment, it might help to provide appointment document with the hospital/specialist.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Data Plans&lt;/strong&gt;
-A good cell phone carrier helps. It's easy to register a SIM card with one of the carriers to make communication easier to make cals to hospitals or local Bangladesh contacts. Few careers are GrameenPhone, Robi, Airtel. Your roaming service might cover you as well for calling and data; however, please note that &lt;em&gt;cellphone plans are cheaper in Bangladesh compared to other countries&lt;/em&gt;. It's better to just utilize that.&lt;/p&gt;
-</content>
-		<summary>&lt;p&gt;To find some good Hospitals in Bangladesh we have to look at affluent medical centers in Dhaka. There is no such thing as Best Hospital in Bangladesh. It's a mix of bad and good experience, bit of luck, type of disease and level of in patient.&lt;/p&gt;</summary>
 	</entry>
 	<entry>
 		<id>https://blog.saosx.com/posts/wyam</id>
@@ -557,6 +557,28 @@ System.IO.File.WriteAllText(System.IO.Path.Combine(tempDir, CNameFileName), CNam
 		<summary>&lt;p&gt;First, we install wyam install locally using pwsh admin,&lt;/p&gt;</summary>
 	</entry>
 	<entry>
+		<id>https://blog.saosx.com/posts/math</id>
+		<title>Math Notation Test</title>
+		<link href="https://blog.saosx.com/posts/math" />
+		<updated>2019-11-22T00:00:00Z</updated>
+		<content>&lt;p&gt;This is a &lt;span class="math"&gt;\(\infty \frac{x^3}{e^x-1}\)&lt;/span&gt; with few symbols.&lt;/p&gt;
+&lt;p&gt;Eq 1,&lt;/p&gt;
+&lt;div class="math"&gt;
+\[
+\begin{equation}
+  \int_0^\infty \frac{x^3}{e^x-1}\,dx = \frac{\pi^4}{15}
+  \label{eq:sample}
+\end{equation}
+\]&lt;/div&gt;
+&lt;p&gt;Eq 2 without starting with beginning equation tagger,&lt;/p&gt;
+&lt;div class="math"&gt;
+\[
+\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
+\]&lt;/div&gt;
+</content>
+		<summary>&lt;p&gt;This is a &lt;span class="math"&gt;\(\infty \frac{x^3}{e^x-1}\)&lt;/span&gt; with few symbols.&lt;/p&gt;</summary>
+	</entry>
+	<entry>
 		<id>https://blog.saosx.com/posts/wifi-cmd</id>
 		<title>WiFi Networking with Powershell and netsh</title>
 		<link href="https://blog.saosx.com/posts/wifi-cmd" />
@@ -812,107 +834,6 @@ SSID 3 : hello_kitty
 &lt;/ol&gt;
 </content>
 		<summary>&lt;p&gt;Please be aware of notation below in command outlines. &lt;code&gt;$&lt;/code&gt; represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for example, &lt;code&gt;takeown&lt;/code&gt;.&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://blog.saosx.com/posts/math</id>
-		<title>Math Notation Test</title>
-		<link href="https://blog.saosx.com/posts/math" />
-		<updated>2019-11-22T00:00:00Z</updated>
-		<content>&lt;p&gt;This is a &lt;span class="math"&gt;\(\infty \frac{x^3}{e^x-1}\)&lt;/span&gt; with few symbols.&lt;/p&gt;
-&lt;p&gt;Eq 1,&lt;/p&gt;
-&lt;div class="math"&gt;
-\[
-\begin{equation}
-  \int_0^\infty \frac{x^3}{e^x-1}\,dx = \frac{\pi^4}{15}
-  \label{eq:sample}
-\end{equation}
-\]&lt;/div&gt;
-&lt;p&gt;Eq 2 without starting with beginning equation tagger,&lt;/p&gt;
-&lt;div class="math"&gt;
-\[
-\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
-\]&lt;/div&gt;
-</content>
-		<summary>&lt;p&gt;This is a &lt;span class="math"&gt;\(\infty \frac{x^3}{e^x-1}\)&lt;/span&gt; with few symbols.&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://blog.saosx.com/posts/dos</id>
-		<title>Generic Windows Command Cache</title>
-		<link href="https://blog.saosx.com/posts/dos" />
-		<updated>2019-11-19T00:00:00Z</updated>
-		<content>&lt;p&gt;Please be aware of notation below in command outlines. &lt;code&gt;$&lt;/code&gt; represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for exxample, &lt;code&gt;takeown&lt;/code&gt;.&lt;/p&gt;
-&lt;h2 id="misc"&gt;Misc&lt;/h2&gt;
-&lt;p&gt;Customized ping command, waits 20 seconds for reply and keep pinging non-stop &lt;a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/ping"&gt;ping ref&lt;/a&gt;,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;ping -w 20000 -t myserver.company.com
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Enable or disable Linux Subsystem feture,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-Disable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Get host name,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;HOSTNAME
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;associating file type for extension &lt;code&gt;.fob&lt;/code&gt;,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;cmd /c assoc .fob=foobarfile
-cmd /c ftype foobarfile=powershell.exe -File `&amp;quot;C:\path\to\your.ps1`&amp;quot; `&amp;quot;%1`&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Find files with hidden attributes,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;dir /A:H general-solving\lintcode
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Modify files to remove hidden attributes using attrib&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;attrib -h my-hidden-file.txt
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;Robust copy&lt;/strong&gt;
-&lt;code&gt;robocopy&lt;/code&gt; is good for copying large numbeer of files (to handle so many different cases: large files, network interruptions, file names). An example cmd,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;robocopy /s /z /v /fp /eta 'D:\Movies' 'H:\' Office.*
-robocopy /s /z /v /fp /eta 'D:\TV Series' 'H:\' Fringe*
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Above cmds copy all files from first one (source dir) matching the pattern.&lt;/p&gt;
-&lt;p&gt;Exmple of copy over network,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;robocopy /s /z /v /fp /eta '\\ENLIGHTENSOUL\Bangla\3RD Person Singular Number' 'i:\'
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;xcopy examples&lt;/strong&gt;
-(prefer &lt;code&gt;robocopy&lt;/code&gt; over this one), some variations below,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;xcopy /C /F /H e:\c O:
-xcopy /s /C /F /H e:\C++ O:\C++
-xcopy /s /C /F /H &amp;quot;e:\FC back up&amp;quot; &amp;quot;o:\FC back up&amp;quot;
-xcopy /s /C /F /H &amp;quot;e:\Net Workspace&amp;quot; &amp;quot;o:\Net Workspace&amp;quot;
-xcopy /s /C /F /H f:\* Q:\*
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Retrieving all cmd history,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;doskey /history &amp;gt; copy_command.txt
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;delete everything inside a directory,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;rd /s /q JobDetails_data
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;mklink&lt;/strong&gt;
-To create a symbolic link named MyDocs from the root directory to the \Users\User1\Documents directory,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;mklink /d \MyDocs \Users\User1\Documents
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Creates a Directory Junction instead using mklink,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ mklink /j C:\Users\Atique\AppData\Local\Microsoft\Office\15.0\OfficeFileCache H:\OfficeFileCache
-Junction created for C:\Users\Atique\AppData\Local\Microsoft\Office\15.0\OfficeFileCache &amp;lt;&amp;lt;===&amp;gt;&amp;gt; H:\OfficeFileCache
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;Network share commands&lt;/strong&gt;
-view curently shared directories,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;net share
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;to delete share (requires admin privilege),&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ net share NewDrama /delete
-Movies      H:\Cool Movies
-Softs        F:\Sourcecodes\Web\Softs
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;To share a directory,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;net share listshare=&amp;quot;c:\art list&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;registry&lt;/strong&gt;
-For example usage &lt;code&gt;regsvr32&lt;/code&gt; of check &lt;a href="https://www.codeproject.com/Articles/766246/Windows-Media-Player-Native-Subtitle-Plugin-Cplusp"&gt;codeproject - Windows Media Player Native Subtitle Plugin&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="references"&gt;References&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/commands-by-server-role"&gt;MS Docs - Windows Commands&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>&lt;p&gt;Please be aware of notation below in command outlines. &lt;code&gt;$&lt;/code&gt; represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for exxample, &lt;code&gt;takeown&lt;/code&gt;.&lt;/p&gt;</summary>
 	</entry>
 	<entry>
 		<id>https://blog.saosx.com/posts/pwsh</id>
@@ -1209,6 +1130,85 @@ PSHOME
 &lt;p&gt;rest of the contents yet to be appended..&lt;/p&gt;
 </content>
 		<summary>&lt;p&gt;&lt;em&gt;This article formerly titled as 'Powershell Frequently Used Commands'&lt;/em&gt;&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>https://blog.saosx.com/posts/dos</id>
+		<title>Generic Windows Command Cache</title>
+		<link href="https://blog.saosx.com/posts/dos" />
+		<updated>2019-11-19T00:00:00Z</updated>
+		<content>&lt;p&gt;Please be aware of notation below in command outlines. &lt;code&gt;$&lt;/code&gt; represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for exxample, &lt;code&gt;takeown&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id="misc"&gt;Misc&lt;/h2&gt;
+&lt;p&gt;Customized ping command, waits 20 seconds for reply and keep pinging non-stop &lt;a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/ping"&gt;ping ref&lt;/a&gt;,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ping -w 20000 -t myserver.company.com
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Enable or disable Linux Subsystem feture,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+Disable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Get host name,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;HOSTNAME
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;associating file type for extension &lt;code&gt;.fob&lt;/code&gt;,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cmd /c assoc .fob=foobarfile
+cmd /c ftype foobarfile=powershell.exe -File `&amp;quot;C:\path\to\your.ps1`&amp;quot; `&amp;quot;%1`&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Find files with hidden attributes,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;dir /A:H general-solving\lintcode
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Modify files to remove hidden attributes using attrib&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;attrib -h my-hidden-file.txt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Robust copy&lt;/strong&gt;
+&lt;code&gt;robocopy&lt;/code&gt; is good for copying large numbeer of files (to handle so many different cases: large files, network interruptions, file names). An example cmd,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;robocopy /s /z /v /fp /eta 'D:\Movies' 'H:\' Office.*
+robocopy /s /z /v /fp /eta 'D:\TV Series' 'H:\' Fringe*
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Above cmds copy all files from first one (source dir) matching the pattern.&lt;/p&gt;
+&lt;p&gt;Exmple of copy over network,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;robocopy /s /z /v /fp /eta '\\ENLIGHTENSOUL\Bangla\3RD Person Singular Number' 'i:\'
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;xcopy examples&lt;/strong&gt;
+(prefer &lt;code&gt;robocopy&lt;/code&gt; over this one), some variations below,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;xcopy /C /F /H e:\c O:
+xcopy /s /C /F /H e:\C++ O:\C++
+xcopy /s /C /F /H &amp;quot;e:\FC back up&amp;quot; &amp;quot;o:\FC back up&amp;quot;
+xcopy /s /C /F /H &amp;quot;e:\Net Workspace&amp;quot; &amp;quot;o:\Net Workspace&amp;quot;
+xcopy /s /C /F /H f:\* Q:\*
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Retrieving all cmd history,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;doskey /history &amp;gt; copy_command.txt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;delete everything inside a directory,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;rd /s /q JobDetails_data
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;mklink&lt;/strong&gt;
+To create a symbolic link named MyDocs from the root directory to the \Users\User1\Documents directory,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mklink /d \MyDocs \Users\User1\Documents
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Creates a Directory Junction instead using mklink,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ mklink /j C:\Users\Atique\AppData\Local\Microsoft\Office\15.0\OfficeFileCache H:\OfficeFileCache
+Junction created for C:\Users\Atique\AppData\Local\Microsoft\Office\15.0\OfficeFileCache &amp;lt;&amp;lt;===&amp;gt;&amp;gt; H:\OfficeFileCache
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Network share commands&lt;/strong&gt;
+view curently shared directories,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;net share
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;to delete share (requires admin privilege),&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ net share NewDrama /delete
+Movies      H:\Cool Movies
+Softs        F:\Sourcecodes\Web\Softs
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To share a directory,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;net share listshare=&amp;quot;c:\art list&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;registry&lt;/strong&gt;
+For example usage &lt;code&gt;regsvr32&lt;/code&gt; of check &lt;a href="https://www.codeproject.com/Articles/766246/Windows-Media-Player-Native-Subtitle-Plugin-Cplusp"&gt;codeproject - Windows Media Player Native Subtitle Plugin&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/commands-by-server-role"&gt;MS Docs - Windows Commands&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>&lt;p&gt;Please be aware of notation below in command outlines. &lt;code&gt;$&lt;/code&gt; represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for exxample, &lt;code&gt;takeown&lt;/code&gt;.&lt;/p&gt;</summary>
 	</entry>
 	<entry>
 		<id>https://blog.saosx.com/posts/python3</id>
@@ -1576,5 +1576,28 @@ svn status
 &lt;/code&gt;&lt;/pre&gt;
 </content>
 		<summary>&lt;p&gt;Checking out a fresh copy from the remote repo,&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>https://blog.saosx.com/posts/windows-application-check-window-handle</id>
+		<title>Multi-threaded Windows C++ Application – Check Window Handle before Updating Child Items</title>
+		<link href="https://blog.saosx.com/posts/windows-application-check-window-handle" />
+		<updated>2011-07-08T00:00:00Z</updated>
+		<content>&lt;p&gt;In an MFC Application, you might use a thread to update some control of a dialog box or Window. Now, while this application is running, user may press any of the buttons for example, OK, Cancel or simply close the Windows or Dialog without performing any of the options while your thread is still performing some background operation. After the operation is complete it tries to update Windows/Dialog. In the meantime, because user has already closed the Window an attempt to update the interface will cause application to crash due to invalid handle.&lt;/p&gt;
+&lt;p&gt;Windows will report the crash with a dialog box that your application has stopped working.&lt;/p&gt;
+&lt;p&gt;To ensure this does not happen for a Windows App you need to check whether that dialog box window really exists before updating it. To do that we use &lt;code&gt;IsWindow&lt;/code&gt; function and pass the Windows Handle Pointer. The function we use here to update some text control in the Window/Dialog is &lt;code&gt;SetDlgItemText&lt;/code&gt; Here's an example,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;int res = PerformSomeTask(param);
+
+if (res == 0) {
+    if (::IsWindow(ts-&amp;gt;_this-&amp;gt;m_hWnd) == TRUE) {  // ts is thread structure
+        SetDlgItemText(IDC_CHECKNOTIFY, _T(&amp;quot;Service is not available&amp;quot;));    // IDC_CHECKNOTIFY is a static text control
+    }
+}
+else {
+    if (::IsWindow(ts-&amp;gt;_this-&amp;gt;m_hWnd) == TRUE)
+        SetDlgItemText(IDC_CHECKNOTIFY, _T(&amp;quot;Service is available&amp;quot;));
+}
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+		<summary>&lt;p&gt;In an MFC Application, you might use a thread to update some control of a dialog box or Window. Now, while this application is running, user may press any of the buttons for example, OK, Cancel or simply close the Windows or Dialog without performing any of the options while your thread is still performing some background operation. After the operation is complete it tries to update Windows/Dialog. In the meantime, because user has already closed the Window an attempt to update the interface will cause application to crash due to invalid handle.&lt;/p&gt;</summary>
 	</entry>
 </feed>

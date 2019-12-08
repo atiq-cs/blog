@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 
-        <title>SAOSX Blog - wyam</title>
+        <title>SAOSX Blog - Multi-threaded Windows C&#x2B;&#x2B; Application &#x2013; Check Window Handle before Updating Child Items</title>
         <meta name="description" content="Heads in the cloud! A Blog by Atiq Rahman!" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">        
 
@@ -28,9 +28,9 @@
         <meta name="msapplication-tooltip" content="SAOSX Blog" />
         <meta name="msapplication-starturl" content="/" />
 
-        <meta property="og:title" content="SAOSX Blog - wyam" />
+        <meta property="og:title" content="SAOSX Blog - Multi-threaded Windows C&#x2B;&#x2B; Application &#x2013; Check Window Handle before Updating Child Items" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://blog.saosx.com/tags/wyam" />
+        <meta property="og:url" content="https://blog.saosx.com/posts/windows-application-check-window-handle" />
         <!-- TODO: More social graph meta tags -->
 
         
@@ -72,9 +72,19 @@
                         <div class="container">
                                 <div class="row">
                                         <div class="col-md-12">
-<div class="site-heading">
-    <h1>wyam</h1>
-</div>                                            </div>
+
+    
+<div class="post-heading">
+    <h1>Multi-threaded Windows C&#x2B;&#x2B; Application &#x2013; Check Window Handle before Updating Child Items</h1>
+    <div class="meta">        
+Published on Friday, July 8, 2011<br>    </div>
+        <div class="tags">
+                    <a role="button" href="/tags/C&#x2B;&#x2B;" class="btn btn-default btn-xs">C&#x2B;&#x2B;</a>
+                    <a role="button" href="/tags/MFC" class="btn btn-default btn-xs">MFC</a>
+                    <a role="button" href="/tags/windows-programming" class="btn btn-default btn-xs">windows programming</a>
+        </div>     
+</div>
+                                        </div>
                                 </div>
                         </div>
                 </header>
@@ -83,55 +93,26 @@
                 <div class="container">
                         <div class="row">
                                 <div id="content" class="col-md-12">
-                                        <div class="container-sm-height">
-    <div class="row row-sm-height">
-        <div class="col-sm-8 right-border col-sm-height">
-            
-        <div class="post-list">
-            <a href="/posts/wyam">
-                <h3 class="post-title">Wyam with Cake Build, Github pages and Azure Pipeline (Windows Server 2019)</h3>
-            </a>
-            <p class="post-meta">Posted on Wednesday, November 27, 2019</p>      
-        </div>   
+                                        
+
+<p>In an MFC Application, you might use a thread to update some control of a dialog box or Window. Now, while this application is running, user may press any of the buttons for example, OK, Cancel or simply close the Windows or Dialog without performing any of the options while your thread is still performing some background operation. After the operation is complete it tries to update Windows/Dialog. In the meantime, because user has already closed the Window an attempt to update the interface will cause application to crash due to invalid handle.</p>
+<p>Windows will report the crash with a dialog box that your application has stopped working.</p>
+<p>To ensure this does not happen for a Windows App you need to check whether that dialog box window really exists before updating it. To do that we use <code>IsWindow</code> function and pass the Windows Handle Pointer. The function we use here to update some text control in the Window/Dialog is <code>SetDlgItemText</code> Here's an example,</p>
+<pre><code>int res = PerformSomeTask(param);
+
+if (res == 0) {
+    if (::IsWindow(ts-&gt;_this-&gt;m_hWnd) == TRUE) {  // ts is thread structure
+        SetDlgItemText(IDC_CHECKNOTIFY, _T(&quot;Service is not available&quot;));    // IDC_CHECKNOTIFY is a static text control
+    }
+}
+else {
+    if (::IsWindow(ts-&gt;_this-&gt;m_hWnd) == TRUE)
+        SetDlgItemText(IDC_CHECKNOTIFY, _T(&quot;Service is available&quot;));
+}
+</code></pre>
 
 
-            <nav>
-                <ul class="pager">
-                    <li class="previous">                
-                    </li>
-                    <li class="next">
-                    </li>
-                </ul>
-            </nav>
-            <hr class="visible-xs-block" />
-        </div>
-		
-        <div class="col-sm-4 col-sm-height">
-                <a role="button" href="/tags/system-administration" class="btn btn-default btn-xs">system administration (4)</a>
-                <a role="button" href="/tags/health-care" class="btn btn-default btn-xs">health care (4)</a>
-                <a role="button" href="/tags/windows-command-prompt" class="btn btn-default btn-xs">windows command prompt (2)</a>
-                <a role="button" href="/tags/markdown" class="btn btn-default btn-xs">markdown (2)</a>
-                <a role="button" href="/tags/Powershell-Core" class="btn btn-default btn-xs">Powershell Core (2)</a>
-                <a role="button" href="/tags/python" class="btn btn-default btn-xs">python (2)</a>
-                <a role="button" href="/tags/programming-languages" class="btn btn-default btn-xs">programming languages (2)</a>
-                <a role="button" href="/tags/source-Control" class="btn btn-default btn-xs">source Control (2)</a>
-                <a role="button" href="/tags/version-Control" class="btn btn-default btn-xs">version Control (2)</a>
-                <a role="button" href="/tags/wyam" class="btn btn-primary btn-xs">wyam (1)</a>
-                <a role="button" href="/tags/Cloud" class="btn btn-default btn-xs">Cloud (1)</a>
-                <a role="button" href="/tags/Pipelines" class="btn btn-default btn-xs">Pipelines (1)</a>
-                <a role="button" href="/tags/math" class="btn btn-default btn-xs">math (1)</a>
-                <a role="button" href="/tags/latex" class="btn btn-default btn-xs">latex (1)</a>
-                <a role="button" href="/tags/netsh" class="btn btn-default btn-xs">netsh (1)</a>
-                <a role="button" href="/tags/network" class="btn btn-default btn-xs">network (1)</a>
-                <a role="button" href="/tags/pwsh" class="btn btn-default btn-xs">pwsh (1)</a>
-                <a role="button" href="/tags/mercurial" class="btn btn-default btn-xs">mercurial (1)</a>
-                <a role="button" href="/tags/SVN" class="btn btn-default btn-xs">SVN (1)</a>
-                <a role="button" href="/tags/windows-programming" class="btn btn-default btn-xs">windows programming (1)</a>
-                <a role="button" href="/tags/C&#x2B;&#x2B;" class="btn btn-default btn-xs">C&#x2B;&#x2B; (1)</a>
-                <a role="button" href="/tags/MFC" class="btn btn-default btn-xs">MFC (1)</a>
-        </div>
-    </div>
-</div>
+
                                 </div>
                         </div>
                 </div>
