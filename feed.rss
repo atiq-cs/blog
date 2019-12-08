@@ -5,8 +5,8 @@
 		<link>https://blog.saosx.com/</link>
 		<description>Heads in the cloud! A Blog by Atiq Rahman!</description>
 		<copyright>2019</copyright>
-		<pubDate>Sun, 08 Dec 2019 22:20:43 GMT</pubDate>
-		<lastBuildDate>Sun, 08 Dec 2019 22:20:43 GMT</lastBuildDate>
+		<pubDate>Sun, 08 Dec 2019 23:18:36 GMT</pubDate>
+		<lastBuildDate>Sun, 08 Dec 2019 23:18:36 GMT</lastBuildDate>
 		<item>
 			<title>Command Line for Utilities and Tools</title>
 			<link>https://blog.saosx.com/posts/tools-cmd</link>
@@ -49,55 +49,6 @@ Extract subtitle using &lt;code&gt;mkvextract&lt;/code&gt; (referring to &lt;cod
 &lt;p&gt;&lt;code&gt;mkvmerge&lt;/code&gt; (in my system &lt;code&gt;C:\Program Files (x86)\MKVToolNix\mkvmerge.exe&lt;/code&gt;) show info on mkv file,&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;mkvmerge -i D:\Movies\Fences.mkv
 &lt;/code&gt;&lt;/pre&gt;
-</content:encoded>
-		</item>
-		<item>
-			<title>Hospitals in Dhaka</title>
-			<link>https://blog.saosx.com/posts/hospitals-dhaka</link>
-			<description>&lt;p&gt;To find some good Hospitals in Bangladesh we have to look at affluent medical centers in Dhaka. There is no such thing as Best Hospital in Bangladesh. It's a mix of bad and good experience, bit of luck, type of disease and level of in patient.&lt;/p&gt;</description>
-			<guid>https://blog.saosx.com/posts/hospitals-dhaka</guid>
-			<pubDate>Thu, 28 Nov 2019 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;h2 id="best-hospitals-in-dhaka"&gt;Best Hospitals in Dhaka&lt;/h2&gt;
-&lt;p&gt;To find some good Hospitals in Bangladesh we have to look at affluent medical centers in Dhaka. There is no such thing as Best Hospital in Bangladesh. It's a mix of bad and good experience, bit of luck, type of disease and level of in patient.&lt;/p&gt;
-&lt;p&gt;Public hospitals here are rife with negligence, overflow of patients and reputation of not so hygiene place for patients.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Dhaka Medical Hospital&lt;/li&gt;
-&lt;li&gt;PG / BSMMU&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;There is an example of negligence, where an elderly patient died in Dhaka Medical due to not taking so good care of a diabetes patient.&lt;/p&gt;
-&lt;p&gt;To get appointments in most public hospitals, sometimes you need political influence, birbery or power. For some, being part of a nearby school campus helps.&lt;/p&gt;
-&lt;p&gt;Among private hospitals a few mentionables are,&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Green Life&lt;/li&gt;
-&lt;li&gt;Apollo&lt;/li&gt;
-&lt;li&gt;Padma&lt;/li&gt;
-&lt;li&gt;NINS&lt;/li&gt;
-&lt;li&gt;Birdem, &lt;a href="hospital-birdem"&gt;review&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;ABM Abdullah in Central Hospital&lt;/p&gt;
-&lt;p&gt;Specialists are scattered across private and public hospitals.&lt;/p&gt;
-&lt;h3 id="dialysis-facilities"&gt;Dialysis Facilities&lt;/h3&gt;
-&lt;p&gt;For kidney patients, dialysis is like oxygen to breathe. Please, be careful about pneumonia (vaccinate ahead). In foreign countries, there might be stem cell treatments to parmamnently cure Kidney problems.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Sonar Bangla Foundation Bangladesh
-Address: 23/6 RUPAYAN SHELFORD, LEVEL-5,
-Shyamoli, Dhaka 1207
-Phone: +880 2-9143676
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Central Hospital, unfortunately, doesn't have dialysis yet.&lt;/p&gt;
-&lt;h2 id="misc"&gt;Misc&lt;/h2&gt;
-&lt;p&gt;Few points,&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;For kidney related diseases, it might as well be a good idea to consult with neurology and oncology.&lt;/li&gt;
-&lt;li&gt;There are plenty of examples where a poor diagnosis took place or wrong diagnosis did occur which resulted a seriously worse condition of patients or they died.&lt;/li&gt;
-&lt;li&gt;Transportation: Dhaka City is pretty busy and suffers high traffic situations. Hence, be prepared to spend time on the road while travelling to places.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;If you are a foreigner, considering treatment travelling to Bangladesh it's probably not a good idea unless you are just trying to save money.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;You could use a translator if there's language barrier i.e., you don't know Bangla or English language. Please be aware that average demography don't speak English.&lt;/li&gt;
-&lt;li&gt;For acquiring VISA to india for treatment, it might help to provide appointment document with the hospital/specialist.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Data Plans&lt;/strong&gt;
-A good cell phone carrier helps. It's easy to register a SIM card with one of the carriers to make communication easier to make cals to hospitals or local Bangladesh contacts. Few careers are GrameenPhone, Robi, Airtel. Your roaming service might cover you as well for calling and data; however, please note that &lt;em&gt;cellphone plans are cheaper in Bangladesh compared to other countries&lt;/em&gt;. It's better to just utilize that.&lt;/p&gt;
 </content:encoded>
 		</item>
 		<item>
@@ -189,6 +140,55 @@ I would bet on Hospitals on Delhi and Mumbai.&lt;/p&gt;
 &lt;li&gt;Mount Elizabeth Hospitals&lt;/li&gt;
 &lt;li&gt;To add more&lt;/li&gt;
 &lt;/ul&gt;
+</content:encoded>
+		</item>
+		<item>
+			<title>Hospitals in Dhaka</title>
+			<link>https://blog.saosx.com/posts/hospitals-dhaka</link>
+			<description>&lt;p&gt;To find some good Hospitals in Bangladesh we have to look at affluent medical centers in Dhaka. There is no such thing as Best Hospital in Bangladesh. It's a mix of bad and good experience, bit of luck, type of disease and level of in patient.&lt;/p&gt;</description>
+			<guid>https://blog.saosx.com/posts/hospitals-dhaka</guid>
+			<pubDate>Thu, 28 Nov 2019 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;h2 id="best-hospitals-in-dhaka"&gt;Best Hospitals in Dhaka&lt;/h2&gt;
+&lt;p&gt;To find some good Hospitals in Bangladesh we have to look at affluent medical centers in Dhaka. There is no such thing as Best Hospital in Bangladesh. It's a mix of bad and good experience, bit of luck, type of disease and level of in patient.&lt;/p&gt;
+&lt;p&gt;Public hospitals here are rife with negligence, overflow of patients and reputation of not so hygiene place for patients.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dhaka Medical Hospital&lt;/li&gt;
+&lt;li&gt;PG / BSMMU&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There is an example of negligence, where an elderly patient died in Dhaka Medical due to not taking so good care of a diabetes patient.&lt;/p&gt;
+&lt;p&gt;To get appointments in most public hospitals, sometimes you need political influence, birbery or power. For some, being part of a nearby school campus helps.&lt;/p&gt;
+&lt;p&gt;Among private hospitals a few mentionables are,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Green Life&lt;/li&gt;
+&lt;li&gt;Apollo&lt;/li&gt;
+&lt;li&gt;Padma&lt;/li&gt;
+&lt;li&gt;NINS&lt;/li&gt;
+&lt;li&gt;Birdem, &lt;a href="hospital-birdem"&gt;review&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ABM Abdullah in Central Hospital&lt;/p&gt;
+&lt;p&gt;Specialists are scattered across private and public hospitals.&lt;/p&gt;
+&lt;h3 id="dialysis-facilities"&gt;Dialysis Facilities&lt;/h3&gt;
+&lt;p&gt;For kidney patients, dialysis is like oxygen to breathe. Please, be careful about pneumonia (vaccinate ahead). In foreign countries, there might be stem cell treatments to parmamnently cure Kidney problems.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Sonar Bangla Foundation Bangladesh
+Address: 23/6 RUPAYAN SHELFORD, LEVEL-5,
+Shyamoli, Dhaka 1207
+Phone: +880 2-9143676
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Central Hospital, unfortunately, doesn't have dialysis yet.&lt;/p&gt;
+&lt;h2 id="misc"&gt;Misc&lt;/h2&gt;
+&lt;p&gt;Few points,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For kidney related diseases, it might as well be a good idea to consult with neurology and oncology.&lt;/li&gt;
+&lt;li&gt;There are plenty of examples where a poor diagnosis took place or wrong diagnosis did occur which resulted a seriously worse condition of patients or they died.&lt;/li&gt;
+&lt;li&gt;Transportation: Dhaka City is pretty busy and suffers high traffic situations. Hence, be prepared to spend time on the road while travelling to places.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you are a foreigner, considering treatment travelling to Bangladesh it's probably not a good idea unless you are just trying to save money.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You could use a translator if there's language barrier i.e., you don't know Bangla or English language. Please be aware that average demography don't speak English.&lt;/li&gt;
+&lt;li&gt;For acquiring VISA to india for treatment, it might help to provide appointment document with the hospital/specialist.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Data Plans&lt;/strong&gt;
+A good cell phone carrier helps. It's easy to register a SIM card with one of the carriers to make communication easier to make cals to hospitals or local Bangladesh contacts. Few careers are GrameenPhone, Robi, Airtel. Your roaming service might cover you as well for calling and data; however, please note that &lt;em&gt;cellphone plans are cheaper in Bangladesh compared to other countries&lt;/em&gt;. It's better to just utilize that.&lt;/p&gt;
 </content:encoded>
 		</item>
 		<item>
@@ -558,28 +558,6 @@ System.IO.File.WriteAllText(System.IO.Path.Combine(tempDir, CNameFileName), CNam
 </content:encoded>
 		</item>
 		<item>
-			<title>Math Notation Test</title>
-			<link>https://blog.saosx.com/posts/math</link>
-			<description>&lt;p&gt;This is a &lt;span class="math"&gt;\(\infty \frac{x^3}{e^x-1}\)&lt;/span&gt; with few symbols.&lt;/p&gt;</description>
-			<guid>https://blog.saosx.com/posts/math</guid>
-			<pubDate>Fri, 22 Nov 2019 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;This is a &lt;span class="math"&gt;\(\infty \frac{x^3}{e^x-1}\)&lt;/span&gt; with few symbols.&lt;/p&gt;
-&lt;p&gt;Eq 1,&lt;/p&gt;
-&lt;div class="math"&gt;
-\[
-\begin{equation}
-  \int_0^\infty \frac{x^3}{e^x-1}\,dx = \frac{\pi^4}{15}
-  \label{eq:sample}
-\end{equation}
-\]&lt;/div&gt;
-&lt;p&gt;Eq 2 without starting with beginning equation tagger,&lt;/p&gt;
-&lt;div class="math"&gt;
-\[
-\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
-\]&lt;/div&gt;
-</content:encoded>
-		</item>
-		<item>
 			<title>WiFi Networking with Powershell and netsh</title>
 			<link>https://blog.saosx.com/posts/wifi-cmd</link>
 			<description>&lt;p&gt;Please be aware of notation below in command outlines. &lt;code&gt;$&lt;/code&gt; represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for example, &lt;code&gt;takeown&lt;/code&gt;.&lt;/p&gt;</description>
@@ -834,6 +812,107 @@ SSID 3 : hello_kitty
 &lt;li&gt;&lt;a href="https://www.xfinity.com/support/internet/comcast-supported-routers-gateways-adapters/"&gt;Some possible default passwords for networks / routers / gateways&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://devblogs.microsoft.com/scripting/get-wireless-network-ssid-and-password-with-powershell/"&gt;MS devblogs - Get Wireless Network SSID and Password with PowerShell&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
+</content:encoded>
+		</item>
+		<item>
+			<title>Math Notation Test</title>
+			<link>https://blog.saosx.com/posts/math</link>
+			<description>&lt;p&gt;This is a &lt;span class="math"&gt;\(\infty \frac{x^3}{e^x-1}\)&lt;/span&gt; with few symbols.&lt;/p&gt;</description>
+			<guid>https://blog.saosx.com/posts/math</guid>
+			<pubDate>Fri, 22 Nov 2019 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;This is a &lt;span class="math"&gt;\(\infty \frac{x^3}{e^x-1}\)&lt;/span&gt; with few symbols.&lt;/p&gt;
+&lt;p&gt;Eq 1,&lt;/p&gt;
+&lt;div class="math"&gt;
+\[
+\begin{equation}
+  \int_0^\infty \frac{x^3}{e^x-1}\,dx = \frac{\pi^4}{15}
+  \label{eq:sample}
+\end{equation}
+\]&lt;/div&gt;
+&lt;p&gt;Eq 2 without starting with beginning equation tagger,&lt;/p&gt;
+&lt;div class="math"&gt;
+\[
+\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
+\]&lt;/div&gt;
+</content:encoded>
+		</item>
+		<item>
+			<title>Generic Windows Command Cache</title>
+			<link>https://blog.saosx.com/posts/dos</link>
+			<description>&lt;p&gt;Please be aware of notation below in command outlines. &lt;code&gt;$&lt;/code&gt; represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for exxample, &lt;code&gt;takeown&lt;/code&gt;.&lt;/p&gt;</description>
+			<guid>https://blog.saosx.com/posts/dos</guid>
+			<pubDate>Tue, 19 Nov 2019 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Please be aware of notation below in command outlines. &lt;code&gt;$&lt;/code&gt; represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for exxample, &lt;code&gt;takeown&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id="misc"&gt;Misc&lt;/h2&gt;
+&lt;p&gt;Customized ping command, waits 20 seconds for reply and keep pinging non-stop &lt;a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/ping"&gt;ping ref&lt;/a&gt;,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ping -w 20000 -t myserver.company.com
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Enable or disable Linux Subsystem feture,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+Disable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Get host name,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;HOSTNAME
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;associating file type for extension &lt;code&gt;.fob&lt;/code&gt;,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cmd /c assoc .fob=foobarfile
+cmd /c ftype foobarfile=powershell.exe -File `&amp;quot;C:\path\to\your.ps1`&amp;quot; `&amp;quot;%1`&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Find files with hidden attributes,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;dir /A:H general-solving\lintcode
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Modify files to remove hidden attributes using attrib&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;attrib -h my-hidden-file.txt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Robust copy&lt;/strong&gt;
+&lt;code&gt;robocopy&lt;/code&gt; is good for copying large numbeer of files (to handle so many different cases: large files, network interruptions, file names). An example cmd,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;robocopy /s /z /v /fp /eta 'D:\Movies' 'H:\' Office.*
+robocopy /s /z /v /fp /eta 'D:\TV Series' 'H:\' Fringe*
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Above cmds copy all files from first one (source dir) matching the pattern.&lt;/p&gt;
+&lt;p&gt;Exmple of copy over network,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;robocopy /s /z /v /fp /eta '\\ENLIGHTENSOUL\Bangla\3RD Person Singular Number' 'i:\'
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;xcopy examples&lt;/strong&gt;
+(prefer &lt;code&gt;robocopy&lt;/code&gt; over this one), some variations below,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;xcopy /C /F /H e:\c O:
+xcopy /s /C /F /H e:\C++ O:\C++
+xcopy /s /C /F /H &amp;quot;e:\FC back up&amp;quot; &amp;quot;o:\FC back up&amp;quot;
+xcopy /s /C /F /H &amp;quot;e:\Net Workspace&amp;quot; &amp;quot;o:\Net Workspace&amp;quot;
+xcopy /s /C /F /H f:\* Q:\*
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Retrieving all cmd history,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;doskey /history &amp;gt; copy_command.txt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;delete everything inside a directory,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;rd /s /q JobDetails_data
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;mklink&lt;/strong&gt;
+To create a symbolic link named MyDocs from the root directory to the \Users\User1\Documents directory,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mklink /d \MyDocs \Users\User1\Documents
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Creates a Directory Junction instead using mklink,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ mklink /j C:\Users\Atique\AppData\Local\Microsoft\Office\15.0\OfficeFileCache H:\OfficeFileCache
+Junction created for C:\Users\Atique\AppData\Local\Microsoft\Office\15.0\OfficeFileCache &amp;lt;&amp;lt;===&amp;gt;&amp;gt; H:\OfficeFileCache
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Network share commands&lt;/strong&gt;
+view curently shared directories,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;net share
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;to delete share (requires admin privilege),&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ net share NewDrama /delete
+Movies      H:\Cool Movies
+Softs        F:\Sourcecodes\Web\Softs
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To share a directory,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;net share listshare=&amp;quot;c:\art list&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;registry&lt;/strong&gt;
+For example usage &lt;code&gt;regsvr32&lt;/code&gt; of check &lt;a href="https://www.codeproject.com/Articles/766246/Windows-Media-Player-Native-Subtitle-Plugin-Cplusp"&gt;codeproject - Windows Media Player Native Subtitle Plugin&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/commands-by-server-role"&gt;MS Docs - Windows Commands&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </content:encoded>
 		</item>
 		<item>
@@ -1130,85 +1209,6 @@ PSHOME
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id="continue"&gt;continue&lt;/h2&gt;
 &lt;p&gt;rest of the contents yet to be appended..&lt;/p&gt;
-</content:encoded>
-		</item>
-		<item>
-			<title>Generic Windows Command Cache</title>
-			<link>https://blog.saosx.com/posts/dos</link>
-			<description>&lt;p&gt;Please be aware of notation below in command outlines. &lt;code&gt;$&lt;/code&gt; represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for exxample, &lt;code&gt;takeown&lt;/code&gt;.&lt;/p&gt;</description>
-			<guid>https://blog.saosx.com/posts/dos</guid>
-			<pubDate>Tue, 19 Nov 2019 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;Please be aware of notation below in command outlines. &lt;code&gt;$&lt;/code&gt; represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for exxample, &lt;code&gt;takeown&lt;/code&gt;.&lt;/p&gt;
-&lt;h2 id="misc"&gt;Misc&lt;/h2&gt;
-&lt;p&gt;Customized ping command, waits 20 seconds for reply and keep pinging non-stop &lt;a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/ping"&gt;ping ref&lt;/a&gt;,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;ping -w 20000 -t myserver.company.com
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Enable or disable Linux Subsystem feture,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-Disable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Get host name,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;HOSTNAME
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;associating file type for extension &lt;code&gt;.fob&lt;/code&gt;,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;cmd /c assoc .fob=foobarfile
-cmd /c ftype foobarfile=powershell.exe -File `&amp;quot;C:\path\to\your.ps1`&amp;quot; `&amp;quot;%1`&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Find files with hidden attributes,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;dir /A:H general-solving\lintcode
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Modify files to remove hidden attributes using attrib&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;attrib -h my-hidden-file.txt
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;Robust copy&lt;/strong&gt;
-&lt;code&gt;robocopy&lt;/code&gt; is good for copying large numbeer of files (to handle so many different cases: large files, network interruptions, file names). An example cmd,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;robocopy /s /z /v /fp /eta 'D:\Movies' 'H:\' Office.*
-robocopy /s /z /v /fp /eta 'D:\TV Series' 'H:\' Fringe*
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Above cmds copy all files from first one (source dir) matching the pattern.&lt;/p&gt;
-&lt;p&gt;Exmple of copy over network,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;robocopy /s /z /v /fp /eta '\\ENLIGHTENSOUL\Bangla\3RD Person Singular Number' 'i:\'
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;xcopy examples&lt;/strong&gt;
-(prefer &lt;code&gt;robocopy&lt;/code&gt; over this one), some variations below,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;xcopy /C /F /H e:\c O:
-xcopy /s /C /F /H e:\C++ O:\C++
-xcopy /s /C /F /H &amp;quot;e:\FC back up&amp;quot; &amp;quot;o:\FC back up&amp;quot;
-xcopy /s /C /F /H &amp;quot;e:\Net Workspace&amp;quot; &amp;quot;o:\Net Workspace&amp;quot;
-xcopy /s /C /F /H f:\* Q:\*
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Retrieving all cmd history,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;doskey /history &amp;gt; copy_command.txt
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;delete everything inside a directory,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;rd /s /q JobDetails_data
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;mklink&lt;/strong&gt;
-To create a symbolic link named MyDocs from the root directory to the \Users\User1\Documents directory,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;mklink /d \MyDocs \Users\User1\Documents
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Creates a Directory Junction instead using mklink,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ mklink /j C:\Users\Atique\AppData\Local\Microsoft\Office\15.0\OfficeFileCache H:\OfficeFileCache
-Junction created for C:\Users\Atique\AppData\Local\Microsoft\Office\15.0\OfficeFileCache &amp;lt;&amp;lt;===&amp;gt;&amp;gt; H:\OfficeFileCache
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;Network share commands&lt;/strong&gt;
-view curently shared directories,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;net share
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;to delete share (requires admin privilege),&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ net share NewDrama /delete
-Movies      H:\Cool Movies
-Softs        F:\Sourcecodes\Web\Softs
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;To share a directory,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;net share listshare=&amp;quot;c:\art list&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;registry&lt;/strong&gt;
-For example usage &lt;code&gt;regsvr32&lt;/code&gt; of check &lt;a href="https://www.codeproject.com/Articles/766246/Windows-Media-Player-Native-Subtitle-Plugin-Cplusp"&gt;codeproject - Windows Media Player Native Subtitle Plugin&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="references"&gt;References&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/commands-by-server-role"&gt;MS Docs - Windows Commands&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </content:encoded>
 		</item>
 		<item>
@@ -1576,6 +1576,156 @@ svn status
 &lt;p&gt;If &lt;code&gt;svn info&lt;/code&gt; shows an outdated local repo, we should do update,&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;svn update
 &lt;/code&gt;&lt;/pre&gt;
+</content:encoded>
+		</item>
+		<item>
+			<title>C++ ifstream::get method overloads</title>
+			<link>https://blog.saosx.com/posts/ifstream-get</link>
+			<description>&lt;p&gt;As stated on the reference, &lt;code&gt;istream::get()&lt;/code&gt; has 6 overloads,&lt;/p&gt;</description>
+			<guid>https://blog.saosx.com/posts/ifstream-get</guid>
+			<pubDate>Tue, 27 Nov 2012 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;As stated on the reference, &lt;code&gt;istream::get()&lt;/code&gt; has 6 overloads,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;int get();
+istream&amp;amp; get ( char&amp;amp; c );
+istream&amp;amp; get ( char* s, streamsize n );
+istream&amp;amp; get ( char* s, streamsize n, char delim );
+istream&amp;amp; get ( streambuf&amp;amp; sb);
+istream&amp;amp; get ( streambuf&amp;amp; sb, char delim );
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It is also stated that &lt;code&gt;int get();&lt;/code&gt; Extracts a character from the stream and returns its value (casted to an integer).&lt;/p&gt;
+&lt;p&gt;On the other hand.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;istream&amp;amp; get ( char&amp;amp; c );
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;extracts a character from the stream and stores it in c.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;istream&amp;amp; get (char* s, streamsize n );
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a href="http://www.cplusplus.com/reference/istream/istream/get/"&gt;cplusplus.com - istream::get&lt;/a&gt; has further details.&lt;/p&gt;
+&lt;h2 id="sampe-program-and-output"&gt;Sampe Program and Output&lt;/h2&gt;
+&lt;p&gt;We shall write a simple program that counts words on each line of a text file. If we cut to the chess, strategy is to take every character, if the character is a separator set a flag, depending on that when a char is found other than separator increment word count and unset the flag until next separator is found. When newline character is found print number of words found on that line. Here's the program,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;ifstream&amp;gt;
+#include &amp;lt;iostream&amp;gt;
+using namespace std;
+ 
+int main () {
+     string separators(&amp;quot;:;.!\&amp;quot;\' \t\n&amp;quot;);
+     ifstream ifs ( &amp;quot;test.txt&amp;quot; , ifstream::in );
+     bool shouldCountNewWord = true;
+     int wordCount=0;
+ 
+     while (ifs.good()) {
+          char ch = ifs.get();
+          int i = 0;
+          for (; i&amp;lt;separators.length(); i++) {
+               if (ch == separators[i]) {
+                    shouldCountNewWord = true;
+                    break;
+               }
+          }
+ 
+          if (i== (int) separators.length() &amp;amp;&amp;amp; shouldCountNewWord == true) {
+               wordCount++;
+               shouldCountNewWord = false;
+          }
+ 
+ 
+          if (ch == '\n') {
+               cout&amp;lt;&amp;lt;&amp;quot;We have encountered &amp;quot;&amp;lt;&amp;lt;wordCount&amp;lt;&amp;lt;&amp;quot; words in this line.&amp;quot;&amp;lt;&amp;lt;endl;
+               wordCount = 0;
+          }
+     }
+     ifs.close();
+     return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;So the input text file test.txt. Let's create it inside the same directory with some random contents,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Mazel tov! Jewish tradition.
+He is not stingy; she is not like him.
+&amp;quot;Experilus!&amp;quot; He cried.
+I have 2 houses. How many do you have?
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After compiling and executing the binary output of this program appears,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;We have encountered 4 words in this line.
+We have encountered 9 words in this line.
+We have encountered 3 words in this line.
+We have encountered 9 words in this line.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you are using Linux stay aware that on Linux, editors like vi, gedit adds an extra newline before end of line as convention. Hence, Hence on that platform, if you add a newline yourself after last line you will see that output prints an extra line saying it has encountered 0 lines on that line. Therefore don't add any newline after last line.&lt;/p&gt;
+&lt;h3 id="the-variation"&gt;The Variation&lt;/h3&gt;
+&lt;p&gt;We have tested &lt;code&gt;int istream::get()&lt;/code&gt;. Let's go ahead and replace it with &lt;code&gt;istream&amp;amp; istream::get ( char&amp;amp; c )&lt;/code&gt;. Let's just replace the line &lt;code&gt;char ch = ifs.get();&lt;/code&gt; with lines as shown below,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;while (ifs.good()) {
+     char ch;
+     ifs.get(ch);
+     .............. // code continues
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After we compile and run the program new output is,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;We have encountered 4 words in this line.
+We have encountered 9 words in this line.
+We have encountered 3 words in this line.
+We have encountered 9 words in this line.
+We have encountered 0 words in this line.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="reason-for-such-unexpected-output"&gt;Reason for such unexpected output&lt;/h3&gt;
+&lt;p&gt;Apparently second version of the code is getting an extra newline character. But the file hasn't changed. Where did it come from? If we add an extra statement and print all characters taken as input we see that there variable ch contains newline twice! On the last one ch contains newline value which 10 though eof has already been reached.&lt;/p&gt;
+&lt;p&gt;Why this behavior? Answer is that, when function get (signature: istream&amp;amp; istream::get ( char&amp;amp; c )) encounters EOF it does not assign it to the character variable because it is not really valid character.&lt;/p&gt;
+&lt;h3 id="first-solution"&gt;First Solution&lt;/h3&gt;
+&lt;p&gt;A solution can be resetting variable 'ch' after each time loop runs as presented in code below,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;   if (ch == '\n') {
+        cout&amp;lt;&amp;lt;&amp;quot;We have encountered &amp;quot;&amp;lt;&amp;lt;wordCount&amp;lt;&amp;lt;&amp;quot; words in this line.&amp;quot;&amp;lt;&amp;lt;endl;
+        wordCount = 0;
+   }
+   ch = '\0';
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Previously read character is erased each time the loop runs and ch cannot contain the same newline value anymore unless it really occurs on the input.&lt;/p&gt;
+&lt;h3 id="second-solution"&gt;Second Solution&lt;/h3&gt;
+&lt;p&gt;We can check whether input stream is still good after character has been read like this,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ifs.get(ch);
+if (!ifs.good())
+   break;
+   // code
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="finally"&gt;Finally&lt;/h3&gt;
+&lt;p&gt;We can improve it further,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;ifstream&amp;gt;
+#include &amp;lt;iostream&amp;gt;
+using namespace std;
+  
+int main () {
+    string separators(&amp;quot;:;.!\&amp;quot;\' \t\n&amp;quot;);
+    ifstream ifs ( &amp;quot;test.txt&amp;quot; , ifstream::in );
+    bool shouldCountNewWord = true;
+    int wordCount=0;
+ 
+    char ch;
+ 
+    while (ifs.get(ch).good()) {
+        int i = 0;
+        for (; i&amp;lt;separators.length(); i++) {
+            if (ch == separators[i]) {
+                shouldCountNewWord = true;
+                break;
+            }
+        }
+ 
+        if (i== (int) separators.length() &amp;amp;&amp;amp; shouldCountNewWord == true) {
+            wordCount++;
+            shouldCountNewWord = false;
+        }
+ 
+ 
+        if (ch == '\n') {
+            cout&amp;lt;&amp;lt;&amp;quot;We have encountered &amp;quot;&amp;lt;&amp;lt;wordCount&amp;lt;&amp;lt;&amp;quot; words in this line.&amp;quot;&amp;lt;&amp;lt;endl;
+            wordCount = 0;
+        }
+    }
+    ifs.close();
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Conclusive remark is that it is easy to make mistake without remembering how istream&amp;amp; istream&lt;span&gt;get ( char&amp;amp; c ) behaves. It is always safe to use int istream&lt;/span&gt;get() because whenever it encounters EOF it returns -1.&lt;/p&gt;
+&lt;p&gt;And remember that, on Linux/Unix editors like vi, gedit adds an extra new line before END OF FILE.&lt;/p&gt;
+&lt;p&gt;Code has been tested on Microsoft Compiler, Visual Studio and on Linux Compiler [ gcc version 4.4.6 20110731 (Red Hat 4.4.6-3) (GCC) ]&lt;/p&gt;
 </content:encoded>
 		</item>
 		<item>
