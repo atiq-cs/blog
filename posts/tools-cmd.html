@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 
-        <title>SAOSX Blog - SVN</title>
+        <title>SAOSX Blog - Command Line for Utilities and Tools</title>
         <meta name="description" content="Heads in the cloud! A Blog by Atiq Rahman!" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">        
 
@@ -28,9 +28,9 @@
         <meta name="msapplication-tooltip" content="SAOSX Blog" />
         <meta name="msapplication-starturl" content="/" />
 
-        <meta property="og:title" content="SAOSX Blog - SVN" />
+        <meta property="og:title" content="SAOSX Blog - Command Line for Utilities and Tools" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://blog.saosx.com/tags/SVN" />
+        <meta property="og:url" content="https://blog.saosx.com/posts/tools-cmd" />
         <!-- TODO: More social graph meta tags -->
 
         
@@ -72,9 +72,18 @@
                         <div class="container">
                                 <div class="row">
                                         <div class="col-md-12">
-<div class="site-heading">
-    <h1>SVN</h1>
-</div>                                            </div>
+
+    
+<div class="post-heading">
+    <h1>Command Line for Utilities and Tools</h1>
+    <div class="meta">        
+Published on Friday, November 29, 2019<br>    </div>
+        <div class="tags">
+                    <a role="button" href="/tags/system-administration" class="btn btn-default btn-xs">system administration</a>
+                    <a role="button" href="/tags/windows-command-prompt" class="btn btn-default btn-xs">windows command prompt</a>
+        </div>     
+</div>
+                                        </div>
                                 </div>
                         </div>
                 </header>
@@ -83,52 +92,47 @@
                 <div class="container">
                         <div class="row">
                                 <div id="content" class="col-md-12">
-                                        <div class="container-sm-height">
-    <div class="row row-sm-height">
-        <div class="col-sm-8 right-border col-sm-height">
-            
-        <div class="post-list">
-            <a href="/posts/svn">
-                <h3 class="post-title">SVN Basics</h3>
-            </a>
-            <p class="post-meta">Posted on Friday, November 14, 2014</p>      
-        </div>   
+                                        
+
+<p>Please be aware of notation below in command outlines. <code>$</code> represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for exxample, <code>takeown</code>.</p>
+<h3 id="winrar">WinRar</h3>
+<p>An example use of rar (in my system referring to <code>D:\ProgData\WinRAR\rar.exe</code>),</p>
+<pre><code>rar a -m5 -psa1 -ep1 I:\Doc\docs.rar I:\Doc\Office_Docs\
+</code></pre>
+<p><em>without -ep1 it makes a big directory tree</em></p>
+<h2 id="gnuwin32-tools">gnuwin32 tools</h2>
+<p>similar to Unix,</p>
+<pre><code>&quot;D:\ProgramFiles_x86\GnuWin32\bin\gzip.exe&quot; -d .\bitarray-ex-0.8.1.tar.gz
+&quot;D:\ProgramFiles_x86\GnuWin32\bin\tar.exe&quot; -xvf .\bitarray-ex-0.8.1.tar
+&quot;D:\ProgramFiles_x86\GnuWin32\bin\tar.exe&quot; --version
+</code></pre>
+<h2 id="external-applications">External Applications</h2>
+<p>Here are some command line examples for External Applications.</p>
+<p>using <code>tftp</code> to uplod a file into ftp server,</p>
+<pre><code> tftp -i 192.168.1.10 PUT 'E:\LinkSys E2000\images\FW_E2000_1.0.04.007_US_20101201_code.bin' FW_E2000_1.0.04.007_US_20101201_code.bin
+</code></pre>
+<p>I used to use this one for 'ATA Automation'.</p>
+<p>Identify image format info using image magick's <code>identiy</code> (referring to <code>C:\Program Files\ImageMagick-6.8.8-Q16\identify.exe</code> in my system as an example),</p>
+<pre><code>identify &quot;F:\Documents\Images\From Previous Cell-Phone\2011-09\01092011.jpg&quot;
+identify -verbose &quot;F:\Sourcecodes\Web\ASP .Net\Icons\saos_favicon.ico&quot;
+</code></pre>
+<p>Identify image format info using image magick's <code>convert</code> tool (referring to <code>C:\Program Files\ImageMagick-6.8.8-Q16\convert.exe</code> in my system as an example),</p>
+<pre><code>convert -background transparent
+</code></pre>
+<p><code>ps2pdf</code> tool (location in my system <code>C:\Program Files\MiKTex\miktex\bin\x64\ps2pdf.exe</code>) from Miktex from example,</p>
+<pre><code>ps2pdf D:\Source\ml-95-ripper.ps
+</code></pre>
+<h2 id="video-applications">Video Applications</h2>
+<p><strong>mkvextract</strong>
+Extract subtitle using <code>mkvextract</code> (referring to <code>C:\Program Files (x86)\MKVToolNix\mkvextract.exe</code> in my system),</p>
+<pre><code>mkvextract tracks D:\Movies\Fences.mkv &quot;2:D:\Movies\Fences.srt&quot;
+</code></pre>
+<p><code>mkvmerge</code> (in my system <code>C:\Program Files (x86)\MKVToolNix\mkvmerge.exe</code>) show info on mkv file,</p>
+<pre><code>mkvmerge -i D:\Movies\Fences.mkv
+</code></pre>
 
 
-            <nav>
-                <ul class="pager">
-                    <li class="previous">                
-                    </li>
-                    <li class="next">
-                    </li>
-                </ul>
-            </nav>
-            <hr class="visible-xs-block" />
-        </div>
-		
-        <div class="col-sm-4 col-sm-height">
-                <a role="button" href="/tags/system-administration" class="btn btn-default btn-xs">system administration (4)</a>
-                <a role="button" href="/tags/health-care" class="btn btn-default btn-xs">health care (4)</a>
-                <a role="button" href="/tags/source-Control" class="btn btn-default btn-xs">source Control (2)</a>
-                <a role="button" href="/tags/version-Control" class="btn btn-default btn-xs">version Control (2)</a>
-                <a role="button" href="/tags/windows-command-prompt" class="btn btn-default btn-xs">windows command prompt (2)</a>
-                <a role="button" href="/tags/markdown" class="btn btn-default btn-xs">markdown (2)</a>
-                <a role="button" href="/tags/Powershell-Core" class="btn btn-default btn-xs">Powershell Core (2)</a>
-                <a role="button" href="/tags/math" class="btn btn-default btn-xs">math (1)</a>
-                <a role="button" href="/tags/latex" class="btn btn-default btn-xs">latex (1)</a>
-                <a role="button" href="/tags/pwsh" class="btn btn-default btn-xs">pwsh (1)</a>
-                <a role="button" href="/tags/python" class="btn btn-default btn-xs">python (1)</a>
-                <a role="button" href="/tags/programming-languages" class="btn btn-default btn-xs">programming languages (1)</a>
-                <a role="button" href="/tags/mercurial" class="btn btn-default btn-xs">mercurial (1)</a>
-                <a role="button" href="/tags/SVN" class="btn btn-primary btn-xs">SVN (1)</a>
-                <a role="button" href="/tags/wyam" class="btn btn-default btn-xs">wyam (1)</a>
-                <a role="button" href="/tags/Cloud" class="btn btn-default btn-xs">Cloud (1)</a>
-                <a role="button" href="/tags/Pipelines" class="btn btn-default btn-xs">Pipelines (1)</a>
-                <a role="button" href="/tags/netsh" class="btn btn-default btn-xs">netsh (1)</a>
-                <a role="button" href="/tags/network" class="btn btn-default btn-xs">network (1)</a>
-        </div>
-    </div>
-</div>
+
                                 </div>
                         </div>
                 </div>
