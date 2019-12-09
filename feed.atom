@@ -4,7 +4,7 @@
 	<title>SAOSX Blog</title>
 	<link rel="self" href="https://blog.saosx.com/" />
 	<rights>2019</rights>
-	<updated>2019-12-08T23:49:52Z</updated>
+	<updated>2019-12-09T18:52:32Z</updated>
 	<subtitle>Heads in the cloud! A Blog by Atiq Rahman!</subtitle>
 	<entry>
 		<id>https://blog.saosx.com/posts/tools-cmd</id>
@@ -1932,39 +1932,39 @@ istream&amp;amp; get ( streambuf&amp;amp; sb, char delim );
 &lt;p&gt;&lt;a href="http://www.cplusplus.com/reference/istream/istream/get/"&gt;cplusplus.com - istream::get&lt;/a&gt; has further details.&lt;/p&gt;
 &lt;h2 id="sampe-program-and-output"&gt;Sampe Program and Output&lt;/h2&gt;
 &lt;p&gt;We shall write a simple program that counts words on each line of a text file. If we cut to the chess, strategy is to take every character, if the character is a separator set a flag, depending on that when a char is found other than separator increment word count and unset the flag until next separator is found. When newline character is found print number of words found on that line. Here's the program,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;#include &amp;lt;ifstream&amp;gt;
+&lt;pre&gt;&lt;code class="language-cpp"&gt;#include &amp;lt;ifstream&amp;gt;
 #include &amp;lt;iostream&amp;gt;
 using namespace std;
- 
+    
 int main () {
-     string separators(&amp;quot;:;.!\&amp;quot;\' \t\n&amp;quot;);
-     ifstream ifs ( &amp;quot;test.txt&amp;quot; , ifstream::in );
-     bool shouldCountNewWord = true;
-     int wordCount=0;
- 
-     while (ifs.good()) {
-          char ch = ifs.get();
-          int i = 0;
-          for (; i&amp;lt;separators.length(); i++) {
-               if (ch == separators[i]) {
+        string separators(&amp;quot;:;.!\&amp;quot;\' \t\n&amp;quot;);
+        ifstream ifs ( &amp;quot;test.txt&amp;quot; , ifstream::in );
+        bool shouldCountNewWord = true;
+        int wordCount=0;
+    
+        while (ifs.good()) {
+            char ch = ifs.get();
+            int i = 0;
+            for (; i&amp;lt;separators.length(); i++) {
+                if (ch == separators[i]) {
                     shouldCountNewWord = true;
                     break;
-               }
-          }
- 
-          if (i== (int) separators.length() &amp;amp;&amp;amp; shouldCountNewWord == true) {
-               wordCount++;
-               shouldCountNewWord = false;
-          }
- 
- 
-          if (ch == '\n') {
-               cout&amp;lt;&amp;lt;&amp;quot;We have encountered &amp;quot;&amp;lt;&amp;lt;wordCount&amp;lt;&amp;lt;&amp;quot; words in this line.&amp;quot;&amp;lt;&amp;lt;endl;
-               wordCount = 0;
-          }
-     }
-     ifs.close();
-     return 0;
+                }
+            }
+    
+            if (i== (int) separators.length() &amp;amp;&amp;amp; shouldCountNewWord == true) {
+                wordCount++;
+                shouldCountNewWord = false;
+            }
+    
+    
+            if (ch == '\n') {
+                cout&amp;lt;&amp;lt;&amp;quot;We have encountered &amp;quot;&amp;lt;&amp;lt;wordCount&amp;lt;&amp;lt;&amp;quot; words in this line.&amp;quot;&amp;lt;&amp;lt;endl;
+                wordCount = 0;
+            }
+        }
+        ifs.close();
+        return 0;
 }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;So the input text file test.txt. Let's create it inside the same directory with some random contents,&lt;/p&gt;

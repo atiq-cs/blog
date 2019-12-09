@@ -111,39 +111,39 @@ istream&amp; get ( streambuf&amp; sb, char delim );
 <p><a href="http://www.cplusplus.com/reference/istream/istream/get/">cplusplus.com - istream::get</a> has further details.</p>
 <h2 id="sampe-program-and-output">Sampe Program and Output</h2>
 <p>We shall write a simple program that counts words on each line of a text file. If we cut to the chess, strategy is to take every character, if the character is a separator set a flag, depending on that when a char is found other than separator increment word count and unset the flag until next separator is found. When newline character is found print number of words found on that line. Here's the program,</p>
-<pre><code>#include &lt;ifstream&gt;
+<pre><code class="language-cpp">#include &lt;ifstream&gt;
 #include &lt;iostream&gt;
 using namespace std;
- 
+    
 int main () {
-     string separators(&quot;:;.!\&quot;\' \t\n&quot;);
-     ifstream ifs ( &quot;test.txt&quot; , ifstream::in );
-     bool shouldCountNewWord = true;
-     int wordCount=0;
- 
-     while (ifs.good()) {
-          char ch = ifs.get();
-          int i = 0;
-          for (; i&lt;separators.length(); i++) {
-               if (ch == separators[i]) {
+        string separators(&quot;:;.!\&quot;\' \t\n&quot;);
+        ifstream ifs ( &quot;test.txt&quot; , ifstream::in );
+        bool shouldCountNewWord = true;
+        int wordCount=0;
+    
+        while (ifs.good()) {
+            char ch = ifs.get();
+            int i = 0;
+            for (; i&lt;separators.length(); i++) {
+                if (ch == separators[i]) {
                     shouldCountNewWord = true;
                     break;
-               }
-          }
- 
-          if (i== (int) separators.length() &amp;&amp; shouldCountNewWord == true) {
-               wordCount++;
-               shouldCountNewWord = false;
-          }
- 
- 
-          if (ch == '\n') {
-               cout&lt;&lt;&quot;We have encountered &quot;&lt;&lt;wordCount&lt;&lt;&quot; words in this line.&quot;&lt;&lt;endl;
-               wordCount = 0;
-          }
-     }
-     ifs.close();
-     return 0;
+                }
+            }
+    
+            if (i== (int) separators.length() &amp;&amp; shouldCountNewWord == true) {
+                wordCount++;
+                shouldCountNewWord = false;
+            }
+    
+    
+            if (ch == '\n') {
+                cout&lt;&lt;&quot;We have encountered &quot;&lt;&lt;wordCount&lt;&lt;&quot; words in this line.&quot;&lt;&lt;endl;
+                wordCount = 0;
+            }
+        }
+        ifs.close();
+        return 0;
 }
 </code></pre>
 <p>So the input text file test.txt. Let's create it inside the same directory with some random contents,</p>
