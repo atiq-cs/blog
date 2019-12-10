@@ -1,4 +1,4 @@
-Title: Quick Sort
+Title: Heap
 Published: 07/18/2018
 Tags:
   - Problem Solving

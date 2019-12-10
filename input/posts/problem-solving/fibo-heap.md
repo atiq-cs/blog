@@ -1,4 +1,4 @@
-Title: Quick Sort
+Title: Fibonacci Heap
 Published: 02/14/2018
 Tags:
   - Problem Solving
