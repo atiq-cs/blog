@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 
-        <title>SAOSX Blog - Pipelines</title>
+        <title>SAOSX Blog - Quick Sort</title>
         <meta name="description" content="Heads in the cloud! A Blog by Atiq Rahman!" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">        
 
@@ -28,9 +28,9 @@
         <meta name="msapplication-tooltip" content="SAOSX Blog" />
         <meta name="msapplication-starturl" content="/" />
 
-        <meta property="og:title" content="SAOSX Blog - Pipelines" />
+        <meta property="og:title" content="SAOSX Blog - Quick Sort" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://blog.saosx.com/tags/Pipelines" />
+        <meta property="og:url" content="https://blog.saosx.com/posts/heap" />
         <!-- TODO: More social graph meta tags -->
 
         
@@ -72,9 +72,20 @@
                         <div class="container">
                                 <div class="row">
                                         <div class="col-md-12">
-<div class="site-heading">
-    <h1>Pipelines</h1>
-</div>                                            </div>
+
+    
+<div class="post-heading">
+    <h1>Quick Sort</h1>
+    <div class="meta">        
+Published on Wednesday, July 18, 2018<br>    </div>
+        <div class="tags">
+                    <a role="button" href="/tags/Algorithms" class="btn btn-default btn-xs">Algorithms</a>
+                    <a role="button" href="/tags/Data-Structure" class="btn btn-default btn-xs">Data Structure</a>
+                    <a role="button" href="/tags/Heap" class="btn btn-default btn-xs">Heap</a>
+                    <a role="button" href="/tags/Problem-Solving" class="btn btn-default btn-xs">Problem Solving</a>
+        </div>     
+</div>
+                                        </div>
                                 </div>
                         </div>
                 </header>
@@ -83,72 +94,51 @@
                 <div class="container">
                         <div class="row">
                                 <div id="content" class="col-md-12">
-                                        <div class="container-sm-height">
-    <div class="row row-sm-height">
-        <div class="col-sm-8 right-border col-sm-height">
-            
-        <div class="post-list">
-            <a href="/posts/wyam">
-                <h3 class="post-title">Wyam with Cake Build, Github pages and Azure Pipeline (Windows Server 2019)</h3>
-            </a>
-            <p class="post-meta">Posted on Wednesday, November 27, 2019</p>      
-        </div>   
+                                        
+
+<h3 id="what-is-heap">What is Heap?</h3>
+<p>Heap is a binary tree representation.</p>
+<p>Intro to Algo by C.L.R.S (page 159) can be applied part that I had trouble is the derivation.</p>
+<ul>
+<li>n element heap has height of <code>lg n</code></li>
+<li>at most <code>n / (2^(h+1))</code> nodes of any height h</li>
+</ul>
+<p>(i draw some examples which worked)</p>
+<p>changed the limit to get better approx for <code>O()</code></p>
+<p>Leaf nodes are (in 0 based index),</p>
+<pre><code>n/2, n/2+1, n/2+2, n/2+3 ... ... ... n
+</code></pre>
+<p>Question: Why does the book (CLRS) use 1 based index where programming languages are based on 0?
+A common standard among books for pseudocode.</p>
+<h3 id="delete-element-operation">delete element operation</h3>
+<p>The idea is similar to <code>Extract-Min</code>. We replace <code>i</code> with <code>A[size-1]</code> then, we heapify. Applied that this idea on to solve hackkerrank qHeap.</p>
+<p>Deriving the tighter bound I mean in some pages in book.</p>
+<p>A problem that uses counting sort but probably hard (Codeforces Round #182 (Div. 1)),
+<a href="http://codeforces.com/contest/301/problem/D">http://codeforces.com/contest/301/problem/D</a></p>
+<p>Quoting <a href="https://arxiv.org/ftp/cs/papers/0007/0007043.pdf">https://arxiv.org/ftp/cs/papers/0007/0007043.pdf</a>,</p>
+<h3 id="min-max-fine-heaps">Min-Max Fine Heaps</h3>
+<p>heap, introduced by Carlsson[2], using bit in each node to indicate its larger child, to improve the
+performance of Min-Max Heap. We call it Min-Max Fine Heap. Also a technique similar to the one used
+by Gonnet and Munro[5] for traditional heaps will be employed for better performance. In the next sections
+we shall present the structure of the heap, algorithm for carrying out the standard operations on deq</p>
+<p>Hash table runtime complexity (insert, search and delete)
+<a href="https://stackoverflow.com/questions/9214353/hash-table-runtime-complexity-insert-search-and-delete">https://stackoverflow.com/questions/9214353/hash-table-runtime-complexity-insert-search-and-delete</a></p>
+<p>Show that second smallest of n elements can be found with <code>n + logn -2</code> in worst case..</p>
+<p>Heap during finding the minimum???
+<a href="https://www.careercup.com/question?id=354885">https://www.careercup.com/question?id=354885</a></p>
+<p>** on my heap sort or heap implementation verification **
+<a href="https://www.hackerrank.com/contests/hw1/challenges/heap-sort">https://www.hackerrank.com/contests/hw1/challenges/heap-sort</a>
+<a href="https://www.hackerrank.com/challenges/qheap1/problem">https://www.hackerrank.com/challenges/qheap1/problem</a></p>
+<p>checking if anybody got accepted with dijkstra short reach
+github.com hackerrank <a href="https://github.com/kamomil/Hackerrank/blob/master/dijkstrashortreach.cpp">dijkstrashortreach cpp implementation</a></p>
+<h3 id="references">References</h3>
+<ol>
+<li>Page# 159 the book, <a href="https://dl.acm.org/citation.cfm?id=1614191">Introduction to Algorithm - C.L.R.S</a></li>
+<li>Stony Brook Univ. Lecture - <a href="http://www3.cs.stonybrook.edu/%7Erezaul/Spring-2015/CSE548/CSE548-lectures-19-20.pdf">Dijkstra’s SSSP &amp; Fibonacci Heaps</a></li>
+</ol>
 
 
-            <nav>
-                <ul class="pager">
-                    <li class="previous">                
-                    </li>
-                    <li class="next">
-                    </li>
-                </ul>
-            </nav>
-            <hr class="visible-xs-block" />
-        </div>
-		
-        <div class="col-sm-4 col-sm-height">
-                <a role="button" href="/tags/system-administration" class="btn btn-default btn-xs">system administration (4)</a>
-                <a role="button" href="/tags/health-care" class="btn btn-default btn-xs">health care (4)</a>
-                <a role="button" href="/tags/Problem-Solving" class="btn btn-default btn-xs">Problem Solving (4)</a>
-                <a role="button" href="/tags/Algorithms" class="btn btn-default btn-xs">Algorithms (4)</a>
-                <a role="button" href="/tags/C&#x2B;&#x2B;" class="btn btn-default btn-xs">C&#x2B;&#x2B; (3)</a>
-                <a role="button" href="/tags/Data-Structure" class="btn btn-default btn-xs">Data Structure (2)</a>
-                <a role="button" href="/tags/Heap" class="btn btn-default btn-xs">Heap (2)</a>
-                <a role="button" href="/tags/dotnet-core" class="btn btn-default btn-xs">dotnet core (2)</a>
-                <a role="button" href="/tags/EFI" class="btn btn-default btn-xs">EFI (2)</a>
-                <a role="button" href="/tags/System-Boot" class="btn btn-default btn-xs">System Boot (2)</a>
-                <a role="button" href="/tags/Linux" class="btn btn-default btn-xs">Linux (2)</a>
-                <a role="button" href="/tags/Windows" class="btn btn-default btn-xs">Windows (2)</a>
-                <a role="button" href="/tags/windows-command-prompt" class="btn btn-default btn-xs">windows command prompt (2)</a>
-                <a role="button" href="/tags/markdown" class="btn btn-default btn-xs">markdown (2)</a>
-                <a role="button" href="/tags/Powershell-Core" class="btn btn-default btn-xs">Powershell Core (2)</a>
-                <a role="button" href="/tags/python" class="btn btn-default btn-xs">python (2)</a>
-                <a role="button" href="/tags/programming-languages" class="btn btn-default btn-xs">programming languages (2)</a>
-                <a role="button" href="/tags/source-Control" class="btn btn-default btn-xs">source Control (2)</a>
-                <a role="button" href="/tags/version-Control" class="btn btn-default btn-xs">version Control (2)</a>
-                <a role="button" href="/tags/Binary-Tree" class="btn btn-default btn-xs">Binary Tree (1)</a>
-                <a role="button" href="/tags/Azure-Cloud" class="btn btn-default btn-xs">Azure Cloud (1)</a>
-                <a role="button" href="/tags/System-Adiministration" class="btn btn-default btn-xs">System Adiministration (1)</a>
-                <a role="button" href="/tags/entity-framework" class="btn btn-default btn-xs">entity framework (1)</a>
-                <a role="button" href="/tags/cpp" class="btn btn-default btn-xs">cpp (1)</a>
-                <a role="button" href="/tags/csharp" class="btn btn-default btn-xs">csharp (1)</a>
-                <a role="button" href="/tags/Sorting" class="btn btn-default btn-xs">Sorting (1)</a>
-                <a role="button" href="/tags/SVN" class="btn btn-default btn-xs">SVN (1)</a>
-                <a role="button" href="/tags/partitioning" class="btn btn-default btn-xs">partitioning (1)</a>
-                <a role="button" href="/tags/windows-programming" class="btn btn-default btn-xs">windows programming (1)</a>
-                <a role="button" href="/tags/MFC" class="btn btn-default btn-xs">MFC (1)</a>
-                <a role="button" href="/tags/wyam" class="btn btn-default btn-xs">wyam (1)</a>
-                <a role="button" href="/tags/Cloud" class="btn btn-default btn-xs">Cloud (1)</a>
-                <a role="button" href="/tags/Pipelines" class="btn btn-primary btn-xs">Pipelines (1)</a>
-                <a role="button" href="/tags/netsh" class="btn btn-default btn-xs">netsh (1)</a>
-                <a role="button" href="/tags/network" class="btn btn-default btn-xs">network (1)</a>
-                <a role="button" href="/tags/math" class="btn btn-default btn-xs">math (1)</a>
-                <a role="button" href="/tags/latex" class="btn btn-default btn-xs">latex (1)</a>
-                <a role="button" href="/tags/pwsh" class="btn btn-default btn-xs">pwsh (1)</a>
-                <a role="button" href="/tags/mercurial" class="btn btn-default btn-xs">mercurial (1)</a>
-        </div>
-    </div>
-</div>
+
                                 </div>
                         </div>
                 </div>

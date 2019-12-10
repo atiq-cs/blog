@@ -5,8 +5,8 @@
 		<link>https://blog.saosx.com/</link>
 		<description>Heads in the cloud! A Blog by Atiq Rahman!</description>
 		<copyright>2019</copyright>
-		<pubDate>Mon, 09 Dec 2019 18:52:32 GMT</pubDate>
-		<lastBuildDate>Mon, 09 Dec 2019 18:52:32 GMT</lastBuildDate>
+		<pubDate>Tue, 10 Dec 2019 07:04:52 GMT</pubDate>
+		<lastBuildDate>Tue, 10 Dec 2019 07:04:52 GMT</lastBuildDate>
 		<item>
 			<title>Command Line for Utilities and Tools</title>
 			<link>https://blog.saosx.com/posts/tools-cmd</link>
@@ -558,28 +558,6 @@ System.IO.File.WriteAllText(System.IO.Path.Combine(tempDir, CNameFileName), CNam
 </content:encoded>
 		</item>
 		<item>
-			<title>Math Notation Test</title>
-			<link>https://blog.saosx.com/posts/math</link>
-			<description>&lt;p&gt;This is a &lt;span class="math"&gt;\(\infty \frac{x^3}{e^x-1}\)&lt;/span&gt; with few symbols.&lt;/p&gt;</description>
-			<guid>https://blog.saosx.com/posts/math</guid>
-			<pubDate>Fri, 22 Nov 2019 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;This is a &lt;span class="math"&gt;\(\infty \frac{x^3}{e^x-1}\)&lt;/span&gt; with few symbols.&lt;/p&gt;
-&lt;p&gt;Eq 1,&lt;/p&gt;
-&lt;div class="math"&gt;
-\[
-\begin{equation}
-  \int_0^\infty \frac{x^3}{e^x-1}\,dx = \frac{\pi^4}{15}
-  \label{eq:sample}
-\end{equation}
-\]&lt;/div&gt;
-&lt;p&gt;Eq 2 without starting with beginning equation tagger,&lt;/p&gt;
-&lt;div class="math"&gt;
-\[
-\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
-\]&lt;/div&gt;
-</content:encoded>
-		</item>
-		<item>
 			<title>WiFi Networking with Powershell and netsh</title>
 			<link>https://blog.saosx.com/posts/wifi-cmd</link>
 			<description>&lt;p&gt;Please be aware of notation below in command outlines. &lt;code&gt;$&lt;/code&gt; represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for example, &lt;code&gt;takeown&lt;/code&gt;.&lt;/p&gt;</description>
@@ -834,6 +812,28 @@ SSID 3 : hello_kitty
 &lt;li&gt;&lt;a href="https://www.xfinity.com/support/internet/comcast-supported-routers-gateways-adapters/"&gt;Some possible default passwords for networks / routers / gateways&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://devblogs.microsoft.com/scripting/get-wireless-network-ssid-and-password-with-powershell/"&gt;MS devblogs - Get Wireless Network SSID and Password with PowerShell&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
+</content:encoded>
+		</item>
+		<item>
+			<title>Math Notation Test</title>
+			<link>https://blog.saosx.com/posts/math</link>
+			<description>&lt;p&gt;This is a &lt;span class="math"&gt;\(\infty \frac{x^3}{e^x-1}\)&lt;/span&gt; with few symbols.&lt;/p&gt;</description>
+			<guid>https://blog.saosx.com/posts/math</guid>
+			<pubDate>Fri, 22 Nov 2019 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;This is a &lt;span class="math"&gt;\(\infty \frac{x^3}{e^x-1}\)&lt;/span&gt; with few symbols.&lt;/p&gt;
+&lt;p&gt;Eq 1,&lt;/p&gt;
+&lt;div class="math"&gt;
+\[
+\begin{equation}
+  \int_0^\infty \frac{x^3}{e^x-1}\,dx = \frac{\pi^4}{15}
+  \label{eq:sample}
+\end{equation}
+\]&lt;/div&gt;
+&lt;p&gt;Eq 2 without starting with beginning equation tagger,&lt;/p&gt;
+&lt;div class="math"&gt;
+\[
+\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
+\]&lt;/div&gt;
 </content:encoded>
 		</item>
 		<item>
@@ -1212,6 +1212,41 @@ PSHOME
 </content:encoded>
 		</item>
 		<item>
+			<title>Python Language Reference</title>
+			<link>https://blog.saosx.com/posts/python3</link>
+			<description>&lt;p&gt;After install, to verify,&lt;/p&gt;</description>
+			<guid>https://blog.saosx.com/posts/python3</guid>
+			<pubDate>Thu, 14 Nov 2019 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;h2 id="install"&gt;Install&lt;/h2&gt;
+&lt;p&gt;After install, to verify,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;quot;import this&amp;quot; | python
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This works on Powershell / pwsh as well.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;How do I return multiple values from a function?&lt;/em&gt;
+ref: &lt;a href="https://stackoverflow.com/q/354883"&gt;so&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Typing “python” on Windows 10 (version 1903) command prompt opens Microsoft store&lt;/em&gt;
+ref &lt;a href="https://superuser.com/q/1437590"&gt;so&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="program-to-find-python-version"&gt;Program to find python version&lt;/h3&gt;
+&lt;p&gt;Example below,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;import sys
+print (sys.version) #parentheses necessary in python 3. 
+print (sys.version_info)
+print (sys.hexversion)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="idle-editor"&gt;IDLE Editor&lt;/h3&gt;
+&lt;p&gt;How to quit,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;quit()
+exit()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;How to print something&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;print(“string”)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;run a script&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;execfile()
+&lt;/code&gt;&lt;/pre&gt;
+</content:encoded>
+		</item>
+		<item>
 			<title>Mercurial Useful Commands</title>
 			<link>https://blog.saosx.com/posts/mercurial</link>
 			<description>&lt;p&gt;List files changed in previous commit,&lt;/p&gt;</description>
@@ -1369,41 +1404,6 @@ like fast forward merge, can go to merge tool&lt;/p&gt;
 </content:encoded>
 		</item>
 		<item>
-			<title>Python Language Reference</title>
-			<link>https://blog.saosx.com/posts/python3</link>
-			<description>&lt;p&gt;After install, to verify,&lt;/p&gt;</description>
-			<guid>https://blog.saosx.com/posts/python3</guid>
-			<pubDate>Thu, 14 Nov 2019 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;h2 id="install"&gt;Install&lt;/h2&gt;
-&lt;p&gt;After install, to verify,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;quot;import this&amp;quot; | python
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This works on Powershell / pwsh as well.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;How do I return multiple values from a function?&lt;/em&gt;
-ref: &lt;a href="https://stackoverflow.com/q/354883"&gt;so&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Typing “python” on Windows 10 (version 1903) command prompt opens Microsoft store&lt;/em&gt;
-ref &lt;a href="https://superuser.com/q/1437590"&gt;so&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id="program-to-find-python-version"&gt;Program to find python version&lt;/h3&gt;
-&lt;p&gt;Example below,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;import sys
-print (sys.version) #parentheses necessary in python 3. 
-print (sys.version_info)
-print (sys.hexversion)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="idle-editor"&gt;IDLE Editor&lt;/h3&gt;
-&lt;p&gt;How to quit,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;quit()
-exit()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;How to print something&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;print(“string”)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;run a script&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;execfile()
-&lt;/code&gt;&lt;/pre&gt;
-</content:encoded>
-		</item>
-		<item>
 			<title>Bhagalpur Sadar Hospital - A Sad Review</title>
 			<link>https://blog.saosx.com/posts/hospital-bhagalpur-sadar</link>
 			<description>&lt;p&gt;&lt;a href="https://www.google.com/search?sxsrf=ACYBGNTxpzQ-ysTO-UgzKZfytxeWzZUpOQ%3A1574982720318&amp;amp;source=hp&amp;amp;ei=QFTgXfzBEJXB7gKd7qGYAg&amp;amp;q=sadar+hospital+bhagalpur&amp;amp;oq=hospital-bhagalpur-sadar&amp;amp;gs_l=psy-ab.3.0.0i8i30l3.3599.3599..5039...3.0..0.94.94.1......0....2j1..gws-wiz.....10..35i362i39.2uNumgMaXHs#lrd=0x39f049ff4254cd83:0x2b4e13f4b89e329a,1,,,"&gt;google review link&lt;/a&gt; of Bhagalpur Sadar Hospital.&lt;/p&gt;</description>
@@ -1429,6 +1429,1295 @@ exit()
 &lt;li&gt;Cross check prescriptions with specialists in the disease area.&lt;/li&gt;
 &lt;li&gt;Don't ever get admitted if you need specialists from multiple areas, they make this really hard and waste time!!&lt;/li&gt;
 &lt;/ul&gt;
+</content:encoded>
+		</item>
+		<item>
+			<title>Binary Related Problems</title>
+			<link>https://blog.saosx.com/posts/binary-tree-problems</link>
+			<description>&lt;p&gt;ToDo: split the article later by topic.&lt;/p&gt;</description>
+			<guid>https://blog.saosx.com/posts/binary-tree-problems</guid>
+			<pubDate>Sat, 06 Oct 2018 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;ToDo: split the article later by topic.&lt;/p&gt;
+&lt;h2 id="related-problems-list"&gt;Related Problems List&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Construct binary Tree from inorder and postorder &lt;a href="https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal"&gt;leetcode problem link&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;cartesian tree problems in &lt;a href="https://codeforces.com/blog/entry/3767"&gt;codeforces blog&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Given an inorder traversal of a cartesian tree, construct the tree. following &lt;a href="https://www.meetup.com/Bay-Area-JavaScript-Interview-Prep-Meetup/events/254210621"&gt;js meetup&lt;/a&gt; works on this on 09-06, here's the &lt;a href="https://docs.google.com/document/d/1GzSrxwIakPdZYDLD-69MWhrbrfpMavdnqArTlzVYa4w"&gt;google doc&lt;/a&gt; with work on code from few members.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Woud this help?&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;int findInorderPosition(int[] inorder, int value, int start, int end) {
+    for (int i = start; i &amp;lt;= end; i++)
+    if (inorder[i] == value)
+        return i;
+    return -1;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;dynamic programming find max sum from array, &lt;a href="https://stackoverflow.com/q/29236837"&gt;SO hint&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="string-problems"&gt;string problems&lt;/h3&gt;
+&lt;p&gt;codeforces String Problems and Solutions
+&lt;a href="https://codeforces.com/blog/entry/49938"&gt;https://codeforces.com/blog/entry/49938&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://codeforces.com/problemset/problem/126/B"&gt;https://codeforces.com/problemset/problem/126/B&lt;/a&gt;
+&lt;a href="https://codeforces.com/problemset/problem/471/D"&gt;https://codeforces.com/problemset/problem/471/D&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;segment tree (probably a solution on Battle with you know who) &lt;a href="https://ideone.com/uihDVe"&gt;code link&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id="competitive-programming-with-lewin-gan"&gt;Competitive programming, with Lewin Gan&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Contest 02 on 08-19 &lt;a href="https://www.meetup.com/Competitive-Programming/events/253040202"&gt;event link&lt;/a&gt; and solutions discussion &lt;a href="https://paper.dropbox.com/doc/Contest-2-Solutions--AR7af%7En02Sq37GkMp1nEQyO7Ag-MoU0f0AH6cXOPZcJZzxOC"&gt;article link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="system-design-problems"&gt;System Design Problems&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="https://fipg.slack.com/files/U5ZM4RSS1/FD0412RB9/Design_Twitter__Part_2_"&gt;Design Twitter (Part 2)&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="misc"&gt;Misc&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://www3.cs.stonybrook.edu/%7Erezaul/Fall-2017/CSE548/CSE548-lecture-4.pdf"&gt;Rezaul convolution&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Problem set &amp;amp; Analysis from the Finals and Qualification rounds
+&lt;a href="http://bubblecup.org/Content/Media/Booklet2018.pdf"&gt;http://bubblecup.org/Content/Media/Booklet2018.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Why does a = b (mod n) iff a - b is divisible by n?
+&lt;a href="https://math.stackexchange.com/questions/1856128/why-does-a-b-mod-n-iff-a-b-is-divisible-by-n"&gt;https://math.stackexchange.com/questions/1856128/why-does-a-b-mod-n-iff-a-b-is-divisible-by-n&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;may be related to some problem from innoworld
+&lt;a href="https://codeforces.com/contest/455/problem/D"&gt;https://codeforces.com/contest/455/problem/D&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id="binary-indexed-tree"&gt;binary indexed tree&lt;/h4&gt;
+&lt;p&gt;codeforces editorials on&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://hk.saowen.com/a/06617b9cf1dd01762b591b6dedb0c5bfd4318d4f1bf12cf58cf4621889a884ed"&gt;https://hk.saowen.com/a/06617b9cf1dd01762b591b6dedb0c5bfd4318d4f1bf12cf58cf4621889a884ed&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://codeforces.com/comments/with/Z38"&gt;https://codeforces.com/comments/with/Z38&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://codeforces.com/blog/entry/60511"&gt;https://codeforces.com/blog/entry/60511&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://codeforces.com/problemset/gymProblem/100741/A"&gt;https://codeforces.com/problemset/gymProblem/100741/A&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://codeforces.com/contest/575/problem/H"&gt;https://codeforces.com/contest/575/problem/H&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+		</item>
+		<item>
+			<title>Azure CLI Windows Container Instance</title>
+			<link>https://blog.saosx.com/posts/azure-ci</link>
+			<description>&lt;p&gt;This article demos various features of Azure CLI.&lt;/p&gt;</description>
+			<guid>https://blog.saosx.com/posts/azure-ci</guid>
+			<pubDate>Wed, 15 Aug 2018 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;This article demos various features of Azure CLI.&lt;/p&gt;
+&lt;p&gt;First I set path,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Microsoft Windows [Version 10.0.17134.165]
+(c) 2018 Microsoft Corporation. All rights reserved.
+&amp;gt; set PATH=%PATH%;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\wbin
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then we check current tools versions,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; az --version
+azure-cli (2.0.43)
+
+acr (2.1.2)
+acs (2.2.2)
+advisor (0.6.0)
+ams (0.2.1)
+appservice (0.2.1)
+backup (1.2.0)
+batch (3.3.1)
+batchai (0.4.0)
+billing (0.2.0)
+cdn (0.1.0)
+cloud (2.1.0)
+cognitiveservices (0.2.0)
+command-modules-nspkg (2.0.2)
+configure (2.0.18)
+consumption (0.4.0)
+container (0.3.2)
+core (2.0.43)
+cosmosdb (0.2.0)
+dla (0.2.0)
+dls (0.1.0)
+dms (0.1.0)
+eventgrid (0.2.0)
+eventhubs (0.2.1)
+extension (0.2.1)
+feedback (2.1.4)
+find (0.2.12)
+interactive (0.3.27)
+iot (0.2.0)
+keyvault (2.2.1)
+lab (0.1.0)
+maps (0.3.1)
+monitor (0.2.1)
+network (2.2.2)
+nspkg (3.0.3)
+policyinsights (0.1.0)
+profile (2.1.1)
+rdbms (0.3.0)
+redis (0.3.0)
+reservations (0.3.1)
+resource (2.1.1)
+role (2.1.2)
+search (0.1.0)
+servicebus (0.2.1)
+servicefabric (0.1.0)
+sql (2.1.1)
+storage (2.1.1)
+vm (2.2.0)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Python location &lt;code&gt;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\python.exe&lt;/code&gt;
+Extensions directory &lt;code&gt;C:\Users\Atiq\.azure\cliextensions&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Python version,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Python (Windows) 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 16:07:46) [MSC v.1900 32 bit (Intel)]
+Legal docs and information: aka.ms/AzureCliLegal
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Let's login,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; az login
+Note, we have launched a browser for you to login. For old experience with device code, use &amp;quot;az login --use-device-code&amp;quot;
+You have logged in. Now let us find all the subscriptions to which you have access...
+[
+{
+    &amp;quot;cloudName&amp;quot;: &amp;quot;AzureCloud&amp;quot;,
+    &amp;quot;id&amp;quot;: &amp;quot;b2faf878-6232-4834-8e65-5e2baeab5939&amp;quot;,
+    &amp;quot;isDefault&amp;quot;: true,
+    &amp;quot;name&amp;quot;: &amp;quot;Free Trial&amp;quot;,
+    &amp;quot;state&amp;quot;: &amp;quot;Enabled&amp;quot;,
+    &amp;quot;tenantId&amp;quot;: &amp;quot;cbd5d855-bf04-4fa4-8da1-a3282cdb742b&amp;quot;,
+    &amp;quot;user&amp;quot;: {
+    &amp;quot;name&amp;quot;: &amp;quot;sodadrinkerthree&amp;#64;hotmail.com&amp;quot;,
+    &amp;quot;type&amp;quot;: &amp;quot;user&amp;quot;
+    }
+}
+]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;List accounts and VM,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; az account list
+[
+{
+    &amp;quot;cloudName&amp;quot;: &amp;quot;AzureCloud&amp;quot;,
+    &amp;quot;id&amp;quot;: &amp;quot;b2faf878-6232-4834-8e65-5e2baeab5939&amp;quot;,
+    &amp;quot;isDefault&amp;quot;: true,
+    &amp;quot;name&amp;quot;: &amp;quot;Free Trial&amp;quot;,
+    &amp;quot;state&amp;quot;: &amp;quot;Enabled&amp;quot;,
+    &amp;quot;tenantId&amp;quot;: &amp;quot;cbd5d855-bf04-4fa4-8da1-a3282cdb742b&amp;quot;,
+    &amp;quot;user&amp;quot;: {
+    &amp;quot;name&amp;quot;: &amp;quot;sodadrinkerthree&amp;#64;hotmail.com&amp;quot;,
+    &amp;quot;type&amp;quot;: &amp;quot;user&amp;quot;
+    }
+}
+]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Create a container,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; az group create --name docker --location westus
+{
+&amp;quot;id&amp;quot;: &amp;quot;/subscriptions/b2faf878-6232-4834-8e65-5e2baeab5939/resourceGroups/docker&amp;quot;,
+&amp;quot;location&amp;quot;: &amp;quot;westus&amp;quot;,
+&amp;quot;managedBy&amp;quot;: null,
+&amp;quot;name&amp;quot;: &amp;quot;docker&amp;quot;,
+&amp;quot;properties&amp;quot;: {
+    &amp;quot;provisioningState&amp;quot;: &amp;quot;Succeeded&amp;quot;
+},
+&amp;quot;tags&amp;quot;: null
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;create regular nanoserver instance,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; az container create --name winci --image microsoft/nanoserver --resource-group docker --ip-address public --os-type Windows --location westus
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;List resource groups,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; az container list --resource-group docker -o table
+Name    ResourceGroup    ProvisioningState    Image                 IP:ports           CPU/Memory       OsType    Location
+------  ---------------  -------------------  --------------------  -----------------  ---------------  --------  ----------
+winci   docker           Succeeded            microsoft/nanoserver  40.118.229.222:80  1.0 core/1.5 gb  Windows   westus
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;delete its resource group,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; az container delete --resource-group docker --name winci
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Create a CI from nanoserver IIS image, this one does recognize executing commands,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; az container create --name winci --image microsoft/iis:nanoserver --resource-group docker --ip-address public --os-type Windows --location westus --ports 80
+{
+&amp;quot;containers&amp;quot;: [
+    {
+    &amp;quot;command&amp;quot;: null,
+    &amp;quot;environmentVariables&amp;quot;: [],
+    &amp;quot;image&amp;quot;: &amp;quot;microsoft/iis:nanoserver&amp;quot;,
+    &amp;quot;instanceView&amp;quot;: {
+        &amp;quot;currentState&amp;quot;: {
+        &amp;quot;detailStatus&amp;quot;: &amp;quot;&amp;quot;,
+        &amp;quot;exitCode&amp;quot;: null,
+        &amp;quot;finishTime&amp;quot;: null,
+        &amp;quot;startTime&amp;quot;: &amp;quot;2018-08-09T05:17:14+00:00&amp;quot;,
+        &amp;quot;state&amp;quot;: &amp;quot;Running&amp;quot;
+        },
+        &amp;quot;events&amp;quot;: [
+        {
+            &amp;quot;count&amp;quot;: 2,
+            &amp;quot;firstTimestamp&amp;quot;: &amp;quot;2018-08-09T05:15:33+00:00&amp;quot;,
+            &amp;quot;lastTimestamp&amp;quot;: &amp;quot;2018-08-09T05:16:02+00:00&amp;quot;,
+            &amp;quot;message&amp;quot;: &amp;quot;pulling image \&amp;quot;microsoft/iis:nanoserver\&amp;quot;&amp;quot;,
+            &amp;quot;name&amp;quot;: &amp;quot;Pulling&amp;quot;,
+            &amp;quot;type&amp;quot;: &amp;quot;Normal&amp;quot;
+        },
+        {
+            &amp;quot;count&amp;quot;: 1,
+            &amp;quot;firstTimestamp&amp;quot;: &amp;quot;2018-08-09T05:17:05+00:00&amp;quot;,
+            &amp;quot;lastTimestamp&amp;quot;: &amp;quot;2018-08-09T05:17:05+00:00&amp;quot;,
+            &amp;quot;message&amp;quot;: &amp;quot;Successfully pulled image \&amp;quot;microsoft/iis:nanoserver\&amp;quot;&amp;quot;,
+            &amp;quot;name&amp;quot;: &amp;quot;Pulled&amp;quot;,
+            &amp;quot;type&amp;quot;: &amp;quot;Normal&amp;quot;
+        },
+        {
+            &amp;quot;count&amp;quot;: 1,
+            &amp;quot;firstTimestamp&amp;quot;: &amp;quot;2018-08-09T05:17:05+00:00&amp;quot;,
+            &amp;quot;lastTimestamp&amp;quot;: &amp;quot;2018-08-09T05:17:05+00:00&amp;quot;,
+            &amp;quot;message&amp;quot;: &amp;quot;Created container with docker id 7f89eb798bff&amp;quot;,
+            &amp;quot;name&amp;quot;: &amp;quot;Created&amp;quot;,
+            &amp;quot;type&amp;quot;: &amp;quot;Normal&amp;quot;
+        },
+        {
+            &amp;quot;count&amp;quot;: 1,
+            &amp;quot;firstTimestamp&amp;quot;: &amp;quot;2018-08-09T05:17:14+00:00&amp;quot;,
+            &amp;quot;lastTimestamp&amp;quot;: &amp;quot;2018-08-09T05:17:14+00:00&amp;quot;,
+            &amp;quot;message&amp;quot;: &amp;quot;Started container with docker id 7f89eb798bff&amp;quot;,
+            &amp;quot;name&amp;quot;: &amp;quot;Started&amp;quot;,
+            &amp;quot;type&amp;quot;: &amp;quot;Normal&amp;quot;
+        }
+        ],
+        &amp;quot;previousState&amp;quot;: null,
+        &amp;quot;restartCount&amp;quot;: 0
+    },
+    &amp;quot;livenessProbe&amp;quot;: null,
+    &amp;quot;name&amp;quot;: &amp;quot;winci&amp;quot;,
+    &amp;quot;ports&amp;quot;: [
+        {
+        &amp;quot;port&amp;quot;: 80,
+        &amp;quot;protocol&amp;quot;: &amp;quot;TCP&amp;quot;
+        }
+    ],
+    &amp;quot;readinessProbe&amp;quot;: null,
+    &amp;quot;resources&amp;quot;: {
+        &amp;quot;limits&amp;quot;: null,
+        &amp;quot;requests&amp;quot;: {
+        &amp;quot;cpu&amp;quot;: 1.0,
+        &amp;quot;memoryInGb&amp;quot;: 1.5
+        }
+    },
+    &amp;quot;volumeMounts&amp;quot;: null
+    }
+],
+&amp;quot;diagnostics&amp;quot;: null,
+&amp;quot;id&amp;quot;: &amp;quot;/subscriptions/b2faf878-6232-4834-8e65-5e2baeab5939/resourceGroups/docker/providers/Microsoft.ContainerInstance/containerGroups/winci&amp;quot;,
+&amp;quot;imageRegistryCredentials&amp;quot;: null,
+&amp;quot;instanceView&amp;quot;: {
+    &amp;quot;events&amp;quot;: [],
+    &amp;quot;state&amp;quot;: &amp;quot;Running&amp;quot;
+},
+&amp;quot;ipAddress&amp;quot;: {
+    &amp;quot;dnsNameLabel&amp;quot;: null,
+    &amp;quot;fqdn&amp;quot;: null,
+    &amp;quot;ip&amp;quot;: &amp;quot;40.78.17.202&amp;quot;,
+    &amp;quot;ports&amp;quot;: [
+    {
+        &amp;quot;port&amp;quot;: 80,
+        &amp;quot;protocol&amp;quot;: &amp;quot;TCP&amp;quot;
+    }
+    ]
+},
+&amp;quot;location&amp;quot;: &amp;quot;westus&amp;quot;,
+&amp;quot;name&amp;quot;: &amp;quot;winci&amp;quot;,
+&amp;quot;osType&amp;quot;: &amp;quot;Windows&amp;quot;,
+&amp;quot;provisioningState&amp;quot;: &amp;quot;Succeeded&amp;quot;,
+&amp;quot;resourceGroup&amp;quot;: &amp;quot;docker&amp;quot;,
+&amp;quot;restartPolicy&amp;quot;: &amp;quot;Always&amp;quot;,
+&amp;quot;tags&amp;quot;: {},
+&amp;quot;type&amp;quot;: &amp;quot;Microsoft.ContainerInstance/containerGroups&amp;quot;,
+&amp;quot;volumes&amp;quot;: null
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now, lets execute,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt;  az container exec --resource-group docker --name winci --exec-command &amp;quot;cmd.exe&amp;quot;
+... messed up output contains ASCII 0x1B ....
+.. Microsoft Windows [Version 10.0.14393] ....(c) 2016 Micro...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Environent,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;C:\&amp;gt;set
+ALLUSERSPROFILE=C:\ProgramData
+APPDATA=C:\Users\ContainerAdministrator\AppData\Roaming
+CAAS_3F2A3A4754DE4E56877D945C622B7D50_PORT=tcp://10.0.225.18:80
+CAAS_3F2A3A4754DE4E56877D945C622B7D50_PORT_80_TCP=tcp://10.0.225.18:80
+CAAS_3F2A3A4754DE4E56877D945C622B7D50_PORT_80_TCP_ADDR=10.0.225.18
+CAAS_3F2A3A4754DE4E56877D945C622B7D50_PORT_80_TCP_PORT=80
+CAAS_3F2A3A4754DE4E56877D945C622B7D50_PORT_80_TCP_PROTO=tcp
+CAAS_3F2A3A4754DE4E56877D945C622B7D50_SERVICE_HOST=10.0.225.18
+CAAS_3F2A3A4754DE4E56877D945C622B7D50_SERVICE_PORT=80
+CAAS_3F2A3A4754DE4E56877D945C622B7D50_SERVICE_PORT_80=80
+CommonProgramFiles=C:\Program Files\Common Files
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+CommonProgramW6432=C:\Program Files\Common Files
+COMPUTERNAME=7F89EB798BFF
+ComSpec=C:\Windows\system32\cmd.exe
+KUBERNETES_PORT=tcp://10.0.0.1:443
+KUBERNETES_PORT_443_TCP=tcp://10.0.0.1:443
+KUBERNETES_PORT_443_TCP_ADDR=10.0.0.1
+KUBERNETES_PORT_443_TCP_PORT=443
+KUBERNETES_PORT_443_TCP_PROTO=tcp
+KUBERNETES_SERVICE_HOST=10.0.0.1
+KUBERNETES_SERVICE_PORT=443
+KUBERNETES_SERVICE_PORT_HTTPS=443
+LOCALAPPDATA=C:\Users\ContainerAdministrator\AppData\Local
+NUMBER_OF_PROCESSORS=2
+OS=Windows_NT
+Path=C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Users\ContainerAdministrator\AppData\Local\Microsoft\WindowsApps
+PATHEXT=.COM;.EXE;.BAT;.CMD
+PROCESSOR_ARCHITECTURE=AMD64
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 63 Stepping 2, GenuineIntel
+PROCESSOR_LEVEL=6
+PROCESSOR_REVISION=3f02
+ProgramData=C:\ProgramData
+ProgramFiles=C:\Program Files
+ProgramFiles(x86)=C:\Program Files (x86)
+ProgramW6432=C:\Program Files
+PROMPT=$P$G
+PUBLIC=C:\Users\Public
+SystemDrive=C:
+SystemRoot=C:\Windows
+TEMP=C:\Users\ContainerAdministrator\AppData\Local\Temp
+TMP=C:\Users\ContainerAdministrator\AppData\Local\Temp
+USERDOMAIN=User Manager
+USERNAME=ContainerAdministrator
+USERPROFILE=C:\Users\ContainerAdministrator
+windir=C:\Windows
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;list acounts,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; az account show
+{
+&amp;quot;environmentName&amp;quot;: &amp;quot;AzureCloud&amp;quot;,
+&amp;quot;id&amp;quot;: &amp;quot;b2faf878-6232-4834-8e65-5e2baeab5939&amp;quot;,
+&amp;quot;isDefault&amp;quot;: true,
+&amp;quot;name&amp;quot;: &amp;quot;Free Trial&amp;quot;,
+&amp;quot;state&amp;quot;: &amp;quot;Enabled&amp;quot;,
+&amp;quot;tenantId&amp;quot;: &amp;quot;cbd5d855-bf04-4fa4-8da1-a3282cdb742b&amp;quot;,
+&amp;quot;user&amp;quot;: {
+    &amp;quot;name&amp;quot;: &amp;quot;sodadrinkerthree&amp;#64;hotmail.com&amp;quot;,
+    &amp;quot;type&amp;quot;: &amp;quot;user&amp;quot;
+}
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;List containers in 2 ways,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; az container list --out table
+Name    ResourceGroup    ProvisioningState    Image                     IP:ports         CPU/Memory       OsType    Location
+------  ---------------  -------------------  ------------------------  ---------------  ---------------  --------  ----------
+winci   docker           Succeeded            microsoft/iis:nanoserver  40.78.17.202:80  1.0 core/1.5 gb  Windows   westus
+
+az&amp;gt; container list
+[
+{
+    &amp;quot;containers&amp;quot;: [
+    {
+        &amp;quot;command&amp;quot;: null,
+        &amp;quot;environmentVariables&amp;quot;: [],
+        &amp;quot;image&amp;quot;: &amp;quot;microsoft/iis:nanoserver&amp;quot;,
+        &amp;quot;instanceView&amp;quot;: null,
+        &amp;quot;livenessProbe&amp;quot;: null,
+        &amp;quot;name&amp;quot;: &amp;quot;winci&amp;quot;,
+        &amp;quot;ports&amp;quot;: [
+        {
+            &amp;quot;port&amp;quot;: 80,
+            &amp;quot;protocol&amp;quot;: &amp;quot;TCP&amp;quot;
+        }
+        ],
+        &amp;quot;readinessProbe&amp;quot;: null,
+        &amp;quot;resources&amp;quot;: {
+        &amp;quot;limits&amp;quot;: null,
+        &amp;quot;requests&amp;quot;: {
+            &amp;quot;cpu&amp;quot;: 1.0,
+            &amp;quot;memoryInGb&amp;quot;: 1.5
+        }
+        },
+        &amp;quot;volumeMounts&amp;quot;: null
+    }
+    ],
+    &amp;quot;diagnostics&amp;quot;: null,
+    &amp;quot;id&amp;quot;: &amp;quot;/subscriptions/b2faf878-6232-4834-8e65-5e2baeab5939/resourceGroups/docker/providers/Microsoft.ContainerInstance/containerGroups/winci&amp;quot;,
+    &amp;quot;imageRegistryCredentials&amp;quot;: null,
+    &amp;quot;instanceView&amp;quot;: null,
+    &amp;quot;ipAddress&amp;quot;: {
+    &amp;quot;dnsNameLabel&amp;quot;: null,
+    &amp;quot;fqdn&amp;quot;: null,
+    &amp;quot;ip&amp;quot;: &amp;quot;40.78.17.202&amp;quot;,
+    &amp;quot;ports&amp;quot;: [
+        {
+        &amp;quot;port&amp;quot;: 80,
+        &amp;quot;protocol&amp;quot;: &amp;quot;TCP&amp;quot;
+        }
+    ]
+    },
+    &amp;quot;location&amp;quot;: &amp;quot;westus&amp;quot;,
+    &amp;quot;name&amp;quot;: &amp;quot;winci&amp;quot;,
+    &amp;quot;osType&amp;quot;: &amp;quot;Windows&amp;quot;,
+    &amp;quot;provisioningState&amp;quot;: &amp;quot;Succeeded&amp;quot;,
+    &amp;quot;resourceGroup&amp;quot;: &amp;quot;docker&amp;quot;,
+    &amp;quot;restartPolicy&amp;quot;: &amp;quot;Always&amp;quot;,
+    &amp;quot;tags&amp;quot;: {},
+    &amp;quot;type&amp;quot;: &amp;quot;Microsoft.ContainerInstance/containerGroups&amp;quot;,
+    &amp;quot;volumes&amp;quot;: null
+}
+]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;List web apps,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;az&amp;gt;&amp;gt; webapp list
+[
+{
+    &amp;quot;appServicePlanId&amp;quot;: &amp;quot;/subscriptions/b2faf878-6232-4834-8e65-5e2baeab5939/resourceGroups/blog/providers/Microsoft.Web/serverfarms/WestUS-D1-Shared&amp;quot;,
+    &amp;quot;availabilityState&amp;quot;: &amp;quot;Normal&amp;quot;,
+    &amp;quot;clientAffinityEnabled&amp;quot;: true,
+    &amp;quot;clientCertEnabled&amp;quot;: false,
+    &amp;quot;cloningInfo&amp;quot;: null,
+    &amp;quot;containerSize&amp;quot;: 0,
+    &amp;quot;dailyMemoryTimeQuota&amp;quot;: 0,
+    &amp;quot;defaultHostName&amp;quot;: &amp;quot;orchardcore.azurewebsites.net&amp;quot;,
+    &amp;quot;enabled&amp;quot;: true,
+    &amp;quot;enabledHostNames&amp;quot;: [
+    &amp;quot;orchardcore.azurewebsites.net&amp;quot;,
+    &amp;quot;orchardcore.scm.azurewebsites.net&amp;quot;
+    ],
+    &amp;quot;hostNameSslStates&amp;quot;: [
+    {
+        &amp;quot;hostType&amp;quot;: &amp;quot;Standard&amp;quot;,
+        &amp;quot;ipBasedSslResult&amp;quot;: null,
+        &amp;quot;ipBasedSslState&amp;quot;: &amp;quot;NotConfigured&amp;quot;,
+        &amp;quot;name&amp;quot;: &amp;quot;orchardcore.azurewebsites.net&amp;quot;,
+        &amp;quot;sslState&amp;quot;: &amp;quot;Disabled&amp;quot;,
+        &amp;quot;thumbprint&amp;quot;: null,
+        &amp;quot;toUpdate&amp;quot;: null,
+        &amp;quot;toUpdateIpBasedSsl&amp;quot;: null,
+        &amp;quot;virtualIp&amp;quot;: null
+    },
+    {
+        &amp;quot;hostType&amp;quot;: &amp;quot;Repository&amp;quot;,
+        &amp;quot;ipBasedSslResult&amp;quot;: null,
+        &amp;quot;ipBasedSslState&amp;quot;: &amp;quot;NotConfigured&amp;quot;,
+        &amp;quot;name&amp;quot;: &amp;quot;orchardcore.scm.azurewebsites.net&amp;quot;,
+        &amp;quot;sslState&amp;quot;: &amp;quot;Disabled&amp;quot;,
+        &amp;quot;thumbprint&amp;quot;: null,
+        &amp;quot;toUpdate&amp;quot;: null,
+        &amp;quot;toUpdateIpBasedSsl&amp;quot;: null,
+        &amp;quot;virtualIp&amp;quot;: null
+    }
+    ],
+    &amp;quot;hostNames&amp;quot;: [
+    &amp;quot;orchardcore.azurewebsites.net&amp;quot;
+    ],
+    &amp;quot;hostNamesDisabled&amp;quot;: false,
+    &amp;quot;hostingEnvironmentProfile&amp;quot;: null,
+    &amp;quot;httpsOnly&amp;quot;: false,
+    &amp;quot;id&amp;quot;: &amp;quot;/subscriptions/b2faf878-6232-4834-8e65-5e2baeab5939/resourceGroups/blog/providers/Microsoft.Web/sites/orchardcore&amp;quot;,
+    &amp;quot;identity&amp;quot;: null,
+    &amp;quot;isDefaultContainer&amp;quot;: null,
+    &amp;quot;kind&amp;quot;: &amp;quot;app&amp;quot;,
+    &amp;quot;lastModifiedTimeUtc&amp;quot;: &amp;quot;2018-07-27T20:07:09.590000&amp;quot;,
+    &amp;quot;location&amp;quot;: &amp;quot;West US&amp;quot;,
+    &amp;quot;maxNumberOfWorkers&amp;quot;: null,
+    &amp;quot;name&amp;quot;: &amp;quot;orchardcore&amp;quot;,
+    &amp;quot;outboundIpAddresses&amp;quot;: &amp;quot;104.42.152.64,40.118.228.30,40.118.235.170,40.118.239.187,40.118.232.194&amp;quot;,
+    &amp;quot;possibleOutboundIpAddresses&amp;quot;: &amp;quot;104.42.152.64,40.118.228.30,40.118.235.170,40.118.239.187,40.118.232.194,40.118.232.202,40.118.239.1,40.112.131.175&amp;quot;,
+    &amp;quot;repositorySiteName&amp;quot;: &amp;quot;orchardcore&amp;quot;,
+    &amp;quot;reserved&amp;quot;: false,
+    &amp;quot;resourceGroup&amp;quot;: &amp;quot;blog&amp;quot;,
+    &amp;quot;scmSiteAlsoStopped&amp;quot;: false,
+    &amp;quot;siteConfig&amp;quot;: null,
+    &amp;quot;slotSwapStatus&amp;quot;: null,
+    &amp;quot;snapshotInfo&amp;quot;: null,
+    &amp;quot;state&amp;quot;: &amp;quot;Running&amp;quot;,
+    &amp;quot;suspendedTill&amp;quot;: null,
+    &amp;quot;tags&amp;quot;: {
+    &amp;quot;hidden-related:/subscriptions/b2faf878-6232-4834-8e65-5e2baeab5939/resourcegroups/blog/providers/Microsoft.Web/serverfarms/WestUS-D1-Shared&amp;quot;: &amp;quot;empty&amp;quot;
+    },
+    &amp;quot;targetSwapSlot&amp;quot;: null,
+    &amp;quot;trafficManagerHostNames&amp;quot;: null,
+    &amp;quot;type&amp;quot;: &amp;quot;Microsoft.Web/sites&amp;quot;,
+    &amp;quot;usageState&amp;quot;: &amp;quot;Normal&amp;quot;
+}
+]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;list accounts,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;az&amp;gt;&amp;gt; az account list
+[
+{
+    &amp;quot;cloudName&amp;quot;: &amp;quot;AzureCloud&amp;quot;,
+    &amp;quot;id&amp;quot;: &amp;quot;b2faf878-6232-4834-8e65-5e2baeab5939&amp;quot;,
+    &amp;quot;isDefault&amp;quot;: true,
+    &amp;quot;name&amp;quot;: &amp;quot;Free Trial&amp;quot;,
+    &amp;quot;state&amp;quot;: &amp;quot;Enabled&amp;quot;,
+    &amp;quot;tenantId&amp;quot;: &amp;quot;cbd5d855-bf04-4fa4-8da1-a3282cdb742b&amp;quot;,
+    &amp;quot;user&amp;quot;: {
+    &amp;quot;name&amp;quot;: &amp;quot;sodadrinkerthree&amp;#64;hotmail.com&amp;quot;,
+    &amp;quot;type&amp;quot;: &amp;quot;user&amp;quot;
+    }
+}
+]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;List locations,&lt;/p&gt;
+&lt;p&gt;az&amp;gt;&amp;gt; az appservice list-locations --sku F1
+[
+{
+&amp;quot;name&amp;quot;: &amp;quot;Central US&amp;quot;
+},
+{
+&amp;quot;name&amp;quot;: &amp;quot;North Europe&amp;quot;
+},
+{
+&amp;quot;name&amp;quot;: &amp;quot;West Europe&amp;quot;
+},
+{
+&amp;quot;name&amp;quot;: &amp;quot;Southeast Asia&amp;quot;
+},
+{
+&amp;quot;name&amp;quot;: &amp;quot;East Asia&amp;quot;
+},
+{
+&amp;quot;name&amp;quot;: &amp;quot;West US&amp;quot;
+},
+{
+&amp;quot;name&amp;quot;: &amp;quot;East US&amp;quot;
+},
+{
+&amp;quot;name&amp;quot;: &amp;quot;Japan West&amp;quot;
+},
+{
+&amp;quot;name&amp;quot;: &amp;quot;Japan East&amp;quot;
+},
+{
+&amp;quot;name&amp;quot;: &amp;quot;East US 2&amp;quot;
+},
+{
+&amp;quot;name&amp;quot;: &amp;quot;North Central US&amp;quot;
+},
+{
+&amp;quot;name&amp;quot;: &amp;quot;South Central US&amp;quot;
+},
+{
+&amp;quot;name&amp;quot;: &amp;quot;Brazil South&amp;quot;
+},
+{
+&amp;quot;name&amp;quot;: &amp;quot;Australia East&amp;quot;
+},
+{
+&amp;quot;name&amp;quot;: &amp;quot;Australia Southeast&amp;quot;
+},
+{
+&amp;quot;name&amp;quot;: &amp;quot;Central India&amp;quot;
+},
+{
+&amp;quot;name&amp;quot;: &amp;quot;West India&amp;quot;
+},
+{
+&amp;quot;name&amp;quot;: &amp;quot;South India&amp;quot;
+},
+{
+&amp;quot;name&amp;quot;: &amp;quot;Canada Central&amp;quot;
+},
+{
+&amp;quot;name&amp;quot;: &amp;quot;Canada East&amp;quot;
+},
+{
+&amp;quot;name&amp;quot;: &amp;quot;West Central US&amp;quot;
+},
+{
+&amp;quot;name&amp;quot;: &amp;quot;West US 2&amp;quot;
+},
+{
+&amp;quot;name&amp;quot;: &amp;quot;UK West&amp;quot;
+},
+{
+&amp;quot;name&amp;quot;: &amp;quot;UK South&amp;quot;
+},
+{
+&amp;quot;name&amp;quot;: &amp;quot;Korea South&amp;quot;
+},
+{
+&amp;quot;name&amp;quot;: &amp;quot;Korea Central&amp;quot;
+},
+{
+&amp;quot;name&amp;quot;: &amp;quot;France South&amp;quot;
+},
+{
+&amp;quot;name&amp;quot;: &amp;quot;France Central&amp;quot;
+}
+]&lt;/p&gt;
+&lt;p&gt;List available groups,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;az&amp;gt;&amp;gt; az group list
+[
+{
+    &amp;quot;id&amp;quot;: &amp;quot;/subscriptions/b2faf878-6232-4834-8e65-5e2baeab5939/resourceGroups/asynctest&amp;quot;,
+    &amp;quot;location&amp;quot;: &amp;quot;westus&amp;quot;,
+    &amp;quot;managedBy&amp;quot;: null,
+    &amp;quot;name&amp;quot;: &amp;quot;asynctest&amp;quot;,
+    &amp;quot;properties&amp;quot;: {
+    &amp;quot;provisioningState&amp;quot;: &amp;quot;Succeeded&amp;quot;
+    },
+    &amp;quot;tags&amp;quot;: null
+},
+{
+    &amp;quot;id&amp;quot;: &amp;quot;/subscriptions/b2faf878-6232-4834-8e65-5e2baeab5939/resourceGroups/blog&amp;quot;,
+    &amp;quot;location&amp;quot;: &amp;quot;centralus&amp;quot;,
+    &amp;quot;managedBy&amp;quot;: null,
+    &amp;quot;name&amp;quot;: &amp;quot;blog&amp;quot;,
+    &amp;quot;properties&amp;quot;: {
+    &amp;quot;provisioningState&amp;quot;: &amp;quot;Succeeded&amp;quot;
+    },
+    &amp;quot;tags&amp;quot;: null
+},
+{
+    &amp;quot;id&amp;quot;: &amp;quot;/subscriptions/b2faf878-6232-4834-8e65-5e2baeab5939/resourceGroups/docker&amp;quot;,
+    &amp;quot;location&amp;quot;: &amp;quot;westus&amp;quot;,
+    &amp;quot;managedBy&amp;quot;: null,
+    &amp;quot;name&amp;quot;: &amp;quot;docker&amp;quot;,
+    &amp;quot;properties&amp;quot;: {
+    &amp;quot;provisioningState&amp;quot;: &amp;quot;Succeeded&amp;quot;
+    },
+    &amp;quot;tags&amp;quot;: null
+},
+{
+    &amp;quot;id&amp;quot;: &amp;quot;/subscriptions/b2faf878-6232-4834-8e65-5e2baeab5939/resourceGroups/ML&amp;quot;,
+    &amp;quot;location&amp;quot;: &amp;quot;westus2&amp;quot;,
+    &amp;quot;managedBy&amp;quot;: null,
+    &amp;quot;name&amp;quot;: &amp;quot;ML&amp;quot;,
+    &amp;quot;properties&amp;quot;: {
+    &amp;quot;provisioningState&amp;quot;: &amp;quot;Succeeded&amp;quot;
+    },
+    &amp;quot;tags&amp;quot;: null
+},
+{
+    &amp;quot;id&amp;quot;: &amp;quot;/subscriptions/b2faf878-6232-4834-8e65-5e2baeab5939/resourceGroups/Speech&amp;quot;,
+    &amp;quot;location&amp;quot;: &amp;quot;westus&amp;quot;,
+    &amp;quot;managedBy&amp;quot;: null,
+    &amp;quot;name&amp;quot;: &amp;quot;Speech&amp;quot;,
+    &amp;quot;properties&amp;quot;: {
+    &amp;quot;provisioningState&amp;quot;: &amp;quot;Succeeded&amp;quot;
+    },
+    &amp;quot;tags&amp;quot;: null
+}
+]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;list end points,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;az&amp;gt;&amp;gt; az cloud list
+[
+{
+    &amp;quot;endpoints&amp;quot;: {
+    &amp;quot;activeDirectory&amp;quot;: &amp;quot;https://login.microsoftonline.com&amp;quot;,
+    &amp;quot;activeDirectoryDataLakeResourceId&amp;quot;: &amp;quot;https://datalake.azure.net/&amp;quot;,
+    &amp;quot;activeDirectoryGraphResourceId&amp;quot;: &amp;quot;https://graph.windows.net/&amp;quot;,
+    &amp;quot;activeDirectoryResourceId&amp;quot;: &amp;quot;https://management.core.windows.net/&amp;quot;,
+    &amp;quot;batchResourceId&amp;quot;: &amp;quot;https://batch.core.windows.net/&amp;quot;,
+    &amp;quot;gallery&amp;quot;: &amp;quot;https://gallery.azure.com/&amp;quot;,
+    &amp;quot;management&amp;quot;: &amp;quot;https://management.core.windows.net/&amp;quot;,
+    &amp;quot;resourceManager&amp;quot;: &amp;quot;https://management.azure.com/&amp;quot;,
+    &amp;quot;sqlManagement&amp;quot;: &amp;quot;https://management.core.windows.net:8443/&amp;quot;,
+    &amp;quot;vmImageAliasDoc&amp;quot;: &amp;quot;https://raw.githubusercontent.com/Azure/azure-rest-api-specs/master/arm-compute/quickstart-templates/aliases.json&amp;quot;
+    },
+    &amp;quot;isActive&amp;quot;: true,
+    &amp;quot;name&amp;quot;: &amp;quot;AzureCloud&amp;quot;,
+    &amp;quot;profile&amp;quot;: &amp;quot;latest&amp;quot;,
+    &amp;quot;suffixes&amp;quot;: {
+    &amp;quot;acrLoginServerEndpoint&amp;quot;: &amp;quot;.azurecr.io&amp;quot;,
+    &amp;quot;azureDatalakeAnalyticsCatalogAndJobEndpoint&amp;quot;: &amp;quot;azuredatalakeanalytics.net&amp;quot;,
+    &amp;quot;azureDatalakeStoreFileSystemEndpoint&amp;quot;: &amp;quot;azuredatalakestore.net&amp;quot;,
+    &amp;quot;keyvaultDns&amp;quot;: &amp;quot;.vault.azure.net&amp;quot;,
+    &amp;quot;sqlServerHostname&amp;quot;: &amp;quot;.database.windows.net&amp;quot;,
+    &amp;quot;storageEndpoint&amp;quot;: &amp;quot;core.windows.net&amp;quot;
+    }
+},
+{
+    &amp;quot;endpoints&amp;quot;: {
+    &amp;quot;activeDirectory&amp;quot;: &amp;quot;https://login.chinacloudapi.cn&amp;quot;,
+    &amp;quot;activeDirectoryDataLakeResourceId&amp;quot;: null,
+    &amp;quot;activeDirectoryGraphResourceId&amp;quot;: &amp;quot;https://graph.chinacloudapi.cn/&amp;quot;,
+    &amp;quot;activeDirectoryResourceId&amp;quot;: &amp;quot;https://management.core.chinacloudapi.cn/&amp;quot;,
+    &amp;quot;batchResourceId&amp;quot;: &amp;quot;https://batch.chinacloudapi.cn/&amp;quot;,
+    &amp;quot;gallery&amp;quot;: &amp;quot;https://gallery.chinacloudapi.cn/&amp;quot;,
+    &amp;quot;management&amp;quot;: &amp;quot;https://management.core.chinacloudapi.cn/&amp;quot;,
+    &amp;quot;resourceManager&amp;quot;: &amp;quot;https://management.chinacloudapi.cn&amp;quot;,
+    &amp;quot;sqlManagement&amp;quot;: &amp;quot;https://management.core.chinacloudapi.cn:8443/&amp;quot;,
+    &amp;quot;vmImageAliasDoc&amp;quot;: &amp;quot;https://raw.githubusercontent.com/Azure/azure-rest-api-specs/master/arm-compute/quickstart-templates/aliases.json&amp;quot;
+    },
+    &amp;quot;isActive&amp;quot;: false,
+    &amp;quot;name&amp;quot;: &amp;quot;AzureChinaCloud&amp;quot;,
+    &amp;quot;profile&amp;quot;: &amp;quot;latest&amp;quot;,
+    &amp;quot;suffixes&amp;quot;: {
+    &amp;quot;acrLoginServerEndpoint&amp;quot;: &amp;quot;.azurecr.cn&amp;quot;,
+    &amp;quot;azureDatalakeAnalyticsCatalogAndJobEndpoint&amp;quot;: null,
+    &amp;quot;azureDatalakeStoreFileSystemEndpoint&amp;quot;: null,
+    &amp;quot;keyvaultDns&amp;quot;: &amp;quot;.vault.azure.cn&amp;quot;,
+    &amp;quot;sqlServerHostname&amp;quot;: &amp;quot;.database.chinacloudapi.cn&amp;quot;,
+    &amp;quot;storageEndpoint&amp;quot;: &amp;quot;core.chinacloudapi.cn&amp;quot;
+    }
+},
+{
+    &amp;quot;endpoints&amp;quot;: {
+    &amp;quot;activeDirectory&amp;quot;: &amp;quot;https://login.microsoftonline.us&amp;quot;,
+    &amp;quot;activeDirectoryDataLakeResourceId&amp;quot;: null,
+    &amp;quot;activeDirectoryGraphResourceId&amp;quot;: &amp;quot;https://graph.windows.net/&amp;quot;,
+    &amp;quot;activeDirectoryResourceId&amp;quot;: &amp;quot;https://management.core.usgovcloudapi.net/&amp;quot;,
+    &amp;quot;batchResourceId&amp;quot;: &amp;quot;https://batch.core.usgovcloudapi.net/&amp;quot;,
+    &amp;quot;gallery&amp;quot;: &amp;quot;https://gallery.usgovcloudapi.net/&amp;quot;,
+    &amp;quot;management&amp;quot;: &amp;quot;https://management.core.usgovcloudapi.net/&amp;quot;,
+    &amp;quot;resourceManager&amp;quot;: &amp;quot;https://management.usgovcloudapi.net/&amp;quot;,
+    &amp;quot;sqlManagement&amp;quot;: &amp;quot;https://management.core.usgovcloudapi.net:8443/&amp;quot;,
+    &amp;quot;vmImageAliasDoc&amp;quot;: &amp;quot;https://raw.githubusercontent.com/Azure/azure-rest-api-specs/master/arm-compute/quickstart-templates/aliases.json&amp;quot;
+    },
+    &amp;quot;isActive&amp;quot;: false,
+    &amp;quot;name&amp;quot;: &amp;quot;AzureUSGovernment&amp;quot;,
+    &amp;quot;profile&amp;quot;: &amp;quot;latest&amp;quot;,
+    &amp;quot;suffixes&amp;quot;: {
+    &amp;quot;acrLoginServerEndpoint&amp;quot;: &amp;quot;.azurecr.us&amp;quot;,
+    &amp;quot;azureDatalakeAnalyticsCatalogAndJobEndpoint&amp;quot;: null,
+    &amp;quot;azureDatalakeStoreFileSystemEndpoint&amp;quot;: null,
+    &amp;quot;keyvaultDns&amp;quot;: &amp;quot;.vault.usgovcloudapi.net&amp;quot;,
+    &amp;quot;sqlServerHostname&amp;quot;: &amp;quot;.database.usgovcloudapi.net&amp;quot;,
+    &amp;quot;storageEndpoint&amp;quot;: &amp;quot;core.usgovcloudapi.net&amp;quot;
+    }
+},
+{
+    &amp;quot;endpoints&amp;quot;: {
+    &amp;quot;activeDirectory&amp;quot;: &amp;quot;https://login.microsoftonline.de&amp;quot;,
+    &amp;quot;activeDirectoryDataLakeResourceId&amp;quot;: null,
+    &amp;quot;activeDirectoryGraphResourceId&amp;quot;: &amp;quot;https://graph.cloudapi.de/&amp;quot;,
+    &amp;quot;activeDirectoryResourceId&amp;quot;: &amp;quot;https://management.core.cloudapi.de/&amp;quot;,
+    &amp;quot;batchResourceId&amp;quot;: &amp;quot;https://batch.cloudapi.de/&amp;quot;,
+    &amp;quot;gallery&amp;quot;: &amp;quot;https://gallery.cloudapi.de/&amp;quot;,
+    &amp;quot;management&amp;quot;: &amp;quot;https://management.core.cloudapi.de/&amp;quot;,
+    &amp;quot;resourceManager&amp;quot;: &amp;quot;https://management.microsoftazure.de&amp;quot;,
+    &amp;quot;sqlManagement&amp;quot;: &amp;quot;https://management.core.cloudapi.de:8443/&amp;quot;,
+    &amp;quot;vmImageAliasDoc&amp;quot;: &amp;quot;https://raw.githubusercontent.com/Azure/azure-rest-api-specs/master/arm-compute/quickstart-templates/aliases.json&amp;quot;
+    },
+    &amp;quot;isActive&amp;quot;: false,
+    &amp;quot;name&amp;quot;: &amp;quot;AzureGermanCloud&amp;quot;,
+    &amp;quot;profile&amp;quot;: &amp;quot;latest&amp;quot;,
+    &amp;quot;suffixes&amp;quot;: {
+    &amp;quot;acrLoginServerEndpoint&amp;quot;: null,
+    &amp;quot;azureDatalakeAnalyticsCatalogAndJobEndpoint&amp;quot;: null,
+    &amp;quot;azureDatalakeStoreFileSystemEndpoint&amp;quot;: null,
+    &amp;quot;keyvaultDns&amp;quot;: &amp;quot;.vault.microsoftazure.de&amp;quot;,
+    &amp;quot;sqlServerHostname&amp;quot;: &amp;quot;.database.cloudapi.de&amp;quot;,
+    &amp;quot;storageEndpoint&amp;quot;: &amp;quot;core.cloudapi.de&amp;quot;
+    }
+}
+]
+&lt;/code&gt;&lt;/pre&gt;
+</content:encoded>
+		</item>
+		<item>
+			<title>Quick Sort</title>
+			<link>https://blog.saosx.com/posts/heap</link>
+			<description>&lt;p&gt;Heap is a binary tree representation.&lt;/p&gt;</description>
+			<guid>https://blog.saosx.com/posts/heap</guid>
+			<pubDate>Wed, 18 Jul 2018 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;h3 id="what-is-heap"&gt;What is Heap?&lt;/h3&gt;
+&lt;p&gt;Heap is a binary tree representation.&lt;/p&gt;
+&lt;p&gt;Intro to Algo by C.L.R.S (page 159) can be applied part that I had trouble is the derivation.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;n element heap has height of &lt;code&gt;lg n&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;at most &lt;code&gt;n / (2^(h+1))&lt;/code&gt; nodes of any height h&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(i draw some examples which worked)&lt;/p&gt;
+&lt;p&gt;changed the limit to get better approx for &lt;code&gt;O()&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Leaf nodes are (in 0 based index),&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;n/2, n/2+1, n/2+2, n/2+3 ... ... ... n
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Question: Why does the book (CLRS) use 1 based index where programming languages are based on 0?
+A common standard among books for pseudocode.&lt;/p&gt;
+&lt;h3 id="delete-element-operation"&gt;delete element operation&lt;/h3&gt;
+&lt;p&gt;The idea is similar to &lt;code&gt;Extract-Min&lt;/code&gt;. We replace &lt;code&gt;i&lt;/code&gt; with &lt;code&gt;A[size-1]&lt;/code&gt; then, we heapify. Applied that this idea on to solve hackkerrank qHeap.&lt;/p&gt;
+&lt;p&gt;Deriving the tighter bound I mean in some pages in book.&lt;/p&gt;
+&lt;p&gt;A problem that uses counting sort but probably hard (Codeforces Round #182 (Div. 1)),
+&lt;a href="http://codeforces.com/contest/301/problem/D"&gt;http://codeforces.com/contest/301/problem/D&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Quoting &lt;a href="https://arxiv.org/ftp/cs/papers/0007/0007043.pdf"&gt;https://arxiv.org/ftp/cs/papers/0007/0007043.pdf&lt;/a&gt;,&lt;/p&gt;
+&lt;h3 id="min-max-fine-heaps"&gt;Min-Max Fine Heaps&lt;/h3&gt;
+&lt;p&gt;heap, introduced by Carlsson[2], using bit in each node to indicate its larger child, to improve the
+performance of Min-Max Heap. We call it Min-Max Fine Heap. Also a technique similar to the one used
+by Gonnet and Munro[5] for traditional heaps will be employed for better performance. In the next sections
+we shall present the structure of the heap, algorithm for carrying out the standard operations on deq&lt;/p&gt;
+&lt;p&gt;Hash table runtime complexity (insert, search and delete)
+&lt;a href="https://stackoverflow.com/questions/9214353/hash-table-runtime-complexity-insert-search-and-delete"&gt;https://stackoverflow.com/questions/9214353/hash-table-runtime-complexity-insert-search-and-delete&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Show that second smallest of n elements can be found with &lt;code&gt;n + logn -2&lt;/code&gt; in worst case..&lt;/p&gt;
+&lt;p&gt;Heap during finding the minimum???
+&lt;a href="https://www.careercup.com/question?id=354885"&gt;https://www.careercup.com/question?id=354885&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;** on my heap sort or heap implementation verification **
+&lt;a href="https://www.hackerrank.com/contests/hw1/challenges/heap-sort"&gt;https://www.hackerrank.com/contests/hw1/challenges/heap-sort&lt;/a&gt;
+&lt;a href="https://www.hackerrank.com/challenges/qheap1/problem"&gt;https://www.hackerrank.com/challenges/qheap1/problem&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;checking if anybody got accepted with dijkstra short reach
+github.com hackerrank &lt;a href="https://github.com/kamomil/Hackerrank/blob/master/dijkstrashortreach.cpp"&gt;dijkstrashortreach cpp implementation&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="references"&gt;References&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Page# 159 the book, &lt;a href="https://dl.acm.org/citation.cfm?id=1614191"&gt;Introduction to Algorithm - C.L.R.S&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Stony Brook Univ. Lecture - &lt;a href="http://www3.cs.stonybrook.edu/%7Erezaul/Spring-2015/CSE548/CSE548-lectures-19-20.pdf"&gt;Dijkstra’s SSSP &amp;amp; Fibonacci Heaps&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content:encoded>
+		</item>
+		<item>
+			<title>dotnet core Hello World with Entity Framework and Database</title>
+			<link>https://blog.saosx.com/posts/net-core-hello-entity-framework-database-sql</link>
+			<description>&lt;p&gt;With .net core things are pretty simple. We run two commands and it does everything we need for a hello world program,&lt;/p&gt;</description>
+			<guid>https://blog.saosx.com/posts/net-core-hello-entity-framework-database-sql</guid>
+			<pubDate>Sun, 01 Jul 2018 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;h2 id="creating-a-hello-world-console-application"&gt;Creating a hello world console application&lt;/h2&gt;
+&lt;p&gt;With .net core things are pretty simple. We run two commands and it does everything we need for a hello world program,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ dotnet new console -n P1_Console
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It creates the directory and puts required hello world source file and project file inside the dir named 'P1_Console'. What type of applications does it support can be found at &lt;a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-new"&gt;microsoft docs - dotnet-new&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ dotnet run
+Hello World!
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;detailed reference at &lt;a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-run"&gt;microsoft docs - dotnet-run&lt;/a&gt;. It is minimalist and does what is supposed to do.&lt;/p&gt;
+&lt;p&gt;This builds the application and runs it. If you only want to build and don't wanna run.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ dotnet build
+Microsoft (R) Build Engine version 15.7.179.6572 for .NET Core
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Restore completed in 33.49 ms for D:\Code\netcore\P01_Console\P01_Console.csproj.
+  P01_Console -&amp;gt; D:\Code\netcore\P01_Console\bin\Debug\netcoreapp2.1\P01_Console.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.80
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Build ref is at &lt;a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-build"&gt;microsoft - dotnet-build&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Default source code of &lt;code&gt;Program.cs&lt;/code&gt; looks like,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;using System;
+
+namespace P01_Console
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine(&amp;quot;Hello World!&amp;quot;);
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I change it slightly to create a generic list of cities and to sort them which is as below,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;using System;
+using System.Collections.Generic;
+
+namespace P01_Console {
+  class Program {
+    static void Main(string[] args) {
+      var cityList = new List { &amp;quot;San Jose&amp;quot;, &amp;quot;Santa Clara&amp;quot;, &amp;quot;Redwood&amp;quot; };
+      cityList.Sort();
+      foreach (var city in cityList)
+        Console.WriteLine(city);
+    }
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And then I build/run it,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ dotnet run
+Redwood
+San Jose
+Santa Clara
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;dotnet run&lt;/code&gt; kinda quietly gets it done; it does not talk about changes it found, recompiling info etc. Command looks pretty simple. How about providing some arguments for the program? &lt;a href="https://docs.microsoft.com/en-us/dotnet/core/tutorials/using-with-xplat-cli"&gt;ms docs - Getting started with .NET Core on Windows/Linux/macOS using the command line&lt;/a&gt; demonstrates it.&lt;/p&gt;
+&lt;h2 id="creating-hello-world-mvc-application-with-entity-framework-and-sql-database-support"&gt;Creating hello world MVC application with Entity Framework and SQL Database Support&lt;/h2&gt;
+&lt;h3 id="creating-hello-world-mvc"&gt;Creating hello world MVC&lt;/h3&gt;
+&lt;p&gt;First, we create a new MVC application,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ dotnet new mvc -n P2_MVC_SQLDB
+The template &amp;quot;ASP.NET Core Web App (Model-View-Controller)&amp;quot; was created successfully.
+This template contains technologies from parties other than Microsoft, see https://aka.ms/aspnetcore-template-3pn-210 for details.
+
+Processing post-creation actions...
+Running 'dotnet restore' on P2_MVC_SQLDB\P2_MVC_SQLDB.csproj...
+  Restoring packages for D:\git_ws\net-core-demos\P2_MVC_SQLDB\P2_MVC_SQLDB.csproj...
+  Generating MSBuild file D:\git_ws\net-core-demos\P2_MVC_SQLDB\obj\P2_MVC_SQLDB.csproj.nuget.g.props.
+  Generating MSBuild file D:\git_ws\net-core-demos\P2_MVC_SQLDB\obj\P2_MVC_SQLDB.csproj.nuget.g.targets.
+  Restore completed in 1 sec for D:\git_ws\net-core-demos\P2_MVC_SQLDB\P2_MVC_SQLDB.csproj.
+
+Restore succeeded.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This immediately creates a hello world mvc application and we can build/run it.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ dotnet run
+Using launch settings from D:\git_ws\net-core-demos\mvc_test\Properties\launchSettings.json...
+info: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[0]
+      User profile is available. Using 'C:\Users\atiqc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+Hosting environment: Development
+Content root path: D:\git_ws\net-core-demos\mvc_test
+Now listening on: https://localhost:5001
+Now listening on: http://localhost:5000
+Application started. Press Ctrl+C to shut down.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;When we navigate using the browser to https://localhost:5001 it looks like this.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://github.com/atiq-cs/atiqcs-wp-com/raw/master/images/2018/07/03_netcore-demo1.png" class="img-fluid" alt=".net Core MVC Demo" /&gt;&lt;/p&gt;
+&lt;h3 id="changing-hello-world-mvc-to-ef-db-supported-app"&gt;Changing hello world mvc to EF, DB supported App&lt;/h3&gt;
+&lt;p&gt;We add following two packages,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ dotnet add package Microsoft.EntityFrameworkCore.SqlServer -v 2.1.0
+$ dotnet add package Microsoft.EntityFrameworkCore.Tools -v 2.1.0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We add specific package version 2.1.0 because latest version at this time is 2.1.1 which has dependency conflict.&lt;/p&gt;
+&lt;p&gt;When we add/remove/change packages basically it changes the project file &lt;code&gt;P2_MVC_SQLDB.csproj&lt;/code&gt;. Also note that,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ dotnet add package package_name
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;adds the latest version of the package.&lt;/p&gt;
+&lt;p&gt;Regarding package management, we also have remove package if we want,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ dotnet remove package Microsoft.EntityFrameworkCore.SqlServer
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now, we change source file &lt;code&gt;Startup.cs&lt;/code&gt; to register our context with dependency injection. To know more about Dependency injection in ASP.NET Core &lt;a href="https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection"&gt;MS Docs article  - dependency-injection&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We add following namespaces,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;using EFGetStarted.AspNetCore.NewDb.Models;
+using Microsoft.EntityFrameworkCore;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And change the method &lt;code&gt;ConfigureServices&lt;/code&gt; to,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;public void ConfigureServices(IServiceCollection services)
+{
+    services.AddMvc();
+
+    var connection = &amp;#64;&amp;quot;Server=(localdb)\mssqllocaldb;Database=EFGetStarted.AspNetCore.NewDb;Trusted_Connection=True;ConnectRetryCount=0&amp;quot;;
+    services.AddDbContext(options =&amp;gt; options.UseSqlServer(connection));
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is not the best way to add connection strings but this serves the hello world purpose for simplification.&lt;/p&gt;
+&lt;p&gt;We add &lt;code&gt;Models\Model.cs&lt;/code&gt;,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;New-Item Models\Model.cs
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;and paste following contents,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+
+namespace EFGetStarted.AspNetCore.NewDb.Models
+{
+    public class BloggingContext : DbContext
+    {
+        public BloggingContext(DbContextOptions options)
+            : base(options)
+        { }
+
+        public DbSet Blogs { get; set; }
+        public DbSet Posts { get; set; }
+    }
+
+    public class Blog
+    {
+        public int BlogId { get; set; }
+        public string Url { get; set; }
+
+        public List Posts { get; set; }
+    }
+
+    public class Post
+    {
+        public int PostId { get; set; }
+        public string Title { get; set; }
+        public string Content { get; set; }
+
+        public int BlogId { get; set; }
+        public Blog Blog { get; set; }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Similarly we add &lt;code&gt;Controllers/BlogsController.cs&lt;/code&gt;,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;New-Item Controllers/BlogsController.cs
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;with following contents,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
+using EFGetStarted.AspNetCore.NewDb.Models;
+
+namespace P02_MVC.Controllers
+{
+    public class BlogsController : Controller
+    {
+        private readonly BloggingContext _context;
+
+        public BlogsController(BloggingContext context)
+        {
+            _context = context;
+        }
+
+        // GET: Blogs
+        public async Task Index()
+        {
+            return View(await _context.Blogs.ToListAsync());
+        }
+
+        // GET: Blogs/Details/5
+        public async Task Details(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var blog = await _context.Blogs
+                .FirstOrDefaultAsync(m =&amp;gt; m.BlogId == id);
+            if (blog == null)
+            {
+                return NotFound();
+            }
+
+            return View(blog);
+        }
+
+        // GET: Blogs/Create
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        // POST: Blogs/Create
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task Create([Bind(&amp;quot;BlogId,Url&amp;quot;)] Blog blog)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Add(blog);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(blog);
+        }
+
+        // GET: Blogs/Edit/5
+        public async Task Edit(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var blog = await _context.Blogs.FindAsync(id);
+            if (blog == null)
+            {
+                return NotFound();
+            }
+            return View(blog);
+        }
+
+        // POST: Blogs/Edit/5
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task Edit(int id, [Bind(&amp;quot;BlogId,Url&amp;quot;)] Blog blog)
+        {
+            if (id != blog.BlogId)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(blog);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!BlogExists(blog.BlogId))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(Index));
+            }
+            return View(blog);
+        }
+
+        // GET: Blogs/Delete/5
+        public async Task Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var blog = await _context.Blogs
+                .FirstOrDefaultAsync(m =&amp;gt; m.BlogId == id);
+            if (blog == null)
+            {
+                return NotFound();
+            }
+
+            return View(blog);
+        }
+
+        // POST: Blogs/Delete/5
+        [HttpPost, ActionName(&amp;quot;Delete&amp;quot;)]
+        [ValidateAntiForgeryToken]
+        public async Task DeleteConfirmed(int id)
+        {
+            var blog = await _context.Blogs.FindAsync(id);
+            _context.Blogs.Remove(blog);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
+        private bool BlogExists(int id)
+        {
+            return _context.Blogs.Any(e =&amp;gt; e.BlogId == id);
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And Copy Views folder into View &lt;code&gt;Views/Blogs&lt;/code&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create.cshtml&lt;/li&gt;
+&lt;li&gt;Delete.cshtml&lt;/li&gt;
+&lt;li&gt;Details.cshtml&lt;/li&gt;
+&lt;li&gt;Edit.cshtml&lt;/li&gt;
+&lt;li&gt;Index.cshtml&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In this demo, we have manually added all components required for enabling a blog controller, providing it view, providing basic operations and bind it with the Model using EF.&lt;/p&gt;
+&lt;p&gt;Visual Studio allows to do this automatically using scaffolding. When we do that we usually need following package to be installed,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design -v 2.1.0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;and then, we could use scaffolding template to create this as showed in screenshot below,&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://github.com/atiq-cs/atiqcs-wp-com/raw/master/images/2018/07/05_netcore-hello-mvc-scaffolding.png" class="img-fluid" alt=".net Core MVC Demo Scaffolding" /&gt;&lt;/p&gt;
+&lt;p&gt;Then, we create the database and update it,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ dotnet ef -v migrations add InitialCreate
+$ dotnet ef -v database update
+output here: https://gist.github.com/atiq-cs/2cfe23a43a296685aaea1fc379ce3ac0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I add &lt;code&gt;-v&lt;/code&gt; to see verbose output which is not required. It's time to run the app,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ dotnet run
+Using launch settings from D:\git_ws\net-core-demos\P2_MVC_SQLDB\Properties\launchSettings.json...
+info: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[0]
+      User profile is available. Using 'C:\Users\atiqc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+Hosting environment: Development
+Content root path: D:\git_ws\net-core-demos\P2_MVC_SQLDB
+Now listening on: https://localhost:5001
+Now listening on: http://localhost:5000
+Application started. Press Ctrl+C to shut down.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now we navigate to https://localhost:5001/Blogs/ and view the site.&lt;/p&gt;
+&lt;p&gt;I follow following two reference while creating this.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/ef/core/get-started/aspnetcore/new-db"&gt;MS Docs - Getting Started with EF Core on ASP.NET Core with a New database&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/ef/core/get-started/netcore/new-db-sqlite"&gt;MS Docs - Getting Started with EF Core on .NET Core Console App with a New database&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+		</item>
+		<item>
+			<title>InterOp Calling C++ from C#</title>
+			<link>https://blog.saosx.com/posts/interop-calling-cpp-from-csharp</link>
+			<description>&lt;p&gt;For the demonstration I consider a Visual Studio 2017 Solution containing two projects,&lt;/p&gt;</description>
+			<guid>https://blog.saosx.com/posts/interop-calling-cpp-from-csharp</guid>
+			<pubDate>Thu, 12 Apr 2018 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;For the demonstration I consider a Visual Studio 2017 Solution containing two projects,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;One project containing C++ Code&lt;/li&gt;
+&lt;li&gt;Other project contain C# driving code doing the demonstrating interop&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;C++ code looks like,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;extern &amp;quot;C&amp;quot;             //No name mangling
+__declspec(dllexport)  //Tells the compiler to export the function
+int                    //Function return type     
+__cdecl                //Specifies calling convention, cdelc is default, 
+                       //so this can be omitted 
+  test(int number) {
+  return number + 1;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Please note the way return type specified compare to traditional function declaration.&lt;/p&gt;
+&lt;p&gt;C# driver code looks like following,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;using System;
+using System.Runtime.InteropServices;
+
+namespace p1
+{
+  public static class NativeTest
+  {
+    static void Main(string[] args)
+    {
+      Console.WriteLine(&amp;quot;Interop test: &amp;quot; + test(100));
+    }
+
+    private const string DllFilePath = &amp;#64;&amp;quot;D:\Code\CSharp\InterOp\Debug\Cpp.dll&amp;quot;;
+
+    [DllImport(DllFilePath , CallingConvention = CallingConvention.Cdecl)]
+    private extern static int test(int number);
+
+    public static int Test(int number) {
+        return test(number);
+    }
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;My projects dir structure looks like,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;D:\CODE\CSHARP\INTEROP
+│   p1.sln
+│
+├───Cpp
+│   │   Cpp.vcxproj
+│   │   Cpp.vcxproj.filters
+│   │   Cpp.vcxproj.user
+│   │   Main.cpp
+│   │
+│   └───Debug
+│       │   Cpp.dll
+│       │   Cpp.exp
+│       │   Cpp.ilk
+│       │   Cpp.lib
+│       │   Cpp.log
+│       │   Cpp.pdb
+│       │   Main.obj
+│       │   vc141.idb
+│       │   vc141.pdb
+│ 
+└───p1
+    │   App.config
+    │   p1.csproj
+    │   Program.cs
+    │
+    ├───bin
+    │   └───Debug
+    │           p1.exe
+    │
+    ├───obj
+    │   └───Debug
+    │       │   p1.exe
+    │       │   p1.pdb
+    └───Properties
+            AssemblyInfo.cs
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For the project structure above, I can use a relative location of the file,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;private const string DllFilePath = &amp;#64;&amp;quot;..\..\..\Cpp\Debug\Cpp.dll&amp;quot;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Additionally, I have changed following for C++ project,&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Output Directory:&lt;/em&gt; &lt;span class="math"&gt;\((SolutionDir)\)&lt;/span&gt;(ProjectName)$(Configuration)&lt;br /&gt;
+&lt;em&gt;Configuration Type:&lt;/em&gt; Dynamic Library (.dll)&lt;/p&gt;
+&lt;p&gt;When we are passing arrays and pointers we need data marshalling. ref, &lt;a href="https://stackoverflow.com/questions/741206/using-arrays-and-pointers-in-c-sharp-with-c-dll"&gt;Using arrays and pointers in C# with C DLL&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;msdn documentation provides instructions for this for managed C++ to unmanaged C++.
+&lt;a href="https://docs.microsoft.com/en-us/cpp/dotnet/how-to-call-native-dlls-from-managed-code-using-pinvoke"&gt;How to: Call Native DLLs from Managed Code Using PInvoke&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;So, for a new project it makes sense. Or if it is feasible to create managed C++ wrapper around the unmanaged code. It gives us an assembly that can be directly referenced from C#. Ref, &lt;a href="https://stackoverflow.com/questions/935664/possible-to-call-c-code-from-c"&gt;Possible to call C++ code from C#?&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://stackoverflow.com/questions/9407616/how-to-call-c-code-from-c-sharp"&gt;How to call C++ code from C#&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/cpp/dotnet/calling-native-functions-from-managed-code"&gt;Calling Native Functions from Managed Code - PInvoke and the DllImport, Marshaling Arguments&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Interop msdn blog posts in 2006 &lt;a href="https://blogs.msdn.microsoft.com/borisj/2006/07/30/interop-101-part-1/"&gt;part 1&lt;/a&gt; and &lt;a href="https://blogs.msdn.microsoft.com/borisj/2007/02/09/interop-101-part-5/"&gt;part 5&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+		</item>
+		<item>
+			<title>Quick Sort</title>
+			<link>https://blog.saosx.com/posts/fibo-heap</link>
+			<description>&lt;p&gt;In computer science, a Fibonacci heap is a heap data structure consisting of a collection of trees. It has a better amortized running time than a binomial heap. Fibonacci heaps were developed by Michael L. Fredman and Robert E. Tarjan in 1984 and first published in a scientific journal in 1987.&lt;/p&gt;</description>
+			<guid>https://blog.saosx.com/posts/fibo-heap</guid>
+			<pubDate>Wed, 14 Feb 2018 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;h3 id="what-is-fibonacci-heap"&gt;What is Fibonacci Heap?&lt;/h3&gt;
+&lt;p&gt;In computer science, a Fibonacci heap is a heap data structure consisting of a collection of trees. It has a better amortized running time than a binomial heap. Fibonacci heaps were developed by Michael L. Fredman and Robert E. Tarjan in 1984 and first published in a scientific journal in 1987.&lt;/p&gt;
+&lt;h3 id="why-this-name"&gt;Why this name?&lt;/h3&gt;
+&lt;p&gt;The name of Fibonacci heap comes from Fibonacci numbers which are used in the running time analysis.&lt;/p&gt;
+&lt;p&gt;Where run time improves?
+It is more complex that binomial heap. Because two pivotal operations: Decrease-Key and Delete are more efficient with fibonacci heap. Due to slowly performing some operations it is called a lazy data structure.&lt;/p&gt;
+&lt;h3 id="related-problems-list"&gt;Related Problems List&lt;/h3&gt;
+&lt;p&gt;All Priority Queue problems; hence dijkstra etc as well.&lt;/p&gt;
+&lt;h3 id="references"&gt;References&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Page# 505 the book, &lt;a href="https://dl.acm.org/citation.cfm?id=1614191"&gt;Introduction to Algorithm - C.L.R.S&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Stony Brook Univ. Lecture - &lt;a href="http://www3.cs.stonybrook.edu/%7Erezaul/Spring-2015/CSE548/CSE548-lectures-19-20.pdf"&gt;Dijkstra’s SSSP &amp;amp; Fibonacci Heaps&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
 </content:encoded>
 		</item>
 		<item>
@@ -1533,554 +2822,6 @@ shows how to do it using the combination of self-hosted wordpress and javascript
 &lt;li&gt;&lt;a href="http://repl.it/languages/Python3"&gt;repl.it&lt;/a&gt; - v3.4.0&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.sourcelair.com"&gt;sourcelair&lt;/a&gt;: comes with a fully featured shell and has python v2.7.6&lt;/li&gt;
 &lt;/ul&gt;
-</content:encoded>
-		</item>
-		<item>
-			<title>SVN Basics</title>
-			<link>https://blog.saosx.com/posts/svn</link>
-			<description>&lt;p&gt;Checking out a fresh copy from the remote repo,&lt;/p&gt;</description>
-			<guid>https://blog.saosx.com/posts/svn</guid>
-			<pubDate>Fri, 14 Nov 2014 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;h2 id="svn-version-control"&gt;SVN - Version Control&lt;/h2&gt;
-&lt;p&gt;Checking out a fresh copy from the remote repo,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;svn checkout URL local_target_dir_path --username name&amp;#64;company.com --password password_for_repo
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Add files to svn repo,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;svn add file_path
-svn add directory_path/pattern*
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Exporting a file from SVN repo,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;amp; svn export -r 5 &amp;quot;file:///D:\svnrepo\repo1\CoolApp/cpp/app.cpp&amp;quot; D:\Projects\CoolApp\app.cpp --username YOUR_USER_NAME --password YOUR_PASS
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Removing files,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;svn remove file_path
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Finally, commit, unlike git/hg in svn a commit pushes files to server as well,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;svn commit D:\Projects\CoolApp --username YOUR_USER_NAME --password YOUR_PASS -m &amp;quot;my change summary&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Also we can do,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;svn update
-svn info
-svn status
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="running-svn-server-locally"&gt;Running SVN Server Locally&lt;/h2&gt;
-&lt;p&gt;I used to use &amp;quot;CollabNet Subversion&amp;quot; to be able to do this. The software installed svnadmin in &lt;code&gt;C:\Program Files\CollabNet\Subversion Client&lt;/code&gt;. Using &lt;code&gt;svnadmin&lt;/code&gt; we can create repositories locally.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;svnadmin create &amp;quot;D:\svnrepo\repo1&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Initial import of a project into this repo,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;svn import D:\Projects\CoolApp &amp;quot;file:///D:\svnrepo\repo1\CoolApp&amp;quot; -m &amp;quot;Initial import&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Later, to checkout from this local repo,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;svn checkout &amp;quot;file:///D:\svnrepo\repo1\CoolApp&amp;quot; D:\Projects\CoolApp --username YOUR_USER_NAME --password YOUR_PASS
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;If &lt;code&gt;svn info&lt;/code&gt; shows an outdated local repo, we should do update,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;svn update
-&lt;/code&gt;&lt;/pre&gt;
-</content:encoded>
-		</item>
-		<item>
-			<title>Sample Coding Template for Problem Solvers in C++</title>
-			<link>https://blog.saosx.com/posts/contest-template</link>
-			<description>&lt;p&gt;In this article I provide my C++ template which,&lt;/p&gt;</description>
-			<guid>https://blog.saosx.com/posts/contest-template</guid>
-			<pubDate>Thu, 27 Feb 2014 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;In this article I provide my C++ template which,&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;includes mostly used C++ header files&lt;/li&gt;
-&lt;li&gt;enables redirection of cin and cout to file input and file out respectively depending on programmer's choice&lt;/li&gt;
-&lt;li&gt;includes an OOP class as skeleton design taking an example as simple as Ecological Premium&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Please have a look at c++ template below. You are encouraged to use it and to provide feedback if it helps you anyway.&lt;/p&gt;
-&lt;p&gt;Programming contestants have templates of many variations. These variations come on many categories: sometimes on use of OOP, sometimes on use of complex MACROS, sometimes on function designs. Whether a clean OOP design can help us think in an organized way, whether it can help us avoid worries of low level details and myriads of bugs related with acquiring insignificant efficiency problem solvers can tell about it.&lt;/p&gt;
-&lt;p&gt;** C++ Template can be found at &lt;a href="https://github.com/atiq-cs/Problem-Solving/blob/master/coding-template/cpp/Template.cpp"&gt;github link&lt;/a&gt; **&lt;/p&gt;
-&lt;p&gt;All C++ Templates can be found at &lt;a href="https://github.com/atiq-cs/Problem-Solving/tree/master/coding-template/cpp"&gt;github link&lt;/a&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-cpp"&gt;    /*******************************************************
-    * Problem Name: Problem Title for example &amp;quot;Ecological Premium&amp;quot;
-    * Problem ID: Problem Number for example &amp;quot;10300&amp;quot;
-    * Occassion: Offlinse solving volume 103
-    * Date: February 27, 2018
-    * Template revision: 002, OOP
-    *
-    * Algorithm: Adhoc
-    * Special Case:
-    * Judge Status: Accepted
-    * Author: Atique
-    * Notes: Primitive data structure limit sensitive
-    *
-    *******************************************************/
-    //Uncomment this line if you use C standard IO functions i.e., printf, scanf
-    #include &amp;lt;string&amp;gt;
-    #include &amp;lt;sstream&amp;gt;
-    #include &amp;lt;cmath&amp;gt;
-    #include &amp;lt;cstdio&amp;gt;
-    #include &amp;lt;vector&amp;gt;
-    #include &amp;lt;iostream&amp;gt;
-    #include &amp;lt;algorithm&amp;gt;
-    #include &amp;lt;map&amp;gt;
-    #include //for cout formatting
-    #define INF 2147483648
-    #define EPS 1e-8
-    using namespace std;
-     
-    // Comment this before submission
-    #define ENABLE_IO_REDIRECTION    1 // redirect cin to input
-        // file for the problem and cout to output file for the problem
-     
-    class EcologicalPremium {
-    public:
-        EcologicalPremium();
-        void CalculateBudget();
-    };
-     
-    EcologicalPremium::EcologicalPremium() {
-        // Initiaze used variables
-    }
-     
-    void EcologicalPremium::CalculateBudget() {
-        // Take Input
-        int nTestCase = 0;
-     
-        // Take number of test cases
-        cin&amp;gt;&amp;gt;nTestCase;
-     
-        while (nTestCase--) {
-            // write some code, take more input using cin if necessary
-            // call some member functions,
-            // output the result using cout
-        }
-    }
-     
-    int main() {
-        #ifdef  ENABLE_IO_REDIRECTION
-            // set problem number here; it helps setting correct input
-            // and output file
-            string problem_id(&amp;quot;10300&amp;quot;);
-     
-            string in_file_path(problem_id); in_file_path += &amp;quot;_in.txt&amp;quot;;
-            string out_file_path(problem_id); out_file_path +=
-                    &amp;quot;_out.txt&amp;quot;;
-     
-            // Redirect cin to in file
-            ifstream subinput(in_file_path);
-            streambuf* orig_cin = NULL;
-            if (subinput) {
-                orig_cin = cin.rdbuf(); //save old buf
-                cin.rdbuf(subinput.rdbuf()); //redirect std::cin to
-                        in.txt!
-            }
-            else
-                cout&amp;lt;&amp;lt;&amp;quot;Input file problem &amp;quot; &amp;lt;&amp;lt; problem_id &amp;lt;&amp;lt; &amp;quot; does
-                    not exist.&amp;quot;&amp;lt;&amp;lt;endl;
-     
-            // Redirect cout to out file
-            ofstream suboutput(out_file_path);
-            streambuf *orig_cout = NULL;
-            if (suboutput) {
-                orig_cout = cout.rdbuf(); //save old buf
-                cout.rdbuf(suboutput.rdbuf()); //redirect std::cout
-                // to out.txt!
-            }
-     
-        #endif
-     
-        // Code here
-        EcologicalPremium EPObj;
-        EPObj.CalculateBudget();
-     
-        #ifdef  ENABLE_IO_REDIRECTION
-            if (suboutput)
-                cout.rdbuf(orig_cout);
-            if (suboutput)
-                cin.rdbuf(orig_cin);
-        #endif
-     
-        return 0;
-    }
-     
-    /*
-     cout.setf (ios::fixed, ios::floatfield);
-     cout.setf(ios::showpoint);
-     cout&amp;lt;&amp;lt;setprecision(2)&amp;lt;&amp;lt;sum_c + eps&amp;lt;&amp;lt;endl;
-    */
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Before submiting the solution to an online judge you should undefine &lt;code&gt;ENABLE_IO_REDIRECTION&lt;/code&gt; (comment the referred line). Depending on the problem id set by you on line number 62 the output executable's input file will be set as &lt;code&gt;number_in.txt&lt;/code&gt; and output file name will be set as &lt;code&gt;number_out.txt&lt;/code&gt;. For example, for problem 10300 its input file becomes &lt;code&gt;10300_in.txt&lt;/code&gt; and output file becomes &lt;code&gt;10300_out.txt&lt;/code&gt;&lt;/p&gt;
-</content:encoded>
-		</item>
-		<item>
-			<title>Cleaning up or resetting a partition table of a USB Key / Flash Drive / Hard Drive</title>
-			<link>https://blog.saosx.com/posts/cleanup-partitions</link>
-			<description>&lt;p&gt;There are several reasons why a partition table is damaged. One reason can be experimenting with disks, for example, applying a slightly modified (may be mistakenly) command to make a USB flash drive bootable (for a live OS). It can also be possible by some faulty usb creator software. Additionally, directly writing an ISO using 'dd' command can result a corrupted partition table. The partition can also be damaged or engineered by a virus to meet certain goals. As these operations are mostly run on USB drives or USB keys this post provides instructions to fix such partition tables. Generally these commands are applicable to any kind of hard-disk/usb drive.&lt;/p&gt;</description>
-			<guid>https://blog.saosx.com/posts/cleanup-partitions</guid>
-			<pubDate>Mon, 18 Mar 2013 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;h2 id="recognizing-a-damaged-partition-table"&gt;Recognizing a damaged partition table&lt;/h2&gt;
-&lt;p&gt;There are several reasons why a partition table is damaged. One reason can be experimenting with disks, for example, applying a slightly modified (may be mistakenly) command to make a USB flash drive bootable (for a live OS). It can also be possible by some faulty usb creator software. Additionally, directly writing an ISO using 'dd' command can result a corrupted partition table. The partition can also be damaged or engineered by a virus to meet certain goals. As these operations are mostly run on USB drives or USB keys this post provides instructions to fix such partition tables. Generally these commands are applicable to any kind of hard-disk/usb drive.&lt;/p&gt;
-&lt;p&gt;&lt;img src="http://3.bp.blogspot.com/-CeoFlB0Q0zU/UacmGoF1YeI/AAAAAAAAAeA/CIXxvWWxGzw/s320/5707_Partitions.gif" class="img-fluid" alt="enter image description here" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://averma82.blogspot.com/2013/05/types-of-hard-drive-partitions-and.html"&gt;image acknowledgement&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;You can have a look at the partition table using parted command or fdisk command on Linux. On Windows, you can view your partition table using 'Disk Management Console' or using diskpart command (requires admin privilege). For a damaged partition table, if you look at the partition table you will see unexpected partition entries, garbage characters and symbols or combination of both of them. You might even see partition entries that you didn't know existed before in your device. To view list of partitions you can run fdisk command in Linux. An example to use this command on drive sdX is below. You should replace sdX by appropriate drive id i.e., sdc, sdb etc.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;# fdisk -l /dev/sdX
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Before proceeding with following procedure be sure to backup data as all data with partitions will be lost after resetting partition table.&lt;/p&gt;
-&lt;p&gt;To view partition table for drive sdX (replace with appropriate drive id) using parted tool command will be,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;# parted /dev/sdX p
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;If your partition table is EFI you must use parted tool as fdisk does not yet support EFI partition table yet.&lt;/p&gt;
-&lt;h2 id="cleaning-up-or-resetting-the-partition-table"&gt;Cleaning up or resetting the partition table&lt;/h2&gt;
-&lt;p&gt;Before proceeding further, be sure to backup data. Partitions will be lost after resetting partition table. Procedures for both Windows and Linux platform are presented below. If you are using Linux please skip to next Linux section.&lt;/p&gt;
-&lt;h3 id="windows-way"&gt;Windows Way&lt;/h3&gt;
-&lt;p&gt;Run command prompt as administrator then run diskpart,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;C:\Windows\system32&amp;gt; diskpart
-Microsoft DiskPart version 10.0.10586
-Copyright (C) 1999-2013 Microsoft Corporation.
-On computer: SAOS-PC
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;On disk-part prompt, list your disks and select the appropriate one to run clean up operation:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;DISKPART&amp;gt; list disk
-  Disk ###  Status         Size     Free     Dyn  Gpt
-  --------  -------------  -------  -------  ---  ---
-  Disk 0    Online          465 GB  3072 KB
-  Disk 1    Online          465 GB    15 MB
-  Disk 2    Online          8 GB        25 MB
- 
-DISKPART&amp;gt; select disk 2
-Disk 2 is now the selected disk.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;For a disk wit GPT partition table you will see a '*' symbol in the output row of the disk. Now please apply &lt;code&gt;clean&lt;/code&gt; command which will delete all partitions,
-This should wipe out all partitions. If this does not work enough you can go a step further. To do that after &lt;code&gt;clean&lt;/code&gt; command apply following commands,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;DISKPART&amp;gt; convert gpt
-DISKPART&amp;gt; create partition primary
-DISKPART&amp;gt; clean
-DISKPART&amp;gt; convert mbr
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now you can create a new partition and start working with your USB Key&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;DISKPART&amp;gt; create partition primary
-DISKPART&amp;gt; format fs=ntfs label=&amp;quot;your label&amp;quot; quick
-DISKPART&amp;gt; clean
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="linux-way"&gt;Linux Way&lt;/h3&gt;
-&lt;p&gt;Please open a terminal and login as root,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ su - root
-Enter root password:
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="using-dd-to-reset-partition-table-on-a-disk-legacy-partition-table"&gt;Using dd to reset partition table on a disk legacy partition table&lt;/h3&gt;
-&lt;p&gt;The dd command is applicable only if the disk contains BIOS(legacy) partition table instead of GPT. Be aware most new systems are rolling out with GPT partition table and EFI firmware. If your system contains a GPT partition table please skip to the next section. Please apply following (caution: data will be lost!) command. Replace sdX with appropriate device id. You can list all devices by running &lt;code&gt;fdisk -l&lt;/code&gt;. For example, if your flash drive is sdc you have to replace sdX with sdc,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;# dd if=/dev/zero of=/dev/sdX bs=1 seek=446 count=64
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This command wipes out the partition table but preserves the MBR. If you want to wipe out your MBR as well you would like to apply following command (first line is the command ran on with root access),&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;# dd if=/dev/zero of=/dev/sdX bs=512 count=1
-512+0 records in
-512+0 records out
-512 bytes (512 B) copied, 1.25339 s, 0.4 kB/s
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;At this point, the device does not have a partition table. So, we create one. Please keep in mind that our next commands require root access as well. As we are using sdc as our example device id of the USB drive it is the third storage device connected to our system. First two hard disks connected to the system are sda and sdb. You should use proper device id in the command according to your device id,&lt;/p&gt;
-&lt;h4 id="for-all-partition-tables-including-gpt"&gt;For all partition tables (including GPT)&lt;/h4&gt;
-&lt;p&gt;If your disk contains GPT partition table please use parted rm commands to delete the partitions one by one. Afterwards, proceed with next steps mentioned below.&lt;/p&gt;
-&lt;p&gt;Let's see information on current partition table,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;# parted /dev/sdc print
-Error: /dev/sdc: unrecognised disk label
-Model:  USB Disk (scsi)
-Disk /dev/sdc: 8054MB
-Sector size (logical/physical): 512B/512B
-Partition Table: unknown
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Following commands will create an msdos partition table. Afterwards, we create an ext4 partition entry inside the partition table. The ext4 partition is using the entire space available on the drive (usually desirable for USB flash drive of small size). Please note that, first command is run on linux shell. Rest of the commands are on parted prompt(string after '(parted)') as you can see below,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;# parted /dev/sdc
-GNU Parted 3.1
-Using /dev/sdc
-Welcome to GNU Parted! Type 'help' to view a list of commands.
- 
-(parted) mklabel msdos
-(parted) mkpart primary ext4 1 -1
-(parted) toggle 1 boot
-(parted) print                                                           
-Model:  USB Disk (scsi)
-Disk /dev/sdc: 8054MB
-Sector size (logical/physical): 512B/512B
-Partition Table: msdos
-Disk Flags:
- 
-Number  Start   End     Size    Type     File system  Flags
- 1      1049kB  8053MB  8052MB  primary               boot
- 
-(parted) quit                                                            
- 
-Information: You may need to update /etc/fstab.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;More explanation is here: second command provided to GNU Parted creates an ext4 primary partition starting from sector after mbr to the end. There is a way to pass commands with parted tool. For example, &lt;code&gt;parted /dev/sdc print&lt;/code&gt; will print device information. You can use this instead of typing &lt;code&gt;parted&lt;/code&gt; first then typing &lt;code&gt;print&lt;/code&gt;. These are like shortcut commands. However, we have a note regarding shortcut command. If you are trying to use something like &lt;code&gt;parted /dev/sdc mkpart primary ext4 1 -1&lt;/code&gt; you know to know some information. If you use the command &lt;code&gt;parted /dev/sdc mkpart primary ext4 1 -1&lt;/code&gt; it won't work properly. Because while passing commands with parted &amp;quot;-1&amp;quot; means a different thing than the ending sector. If you pass &lt;code&gt;mkpart&lt;/code&gt; with parted you must provide correct size in MegaBytes instead of &amp;quot;-1&amp;quot; which will work fine.&lt;/p&gt;
-&lt;p&gt;Our third command passed to gparted sets bootable (active) flag to created partition so that it can be used to boot a OS. Now, let's format the partition now to create ext4 filesystem in it.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;# mkfs -T ext4 /dev/sdX1
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;where sdX1 should be replaced by sdc1 (which means the first partition on drive sdc) if your flash drive is sdc&lt;/p&gt;
-&lt;p&gt;Optionally, you can apply a label to the filesystem, it is used by the OS during automount target&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;# e2label /dev/sdX1 My_Linux_USB_Drive
-Warning: label too long, truncating.
-When label is too long it truncates.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Please provide your feedback regarding the article. Previous comments are removed which were mostly appreciating remarks (&lt;em&gt;Thanks to Bill Biffle, Robert Liimatainen, bemma, gusbus, roj, dvt, ponmudi, Leon, cory pollard, RezaKnot, Steve, vtwire and many people around the world&lt;/em&gt;). We are more interested in critical cases where instructions do not work as said.&lt;/p&gt;
-&lt;h3 id="faq"&gt;FAQ&lt;/h3&gt;
-&lt;h4 id="q1-roj-my-fdisk-output-is-saying-my-disk-is-gpt.why-is-my-dd-command-failing"&gt;Q1: Roj: my fdisk output is saying my disk is gpt. Why is my dd command failing?&lt;/h4&gt;
-&lt;p&gt;&amp;#64;roj, you are applying dd command on a disk with GPT partition. That is wrong. Follow other ways mentioned in the article for example using &lt;code&gt;diskpart&lt;/code&gt; or &lt;code&gt;parted&lt;/code&gt; to remove partitions. &lt;code&gt;fdisk&lt;/code&gt; is being deprecated and is not well supported on GPT disk.&lt;/p&gt;
-</content:encoded>
-		</item>
-		<item>
-			<title>Operating System Installation on GPT Disks (EFI boot enabled Systems)</title>
-			<link>https://blog.saosx.com/posts/gpt-efi-os-install</link>
-			<description>&lt;p&gt;This article includes instruction for both Windows and Linux. However, for better understanding, you should peruse entire article.&lt;/p&gt;</description>
-			<guid>https://blog.saosx.com/posts/gpt-efi-os-install</guid>
-			<pubDate>Mon, 04 Feb 2013 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;This article includes instruction for both Windows and Linux. However, for better understanding, you should peruse entire article.&lt;/p&gt;
-&lt;h2 id="windows-installation-with-efi"&gt;Windows Installation with EFI&lt;/h2&gt;
-&lt;p&gt;Legacy boot enabled OSs install bootloader on first 446 bytes of active primary partition in MBR disks (disks with MBR/Legacy Partition Layout). On EFI disks, EFI enabled operating systems put required EFI files for boot into a reserved EFI partition. EFI bootloader applications are EFI files which should properly be put in System's EFI partition.&lt;/p&gt;
-&lt;p&gt;As for Windows installations Windows automatically detects whether the system is using EFI or legacy and thus, installation proceeds. Usually there is also an option in modern mainboards: BIOS to enable/disable EFI boot feature. When this feature is enabled for GPT disks Windows will install EFI bootloader instead of legacy/mbr bootloader.&lt;/p&gt;
-&lt;p&gt;When your hard-disk size is 2 TB or more GPT is better. Legacy mbr layout for hard disks are getting out-dated. The future is GPT which has advantage of creating numerous primary partitions and, has built-in recovery features.&lt;/p&gt;
-&lt;h2 id="finding-out-what-partition-layout-your-hard-disk-uses"&gt;Finding Out What Partition Layout your Hard disk uses&lt;/h2&gt;
-&lt;p&gt;To know what partition layout is used by your hard disk follow procedure below. If you are using Linux skip Windows section&lt;/p&gt;
-&lt;h3 id="procedure-to-find-out-partition-layout-on-windows"&gt;Procedure to Find Out Partition Layout on Windows&lt;/h3&gt;
-&lt;p&gt;Fire up a command prompt with admin privilege and run command as illustrated below. Commands are given after '&amp;gt;' symbol. A command is follows by single or several lines of output,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Microsoft Windows [Version 6.3.9600]
-(c) 2013 Microsoft Corporation. All rights reserved.
- 
-C:\Windows\system32&amp;gt; diskpart
-Microsoft DiskPart version 6.3.9600
-Copyright (C) 1999-2013 Microsoft Corporation.
-On computer: SAOSLab_WS
- 
-DISKPART&amp;gt; list disk
-  Disk ###  Status         Size     Free     Dyn  Gpt
-  --------  -------------  -------  -------  ---  ---
-* Disk 0    Online          931 GB      0 B        *
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;As you can see a * on Gpt column indicates that the disk uses GPT layout (for EFI boot).&lt;/p&gt;
-&lt;h3 id="procedure-to-find-out-partition-layout-on-linux"&gt;Procedure to Find Out Partition Layout on Linux&lt;/h3&gt;
-&lt;p&gt;First of all you need to login as root in a terminal.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ su - root
-Enter password:     
-#
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The prompt '#' indicates that you are logged in as root. Now, if you have multiple drives in your system, to find out the drive id apply following command,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;# fdisk -l
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;It will give you the list of drives with information from which you will be able to recognize your hard-drive that you want to view partition layout. If you have single hard drive its drive id will be sda. If you have multiple drives second one will be sdb, third sdc and so on. For example, you want to view partition layout info for drive sda apply following command,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;# parted /dev/sda p
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;If your hard drive uses mbr/legacy layout it will be displayed as layout: msdos on the output of the command you just applied.&lt;/p&gt;
-&lt;p&gt;If you're decided that you shall go with GPT but you have a hard-disk which has legacy/mbr/msdos layout you should follow procedure presented below,&lt;/p&gt;
-&lt;h2 id="converting-mbr-disk-to-gpt-disk"&gt;Converting MBR disk to GPT disk&lt;/h2&gt;
-&lt;p&gt;You can use an existing Windows or use the command prompt of recovery tool of Windows 7/8 Installation DVD to follow the procedure. You have to start command prompt as administrator if you run from existing Windows and then apply 'diskpart' command. If you are running from recovery console you only to run diskpart,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;C:\Windows\system32&amp;gt; diskpart
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;On &lt;code&gt;diskpart&lt;/code&gt; prompt list your disks and select the disk that you want to convert to GPT,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;DISKPART&amp;gt; list disk     
-  Disk ###  Status         Size     Free     Dyn  Gpt
-  --------  -------------  -------  -------  ---  ---
-  Disk 0    Online          465 GB  3072 KB
-  Disk 1    Online          465 GB    15 MB
- 
-DISKPART&amp;gt; select disk 1     
-Disk 1 is now the selected disk.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Run clean command to delete all partitions, Be sure to backup data from the hard-disk before proceeding with this command,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;DISKPART&amp;gt; clean
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This should wipe out all partitions.&lt;/p&gt;
-&lt;p&gt;Now run convert,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;DISKPART&amp;gt; convert gpt
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Where &lt;code&gt;convert gpt&lt;/code&gt; command converts a disk layout to GPT 'convert mbr' converts to mbr. Before proceeding with installation of Windows or other OS we need to create the EFI and MSR partitions. Following commands perform this,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;DISKPART&amp;gt; create partition efi size=112
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;which creates an EFI partition of 112 MB. To format the partition,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;DISKPART&amp;gt; format fs=fat32 quick
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;the efi partition is formatted used fat32 filesystem. EFI requires fat or fat32 filesystem. We also need to create a microsoft reserved partition which can be of size 50 MB&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;DISKPART&amp;gt; create partition msr size=50
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now let's go ahead and create a primary partition where Windows will be installed.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;DISKPART&amp;gt; create partition primary size=102400
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;It creates a partition with size 100 GB. Let's mark it as active partition.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;DISKPART&amp;gt; active
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The format operation is optional, which can be done with following command,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;DISKPART&amp;gt; format fs=ntfs label=&amp;quot;WinOS&amp;quot; quick
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now we can go ahead with Windows installation. During installation of Windows when partition selection screen appears we have to select the partition of 100 GB for installation. Window will automatically put its efi bootloader files inside EFI partition.&lt;/p&gt;
-&lt;h2 id="installation-of-fedora-18-on-gpt-disks-with-efi-boot-enabled-systems-dual-boot-with-windows"&gt;Installation of Fedora 18 on GPT disks with EFI boot enabled systems (dual boot with Windows)&lt;/h2&gt;
-&lt;p&gt;Fedora 18, 17, 16 releases have by default EFI support. I am not sure about the earlier releases to Fedora 16 about EFI support (I haven't tested in them). If you are creating a bootable USB stick using &lt;code&gt;livecd-tools&lt;/code&gt; be sure to add these options: &lt;code&gt;--efi --format --msdos --reset-mbr&lt;/code&gt;. Otherwise, EFI support will not be available with installation from bootable usb.&lt;/p&gt;
-&lt;p&gt;Installation procedure for Fedora 18 with EFI bootable usb is same to the usual installation except the part where we select the boot partition. During partition selection after selecting the root partition we have to change the mount point of EFI partition that we have created earlier with &lt;code&gt;/boot/efi&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Rest of the installation procedure is as usual. After the installation is complete, Fedora will be listed on EFI boot managers. Usually, Windows is boot by osbootmgr, Fedora is named as Fedora. Only problem is that I have to manually select Fedora each time otherwise Windows gets booted by default. However, with latest EFI firmware it is possible to choose the default OS to boot. As I see OS selection from EFI BIOS is working with recent Dell Lattitude and some other Models I have tested.&lt;/p&gt;
-</content:encoded>
-		</item>
-		<item>
-			<title>C++ ifstream::get method overloads</title>
-			<link>https://blog.saosx.com/posts/ifstream-get</link>
-			<description>&lt;p&gt;As stated on the reference, &lt;code&gt;istream::get()&lt;/code&gt; has 6 overloads,&lt;/p&gt;</description>
-			<guid>https://blog.saosx.com/posts/ifstream-get</guid>
-			<pubDate>Tue, 27 Nov 2012 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;As stated on the reference, &lt;code&gt;istream::get()&lt;/code&gt; has 6 overloads,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;int get();
-istream&amp;amp; get ( char&amp;amp; c );
-istream&amp;amp; get ( char* s, streamsize n );
-istream&amp;amp; get ( char* s, streamsize n, char delim );
-istream&amp;amp; get ( streambuf&amp;amp; sb);
-istream&amp;amp; get ( streambuf&amp;amp; sb, char delim );
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;It is also stated that &lt;code&gt;int get();&lt;/code&gt; Extracts a character from the stream and returns its value (casted to an integer).&lt;/p&gt;
-&lt;p&gt;On the other hand.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;istream&amp;amp; get ( char&amp;amp; c );
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;extracts a character from the stream and stores it in c.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;istream&amp;amp; get (char* s, streamsize n );
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;a href="http://www.cplusplus.com/reference/istream/istream/get/"&gt;cplusplus.com - istream::get&lt;/a&gt; has further details.&lt;/p&gt;
-&lt;h2 id="sampe-program-and-output"&gt;Sampe Program and Output&lt;/h2&gt;
-&lt;p&gt;We shall write a simple program that counts words on each line of a text file. If we cut to the chess, strategy is to take every character, if the character is a separator set a flag, depending on that when a char is found other than separator increment word count and unset the flag until next separator is found. When newline character is found print number of words found on that line. Here's the program,&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-cpp"&gt;#include &amp;lt;ifstream&amp;gt;
-#include &amp;lt;iostream&amp;gt;
-using namespace std;
-    
-int main () {
-        string separators(&amp;quot;:;.!\&amp;quot;\' \t\n&amp;quot;);
-        ifstream ifs ( &amp;quot;test.txt&amp;quot; , ifstream::in );
-        bool shouldCountNewWord = true;
-        int wordCount=0;
-    
-        while (ifs.good()) {
-            char ch = ifs.get();
-            int i = 0;
-            for (; i&amp;lt;separators.length(); i++) {
-                if (ch == separators[i]) {
-                    shouldCountNewWord = true;
-                    break;
-                }
-            }
-    
-            if (i== (int) separators.length() &amp;amp;&amp;amp; shouldCountNewWord == true) {
-                wordCount++;
-                shouldCountNewWord = false;
-            }
-    
-    
-            if (ch == '\n') {
-                cout&amp;lt;&amp;lt;&amp;quot;We have encountered &amp;quot;&amp;lt;&amp;lt;wordCount&amp;lt;&amp;lt;&amp;quot; words in this line.&amp;quot;&amp;lt;&amp;lt;endl;
-                wordCount = 0;
-            }
-        }
-        ifs.close();
-        return 0;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;So the input text file test.txt. Let's create it inside the same directory with some random contents,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Mazel tov! Jewish tradition.
-He is not stingy; she is not like him.
-&amp;quot;Experilus!&amp;quot; He cried.
-I have 2 houses. How many do you have?
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;After compiling and executing the binary output of this program appears,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;We have encountered 4 words in this line.
-We have encountered 9 words in this line.
-We have encountered 3 words in this line.
-We have encountered 9 words in this line.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;If you are using Linux stay aware that on Linux, editors like vi, gedit adds an extra newline before end of line as convention. Hence, Hence on that platform, if you add a newline yourself after last line you will see that output prints an extra line saying it has encountered 0 lines on that line. Therefore don't add any newline after last line.&lt;/p&gt;
-&lt;h3 id="the-variation"&gt;The Variation&lt;/h3&gt;
-&lt;p&gt;We have tested &lt;code&gt;int istream::get()&lt;/code&gt;. Let's go ahead and replace it with &lt;code&gt;istream&amp;amp; istream::get ( char&amp;amp; c )&lt;/code&gt;. Let's just replace the line &lt;code&gt;char ch = ifs.get();&lt;/code&gt; with lines as shown below,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;while (ifs.good()) {
-     char ch;
-     ifs.get(ch);
-     .............. // code continues
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;After we compile and run the program new output is,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;We have encountered 4 words in this line.
-We have encountered 9 words in this line.
-We have encountered 3 words in this line.
-We have encountered 9 words in this line.
-We have encountered 0 words in this line.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="reason-for-such-unexpected-output"&gt;Reason for such unexpected output&lt;/h3&gt;
-&lt;p&gt;Apparently second version of the code is getting an extra newline character. But the file hasn't changed. Where did it come from? If we add an extra statement and print all characters taken as input we see that there variable ch contains newline twice! On the last one ch contains newline value which 10 though eof has already been reached.&lt;/p&gt;
-&lt;p&gt;Why this behavior? Answer is that, when function get (signature: istream&amp;amp; istream::get ( char&amp;amp; c )) encounters EOF it does not assign it to the character variable because it is not really valid character.&lt;/p&gt;
-&lt;h3 id="first-solution"&gt;First Solution&lt;/h3&gt;
-&lt;p&gt;A solution can be resetting variable 'ch' after each time loop runs as presented in code below,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;   if (ch == '\n') {
-        cout&amp;lt;&amp;lt;&amp;quot;We have encountered &amp;quot;&amp;lt;&amp;lt;wordCount&amp;lt;&amp;lt;&amp;quot; words in this line.&amp;quot;&amp;lt;&amp;lt;endl;
-        wordCount = 0;
-   }
-   ch = '\0';
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Previously read character is erased each time the loop runs and ch cannot contain the same newline value anymore unless it really occurs on the input.&lt;/p&gt;
-&lt;h3 id="second-solution"&gt;Second Solution&lt;/h3&gt;
-&lt;p&gt;We can check whether input stream is still good after character has been read like this,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;ifs.get(ch);
-if (!ifs.good())
-   break;
-   // code
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="finally"&gt;Finally&lt;/h3&gt;
-&lt;p&gt;We can improve it further,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;#include &amp;lt;ifstream&amp;gt;
-#include &amp;lt;iostream&amp;gt;
-using namespace std;
-  
-int main () {
-    string separators(&amp;quot;:;.!\&amp;quot;\' \t\n&amp;quot;);
-    ifstream ifs ( &amp;quot;test.txt&amp;quot; , ifstream::in );
-    bool shouldCountNewWord = true;
-    int wordCount=0;
- 
-    char ch;
- 
-    while (ifs.get(ch).good()) {
-        int i = 0;
-        for (; i&amp;lt;separators.length(); i++) {
-            if (ch == separators[i]) {
-                shouldCountNewWord = true;
-                break;
-            }
-        }
- 
-        if (i== (int) separators.length() &amp;amp;&amp;amp; shouldCountNewWord == true) {
-            wordCount++;
-            shouldCountNewWord = false;
-        }
- 
- 
-        if (ch == '\n') {
-            cout&amp;lt;&amp;lt;&amp;quot;We have encountered &amp;quot;&amp;lt;&amp;lt;wordCount&amp;lt;&amp;lt;&amp;quot; words in this line.&amp;quot;&amp;lt;&amp;lt;endl;
-            wordCount = 0;
-        }
-    }
-    ifs.close();
-    return 0;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Conclusive remark is that it is easy to make mistake without remembering how istream&amp;amp; istream&lt;span&gt;get ( char&amp;amp; c ) behaves. It is always safe to use int istream&lt;/span&gt;get() because whenever it encounters EOF it returns -1.&lt;/p&gt;
-&lt;p&gt;And remember that, on Linux/Unix editors like vi, gedit adds an extra new line before END OF FILE.&lt;/p&gt;
-&lt;p&gt;Code has been tested on Microsoft Compiler, Visual Studio and on Linux Compiler [ gcc version 4.4.6 20110731 (Red Hat 4.4.6-3) (GCC) ]&lt;/p&gt;
-</content:encoded>
-		</item>
-		<item>
-			<title>Multi-threaded Windows C++ Application – Check Window Handle before Updating Child Items</title>
-			<link>https://blog.saosx.com/posts/win-app-check-window-handle</link>
-			<description>&lt;p&gt;In an MFC Application, you might use a thread to update some control of a dialog box or Window. Now, while this application is running, user may press any of the buttons for example, OK, Cancel or simply close the Windows or Dialog without performing any of the options while your thread is still performing some background operation. After the operation is complete it tries to update Windows/Dialog. In the meantime, because user has already closed the Window an attempt to update the interface will cause application to crash due to invalid handle.&lt;/p&gt;</description>
-			<guid>https://blog.saosx.com/posts/win-app-check-window-handle</guid>
-			<pubDate>Fri, 08 Jul 2011 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;In an MFC Application, you might use a thread to update some control of a dialog box or Window. Now, while this application is running, user may press any of the buttons for example, OK, Cancel or simply close the Windows or Dialog without performing any of the options while your thread is still performing some background operation. After the operation is complete it tries to update Windows/Dialog. In the meantime, because user has already closed the Window an attempt to update the interface will cause application to crash due to invalid handle.&lt;/p&gt;
-&lt;p&gt;Windows will report the crash with a dialog box that your application has stopped working.&lt;/p&gt;
-&lt;p&gt;To ensure this does not happen for a Windows App you need to check whether that dialog box window really exists before updating it. To do that we use &lt;code&gt;IsWindow&lt;/code&gt; function and pass the Windows Handle Pointer. The function we use here to update some text control in the Window/Dialog is &lt;code&gt;SetDlgItemText&lt;/code&gt; Here's an example,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;int res = PerformSomeTask(param);
-
-if (res == 0) {
-    if (::IsWindow(ts-&amp;gt;_this-&amp;gt;m_hWnd) == TRUE) {  // ts is thread structure
-        SetDlgItemText(IDC_CHECKNOTIFY, _T(&amp;quot;Service is not available&amp;quot;));    // IDC_CHECKNOTIFY is a static text control
-    }
-}
-else {
-    if (::IsWindow(ts-&amp;gt;_this-&amp;gt;m_hWnd) == TRUE)
-        SetDlgItemText(IDC_CHECKNOTIFY, _T(&amp;quot;Service is available&amp;quot;));
-}
-&lt;/code&gt;&lt;/pre&gt;
 </content:encoded>
 		</item>
 	</channel>

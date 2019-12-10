@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 
-        <title>SAOSX Blog - Pipelines</title>
+        <title>SAOSX Blog - InterOp Calling C&#x2B;&#x2B; from C#</title>
         <meta name="description" content="Heads in the cloud! A Blog by Atiq Rahman!" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">        
 
@@ -28,9 +28,9 @@
         <meta name="msapplication-tooltip" content="SAOSX Blog" />
         <meta name="msapplication-starturl" content="/" />
 
-        <meta property="og:title" content="SAOSX Blog - Pipelines" />
+        <meta property="og:title" content="SAOSX Blog - InterOp Calling C&#x2B;&#x2B; from C#" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://blog.saosx.com/tags/Pipelines" />
+        <meta property="og:url" content="https://blog.saosx.com/posts/interop-calling-cpp-from-csharp" />
         <!-- TODO: More social graph meta tags -->
 
         
@@ -72,9 +72,19 @@
                         <div class="container">
                                 <div class="row">
                                         <div class="col-md-12">
-<div class="site-heading">
-    <h1>Pipelines</h1>
-</div>                                            </div>
+
+    
+<div class="post-heading">
+    <h1>InterOp Calling C&#x2B;&#x2B; from C#</h1>
+    <div class="meta">        
+Published on Thursday, April 12, 2018<br>    </div>
+        <div class="tags">
+                    <a role="button" href="/tags/cpp" class="btn btn-default btn-xs">cpp</a>
+                    <a role="button" href="/tags/csharp" class="btn btn-default btn-xs">csharp</a>
+                    <a role="button" href="/tags/dotnet-core" class="btn btn-default btn-xs">dotnet core</a>
+        </div>     
+</div>
+                                        </div>
                                 </div>
                         </div>
                 </header>
@@ -83,72 +93,104 @@
                 <div class="container">
                         <div class="row">
                                 <div id="content" class="col-md-12">
-                                        <div class="container-sm-height">
-    <div class="row row-sm-height">
-        <div class="col-sm-8 right-border col-sm-height">
-            
-        <div class="post-list">
-            <a href="/posts/wyam">
-                <h3 class="post-title">Wyam with Cake Build, Github pages and Azure Pipeline (Windows Server 2019)</h3>
-            </a>
-            <p class="post-meta">Posted on Wednesday, November 27, 2019</p>      
-        </div>   
+                                        
+
+<p>For the demonstration I consider a Visual Studio 2017 Solution containing two projects,</p>
+<ul>
+<li>One project containing C++ Code</li>
+<li>Other project contain C# driving code doing the demonstrating interop</li>
+</ul>
+<p>C++ code looks like,</p>
+<pre><code>extern &quot;C&quot;             //No name mangling
+__declspec(dllexport)  //Tells the compiler to export the function
+int                    //Function return type     
+__cdecl                //Specifies calling convention, cdelc is default, 
+                       //so this can be omitted 
+  test(int number) {
+  return number + 1;
+}
+</code></pre>
+<p>Please note the way return type specified compare to traditional function declaration.</p>
+<p>C# driver code looks like following,</p>
+<pre><code>using System;
+using System.Runtime.InteropServices;
+
+namespace p1
+{
+  public static class NativeTest
+  {
+    static void Main(string[] args)
+    {
+      Console.WriteLine(&quot;Interop test: &quot; + test(100));
+    }
+
+    private const string DllFilePath = &#64;&quot;D:\Code\CSharp\InterOp\Debug\Cpp.dll&quot;;
+
+    [DllImport(DllFilePath , CallingConvention = CallingConvention.Cdecl)]
+    private extern static int test(int number);
+
+    public static int Test(int number) {
+        return test(number);
+    }
+  }
+}
+</code></pre>
+<p>My projects dir structure looks like,</p>
+<pre><code>D:\CODE\CSHARP\INTEROP
+│   p1.sln
+│
+├───Cpp
+│   │   Cpp.vcxproj
+│   │   Cpp.vcxproj.filters
+│   │   Cpp.vcxproj.user
+│   │   Main.cpp
+│   │
+│   └───Debug
+│       │   Cpp.dll
+│       │   Cpp.exp
+│       │   Cpp.ilk
+│       │   Cpp.lib
+│       │   Cpp.log
+│       │   Cpp.pdb
+│       │   Main.obj
+│       │   vc141.idb
+│       │   vc141.pdb
+│ 
+└───p1
+    │   App.config
+    │   p1.csproj
+    │   Program.cs
+    │
+    ├───bin
+    │   └───Debug
+    │           p1.exe
+    │
+    ├───obj
+    │   └───Debug
+    │       │   p1.exe
+    │       │   p1.pdb
+    └───Properties
+            AssemblyInfo.cs
+</code></pre>
+<p>For the project structure above, I can use a relative location of the file,</p>
+<pre><code>private const string DllFilePath = &#64;&quot;..\..\..\Cpp\Debug\Cpp.dll&quot;;
+</code></pre>
+<p>Additionally, I have changed following for C++ project,</p>
+<p><em>Output Directory:</em> <span class="math">\((SolutionDir)\)</span>(ProjectName)$(Configuration)<br />
+<em>Configuration Type:</em> Dynamic Library (.dll)</p>
+<p>When we are passing arrays and pointers we need data marshalling. ref, <a href="https://stackoverflow.com/questions/741206/using-arrays-and-pointers-in-c-sharp-with-c-dll">Using arrays and pointers in C# with C DLL</a></p>
+<p>msdn documentation provides instructions for this for managed C++ to unmanaged C++.
+<a href="https://docs.microsoft.com/en-us/cpp/dotnet/how-to-call-native-dlls-from-managed-code-using-pinvoke">How to: Call Native DLLs from Managed Code Using PInvoke</a></p>
+<p>So, for a new project it makes sense. Or if it is feasible to create managed C++ wrapper around the unmanaged code. It gives us an assembly that can be directly referenced from C#. Ref, <a href="https://stackoverflow.com/questions/935664/possible-to-call-c-code-from-c">Possible to call C++ code from C#?</a></p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://stackoverflow.com/questions/9407616/how-to-call-c-code-from-c-sharp">How to call C++ code from C#</a></li>
+<li><a href="https://docs.microsoft.com/en-us/cpp/dotnet/calling-native-functions-from-managed-code">Calling Native Functions from Managed Code - PInvoke and the DllImport, Marshaling Arguments</a></li>
+<li>Interop msdn blog posts in 2006 <a href="https://blogs.msdn.microsoft.com/borisj/2006/07/30/interop-101-part-1/">part 1</a> and <a href="https://blogs.msdn.microsoft.com/borisj/2007/02/09/interop-101-part-5/">part 5</a></li>
+</ul>
 
 
-            <nav>
-                <ul class="pager">
-                    <li class="previous">                
-                    </li>
-                    <li class="next">
-                    </li>
-                </ul>
-            </nav>
-            <hr class="visible-xs-block" />
-        </div>
-		
-        <div class="col-sm-4 col-sm-height">
-                <a role="button" href="/tags/system-administration" class="btn btn-default btn-xs">system administration (4)</a>
-                <a role="button" href="/tags/health-care" class="btn btn-default btn-xs">health care (4)</a>
-                <a role="button" href="/tags/Problem-Solving" class="btn btn-default btn-xs">Problem Solving (4)</a>
-                <a role="button" href="/tags/Algorithms" class="btn btn-default btn-xs">Algorithms (4)</a>
-                <a role="button" href="/tags/C&#x2B;&#x2B;" class="btn btn-default btn-xs">C&#x2B;&#x2B; (3)</a>
-                <a role="button" href="/tags/Data-Structure" class="btn btn-default btn-xs">Data Structure (2)</a>
-                <a role="button" href="/tags/Heap" class="btn btn-default btn-xs">Heap (2)</a>
-                <a role="button" href="/tags/dotnet-core" class="btn btn-default btn-xs">dotnet core (2)</a>
-                <a role="button" href="/tags/EFI" class="btn btn-default btn-xs">EFI (2)</a>
-                <a role="button" href="/tags/System-Boot" class="btn btn-default btn-xs">System Boot (2)</a>
-                <a role="button" href="/tags/Linux" class="btn btn-default btn-xs">Linux (2)</a>
-                <a role="button" href="/tags/Windows" class="btn btn-default btn-xs">Windows (2)</a>
-                <a role="button" href="/tags/windows-command-prompt" class="btn btn-default btn-xs">windows command prompt (2)</a>
-                <a role="button" href="/tags/markdown" class="btn btn-default btn-xs">markdown (2)</a>
-                <a role="button" href="/tags/Powershell-Core" class="btn btn-default btn-xs">Powershell Core (2)</a>
-                <a role="button" href="/tags/python" class="btn btn-default btn-xs">python (2)</a>
-                <a role="button" href="/tags/programming-languages" class="btn btn-default btn-xs">programming languages (2)</a>
-                <a role="button" href="/tags/source-Control" class="btn btn-default btn-xs">source Control (2)</a>
-                <a role="button" href="/tags/version-Control" class="btn btn-default btn-xs">version Control (2)</a>
-                <a role="button" href="/tags/Binary-Tree" class="btn btn-default btn-xs">Binary Tree (1)</a>
-                <a role="button" href="/tags/Azure-Cloud" class="btn btn-default btn-xs">Azure Cloud (1)</a>
-                <a role="button" href="/tags/System-Adiministration" class="btn btn-default btn-xs">System Adiministration (1)</a>
-                <a role="button" href="/tags/entity-framework" class="btn btn-default btn-xs">entity framework (1)</a>
-                <a role="button" href="/tags/cpp" class="btn btn-default btn-xs">cpp (1)</a>
-                <a role="button" href="/tags/csharp" class="btn btn-default btn-xs">csharp (1)</a>
-                <a role="button" href="/tags/Sorting" class="btn btn-default btn-xs">Sorting (1)</a>
-                <a role="button" href="/tags/SVN" class="btn btn-default btn-xs">SVN (1)</a>
-                <a role="button" href="/tags/partitioning" class="btn btn-default btn-xs">partitioning (1)</a>
-                <a role="button" href="/tags/windows-programming" class="btn btn-default btn-xs">windows programming (1)</a>
-                <a role="button" href="/tags/MFC" class="btn btn-default btn-xs">MFC (1)</a>
-                <a role="button" href="/tags/wyam" class="btn btn-default btn-xs">wyam (1)</a>
-                <a role="button" href="/tags/Cloud" class="btn btn-default btn-xs">Cloud (1)</a>
-                <a role="button" href="/tags/Pipelines" class="btn btn-primary btn-xs">Pipelines (1)</a>
-                <a role="button" href="/tags/netsh" class="btn btn-default btn-xs">netsh (1)</a>
-                <a role="button" href="/tags/network" class="btn btn-default btn-xs">network (1)</a>
-                <a role="button" href="/tags/math" class="btn btn-default btn-xs">math (1)</a>
-                <a role="button" href="/tags/latex" class="btn btn-default btn-xs">latex (1)</a>
-                <a role="button" href="/tags/pwsh" class="btn btn-default btn-xs">pwsh (1)</a>
-                <a role="button" href="/tags/mercurial" class="btn btn-default btn-xs">mercurial (1)</a>
-        </div>
-    </div>
-</div>
+
                                 </div>
                         </div>
                 </div>
