@@ -4,7 +4,7 @@
 	<title>SAOSX Blog</title>
 	<link rel="self" href="https://blog.saosx.com/" />
 	<rights>2019</rights>
-	<updated>2019-12-10T07:13:55Z</updated>
+	<updated>2019-12-10T07:17:22Z</updated>
 	<subtitle>Heads in the cloud! A Blog by Atiq Rahman!</subtitle>
 	<entry>
 		<id>https://blog.saosx.com/posts/tools-cmd</id>
@@ -2195,7 +2195,7 @@ az&amp;gt; container list
 	</entry>
 	<entry>
 		<id>https://blog.saosx.com/posts/heap</id>
-		<title>Quick Sort</title>
+		<title>Heap</title>
 		<link href="https://blog.saosx.com/posts/heap" />
 		<updated>2018-07-18T00:00:00Z</updated>
 		<content>&lt;h3 id="what-is-heap"&gt;What is Heap?&lt;/h3&gt;
@@ -2700,7 +2700,7 @@ namespace p1
 	</entry>
 	<entry>
 		<id>https://blog.saosx.com/posts/fibo-heap</id>
-		<title>Quick Sort</title>
+		<title>Fibonacci Heap</title>
 		<link href="https://blog.saosx.com/posts/fibo-heap" />
 		<updated>2018-02-14T00:00:00Z</updated>
 		<content>&lt;h3 id="what-is-fibonacci-heap"&gt;What is Fibonacci Heap?&lt;/h3&gt;
