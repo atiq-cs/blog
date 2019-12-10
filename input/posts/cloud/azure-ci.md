@@ -246,8 +246,8 @@ Create a CI from nanoserver IIS image, this one does recognize executing command
 Now, lets execute,
 
     >  az container exec --resource-group docker --name winci --exec-command "cmd.exe"
-    [2J[H[1H[37;40m[K[2H[K[3H[K[4H[K[5H[K[6H[K[7H[K[8H[K[9H[K[10H[K[11H[K[12H[K[13H[K[14H[K[15H[K[16H[K[17H[K[18H[K[19H[K[20H[K[1;1HMicrosoft Windows [Version 10.0.14393]
-    (c) 2016 Microsoft Corporation. All rights reserved.
+    ... messed up output contains ASCII 0x1B ....
+    .. Microsoft Windows [Version 10.0.14393] ....(c) 2016 Micro...
 
 Environent,
 
