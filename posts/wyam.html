@@ -112,12 +112,15 @@ dotnet D:\PFiles_x64\Chocolatey\lib\wyam\Wyam.dll build --help
 <p>Create a new repo. do a clone or (init and add files).</p>
 <p>However, <em>we don't create master branch</em>. We only create a branch called <code>source</code>.</p>
 <pre><code>git clone https://github.com/atiq-cs/saos-site
+Rename-Item saos-site wyamBlog
+pushd wyamBlog
+git checkout -b source
 git add .gitignore
-git commit -m 'initial commit'
+git commit -m 'add git ignore file'
+git push -u origin source
 </code></pre>
-<p>Assume our project dir is <code>D:\Code\wyamBlog</code>.</p>
-<pre><code>pushd D:\Code\wyamBlog
-dotnet D:\PFiles_x64\Chocolatey\lib\wyam\Wyam.dll new -r Blog
+<p>Let's create the blog,</p>
+<pre><code>dotnet D:\PFiles_x64\Chocolatey\lib\wyam\Wyam.dll new -r Blog
 dotnet D:\PFiles_x64\Chocolatey\lib\wyam\Wyam.dll build
 dotnet D:\PFiles_x64\Chocolatey\lib\wyam\Wyam.dll preview
 </code></pre>
@@ -125,13 +128,9 @@ dotnet D:\PFiles_x64\Chocolatey\lib\wyam\Wyam.dll preview
 <h2 id="cake-build">Cake Build</h2>
 <p>I update package versions in <code>build.cake</code> file,</p>
 <pre><code>#tool nuget:?package=Wyam&amp;version=2.2.9
-#tool &quot;nuget:?package=GitVersion.CommandLine&amp;version=5.1.2&quot;
+#tool nuget:?package=GitVersion.CommandLine&amp;version=5.1.3
 #addin nuget:?package=Cake.Wyam&amp;version=2.2.9
 #addin nuget:?package=Cake.Git&amp;version=0.21.0
-</code></pre>
-<p>Additionally, I upgrade it to use the latest VM,</p>
-<pre><code>pool:
-  vmImage: 'windows-2019'
 </code></pre>
 <p>For successful build, we need to set the variables properly,</p>
 <pre><code>$Env:GITHUB_USERNAME = 'atique'
@@ -139,8 +138,20 @@ $Env:GITHUB_USEREMAIL = 'atiq&#64;github.com'
 $Env:GITHUB_ACCESS_TOKEN = '123abcdef456'
 $Env:CNAME_CONTENT = 'blog.domain.com'
 </code></pre>
+<p>To generate new token visit <a href="https://github.com/settings/tokens/new">tokens page</a></p>
+<p>Get build script for cake,</p>
+<pre><code>Invoke-WebRequest https://cakebuild.net/download/bootstrapper/windows -OutFile build.ps1
+</code></pre>
+<p>We update in <code>config.wyam</code>,</p>
+<pre><code>Settings[Keys.Host] = &quot;blog.domain.com&quot;;
+</code></pre>
+<p>Otherwise we get,</p>
+<pre><code>Compiling build script...
+Error: One or more errors occurred.
+        Expecting state 'Element'.. Encountered 'Text'  with name '', namespace ''.
+</code></pre>
 <p>Here's example of local build,</p>
-<pre><code>$ .\build.ps1 -Target Build -Verbosity=verbose
+<pre><code>$ .\build -Target Build -Verbosity=verbose
 Preparing to run build script...
 Running build script...
 Analyzing build script...
@@ -363,7 +374,11 @@ PushMasterBranch              00:00:04.0557769
 Total:                        00:00:18.3127486
 </code></pre>
 <h2 id="azure-pipelines">Azure Pipelines</h2>
-<p><code>azure-pipelines.yml</code> is the pipeline file that triggers the deployment.</p>
+<p>Surf <a href="https://github.com/marketplace/azure-pipelines">azure-pipelines</a> and choose free plan.
+<code>azure-pipelines.yml</code> is the pipeline file that triggers the deployment. Additionally, I upgrade it to use the latest VM,</p>
+<pre><code>pool:
+  vmImage: 'windows-2019'
+</code></pre>
 <p>However, this one can be tricky to find the right <code>cake-build</code> package in azure. For convenience, here's the one that works: <a href="https://marketplace.visualstudio.com/acquisition?itemName=cake-build.cake">cake build pacakage in marketplacevisualstudio </a></p>
 <p>Without this package, pipeline build doesn't succeed and encounters following error,</p>
 <pre><code>A task is missing. The pipeline references a task called 'cake-build.cake.cake-build-task.Cake'. This usually indicates the task isn't installed, and you may be able to install it from the Marketplace: https://marketplace.visualstudio.com. (Task version 0, job 'Job', step ''.)
@@ -427,7 +442,7 @@ System.IO.File.WriteAllText(System.IO.Path.Combine(tempDir, CNameFileName), CNam
 </code></pre>
 <h2 id="pipeline-variables">Pipeline Variables</h2>
 <p>Probably these variables reset after we do deploy as below,</p>
-<pre><code>.\build.ps1 -Target Deploy
+<pre><code>.\build -Target Deploy
 </code></pre>
 <p><a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables">MS Docs - Pipeline Variables</a></p>
 <p>To edit pipeline variables on azure cloud.</p>
@@ -469,7 +484,7 @@ System.IO.File.WriteAllText(System.IO.Path.Combine(tempDir, CNameFileName), CNam
         <div class="row">
                 <div class="col-md-12 text-center">
                     <p class="copyright text-muted">
-                        Copyright © 2019
+                        Copyright © 2020
                         <br />
                             <a href="/feed.rss"><i class="fa fa-rss"></i> RSS Feed</a>
                         |

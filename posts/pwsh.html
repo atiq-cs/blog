@@ -95,7 +95,7 @@ Published on Tuesday, November 19, 2019<br>    </div>
                                 <div id="content" class="col-md-12">
                                         
 
-<p><em>This article formerly titled as 'Powershell Frequently Used Commands'</em></p>
+<p><em>This article formerly titled as 'Powershell Frequently Used Commands. Even though the article is titled pwsh it draws back on the topic of Powershell as well.'</em></p>
 <p>Please be aware of notation below in command outlines. <code>$</code> represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for example, <code>takeown</code>.</p>
 <h2 id="initialization-of-shell">Initialization of Shell</h2>
 <p><em>This section is for my personalized shell; please feel free to skip it.</em></p>
@@ -115,8 +115,13 @@ ls, cat, popd, pushd etc still work</p>
 <p>works just fine.</p>
 <p>ps is equivalent to Get-Process or to List processes or doing <code>tasklist</code>.
 Stop-Proccess instead of taskkill</p>
+<p>Example of starting pwsh with an initiazation script or calling a script with an arg,</p>
+<pre><code>Start-Process pwsh -ArgumentList '-NoExit', 'Init-App.ps1 foo' -ErrorAction 'stop'
+</code></pre>
+<p>above, <code>foo</code> is argument.</p>
 <h2 id="application-run-examples">Application Run Examples</h2>
 <p><code>Start</code> is an alias of <code>Start-Process</code></p>
+<h3 id="cmdlets">Cmdlets</h3>
 <h3 id="start-process">Start-Process</h3>
 <p>Here are some handy cmds,</p>
 <pre><code>Start DevEnv /Edit, Stream-Converter.ps1
@@ -188,6 +193,16 @@ Power Scheme GUID: 496d75e1-8cba-4d72-b778-535d67c976ea  (Airplane)
 <li>Sound</li>
 <li>Mouse</li>
 </ul>
+<h2 id="network-cmdlets">Network Cmdlets</h2>
+<p>Ping hosts,</p>
+<pre><code>Test-Connection -Count 64 google.com
+Test-Connection -Count 1024 google.com
+</code></pre>
+<p>host <code>bing.com</code> does not reply to ICMP requests anymore, hence it's not worth trying <code>Test-Connection bing.com</code>.</p>
+<p>if help modules are outdated this updates it,</p>
+<pre><code>Update-Help
+</code></pre>
+<p>More network related cmdlets or commands are at <a href="wifi-cmd">wifi cmd article</a></p>
 <h2 id="other-cmdlets">Other Cmdlets</h2>
 <p>Get list of running processes (unique),</p>
 <pre><code>Get-Process | Select-Object -Unique Path
@@ -214,14 +229,6 @@ DebuggerEnabled  : True
 IsRunspacePushed : False
 Runspace         : System.Management.Automation.Runspaces.LocalRunspace
 </code></pre>
-<p>Ping hosts,</p>
-<pre><code>Test-Connection -Count 64 bing.com
-Test-Connection -Count 1024 bing.com
-</code></pre>
-<p>if help modules are outdated this updates it,</p>
-<pre><code>Update-Help
-</code></pre>
-<p>More network related cmdlets or commands are at <a href="wifi-cmd">wifi cmd article</a></p>
 <p>How to uninstall store application i.e., skype</p>
 <pre><code>Get-AppxPackage Microsoft.SkypeApp | Remove-AppxPackage
 </code></pre>
@@ -234,7 +241,7 @@ $app.Uninstall()
 </code></pre>
 <h2 id="service-management">Service Management</h2>
 <p>Get list of services currently running,</p>
-<pre><code>    Get-Service | Where-Object {$_.Status -eq &quot;Running&quot;}
+<pre><code>Get-Service | Where-Object {$_.Status -eq &quot;Running&quot;}
 </code></pre>
 <p>Start a service,</p>
 <pre><code>Start-Service -Name VPNAgent
@@ -249,18 +256,19 @@ $app.Uninstall()
 &amp; &quot;$Env:HOME\ss.ps1&quot; $saArgs
 </code></pre>
 <h3 id="type-conversion">Type Conversion</h3>
-<p>Command to find ascii number of a bunch of characters,</p>
+<p>This part also demonstrates how to use some datatype libraries in commands.</p>
+<p>Example 1, how do we find ascii number of a bunch of characters?</p>
 <pre><code>$ [int[]][char[]] 'abcd'
 97
 98
 99
 100
 </code></pre>
-<p>To find ascii number of single char,</p>
+<p>Additionally, to find ascii number of single char,</p>
 <pre><code>$ [int][char] 'z'
 122
 </code></pre>
-<p>Array Sort,</p>
+<p>Moroever we can call <code>Array.Sort</code> in following way,</p>
 <pre><code>$a = [int[]] &#64;(9,5)
 [Array]::Sort($a)
 </code></pre>
@@ -311,7 +319,7 @@ Major  Minor  Build  Revision
 -----  -----  -----  --------
 10     0      18362  356
 </code></pre>
-<h2 id="misc">Misc</h2>
+<h2 id="shell-variables">Shell Variables</h2>
 <p>To delete all contents of USB drive (this is dangerous as it deletea all contents and files/dirs from a drive),</p>
 <pre><code>Remove-Item -force l:\*
 </code></pre>
@@ -322,6 +330,9 @@ DocumentsDir\PowerShell\Microsoft.PowerShell_profile.ps1
 <p>On Powershell (Windows),</p>
 <pre><code>$ $profile
 DocumentsDir\\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
+</code></pre>
+<p>Access history file,</p>
+<pre><code>$ (Get-PSReadlineOption).HistorySavePath
 </code></pre>
 <h2 id="inception-to-powershell-from-pwsh">Inception to Powershell from pwsh</h2>
 <p>Say you have a script named <code>Bluetooth.ps1</code> that uses Windows features. Hence, it requires Powershell.</p>
@@ -381,6 +392,28 @@ PSCommandPath
 PSEdition
 PSHOME
 </code></pre>
+<h3 id="chaning-window-size">Chaning Window Size</h3>
+<p>To change Window ize we change buffer size first, because Window Size depends on it.</p>
+<pre><code>$cUI = (Get-Host).UI.RawUI
+$b = $cUI.BufferSize
+$b.Width = $width
+$b.Height = $history_size
+$cUI.BufferSize = $b
+
+# change window height and width
+$b = $cUI.WindowSize
+$b.Width = $width
+$b.Height = $height
+$cUI.WindowSize = $b
+</code></pre>
+<p>There's oneliner to do it as well,</p>
+<pre><code>(Get-Host).UI.RawUI.BufferSize = New-Object System.Management.Automation.Host.Size -Property &#64;{Width=$width; Height=$history_size}
+(Get-Host).UI.RawUI.WindowSize = New-Object System.Management.Automation.Host.Size -Property &#64;{Width=$width; Height=$height}
+</code></pre>
+<p>To change the title of the console we do,</p>
+<pre><code>$cUI.WindowTitle = $title
+</code></pre>
+<p><a href="https://docs.microsoft.com/en-us/dotnet/api/system.management.automation.host.pshostuserinterface.rawui">ms docs ref</a></p>
 <h2 id="continue">continue</h2>
 <p>rest of the contents yet to be appended..</p>
 
@@ -398,7 +431,7 @@ PSHOME
         <div class="row">
                 <div class="col-md-12 text-center">
                     <p class="copyright text-muted">
-                        Copyright © 2019
+                        Copyright © 2020
                         <br />
                             <a href="/feed.rss"><i class="fa fa-rss"></i> RSS Feed</a>
                         |

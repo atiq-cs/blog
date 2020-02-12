@@ -4,9 +4,9 @@
 		<title>SAOSX Blog</title>
 		<link>https://blog.saosx.com/</link>
 		<description>Heads in the cloud! A Blog by Atiq Rahman!</description>
-		<copyright>2019</copyright>
-		<pubDate>Tue, 10 Dec 2019 07:17:22 GMT</pubDate>
-		<lastBuildDate>Tue, 10 Dec 2019 07:17:22 GMT</lastBuildDate>
+		<copyright>2020</copyright>
+		<pubDate>Wed, 12 Feb 2020 06:24:57 GMT</pubDate>
+		<lastBuildDate>Wed, 12 Feb 2020 06:24:57 GMT</lastBuildDate>
 		<item>
 			<title>Command Line for Utilities and Tools</title>
 			<link>https://blog.saosx.com/posts/tools-cmd</link>
@@ -49,76 +49,6 @@ Extract subtitle using &lt;code&gt;mkvextract&lt;/code&gt; (referring to &lt;cod
 &lt;p&gt;&lt;code&gt;mkvmerge&lt;/code&gt; (in my system &lt;code&gt;C:\Program Files (x86)\MKVToolNix\mkvmerge.exe&lt;/code&gt;) show info on mkv file,&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;mkvmerge -i D:\Movies\Fences.mkv
 &lt;/code&gt;&lt;/pre&gt;
-</content:encoded>
-		</item>
-		<item>
-			<title>Hospitals in Dhaka</title>
-			<link>https://blog.saosx.com/posts/hospitals-dhaka</link>
-			<description>&lt;p&gt;To find some good Hospitals in Bangladesh we have to look at affluent medical centers in Dhaka. There is no such thing as Best Hospital in Bangladesh. It's a mix of bad and good experience, bit of luck, type of disease and level of in patient.&lt;/p&gt;</description>
-			<guid>https://blog.saosx.com/posts/hospitals-dhaka</guid>
-			<pubDate>Thu, 28 Nov 2019 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;h2 id="best-hospitals-in-dhaka"&gt;Best Hospitals in Dhaka&lt;/h2&gt;
-&lt;p&gt;To find some good Hospitals in Bangladesh we have to look at affluent medical centers in Dhaka. There is no such thing as Best Hospital in Bangladesh. It's a mix of bad and good experience, bit of luck, type of disease and level of in patient.&lt;/p&gt;
-&lt;p&gt;Public hospitals here are rife with negligence, overflow of patients and reputation of not so hygiene place for patients.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Dhaka Medical Hospital&lt;/li&gt;
-&lt;li&gt;PG / BSMMU&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;There is an example of negligence, where an elderly patient died in Dhaka Medical due to not taking so good care of a diabetes patient.&lt;/p&gt;
-&lt;p&gt;To get appointments in most public hospitals, sometimes you need political influence, birbery or power. For some, being part of a nearby school campus helps.&lt;/p&gt;
-&lt;p&gt;Among private hospitals a few mentionables are,&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Green Life&lt;/li&gt;
-&lt;li&gt;Apollo&lt;/li&gt;
-&lt;li&gt;Padma&lt;/li&gt;
-&lt;li&gt;NINS&lt;/li&gt;
-&lt;li&gt;Birdem, &lt;a href="hospital-birdem"&gt;review&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;ABM Abdullah in Central Hospital&lt;/p&gt;
-&lt;p&gt;Specialists are scattered across private and public hospitals.&lt;/p&gt;
-&lt;h3 id="dialysis-facilities"&gt;Dialysis Facilities&lt;/h3&gt;
-&lt;p&gt;For kidney patients, dialysis is like oxygen to breathe. Please, be careful about pneumonia (vaccinate ahead). In foreign countries, there might be stem cell treatments to parmamnently cure Kidney problems.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Sonar Bangla Foundation Bangladesh
-Address: 23/6 RUPAYAN SHELFORD, LEVEL-5,
-Shyamoli, Dhaka 1207
-Phone: +880 2-9143676
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Central Hospital, unfortunately, doesn't have dialysis yet.&lt;/p&gt;
-&lt;h2 id="misc"&gt;Misc&lt;/h2&gt;
-&lt;p&gt;Few points,&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;For kidney related diseases, it might as well be a good idea to consult with neurology and oncology.&lt;/li&gt;
-&lt;li&gt;There are plenty of examples where a poor diagnosis took place or wrong diagnosis did occur which resulted a seriously worse condition of patients or they died.&lt;/li&gt;
-&lt;li&gt;Transportation: Dhaka City is pretty busy and suffers high traffic situations. Hence, be prepared to spend time on the road while travelling to places.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;If you are a foreigner, considering treatment travelling to Bangladesh it's probably not a good idea unless you are just trying to save money.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;You could use a translator if there's language barrier i.e., you don't know Bangla or English language. Please be aware that average demography don't speak English.&lt;/li&gt;
-&lt;li&gt;For acquiring VISA to india for treatment, it might help to provide appointment document with the hospital/specialist.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Data Plans&lt;/strong&gt;
-A good cell phone carrier helps. It's easy to register a SIM card with one of the carriers to make communication easier to make cals to hospitals or local Bangladesh contacts. Few careers are GrameenPhone, Robi, Airtel. Your roaming service might cover you as well for calling and data; however, please note that &lt;em&gt;cellphone plans are cheaper in Bangladesh compared to other countries&lt;/em&gt;. It's better to just utilize that.&lt;/p&gt;
-</content:encoded>
-		</item>
-		<item>
-			<title>BIRDEM General Hospital Review</title>
-			<link>https://blog.saosx.com/posts/hospital-birdem</link>
-			<description>&lt;p&gt;BIRDEM: &lt;a href="https://www.google.com/search?sxsrf=ACYBGNTMLrdeP99E_eiLCVujRWvrGh7t8g%3A1574983392995&amp;amp;ei=4FbgXaSuPOP19APgwoJg&amp;amp;q=birdem+hospital&amp;amp;oq=birdem+hospital&amp;amp;gs_l=psy-ab.3..35i39l2j0l3j0i20i263j0l4.2652.8043..10211...1.1..0.169.1542.11j5......0....1..gws-wiz.......0i71j0i273j0i131j0i67j35i304i39j0i13.QrrR8Vo4Idc&amp;amp;ved=0ahUKEwiknqqtho7mAhXjOn0KHWChAAwQ4dUDCAs&amp;amp;uact=5#lrd=0x3755b8eb2cd9b849:0x7c213c924dd2d324,1,,,"&gt;google review link&lt;/a&gt;
-As a friend quotes,&lt;/p&gt;</description>
-			<guid>https://blog.saosx.com/posts/hospital-birdem</guid>
-			<pubDate>Thu, 28 Nov 2019 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;BIRDEM: &lt;a href="https://www.google.com/search?sxsrf=ACYBGNTMLrdeP99E_eiLCVujRWvrGh7t8g%3A1574983392995&amp;amp;ei=4FbgXaSuPOP19APgwoJg&amp;amp;q=birdem+hospital&amp;amp;oq=birdem+hospital&amp;amp;gs_l=psy-ab.3..35i39l2j0l3j0i20i263j0l4.2652.8043..10211...1.1..0.169.1542.11j5......0....1..gws-wiz.......0i71j0i273j0i131j0i67j35i304i39j0i13.QrrR8Vo4Idc&amp;amp;ved=0ahUKEwiknqqtho7mAhXjOn0KHWChAAwQ4dUDCAs&amp;amp;uact=5#lrd=0x3755b8eb2cd9b849:0x7c213c924dd2d324,1,,,"&gt;google review link&lt;/a&gt;
-As a friend quotes,&lt;/p&gt;
-&lt;blockquote class="blockquote"&gt;
-&lt;p&gt;Cost is similar to private but environment is identical to public hospitals.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;** Bed bugs are real **: there are bed bugs, dirty environment in wards and cabins follows.&lt;/li&gt;
-&lt;li&gt;wards fees of private, but condition is public.. cabins have few patients..&lt;/li&gt;
-&lt;li&gt;most times doctors are resistant on showing report or taking photos of those.
-hard to get access to Sr Doctor, talks over phone with Sr Doctor, sometimes there are delays in treatment due to that.&lt;/li&gt;
-&lt;li&gt;You need to keep people around the patient during every treatment/dialysis session. Chances are if things go wrong, Nurses might not notice it. They might as well just blame the patient for anything bad happened for example, say that patient moved and saline got disconnected which result cotting of blood. This is their excuse while the patient is unable to move at all. They won't apologize despite their fault/negligence. They even kick you out if you speak out due to their mistake. After all, you are victim.&lt;/li&gt;
-&lt;/ul&gt;
 </content:encoded>
 		</item>
 		<item>
@@ -192,6 +122,76 @@ I would bet on Hospitals on Delhi and Mumbai.&lt;/p&gt;
 </content:encoded>
 		</item>
 		<item>
+			<title>Hospitals in Dhaka</title>
+			<link>https://blog.saosx.com/posts/hospitals-dhaka</link>
+			<description>&lt;p&gt;To find some good Hospitals in Bangladesh we have to look at affluent medical centers in Dhaka. There is no such thing as Best Hospital in Bangladesh. It's a mix of bad and good experience, bit of luck, type of disease and level of in patient.&lt;/p&gt;</description>
+			<guid>https://blog.saosx.com/posts/hospitals-dhaka</guid>
+			<pubDate>Thu, 28 Nov 2019 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;h2 id="best-hospitals-in-dhaka"&gt;Best Hospitals in Dhaka&lt;/h2&gt;
+&lt;p&gt;To find some good Hospitals in Bangladesh we have to look at affluent medical centers in Dhaka. There is no such thing as Best Hospital in Bangladesh. It's a mix of bad and good experience, bit of luck, type of disease and level of in patient.&lt;/p&gt;
+&lt;p&gt;Public hospitals here are rife with negligence, overflow of patients and reputation of not so hygiene place for patients.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dhaka Medical Hospital&lt;/li&gt;
+&lt;li&gt;PG / BSMMU&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There is an example of negligence, where an elderly patient died in Dhaka Medical due to not taking so good care of a diabetes patient.&lt;/p&gt;
+&lt;p&gt;To get appointments in most public hospitals, sometimes you need political influence, birbery or power. For some, being part of a nearby school campus helps.&lt;/p&gt;
+&lt;p&gt;Among private hospitals a few mentionables are,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Green Life&lt;/li&gt;
+&lt;li&gt;Apollo&lt;/li&gt;
+&lt;li&gt;Padma&lt;/li&gt;
+&lt;li&gt;NINS&lt;/li&gt;
+&lt;li&gt;Birdem, &lt;a href="hospital-birdem"&gt;review&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ABM Abdullah in Central Hospital&lt;/p&gt;
+&lt;p&gt;Specialists are scattered across private and public hospitals.&lt;/p&gt;
+&lt;h3 id="dialysis-facilities"&gt;Dialysis Facilities&lt;/h3&gt;
+&lt;p&gt;For kidney patients, dialysis is like oxygen to breathe. Please, be careful about pneumonia (vaccinate ahead). In foreign countries, there might be stem cell treatments to parmamnently cure Kidney problems.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Sonar Bangla Foundation Bangladesh
+Address: 23/6 RUPAYAN SHELFORD, LEVEL-5,
+Shyamoli, Dhaka 1207
+Phone: +880 2-9143676
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Central Hospital, unfortunately, doesn't have dialysis yet.&lt;/p&gt;
+&lt;h2 id="misc"&gt;Misc&lt;/h2&gt;
+&lt;p&gt;Few points,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For kidney related diseases, it might as well be a good idea to consult with neurology and oncology.&lt;/li&gt;
+&lt;li&gt;There are plenty of examples where a poor diagnosis took place or wrong diagnosis did occur which resulted a seriously worse condition of patients or they died.&lt;/li&gt;
+&lt;li&gt;Transportation: Dhaka City is pretty busy and suffers high traffic situations. Hence, be prepared to spend time on the road while travelling to places.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you are a foreigner, considering treatment travelling to Bangladesh it's probably not a good idea unless you are just trying to save money.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You could use a translator if there's language barrier i.e., you don't know Bangla or English language. Please be aware that average demography don't speak English.&lt;/li&gt;
+&lt;li&gt;For acquiring VISA to india for treatment, it might help to provide appointment document with the hospital/specialist.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Data Plans&lt;/strong&gt;
+A good cell phone carrier helps. It's easy to register a SIM card with one of the carriers to make communication easier to make cals to hospitals or local Bangladesh contacts. Few careers are GrameenPhone, Robi, Airtel. Your roaming service might cover you as well for calling and data; however, please note that &lt;em&gt;cellphone plans are cheaper in Bangladesh compared to other countries&lt;/em&gt;. It's better to just utilize that.&lt;/p&gt;
+</content:encoded>
+		</item>
+		<item>
+			<title>BIRDEM General Hospital Review</title>
+			<link>https://blog.saosx.com/posts/hospital-birdem</link>
+			<description>&lt;p&gt;BIRDEM: &lt;a href="https://www.google.com/search?sxsrf=ACYBGNTMLrdeP99E_eiLCVujRWvrGh7t8g%3A1574983392995&amp;amp;ei=4FbgXaSuPOP19APgwoJg&amp;amp;q=birdem+hospital&amp;amp;oq=birdem+hospital&amp;amp;gs_l=psy-ab.3..35i39l2j0l3j0i20i263j0l4.2652.8043..10211...1.1..0.169.1542.11j5......0....1..gws-wiz.......0i71j0i273j0i131j0i67j35i304i39j0i13.QrrR8Vo4Idc&amp;amp;ved=0ahUKEwiknqqtho7mAhXjOn0KHWChAAwQ4dUDCAs&amp;amp;uact=5#lrd=0x3755b8eb2cd9b849:0x7c213c924dd2d324,1,,,"&gt;google review link&lt;/a&gt;
+As a friend quotes,&lt;/p&gt;</description>
+			<guid>https://blog.saosx.com/posts/hospital-birdem</guid>
+			<pubDate>Thu, 28 Nov 2019 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;BIRDEM: &lt;a href="https://www.google.com/search?sxsrf=ACYBGNTMLrdeP99E_eiLCVujRWvrGh7t8g%3A1574983392995&amp;amp;ei=4FbgXaSuPOP19APgwoJg&amp;amp;q=birdem+hospital&amp;amp;oq=birdem+hospital&amp;amp;gs_l=psy-ab.3..35i39l2j0l3j0i20i263j0l4.2652.8043..10211...1.1..0.169.1542.11j5......0....1..gws-wiz.......0i71j0i273j0i131j0i67j35i304i39j0i13.QrrR8Vo4Idc&amp;amp;ved=0ahUKEwiknqqtho7mAhXjOn0KHWChAAwQ4dUDCAs&amp;amp;uact=5#lrd=0x3755b8eb2cd9b849:0x7c213c924dd2d324,1,,,"&gt;google review link&lt;/a&gt;
+As a friend quotes,&lt;/p&gt;
+&lt;blockquote class="blockquote"&gt;
+&lt;p&gt;Cost is similar to private but environment is identical to public hospitals.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;** Bed bugs are real **: there are bed bugs, dirty environment in wards and cabins follows.&lt;/li&gt;
+&lt;li&gt;wards fees of private, but condition is public.. cabins have few patients..&lt;/li&gt;
+&lt;li&gt;most times doctors are resistant on showing report or taking photos of those.
+hard to get access to Sr Doctor, talks over phone with Sr Doctor, sometimes there are delays in treatment due to that.&lt;/li&gt;
+&lt;li&gt;You need to keep people around the patient during every treatment/dialysis session. Chances are if things go wrong, Nurses might not notice it. They might as well just blame the patient for anything bad happened for example, say that patient moved and saline got disconnected which result cotting of blood. This is their excuse while the patient is unable to move at all. They won't apologize despite their fault/negligence. They even kick you out if you speak out due to their mistake. After all, you are victim.&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+		</item>
+		<item>
 			<title>Wyam with Cake Build, Github pages and Azure Pipeline (Windows Server 2019)</title>
 			<link>https://blog.saosx.com/posts/wyam</link>
 			<description>&lt;p&gt;First, we install wyam install locally using pwsh admin,&lt;/p&gt;</description>
@@ -213,12 +213,15 @@ dotnet D:\PFiles_x64\Chocolatey\lib\wyam\Wyam.dll build --help
 &lt;p&gt;Create a new repo. do a clone or (init and add files).&lt;/p&gt;
 &lt;p&gt;However, &lt;em&gt;we don't create master branch&lt;/em&gt;. We only create a branch called &lt;code&gt;source&lt;/code&gt;.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;git clone https://github.com/atiq-cs/saos-site
+Rename-Item saos-site wyamBlog
+pushd wyamBlog
+git checkout -b source
 git add .gitignore
-git commit -m 'initial commit'
+git commit -m 'add git ignore file'
+git push -u origin source
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Assume our project dir is &lt;code&gt;D:\Code\wyamBlog&lt;/code&gt;.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;pushd D:\Code\wyamBlog
-dotnet D:\PFiles_x64\Chocolatey\lib\wyam\Wyam.dll new -r Blog
+&lt;p&gt;Let's create the blog,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;dotnet D:\PFiles_x64\Chocolatey\lib\wyam\Wyam.dll new -r Blog
 dotnet D:\PFiles_x64\Chocolatey\lib\wyam\Wyam.dll build
 dotnet D:\PFiles_x64\Chocolatey\lib\wyam\Wyam.dll preview
 &lt;/code&gt;&lt;/pre&gt;
@@ -226,13 +229,9 @@ dotnet D:\PFiles_x64\Chocolatey\lib\wyam\Wyam.dll preview
 &lt;h2 id="cake-build"&gt;Cake Build&lt;/h2&gt;
 &lt;p&gt;I update package versions in &lt;code&gt;build.cake&lt;/code&gt; file,&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;#tool nuget:?package=Wyam&amp;amp;version=2.2.9
-#tool &amp;quot;nuget:?package=GitVersion.CommandLine&amp;amp;version=5.1.2&amp;quot;
+#tool nuget:?package=GitVersion.CommandLine&amp;amp;version=5.1.3
 #addin nuget:?package=Cake.Wyam&amp;amp;version=2.2.9
 #addin nuget:?package=Cake.Git&amp;amp;version=0.21.0
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Additionally, I upgrade it to use the latest VM,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;pool:
-  vmImage: 'windows-2019'
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;For successful build, we need to set the variables properly,&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;$Env:GITHUB_USERNAME = 'atique'
@@ -240,8 +239,20 @@ $Env:GITHUB_USEREMAIL = 'atiq&amp;#64;github.com'
 $Env:GITHUB_ACCESS_TOKEN = '123abcdef456'
 $Env:CNAME_CONTENT = 'blog.domain.com'
 &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To generate new token visit &lt;a href="https://github.com/settings/tokens/new"&gt;tokens page&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Get build script for cake,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Invoke-WebRequest https://cakebuild.net/download/bootstrapper/windows -OutFile build.ps1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We update in &lt;code&gt;config.wyam&lt;/code&gt;,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Settings[Keys.Host] = &amp;quot;blog.domain.com&amp;quot;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Otherwise we get,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Compiling build script...
+Error: One or more errors occurred.
+        Expecting state 'Element'.. Encountered 'Text'  with name '', namespace ''.
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here's example of local build,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ .\build.ps1 -Target Build -Verbosity=verbose
+&lt;pre&gt;&lt;code&gt;$ .\build -Target Build -Verbosity=verbose
 Preparing to run build script...
 Running build script...
 Analyzing build script...
@@ -464,7 +475,11 @@ PushMasterBranch              00:00:04.0557769
 Total:                        00:00:18.3127486
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id="azure-pipelines"&gt;Azure Pipelines&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;azure-pipelines.yml&lt;/code&gt; is the pipeline file that triggers the deployment.&lt;/p&gt;
+&lt;p&gt;Surf &lt;a href="https://github.com/marketplace/azure-pipelines"&gt;azure-pipelines&lt;/a&gt; and choose free plan.
+&lt;code&gt;azure-pipelines.yml&lt;/code&gt; is the pipeline file that triggers the deployment. Additionally, I upgrade it to use the latest VM,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pool:
+  vmImage: 'windows-2019'
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;However, this one can be tricky to find the right &lt;code&gt;cake-build&lt;/code&gt; package in azure. For convenience, here's the one that works: &lt;a href="https://marketplace.visualstudio.com/acquisition?itemName=cake-build.cake"&gt;cake build pacakage in marketplacevisualstudio &lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Without this package, pipeline build doesn't succeed and encounters following error,&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;A task is missing. The pipeline references a task called 'cake-build.cake.cake-build-task.Cake'. This usually indicates the task isn't installed, and you may be able to install it from the Marketplace: https://marketplace.visualstudio.com. (Task version 0, job 'Job', step ''.)
@@ -528,7 +543,7 @@ System.IO.File.WriteAllText(System.IO.Path.Combine(tempDir, CNameFileName), CNam
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id="pipeline-variables"&gt;Pipeline Variables&lt;/h2&gt;
 &lt;p&gt;Probably these variables reset after we do deploy as below,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;.\build.ps1 -Target Deploy
+&lt;pre&gt;&lt;code&gt;.\build -Target Deploy
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables"&gt;MS Docs - Pipeline Variables&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;To edit pipeline variables on azure cloud.&lt;/p&gt;
@@ -843,6 +858,12 @@ SSID 3 : hello_kitty
 			<guid>https://blog.saosx.com/posts/dos</guid>
 			<pubDate>Tue, 19 Nov 2019 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;Please be aware of notation below in command outlines. &lt;code&gt;$&lt;/code&gt; represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for exxample, &lt;code&gt;takeown&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Win Supported Run Cmds&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;[ToDo: move this to a separate one.]&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;desk.cpl
+services.msc
+sysdm.cpl
+&lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id="misc"&gt;Misc&lt;/h2&gt;
 &lt;p&gt;Customized ping command, waits 20 seconds for reply and keep pinging non-stop &lt;a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/ping"&gt;ping ref&lt;/a&gt;,&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;ping -w 20000 -t myserver.company.com
@@ -918,10 +939,10 @@ For example usage &lt;code&gt;regsvr32&lt;/code&gt; of check &lt;a href="https:/
 		<item>
 			<title>pwsh Command Cache</title>
 			<link>https://blog.saosx.com/posts/pwsh</link>
-			<description>&lt;p&gt;&lt;em&gt;This article formerly titled as 'Powershell Frequently Used Commands'&lt;/em&gt;&lt;/p&gt;</description>
+			<description>&lt;p&gt;&lt;em&gt;This article formerly titled as 'Powershell Frequently Used Commands. Even though the article is titled pwsh it draws back on the topic of Powershell as well.'&lt;/em&gt;&lt;/p&gt;</description>
 			<guid>https://blog.saosx.com/posts/pwsh</guid>
 			<pubDate>Tue, 19 Nov 2019 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;&lt;em&gt;This article formerly titled as 'Powershell Frequently Used Commands'&lt;/em&gt;&lt;/p&gt;
+			<content:encoded>&lt;p&gt;&lt;em&gt;This article formerly titled as 'Powershell Frequently Used Commands. Even though the article is titled pwsh it draws back on the topic of Powershell as well.'&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Please be aware of notation below in command outlines. &lt;code&gt;$&lt;/code&gt; represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for example, &lt;code&gt;takeown&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id="initialization-of-shell"&gt;Initialization of Shell&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;This section is for my personalized shell; please feel free to skip it.&lt;/em&gt;&lt;/p&gt;
@@ -941,8 +962,13 @@ ls, cat, popd, pushd etc still work&lt;/p&gt;
 &lt;p&gt;works just fine.&lt;/p&gt;
 &lt;p&gt;ps is equivalent to Get-Process or to List processes or doing &lt;code&gt;tasklist&lt;/code&gt;.
 Stop-Proccess instead of taskkill&lt;/p&gt;
+&lt;p&gt;Example of starting pwsh with an initiazation script or calling a script with an arg,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Start-Process pwsh -ArgumentList '-NoExit', 'Init-App.ps1 foo' -ErrorAction 'stop'
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;above, &lt;code&gt;foo&lt;/code&gt; is argument.&lt;/p&gt;
 &lt;h2 id="application-run-examples"&gt;Application Run Examples&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;Start&lt;/code&gt; is an alias of &lt;code&gt;Start-Process&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id="cmdlets"&gt;Cmdlets&lt;/h3&gt;
 &lt;h3 id="start-process"&gt;Start-Process&lt;/h3&gt;
 &lt;p&gt;Here are some handy cmds,&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Start DevEnv /Edit, Stream-Converter.ps1
@@ -1014,6 +1040,16 @@ Power Scheme GUID: 496d75e1-8cba-4d72-b778-535d67c976ea  (Airplane)
 &lt;li&gt;Sound&lt;/li&gt;
 &lt;li&gt;Mouse&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id="network-cmdlets"&gt;Network Cmdlets&lt;/h2&gt;
+&lt;p&gt;Ping hosts,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Test-Connection -Count 64 google.com
+Test-Connection -Count 1024 google.com
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;host &lt;code&gt;bing.com&lt;/code&gt; does not reply to ICMP requests anymore, hence it's not worth trying &lt;code&gt;Test-Connection bing.com&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;if help modules are outdated this updates it,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Update-Help
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;More network related cmdlets or commands are at &lt;a href="wifi-cmd"&gt;wifi cmd article&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="other-cmdlets"&gt;Other Cmdlets&lt;/h2&gt;
 &lt;p&gt;Get list of running processes (unique),&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Get-Process | Select-Object -Unique Path
@@ -1040,14 +1076,6 @@ DebuggerEnabled  : True
 IsRunspacePushed : False
 Runspace         : System.Management.Automation.Runspaces.LocalRunspace
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Ping hosts,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Test-Connection -Count 64 bing.com
-Test-Connection -Count 1024 bing.com
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;if help modules are outdated this updates it,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Update-Help
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;More network related cmdlets or commands are at &lt;a href="wifi-cmd"&gt;wifi cmd article&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;How to uninstall store application i.e., skype&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Get-AppxPackage Microsoft.SkypeApp | Remove-AppxPackage
 &lt;/code&gt;&lt;/pre&gt;
@@ -1060,7 +1088,7 @@ $app.Uninstall()
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id="service-management"&gt;Service Management&lt;/h2&gt;
 &lt;p&gt;Get list of services currently running,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;    Get-Service | Where-Object {$_.Status -eq &amp;quot;Running&amp;quot;}
+&lt;pre&gt;&lt;code&gt;Get-Service | Where-Object {$_.Status -eq &amp;quot;Running&amp;quot;}
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Start a service,&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Start-Service -Name VPNAgent
@@ -1075,18 +1103,19 @@ $app.Uninstall()
 &amp;amp; &amp;quot;$Env:HOME\ss.ps1&amp;quot; $saArgs
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id="type-conversion"&gt;Type Conversion&lt;/h3&gt;
-&lt;p&gt;Command to find ascii number of a bunch of characters,&lt;/p&gt;
+&lt;p&gt;This part also demonstrates how to use some datatype libraries in commands.&lt;/p&gt;
+&lt;p&gt;Example 1, how do we find ascii number of a bunch of characters?&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;$ [int[]][char[]] 'abcd'
 97
 98
 99
 100
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;To find ascii number of single char,&lt;/p&gt;
+&lt;p&gt;Additionally, to find ascii number of single char,&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;$ [int][char] 'z'
 122
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Array Sort,&lt;/p&gt;
+&lt;p&gt;Moroever we can call &lt;code&gt;Array.Sort&lt;/code&gt; in following way,&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;$a = [int[]] &amp;#64;(9,5)
 [Array]::Sort($a)
 &lt;/code&gt;&lt;/pre&gt;
@@ -1137,7 +1166,7 @@ Major  Minor  Build  Revision
 -----  -----  -----  --------
 10     0      18362  356
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="misc"&gt;Misc&lt;/h2&gt;
+&lt;h2 id="shell-variables"&gt;Shell Variables&lt;/h2&gt;
 &lt;p&gt;To delete all contents of USB drive (this is dangerous as it deletea all contents and files/dirs from a drive),&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Remove-Item -force l:\*
 &lt;/code&gt;&lt;/pre&gt;
@@ -1148,6 +1177,9 @@ DocumentsDir\PowerShell\Microsoft.PowerShell_profile.ps1
 &lt;p&gt;On Powershell (Windows),&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;$ $profile
 DocumentsDir\\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Access history file,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ (Get-PSReadlineOption).HistorySavePath
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id="inception-to-powershell-from-pwsh"&gt;Inception to Powershell from pwsh&lt;/h2&gt;
 &lt;p&gt;Say you have a script named &lt;code&gt;Bluetooth.ps1&lt;/code&gt; that uses Windows features. Hence, it requires Powershell.&lt;/p&gt;
@@ -1207,6 +1239,28 @@ PSCommandPath
 PSEdition
 PSHOME
 &lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id="chaning-window-size"&gt;Chaning Window Size&lt;/h3&gt;
+&lt;p&gt;To change Window ize we change buffer size first, because Window Size depends on it.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$cUI = (Get-Host).UI.RawUI
+$b = $cUI.BufferSize
+$b.Width = $width
+$b.Height = $history_size
+$cUI.BufferSize = $b
+
+# change window height and width
+$b = $cUI.WindowSize
+$b.Width = $width
+$b.Height = $height
+$cUI.WindowSize = $b
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;There's oneliner to do it as well,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;(Get-Host).UI.RawUI.BufferSize = New-Object System.Management.Automation.Host.Size -Property &amp;#64;{Width=$width; Height=$history_size}
+(Get-Host).UI.RawUI.WindowSize = New-Object System.Management.Automation.Host.Size -Property &amp;#64;{Width=$width; Height=$height}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To change the title of the console we do,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$cUI.WindowTitle = $title
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a href="https://docs.microsoft.com/en-us/dotnet/api/system.management.automation.host.pshostuserinterface.rawui"&gt;ms docs ref&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="continue"&gt;continue&lt;/h2&gt;
 &lt;p&gt;rest of the contents yet to be appended..&lt;/p&gt;
 </content:encoded>
