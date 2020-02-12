@@ -22,6 +22,7 @@ steps:
     inputs:
       target: Deploy
     env:
+      GITHUB_REPO_URL: $(githubUserRepoUrl)
       GITHUB_ACCESS_TOKEN: $(githubAccessToken)
       GITHUB_USERNAME: "$(githubUserName)"
       GITHUB_USEREMAIL: "$(githubUserEmail)"

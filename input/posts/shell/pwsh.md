@@ -5,7 +5,7 @@ Tags:
   - pwsh
   - system administration
 ---
-_This article formerly titled as 'Powershell Frequently Used Commands'_
+_This article formerly titled as 'Powershell Frequently Used Commands. Even though the article is titled pwsh it draws back on the topic of Powershell as well.'_
 
 Please be aware of notation below in command outlines. `$` represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for example, `takeown`.
 
@@ -34,9 +34,17 @@ works just fine.
 ps is equivalent to Get-Process or to List processes or doing `tasklist`.
 Stop-Proccess instead of taskkill
 
+Example of starting pwsh with an initiazation script or calling a script with an arg,
+
+    Start-Process pwsh -ArgumentList '-NoExit', 'Init-App.ps1 foo' -ErrorAction 'stop'
+
+above, `foo` is argument.
+
 ## Application Run Examples
 `Start` is an alias of `Start-Process`
 
+
+### Cmdlets
 ### Start-Process
 Here are some handy cmds,
 
@@ -127,6 +135,20 @@ For, Sound mouse etc we do,
 - Sound
 - Mouse
 
+## Network Cmdlets
+Ping hosts,
+
+    Test-Connection -Count 64 google.com
+    Test-Connection -Count 1024 google.com
+
+host `bing.com` does not reply to ICMP requests anymore, hence it's not worth trying `Test-Connection bing.com`.
+
+if help modules are outdated this updates it,
+
+    Update-Help
+
+More network related cmdlets or commands are at [wifi cmd article](wifi-cmd)
+
 ## Other Cmdlets
 Get list of running processes (unique),
 
@@ -159,17 +181,6 @@ Show console host info,
     IsRunspacePushed : False
     Runspace         : System.Management.Automation.Runspaces.LocalRunspace
 
-Ping hosts,
-
-    Test-Connection -Count 64 bing.com
-    Test-Connection -Count 1024 bing.com
-
-if help modules are outdated this updates it,
-
-    Update-Help
-
-More network related cmdlets or commands are at [wifi cmd article](wifi-cmd)
-
 How to uninstall store application i.e., skype
 
     Get-AppxPackage Microsoft.SkypeApp | Remove-AppxPackage
@@ -187,7 +198,7 @@ How to uninstall application,
 ## Service Management
 Get list of services currently running,
 
-        Get-Service | Where-Object {$_.Status -eq "Running"}
+    Get-Service | Where-Object {$_.Status -eq "Running"}
 
 Start a service,
 
@@ -206,7 +217,9 @@ Passing all arguments, untouched to another script,
     & "$Env:HOME\ss.ps1" $saArgs
 
 ### Type Conversion
-Command to find ascii number of a bunch of characters,
+This part also demonstrates how to use some datatype libraries in commands.
+
+Example 1, how do we find ascii number of a bunch of characters?
 
     $ [int[]][char[]] 'abcd'
     97
@@ -214,25 +227,24 @@ Command to find ascii number of a bunch of characters,
     99
     100
 
-To find ascii number of single char,
+Additionally, to find ascii number of single char,
 ```
 $ [int][char] 'z'
 122
 ```
 
-Array Sort,
-```
-$a = [int[]] @(9,5)
-[Array]::Sort($a)
-```
+Moroever we can call `Array.Sort` in following way,
+
+    $a = [int[]] @(9,5)
+    [Array]::Sort($a)
 
 Because these literatls i.e., 'xxx' in powershell is considered as string literal like python.
-```
-$ 'z'.gettype()
-IsPublic IsSerial Name                                     BaseType
--------- -------- ----                                     --------
-True     True     String                                   System.Object
-```
+
+    $ 'z'.gettype()
+    IsPublic IsSerial Name                                     BaseType
+    -------- -------- ----                                     --------
+    True     True     String                                   System.Object
+
 
 #### Mathematics Library
 Example usage of .net math library, using old friend the `power` method,
@@ -283,7 +295,7 @@ Additionally, we can do this inspecting `hal.dll`,
     -----  -----  -----  --------
     10     0      18362  356
 
-## Misc
+## Shell Variables
 To delete all contents of USB drive (this is dangerous as it deletea all contents and files/dirs from a drive),
 
     Remove-Item -force l:\*
@@ -297,6 +309,11 @@ On Powershell (Windows),
 
     $ $profile
     DocumentsDir\\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
+
+Access history file,
+
+    $ (Get-PSReadlineOption).HistorySavePath
+
 
 ## Inception to Powershell from pwsh
 Say you have a script named `Bluetooth.ps1` that uses Windows features. Hence, it requires Powershell.
@@ -365,6 +382,32 @@ The shell modified following previously known Powershell variables,
     PSCommandPath
     PSEdition
     PSHOME
+
+### Chaning Window Size
+To change Window ize we change buffer size first, because Window Size depends on it.
+
+    $cUI = (Get-Host).UI.RawUI
+    $b = $cUI.BufferSize
+    $b.Width = $width
+    $b.Height = $history_size
+    $cUI.BufferSize = $b
+
+    # change window height and width
+    $b = $cUI.WindowSize
+    $b.Width = $width
+    $b.Height = $height
+    $cUI.WindowSize = $b
+
+There's oneliner to do it as well,
+
+    (Get-Host).UI.RawUI.BufferSize = New-Object System.Management.Automation.Host.Size -Property @{Width=$width; Height=$history_size}
+    (Get-Host).UI.RawUI.WindowSize = New-Object System.Management.Automation.Host.Size -Property @{Width=$width; Height=$height}
+
+To change the title of the console we do,
+
+    $cUI.WindowTitle = $title
+
+[ms docs ref](https://docs.microsoft.com/en-us/dotnet/api/system.management.automation.host.pshostuserinterface.rawui)
 
 ## continue
 rest of the contents yet to be appended..

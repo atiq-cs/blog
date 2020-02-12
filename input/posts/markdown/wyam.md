@@ -28,13 +28,15 @@ Create a new repo. do a clone or (init and add files).
 However, _we don't create master branch_. We only create a branch called `source`.
 
     git clone https://github.com/atiq-cs/saos-site
+    Rename-Item saos-site wyamBlog
+    pushd wyamBlog
+    git checkout -b source
     git add .gitignore
-    git commit -m 'initial commit'
+    git commit -m 'add git ignore file'
+    git push -u origin source
 
+Let's create the blog,
 
-Assume our project dir is `D:\Code\wyamBlog`.
-
-    pushd D:\Code\wyamBlog
     dotnet D:\PFiles_x64\Chocolatey\lib\wyam\Wyam.dll new -r Blog
     dotnet D:\PFiles_x64\Chocolatey\lib\wyam\Wyam.dll build
     dotnet D:\PFiles_x64\Chocolatey\lib\wyam\Wyam.dll preview
@@ -45,14 +47,9 @@ After we add required config file, yml file etc we build on next step. After we 
 I update package versions in `build.cake` file,
 
     #tool nuget:?package=Wyam&version=2.2.9
-    #tool "nuget:?package=GitVersion.CommandLine&version=5.1.2"
+    #tool nuget:?package=GitVersion.CommandLine&version=5.1.3
     #addin nuget:?package=Cake.Wyam&version=2.2.9
     #addin nuget:?package=Cake.Git&version=0.21.0
-
-Additionally, I upgrade it to use the latest VM,
-
-    pool:
-      vmImage: 'windows-2019'
 
 For successful build, we need to set the variables properly,
 
@@ -61,9 +58,25 @@ For successful build, we need to set the variables properly,
     $Env:GITHUB_ACCESS_TOKEN = '123abcdef456'
     $Env:CNAME_CONTENT = 'blog.domain.com'
 
+To generate new token visit [tokens page](https://github.com/settings/tokens/new)
+
+Get build script for cake,
+
+    Invoke-WebRequest https://cakebuild.net/download/bootstrapper/windows -OutFile build.ps1
+
+We update in `config.wyam`,
+
+    Settings[Keys.Host] = "blog.domain.com";
+
+Otherwise we get,
+
+    Compiling build script...
+    Error: One or more errors occurred.
+            Expecting state 'Element'.. Encountered 'Text'  with name '', namespace ''.
+
 Here's example of local build,
 
-    $ .\build.ps1 -Target Build -Verbosity=verbose
+    $ .\build -Target Build -Verbosity=verbose
     Preparing to run build script...
     Running build script...
     Analyzing build script...
@@ -289,7 +302,11 @@ Here's example of deployment from local pwsh,
 
 
 ## Azure Pipelines
-`azure-pipelines.yml` is the pipeline file that triggers the deployment.
+Surf [azure-pipelines](https://github.com/marketplace/azure-pipelines) and choose free plan.
+`azure-pipelines.yml` is the pipeline file that triggers the deployment. Additionally, I upgrade it to use the latest VM,
+
+    pool:
+      vmImage: 'windows-2019'
 
 However, this one can be tricky to find the right `cake-build` package in azure. For convenience, here's the one that works: [cake build pacakage in marketplacevisualstudio ](https://marketplace.visualstudio.com/acquisition?itemName=cake-build.cake)
 
@@ -362,7 +379,7 @@ We can write the CName in following way,
 ## Pipeline Variables
 Probably these variables reset after we do deploy as below,
 
-    .\build.ps1 -Target Deploy
+    .\build -Target Deploy
 
 [MS Docs - Pipeline Variables](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables)
 

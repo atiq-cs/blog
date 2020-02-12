@@ -6,8 +6,16 @@ Tags:
 ---
 Please be aware of notation below in command outlines. `$` represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for exxample, `takeown`.
 
-## Misc
+**Win Supported Run Cmds**
 
+[ToDo: move this to a separate one.]
+
+    desk.cpl
+    services.msc
+    sysdm.cpl
+
+
+## Misc
 Customized ping command, waits 20 seconds for reply and keep pinging non-stop [ping ref](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/ping),
 
     ping -w 20000 -t myserver.company.com

@@ -1,15 +1,15 @@
-#tool nuget:?package=Wyam&version=2.2.9
-#tool "nuget:?package=GitVersion.CommandLine&version=5.1.2"
-#addin nuget:?package=Cake.Wyam&version=2.2.9
-#addin nuget:?package=Cake.Git&version=0.21.0
+#tool nuget:?package=Wyam
+#tool nuget:?package=GitVersion.CommandLine
+#addin nuget:?package=Cake.Wyam
+#addin nuget:?package=Cake.Git
 
 var target = Argument("target", "Default");
 
-var repositoryUrl = "https://github.com/atiq-cs/saos";
+var githubUserRepoUrl = EnvironmentVariable("GITHUB_REPO_URL");;
 var githubUserName = EnvironmentVariable("GITHUB_USERNAME");
 var githubUserEmail = EnvironmentVariable("GITHUB_USEREMAIL");
 var githubAccessToken = EnvironmentVariable("GITHUB_ACCESS_TOKEN");
-var CNameContent = EnvironmentVariable("CNAME_CONTENT");;
+var CNameContent = EnvironmentVariable("CNAME_CONTENT");
 
 var gitVersion = GitVersion();
 
@@ -48,7 +48,7 @@ Task("CloneMasterBranch")
         Information("Cloning master branch into temp directory");
 
         GitClone(
-            repositoryUrl,
+            githubUserRepoUrl,
             new DirectoryPath(tempDir),
             githubUserName,
             githubAccessToken,
