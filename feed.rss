@@ -5,8 +5,8 @@
 		<link>https://blog.saosx.com/</link>
 		<description>Heads in the cloud! A Blog by Atiq Rahman!</description>
 		<copyright>2020</copyright>
-		<pubDate>Wed, 12 Feb 2020 06:24:57 GMT</pubDate>
-		<lastBuildDate>Wed, 12 Feb 2020 06:24:57 GMT</lastBuildDate>
+		<pubDate>Wed, 12 Feb 2020 06:27:18 GMT</pubDate>
+		<lastBuildDate>Wed, 12 Feb 2020 06:27:18 GMT</lastBuildDate>
 		<item>
 			<title>Command Line for Utilities and Tools</title>
 			<link>https://blog.saosx.com/posts/tools-cmd</link>
@@ -119,6 +119,38 @@ I would bet on Hospitals on Delhi and Mumbai.&lt;/p&gt;
 &lt;li&gt;Mount Elizabeth Hospitals&lt;/li&gt;
 &lt;li&gt;To add more&lt;/li&gt;
 &lt;/ul&gt;
+</content:encoded>
+		</item>
+		<item>
+			<title>Hospitals in Dhaka</title>
+			<link>https://blog.saosx.com/posts/GPA</link>
+			<description>&lt;p&gt;wegener's granulomatosis vs rheumatoid arthritis&lt;/p&gt;</description>
+			<guid>https://blog.saosx.com/posts/GPA</guid>
+			<pubDate>Thu, 28 Nov 2019 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;h2 id="intro"&gt;Intro&lt;/h2&gt;
+&lt;p&gt;wegener's granulomatosis vs rheumatoid arthritis&lt;/p&gt;
+&lt;p&gt;Platelet counts as a biomarker in ANCA-associated vasculitis.
+&lt;a href="https://www.ncbi.nlm.nih.gov/pubmed/25744854"&gt;https://www.ncbi.nlm.nih.gov/pubmed/25744854&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;wegner, a study in india
+&lt;a href="https://www.ncbi.nlm.nih.gov/pubmed/18610662"&gt;https://www.ncbi.nlm.nih.gov/pubmed/18610662&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;more on wegener
+&lt;a href="https://www.indiatoday.in/lifestyle/health/story/story/wegeners-granulomatosis/1/391068-300511-2014-09-24"&gt;https://www.indiatoday.in/lifestyle/health/story/story/wegeners-granulomatosis/1/391068-300511-2014-09-24&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;why is my platelet count low
+Thrombocytopenia (low platelet count)&lt;/p&gt;
+&lt;p&gt;rheumatoid arthritis&lt;/p&gt;
+&lt;p&gt;Evans Syndrome and Granulomatosis With Polyangiitis: An Interesting Concomitant Occurrence
+&lt;a href="https://journal.chestnet.org/article/S0012-3692(16)55832-2/fulltext"&gt;https://journal.chestnet.org/article/S0012-3692(16)55832-2/fulltext&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Granulomatosis with polyangiitis (Wegener's disease): An updated review of ocular disease manifestations
+&lt;a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4869584/#bib16"&gt;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4869584/#bib16&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Wegener Granulomatosis: An Analysis of 158 Patients
+&lt;a href="https://annals.org/aim/article-abstract/705389"&gt;https://annals.org/aim/article-abstract/705389&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Extreme Thrombocytosis Presenting in Anti-Neutrophil Cytoplasmic Autoantibodies-Associated Crescentic Glomerulonephritis with Immune Complex Deposits: A Case Report
+&lt;a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5285513/"&gt;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5285513/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;cyclophosphamide vs plasmapheresis
+thrombocytopenia wegener's granulomatosis&lt;/p&gt;
+&lt;p&gt;Plasma Exchange and Cyclophosphamide in Combination as Rescue Therapy for Severe Granulomatosis With Polyangiitis Refractory to Rituximab Therapy
+&lt;a href="https://journal.chestnet.org/article/S0012-3692(17)31844-5/pdf"&gt;https://journal.chestnet.org/article/S0012-3692(17)31844-5/pdf&lt;/a&gt;&lt;/p&gt;
 </content:encoded>
 		</item>
 		<item>
@@ -573,6 +605,28 @@ System.IO.File.WriteAllText(System.IO.Path.Combine(tempDir, CNameFileName), CNam
 </content:encoded>
 		</item>
 		<item>
+			<title>Math Notation Test</title>
+			<link>https://blog.saosx.com/posts/math</link>
+			<description>&lt;p&gt;This is a &lt;span class="math"&gt;\(\infty \frac{x^3}{e^x-1}\)&lt;/span&gt; with few symbols.&lt;/p&gt;</description>
+			<guid>https://blog.saosx.com/posts/math</guid>
+			<pubDate>Fri, 22 Nov 2019 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;This is a &lt;span class="math"&gt;\(\infty \frac{x^3}{e^x-1}\)&lt;/span&gt; with few symbols.&lt;/p&gt;
+&lt;p&gt;Eq 1,&lt;/p&gt;
+&lt;div class="math"&gt;
+\[
+\begin{equation}
+  \int_0^\infty \frac{x^3}{e^x-1}\,dx = \frac{\pi^4}{15}
+  \label{eq:sample}
+\end{equation}
+\]&lt;/div&gt;
+&lt;p&gt;Eq 2 without starting with beginning equation tagger,&lt;/p&gt;
+&lt;div class="math"&gt;
+\[
+\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
+\]&lt;/div&gt;
+</content:encoded>
+		</item>
+		<item>
 			<title>WiFi Networking with Powershell and netsh</title>
 			<link>https://blog.saosx.com/posts/wifi-cmd</link>
 			<description>&lt;p&gt;Please be aware of notation below in command outlines. &lt;code&gt;$&lt;/code&gt; represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for example, &lt;code&gt;takeown&lt;/code&gt;.&lt;/p&gt;</description>
@@ -827,113 +881,6 @@ SSID 3 : hello_kitty
 &lt;li&gt;&lt;a href="https://www.xfinity.com/support/internet/comcast-supported-routers-gateways-adapters/"&gt;Some possible default passwords for networks / routers / gateways&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://devblogs.microsoft.com/scripting/get-wireless-network-ssid-and-password-with-powershell/"&gt;MS devblogs - Get Wireless Network SSID and Password with PowerShell&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-</content:encoded>
-		</item>
-		<item>
-			<title>Math Notation Test</title>
-			<link>https://blog.saosx.com/posts/math</link>
-			<description>&lt;p&gt;This is a &lt;span class="math"&gt;\(\infty \frac{x^3}{e^x-1}\)&lt;/span&gt; with few symbols.&lt;/p&gt;</description>
-			<guid>https://blog.saosx.com/posts/math</guid>
-			<pubDate>Fri, 22 Nov 2019 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;This is a &lt;span class="math"&gt;\(\infty \frac{x^3}{e^x-1}\)&lt;/span&gt; with few symbols.&lt;/p&gt;
-&lt;p&gt;Eq 1,&lt;/p&gt;
-&lt;div class="math"&gt;
-\[
-\begin{equation}
-  \int_0^\infty \frac{x^3}{e^x-1}\,dx = \frac{\pi^4}{15}
-  \label{eq:sample}
-\end{equation}
-\]&lt;/div&gt;
-&lt;p&gt;Eq 2 without starting with beginning equation tagger,&lt;/p&gt;
-&lt;div class="math"&gt;
-\[
-\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
-\]&lt;/div&gt;
-</content:encoded>
-		</item>
-		<item>
-			<title>Generic Windows Command Cache</title>
-			<link>https://blog.saosx.com/posts/dos</link>
-			<description>&lt;p&gt;Please be aware of notation below in command outlines. &lt;code&gt;$&lt;/code&gt; represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for exxample, &lt;code&gt;takeown&lt;/code&gt;.&lt;/p&gt;</description>
-			<guid>https://blog.saosx.com/posts/dos</guid>
-			<pubDate>Tue, 19 Nov 2019 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;Please be aware of notation below in command outlines. &lt;code&gt;$&lt;/code&gt; represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for exxample, &lt;code&gt;takeown&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Win Supported Run Cmds&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;[ToDo: move this to a separate one.]&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;desk.cpl
-services.msc
-sysdm.cpl
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id="misc"&gt;Misc&lt;/h2&gt;
-&lt;p&gt;Customized ping command, waits 20 seconds for reply and keep pinging non-stop &lt;a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/ping"&gt;ping ref&lt;/a&gt;,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;ping -w 20000 -t myserver.company.com
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Enable or disable Linux Subsystem feture,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-Disable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Get host name,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;HOSTNAME
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;associating file type for extension &lt;code&gt;.fob&lt;/code&gt;,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;cmd /c assoc .fob=foobarfile
-cmd /c ftype foobarfile=powershell.exe -File `&amp;quot;C:\path\to\your.ps1`&amp;quot; `&amp;quot;%1`&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Find files with hidden attributes,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;dir /A:H general-solving\lintcode
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Modify files to remove hidden attributes using attrib&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;attrib -h my-hidden-file.txt
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;Robust copy&lt;/strong&gt;
-&lt;code&gt;robocopy&lt;/code&gt; is good for copying large numbeer of files (to handle so many different cases: large files, network interruptions, file names). An example cmd,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;robocopy /s /z /v /fp /eta 'D:\Movies' 'H:\' Office.*
-robocopy /s /z /v /fp /eta 'D:\TV Series' 'H:\' Fringe*
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Above cmds copy all files from first one (source dir) matching the pattern.&lt;/p&gt;
-&lt;p&gt;Exmple of copy over network,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;robocopy /s /z /v /fp /eta '\\ENLIGHTENSOUL\Bangla\3RD Person Singular Number' 'i:\'
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;xcopy examples&lt;/strong&gt;
-(prefer &lt;code&gt;robocopy&lt;/code&gt; over this one), some variations below,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;xcopy /C /F /H e:\c O:
-xcopy /s /C /F /H e:\C++ O:\C++
-xcopy /s /C /F /H &amp;quot;e:\FC back up&amp;quot; &amp;quot;o:\FC back up&amp;quot;
-xcopy /s /C /F /H &amp;quot;e:\Net Workspace&amp;quot; &amp;quot;o:\Net Workspace&amp;quot;
-xcopy /s /C /F /H f:\* Q:\*
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Retrieving all cmd history,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;doskey /history &amp;gt; copy_command.txt
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;delete everything inside a directory,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;rd /s /q JobDetails_data
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;mklink&lt;/strong&gt;
-To create a symbolic link named MyDocs from the root directory to the \Users\User1\Documents directory,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;mklink /d \MyDocs \Users\User1\Documents
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Creates a Directory Junction instead using mklink,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ mklink /j C:\Users\Atique\AppData\Local\Microsoft\Office\15.0\OfficeFileCache H:\OfficeFileCache
-Junction created for C:\Users\Atique\AppData\Local\Microsoft\Office\15.0\OfficeFileCache &amp;lt;&amp;lt;===&amp;gt;&amp;gt; H:\OfficeFileCache
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;Network share commands&lt;/strong&gt;
-view curently shared directories,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;net share
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;to delete share (requires admin privilege),&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ net share NewDrama /delete
-Movies      H:\Cool Movies
-Softs        F:\Sourcecodes\Web\Softs
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;To share a directory,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;net share listshare=&amp;quot;c:\art list&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;registry&lt;/strong&gt;
-For example usage &lt;code&gt;regsvr32&lt;/code&gt; of check &lt;a href="https://www.codeproject.com/Articles/766246/Windows-Media-Player-Native-Subtitle-Plugin-Cplusp"&gt;codeproject - Windows Media Player Native Subtitle Plugin&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="references"&gt;References&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/commands-by-server-role"&gt;MS Docs - Windows Commands&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </content:encoded>
 		</item>
 		<item>
@@ -1263,6 +1210,91 @@ $cUI.WindowSize = $b
 &lt;p&gt;&lt;a href="https://docs.microsoft.com/en-us/dotnet/api/system.management.automation.host.pshostuserinterface.rawui"&gt;ms docs ref&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="continue"&gt;continue&lt;/h2&gt;
 &lt;p&gt;rest of the contents yet to be appended..&lt;/p&gt;
+</content:encoded>
+		</item>
+		<item>
+			<title>Generic Windows Command Cache</title>
+			<link>https://blog.saosx.com/posts/dos</link>
+			<description>&lt;p&gt;Please be aware of notation below in command outlines. &lt;code&gt;$&lt;/code&gt; represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for exxample, &lt;code&gt;takeown&lt;/code&gt;.&lt;/p&gt;</description>
+			<guid>https://blog.saosx.com/posts/dos</guid>
+			<pubDate>Tue, 19 Nov 2019 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Please be aware of notation below in command outlines. &lt;code&gt;$&lt;/code&gt; represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for exxample, &lt;code&gt;takeown&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Win Supported Run Cmds&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;[ToDo: move this to a separate one.]&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;desk.cpl
+services.msc
+sysdm.cpl
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id="misc"&gt;Misc&lt;/h2&gt;
+&lt;p&gt;Customized ping command, waits 20 seconds for reply and keep pinging non-stop &lt;a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/ping"&gt;ping ref&lt;/a&gt;,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ping -w 20000 -t myserver.company.com
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Enable or disable Linux Subsystem feture,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+Disable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Get host name,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;HOSTNAME
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;associating file type for extension &lt;code&gt;.fob&lt;/code&gt;,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cmd /c assoc .fob=foobarfile
+cmd /c ftype foobarfile=powershell.exe -File `&amp;quot;C:\path\to\your.ps1`&amp;quot; `&amp;quot;%1`&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Find files with hidden attributes,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;dir /A:H general-solving\lintcode
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Modify files to remove hidden attributes using attrib&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;attrib -h my-hidden-file.txt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Robust copy&lt;/strong&gt;
+&lt;code&gt;robocopy&lt;/code&gt; is good for copying large numbeer of files (to handle so many different cases: large files, network interruptions, file names). An example cmd,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;robocopy /s /z /v /fp /eta 'D:\Movies' 'H:\' Office.*
+robocopy /s /z /v /fp /eta 'D:\TV Series' 'H:\' Fringe*
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Above cmds copy all files from first one (source dir) matching the pattern.&lt;/p&gt;
+&lt;p&gt;Exmple of copy over network,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;robocopy /s /z /v /fp /eta '\\ENLIGHTENSOUL\Bangla\3RD Person Singular Number' 'i:\'
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;xcopy examples&lt;/strong&gt;
+(prefer &lt;code&gt;robocopy&lt;/code&gt; over this one), some variations below,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;xcopy /C /F /H e:\c O:
+xcopy /s /C /F /H e:\C++ O:\C++
+xcopy /s /C /F /H &amp;quot;e:\FC back up&amp;quot; &amp;quot;o:\FC back up&amp;quot;
+xcopy /s /C /F /H &amp;quot;e:\Net Workspace&amp;quot; &amp;quot;o:\Net Workspace&amp;quot;
+xcopy /s /C /F /H f:\* Q:\*
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Retrieving all cmd history,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;doskey /history &amp;gt; copy_command.txt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;delete everything inside a directory,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;rd /s /q JobDetails_data
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;mklink&lt;/strong&gt;
+To create a symbolic link named MyDocs from the root directory to the \Users\User1\Documents directory,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mklink /d \MyDocs \Users\User1\Documents
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Creates a Directory Junction instead using mklink,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ mklink /j C:\Users\Atique\AppData\Local\Microsoft\Office\15.0\OfficeFileCache H:\OfficeFileCache
+Junction created for C:\Users\Atique\AppData\Local\Microsoft\Office\15.0\OfficeFileCache &amp;lt;&amp;lt;===&amp;gt;&amp;gt; H:\OfficeFileCache
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Network share commands&lt;/strong&gt;
+view curently shared directories,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;net share
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;to delete share (requires admin privilege),&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ net share NewDrama /delete
+Movies      H:\Cool Movies
+Softs        F:\Sourcecodes\Web\Softs
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To share a directory,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;net share listshare=&amp;quot;c:\art list&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;registry&lt;/strong&gt;
+For example usage &lt;code&gt;regsvr32&lt;/code&gt; of check &lt;a href="https://www.codeproject.com/Articles/766246/Windows-Media-Player-Native-Subtitle-Plugin-Cplusp"&gt;codeproject - Windows Media Player Native Subtitle Plugin&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/commands-by-server-role"&gt;MS Docs - Windows Commands&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </content:encoded>
 		</item>
 		<item>
@@ -2825,56 +2857,6 @@ shows how to do it using the combination of self-hosted wordpress and javascript
 &lt;li&gt;&lt;a href="https://github.com/linezero/Blog"&gt;https://github.com/linezero/Blog&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/search?q=markdown+editor"&gt;https://github.com/search?q=markdown+editor&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/benweet/stackedit/blob/master/src/components/Editor.vue"&gt;https://github.com/benweet/stackedit/blob/master/src/components/Editor.vue&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-		</item>
-		<item>
-			<title>Python Editors online</title>
-			<link>https://blog.saosx.com/posts/python-online</link>
-			<description>&lt;p&gt;We list some Python Editors or compilers online&lt;/p&gt;</description>
-			<guid>https://blog.saosx.com/posts/python-online</guid>
-			<pubDate>Sun, 19 Nov 2017 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;We list some Python Editors or compilers online&lt;/p&gt;
-&lt;h3 id="codepad"&gt;codepad&lt;/h3&gt;
-&lt;p&gt;&lt;a href="http://codepad.org"&gt;link to online compiler&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;This is one of the best online collaboration tool with IDE and compilers. Info,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;    2.5.1 (r251:54863, May  4 2007, 16:52:23) 
-    [GCC 4.1.2]
-    (2, 5, 1, 'final', 0)
-    33882608
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="ideone"&gt;ideone&lt;/h3&gt;
-&lt;p&gt;&lt;a href="https://ideone.com"&gt;link to online compiler&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Info,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;    Latest python online 3.4.2
-    3.4.2 (default, Dec 27 2014, 19:25:25) 
-    [GCC 4.9.2]
-    sys.version_info(major=3, minor=4, micro=2, releaselevel='final', serial=0)
-    50594544
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="repl-it"&gt;repl it&lt;/h3&gt;
-&lt;p&gt;&lt;a href="http://repl.it/languages/Python3"&gt;link to online compiler&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Info,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;    3.4.2 (default, Jan 20 2015, 19:02:53) 
-    [GCC 4.8.3]
-    sys.version_info(major=3, minor=4, micro=2, releaselevel='final', serial=0)
-    50594544
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="melpon"&gt;melpon&lt;/h3&gt;
-&lt;p&gt;&lt;a href="http://melpon.org/wandbox/"&gt;link to online compiler&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Info,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;    3.5.0a1+ (default:041a27298cf3, Feb 20 2015, 10:07:43) 
-    [GCC 4.6.3]
-    sys.version_info(major=3, minor=5, micro=0, releaselevel='alpha', serial=1)
-    50659489
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="misc"&gt;Misc&lt;/h3&gt;
-&lt;p&gt;Addtionally, we have following available online,&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://www.tutorialspoint.com/ipython_terminal_online.php"&gt;tutorialspoint&lt;/a&gt; - python 2.7.8&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://pythonfiddle.com"&gt;pythonfiddle&lt;/a&gt; - v2.7.2&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://repl.it/languages/Python3"&gt;repl.it&lt;/a&gt; - v3.4.0&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sourcelair.com"&gt;sourcelair&lt;/a&gt;: comes with a fully featured shell and has python v2.7.6&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 		</item>
