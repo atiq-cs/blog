@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 
-        <title>SAOSX Blog - Pipelines</title>
+        <title>SAOSX Blog - System Programming</title>
         <meta name="description" content="Heads in the cloud! A Blog by Atiq Rahman!" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">        
 
@@ -28,9 +28,9 @@
         <meta name="msapplication-tooltip" content="SAOSX Blog" />
         <meta name="msapplication-starturl" content="/" />
 
-        <meta property="og:title" content="SAOSX Blog - Pipelines" />
+        <meta property="og:title" content="SAOSX Blog - System Programming" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://blog.saosx.com/tags/Pipelines" />
+        <meta property="og:url" content="https://blog.saosx.com/posts/system-programming" />
         <!-- TODO: More social graph meta tags -->
 
         
@@ -72,9 +72,17 @@
                         <div class="container">
                                 <div class="row">
                                         <div class="col-md-12">
-<div class="site-heading">
-    <h1>Pipelines</h1>
-</div>                                            </div>
+
+    
+<div class="post-heading">
+    <h1>System Programming</h1>
+    <div class="meta">        
+Published on Wednesday, February 21, 2018<br>    </div>
+        <div class="tags">
+                    <a role="button" href="/tags/System-Programming" class="btn btn-default btn-xs">System Programming</a>
+        </div>     
+</div>
+                                        </div>
                                 </div>
                         </div>
                 </header>
@@ -83,75 +91,49 @@
                 <div class="container">
                         <div class="row">
                                 <div id="content" class="col-md-12">
-                                        <div class="container-sm-height">
-    <div class="row row-sm-height">
-        <div class="col-sm-8 right-border col-sm-height">
-            
-        <div class="post-list">
-            <a href="/posts/wyam">
-                <h3 class="post-title">Wyam with Cake Build, Github pages and Azure Pipeline (Windows Server 2019)</h3>
-            </a>
-            <p class="post-meta">Posted on Wednesday, November 27, 2019</p>      
-        </div>   
+                                        
+
+<p><strong>System call related questions</strong></p>
+<p><strong>Which two System calls are used to create new process?</strong>
+fork() and exec()</p>
+<p>In Windows, it is called <code>CreateProcess</code>.</p>
+<p>values return by <code>fork()</code>,</p>
+<ul>
+<li>0 in the child process</li>
+<li>The PID of the child in the parent process</li>
+<li>-1 in the parent if there was a failure (there is no child, naturally).</li>
+</ul>
+<p><strong>How are System Calls provided?</strong>
+Generally, systems provide a library or API that sits between normal programs and the operating system. On Unix-like systems, that API is usually part of an implementation of the C library (libc), such as glibc, that provides wrapper functions for the system calls, often named the same as the system calls they invoke. On Windows NT, that API is part of the Native API, in the ntdll.dll library; this is an undocumented API used by implementations of the regular Windows API a</p>
+<p>Number of fd allowed in the system?</p>
+<p>This limit is defined by,</p>
+<pre><code>/proc/&lt;pid&gt;/limits.
+/proc/&lt;pid&gt;/fd/
+</code></pre>
+<p>Or can be found using command,</p>
+<pre><code>ulimit -Hn
+</code></pre>
+<p><a href="http://www2.cs.uregina.ca/%7Ehamilton/courses/330/notes/unix/filesyscalls.html">OS - File System Calls - .cs.uregina.ca/~hamilton</a></p>
+<p><strong>How to kill/terminate process?</strong>
+We can utilize <code>pgrep</code> to find the process, <code>pkill</code> to kill it.</p>
+<p>On Windows, we have <code>tasklist</code>, <code>taskkill</code> to kill.</p>
+<p><strong>What is <code>kill -9</code>?</strong>
+Variants: <code>-9</code>, <code>-KILL</code>, <code>-SIGKILL</code></p>
+<p>if one of these are not specified usually kill command sends a TERM signal.
+The difference between SIGTERM and SIGKILL is the way an application may act on the signal:</p>
+<ul>
+<li>TERM: an application will be able to terminate, i.e. properly run a shutdown routine.</li>
+<li>KILL: the applications is stopped and killed immediately (which could lead to data loss or raising apport to report a presumed crash in some cases).</li>
+</ul>
+<h3 id="references">References</h3>
+<ul>
+<li><a href="https://askubuntu.com/questions/184071/what-is-the-purpose-of-the-9-option-in-the-kill-command">askubuntu</a></li>
+<li><a href="https://unix.stackexchange.com/questions/4377/after-fork-where-does-the-child-begin-its-execution?rq=1">After fork(), where does the child begin its execution?</a></li>
+<li><a href="https://en.wikipedia.org/wiki/System_call">wiki System Call</a></li>
+</ul>
 
 
-            <nav>
-                <ul class="pager">
-                    <li class="previous">                
-                    </li>
-                    <li class="next">
-                    </li>
-                </ul>
-            </nav>
-            <hr class="visible-xs-block" />
-        </div>
-		
-        <div class="col-sm-4 col-sm-height">
-                <a role="button" href="/tags/health-care" class="btn btn-default btn-xs">health care (5)</a>
-                <a role="button" href="/tags/system-administration" class="btn btn-default btn-xs">system administration (4)</a>
-                <a role="button" href="/tags/Problem-Solving" class="btn btn-default btn-xs">Problem Solving (4)</a>
-                <a role="button" href="/tags/Algorithms" class="btn btn-default btn-xs">Algorithms (4)</a>
-                <a role="button" href="/tags/C&#x2B;&#x2B;" class="btn btn-default btn-xs">C&#x2B;&#x2B; (3)</a>
-                <a role="button" href="/tags/programming-languages" class="btn btn-default btn-xs">programming languages (3)</a>
-                <a role="button" href="/tags/source-Control" class="btn btn-default btn-xs">source Control (3)</a>
-                <a role="button" href="/tags/version-Control" class="btn btn-default btn-xs">version Control (3)</a>
-                <a role="button" href="/tags/Data-Structure" class="btn btn-default btn-xs">Data Structure (2)</a>
-                <a role="button" href="/tags/Heap" class="btn btn-default btn-xs">Heap (2)</a>
-                <a role="button" href="/tags/dotnet-core" class="btn btn-default btn-xs">dotnet core (2)</a>
-                <a role="button" href="/tags/EFI" class="btn btn-default btn-xs">EFI (2)</a>
-                <a role="button" href="/tags/System-Boot" class="btn btn-default btn-xs">System Boot (2)</a>
-                <a role="button" href="/tags/Linux" class="btn btn-default btn-xs">Linux (2)</a>
-                <a role="button" href="/tags/Windows" class="btn btn-default btn-xs">Windows (2)</a>
-                <a role="button" href="/tags/windows-command-prompt" class="btn btn-default btn-xs">windows command prompt (2)</a>
-                <a role="button" href="/tags/markdown" class="btn btn-default btn-xs">markdown (2)</a>
-                <a role="button" href="/tags/Powershell-Core" class="btn btn-default btn-xs">Powershell Core (2)</a>
-                <a role="button" href="/tags/python" class="btn btn-default btn-xs">python (2)</a>
-                <a role="button" href="/tags/Azure-Cloud" class="btn btn-default btn-xs">Azure Cloud (1)</a>
-                <a role="button" href="/tags/System-Adiministration" class="btn btn-default btn-xs">System Adiministration (1)</a>
-                <a role="button" href="/tags/entity-framework" class="btn btn-default btn-xs">entity framework (1)</a>
-                <a role="button" href="/tags/editors" class="btn btn-default btn-xs">editors (1)</a>
-                <a role="button" href="/tags/cpp" class="btn btn-default btn-xs">cpp (1)</a>
-                <a role="button" href="/tags/csharp" class="btn btn-default btn-xs">csharp (1)</a>
-                <a role="button" href="/tags/System-Programming" class="btn btn-default btn-xs">System Programming (1)</a>
-                <a role="button" href="/tags/Sorting" class="btn btn-default btn-xs">Sorting (1)</a>
-                <a role="button" href="/tags/git" class="btn btn-default btn-xs">git (1)</a>
-                <a role="button" href="/tags/SVN" class="btn btn-default btn-xs">SVN (1)</a>
-                <a role="button" href="/tags/partitioning" class="btn btn-default btn-xs">partitioning (1)</a>
-                <a role="button" href="/tags/windows-programming" class="btn btn-default btn-xs">windows programming (1)</a>
-                <a role="button" href="/tags/MFC" class="btn btn-default btn-xs">MFC (1)</a>
-                <a role="button" href="/tags/wyam" class="btn btn-default btn-xs">wyam (1)</a>
-                <a role="button" href="/tags/Cloud" class="btn btn-default btn-xs">Cloud (1)</a>
-                <a role="button" href="/tags/Pipelines" class="btn btn-primary btn-xs">Pipelines (1)</a>
-                <a role="button" href="/tags/math" class="btn btn-default btn-xs">math (1)</a>
-                <a role="button" href="/tags/latex" class="btn btn-default btn-xs">latex (1)</a>
-                <a role="button" href="/tags/netsh" class="btn btn-default btn-xs">netsh (1)</a>
-                <a role="button" href="/tags/network" class="btn btn-default btn-xs">network (1)</a>
-                <a role="button" href="/tags/pwsh" class="btn btn-default btn-xs">pwsh (1)</a>
-                <a role="button" href="/tags/mercurial" class="btn btn-default btn-xs">mercurial (1)</a>
-                <a role="button" href="/tags/Binary-Tree" class="btn btn-default btn-xs">Binary Tree (1)</a>
-        </div>
-    </div>
-</div>
+
                                 </div>
                         </div>
                 </div>

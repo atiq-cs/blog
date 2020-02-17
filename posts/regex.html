@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 
-        <title>SAOSX Blog - Pipelines</title>
+        <title>SAOSX Blog - Regular Expressions</title>
         <meta name="description" content="Heads in the cloud! A Blog by Atiq Rahman!" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">        
 
@@ -28,9 +28,9 @@
         <meta name="msapplication-tooltip" content="SAOSX Blog" />
         <meta name="msapplication-starturl" content="/" />
 
-        <meta property="og:title" content="SAOSX Blog - Pipelines" />
+        <meta property="og:title" content="SAOSX Blog - Regular Expressions" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://blog.saosx.com/tags/Pipelines" />
+        <meta property="og:url" content="https://blog.saosx.com/posts/regex" />
         <!-- TODO: More social graph meta tags -->
 
         
@@ -72,9 +72,18 @@
                         <div class="container">
                                 <div class="row">
                                         <div class="col-md-12">
-<div class="site-heading">
-    <h1>Pipelines</h1>
-</div>                                            </div>
+
+    
+<div class="post-heading">
+    <h1>Regular Expressions</h1>
+    <div class="meta">        
+Published on Friday, May 18, 2018<br>    </div>
+        <div class="tags">
+                    <a role="button" href="/tags/editors" class="btn btn-default btn-xs">editors</a>
+                    <a role="button" href="/tags/programming-languages" class="btn btn-default btn-xs">programming languages</a>
+        </div>     
+</div>
+                                        </div>
                                 </div>
                         </div>
                 </header>
@@ -83,75 +92,68 @@
                 <div class="container">
                         <div class="row">
                                 <div id="content" class="col-md-12">
-                                        <div class="container-sm-height">
-    <div class="row row-sm-height">
-        <div class="col-sm-8 right-border col-sm-height">
-            
-        <div class="post-list">
-            <a href="/posts/wyam">
-                <h3 class="post-title">Wyam with Cake Build, Github pages and Azure Pipeline (Windows Server 2019)</h3>
-            </a>
-            <p class="post-meta">Posted on Wednesday, November 27, 2019</p>      
-        </div>   
+                                        
+
+<h2 id="notepad">Notepad++</h2>
+<p><code>notepad++</code> flavor uses <code>\1</code>, <code>\2</code> and so on to refer to matched terms under <code>()</code>.</p>
+<p>How to replace NSLog(&#64;x) with printf(x)
+In find text box we put,</p>
+<pre><code>(NSLog\(&#64;)(.*) (;)
+</code></pre>
+<p>In replace text box we put,</p>
+<pre><code>printf(\2
+</code></pre>
+<p>Copying from github then removing line numbers in front of all lines
+removing them using notepad++ regular expression,</p>
+<pre><code>find        : ^([0-9][0-9][0-9] )(.*)
+replacement : \2
+</code></pre>
+<p>regular expression for clone repo, dependency repos given list of repo names,</p>
+<pre><code>clone_repo /builds/atiq/jv8/\1 \1 false
+</code></pre>
+<p>Remove beginning line numbers from the output of history command,
+^  7..</p>
+<p>Remove all numbers from bash history files,</p>
+<pre><code>find        : ^\s*(\d|\d\d|\d\d\d)\s\s(\S)
+replacement : \2
+</code></pre>
+<p>Exammple table,</p>
+<table class="table">
+<thead>
+<tr>
+<th>Tables</th>
+<th style="text-align: center;">Are</th>
+<th style="text-align: right;">Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>col 1 is</td>
+<td style="text-align: center;">left-aligned</td>
+<td style="text-align: right;">$1600</td>
+</tr>
+<tr>
+<td>col 2 is</td>
+<td style="text-align: center;">centered</td>
+<td style="text-align: right;">$12</td>
+</tr>
+<tr>
+<td>col 3 is</td>
+<td style="text-align: center;">right-aligned</td>
+<td style="text-align: right;">$1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="npp-regex-refs">npp regex refs</h2>
+<ul>
+<li><a href="http://markantoniou.blogspot.com/2008/06/notepad-how-to-use-regular-expressions.html">notepad-how-to-use-regular-expressions</a></li>
+<li><a href="http://docs.notepad-plus-plus.org/index.php/Regular_Expressions">npp official regex instructions</a></li>
+</ul>
+<p><strong>Notepad++ Trips and Tricks</strong>
+<a href="https://superuser.com/questions/331098/flip-or-reverse-line-order-in-notepad">Flip or reverse line order in notepad++</a>. It is used in <a href="https://github.com/atiq-cs/Problem-Solving/blob/master/general-solving/leetcode/0012_integer-to-roman.cs">soln</a> of the problem: <a href="https://leetcode.com/problems/integer-to-roman">12. Integer to Roman</a></p>
 
 
-            <nav>
-                <ul class="pager">
-                    <li class="previous">                
-                    </li>
-                    <li class="next">
-                    </li>
-                </ul>
-            </nav>
-            <hr class="visible-xs-block" />
-        </div>
-		
-        <div class="col-sm-4 col-sm-height">
-                <a role="button" href="/tags/health-care" class="btn btn-default btn-xs">health care (5)</a>
-                <a role="button" href="/tags/system-administration" class="btn btn-default btn-xs">system administration (4)</a>
-                <a role="button" href="/tags/Problem-Solving" class="btn btn-default btn-xs">Problem Solving (4)</a>
-                <a role="button" href="/tags/Algorithms" class="btn btn-default btn-xs">Algorithms (4)</a>
-                <a role="button" href="/tags/C&#x2B;&#x2B;" class="btn btn-default btn-xs">C&#x2B;&#x2B; (3)</a>
-                <a role="button" href="/tags/programming-languages" class="btn btn-default btn-xs">programming languages (3)</a>
-                <a role="button" href="/tags/source-Control" class="btn btn-default btn-xs">source Control (3)</a>
-                <a role="button" href="/tags/version-Control" class="btn btn-default btn-xs">version Control (3)</a>
-                <a role="button" href="/tags/Data-Structure" class="btn btn-default btn-xs">Data Structure (2)</a>
-                <a role="button" href="/tags/Heap" class="btn btn-default btn-xs">Heap (2)</a>
-                <a role="button" href="/tags/dotnet-core" class="btn btn-default btn-xs">dotnet core (2)</a>
-                <a role="button" href="/tags/EFI" class="btn btn-default btn-xs">EFI (2)</a>
-                <a role="button" href="/tags/System-Boot" class="btn btn-default btn-xs">System Boot (2)</a>
-                <a role="button" href="/tags/Linux" class="btn btn-default btn-xs">Linux (2)</a>
-                <a role="button" href="/tags/Windows" class="btn btn-default btn-xs">Windows (2)</a>
-                <a role="button" href="/tags/windows-command-prompt" class="btn btn-default btn-xs">windows command prompt (2)</a>
-                <a role="button" href="/tags/markdown" class="btn btn-default btn-xs">markdown (2)</a>
-                <a role="button" href="/tags/Powershell-Core" class="btn btn-default btn-xs">Powershell Core (2)</a>
-                <a role="button" href="/tags/python" class="btn btn-default btn-xs">python (2)</a>
-                <a role="button" href="/tags/Azure-Cloud" class="btn btn-default btn-xs">Azure Cloud (1)</a>
-                <a role="button" href="/tags/System-Adiministration" class="btn btn-default btn-xs">System Adiministration (1)</a>
-                <a role="button" href="/tags/entity-framework" class="btn btn-default btn-xs">entity framework (1)</a>
-                <a role="button" href="/tags/editors" class="btn btn-default btn-xs">editors (1)</a>
-                <a role="button" href="/tags/cpp" class="btn btn-default btn-xs">cpp (1)</a>
-                <a role="button" href="/tags/csharp" class="btn btn-default btn-xs">csharp (1)</a>
-                <a role="button" href="/tags/System-Programming" class="btn btn-default btn-xs">System Programming (1)</a>
-                <a role="button" href="/tags/Sorting" class="btn btn-default btn-xs">Sorting (1)</a>
-                <a role="button" href="/tags/git" class="btn btn-default btn-xs">git (1)</a>
-                <a role="button" href="/tags/SVN" class="btn btn-default btn-xs">SVN (1)</a>
-                <a role="button" href="/tags/partitioning" class="btn btn-default btn-xs">partitioning (1)</a>
-                <a role="button" href="/tags/windows-programming" class="btn btn-default btn-xs">windows programming (1)</a>
-                <a role="button" href="/tags/MFC" class="btn btn-default btn-xs">MFC (1)</a>
-                <a role="button" href="/tags/wyam" class="btn btn-default btn-xs">wyam (1)</a>
-                <a role="button" href="/tags/Cloud" class="btn btn-default btn-xs">Cloud (1)</a>
-                <a role="button" href="/tags/Pipelines" class="btn btn-primary btn-xs">Pipelines (1)</a>
-                <a role="button" href="/tags/math" class="btn btn-default btn-xs">math (1)</a>
-                <a role="button" href="/tags/latex" class="btn btn-default btn-xs">latex (1)</a>
-                <a role="button" href="/tags/netsh" class="btn btn-default btn-xs">netsh (1)</a>
-                <a role="button" href="/tags/network" class="btn btn-default btn-xs">network (1)</a>
-                <a role="button" href="/tags/pwsh" class="btn btn-default btn-xs">pwsh (1)</a>
-                <a role="button" href="/tags/mercurial" class="btn btn-default btn-xs">mercurial (1)</a>
-                <a role="button" href="/tags/Binary-Tree" class="btn btn-default btn-xs">Binary Tree (1)</a>
-        </div>
-    </div>
-</div>
+
                                 </div>
                         </div>
                 </div>
