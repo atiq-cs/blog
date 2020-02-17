@@ -13,6 +13,7 @@ Example table,
 |--------------------------------------|-----------------------|--------------|
 | Replace `NSLog(@x)` with `printf(x)` | `(NSLog\(@)(.*) (;)`  | `printf(\2`  |
 | Remove line numbers from output of bash `history` cmd | `^  7..` | `null`   |
+| Converting a batch script variables to Powershell variables | `^([0-9][0-9][0-9] )(.*)`  | `\2`  |
 | Remove number prefixes from bash history file | `^\s*(\d|\d\d|\d\d\d)\s\s(\S)` | `\2` |
 | Copying from github which contains line numbers as prefixes, then, removing line numbers | `^([0-9][0-9][0-9] )(.*)` | `\2` |
 | Given dependency repos name list, regular expression for clone repo | `(.*)` | `clone_repo /builds/atiq/jv8/\1 \1 false` |
