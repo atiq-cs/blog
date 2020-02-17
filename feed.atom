@@ -4,7 +4,7 @@
 	<title>SAOSX Blog</title>
 	<link rel="self" href="https://blog.saosx.com/" />
 	<rights>2020</rights>
-	<updated>2020-02-17T18:40:11Z</updated>
+	<updated>2020-02-17T19:01:27Z</updated>
 	<subtitle>Heads in the cloud! A Blog by Atiq Rahman!</subtitle>
 	<entry>
 		<id>https://blog.saosx.com/posts/tools-cmd</id>
@@ -51,27 +51,6 @@ Extract subtitle using &lt;code&gt;mkvextract&lt;/code&gt; (referring to &lt;cod
 		<summary>&lt;p&gt;Please be aware of notation below in command outlines. &lt;code&gt;$&lt;/code&gt; represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for exxample, &lt;code&gt;takeown&lt;/code&gt;.&lt;/p&gt;</summary>
 	</entry>
 	<entry>
-		<id>https://blog.saosx.com/posts/hospital-birdem</id>
-		<title>BIRDEM General Hospital Review</title>
-		<link href="https://blog.saosx.com/posts/hospital-birdem" />
-		<updated>2019-11-28T00:00:00Z</updated>
-		<content>&lt;p&gt;BIRDEM: &lt;a href="https://www.google.com/search?sxsrf=ACYBGNTMLrdeP99E_eiLCVujRWvrGh7t8g%3A1574983392995&amp;amp;ei=4FbgXaSuPOP19APgwoJg&amp;amp;q=birdem+hospital&amp;amp;oq=birdem+hospital&amp;amp;gs_l=psy-ab.3..35i39l2j0l3j0i20i263j0l4.2652.8043..10211...1.1..0.169.1542.11j5......0....1..gws-wiz.......0i71j0i273j0i131j0i67j35i304i39j0i13.QrrR8Vo4Idc&amp;amp;ved=0ahUKEwiknqqtho7mAhXjOn0KHWChAAwQ4dUDCAs&amp;amp;uact=5#lrd=0x3755b8eb2cd9b849:0x7c213c924dd2d324,1,,,"&gt;google review link&lt;/a&gt;
-As a friend quotes,&lt;/p&gt;
-&lt;blockquote class="blockquote"&gt;
-&lt;p&gt;Cost is similar to private but environment is identical to public hospitals.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;** Bed bugs are real **: there are bed bugs, dirty environment in wards and cabins follows.&lt;/li&gt;
-&lt;li&gt;wards fees of private, but condition is public.. cabins have few patients..&lt;/li&gt;
-&lt;li&gt;most times doctors are resistant on showing report or taking photos of those.
-hard to get access to Sr Doctor, talks over phone with Sr Doctor, sometimes there are delays in treatment due to that.&lt;/li&gt;
-&lt;li&gt;You need to keep people around the patient during every treatment/dialysis session. Chances are if things go wrong, Nurses might not notice it. They might as well just blame the patient for anything bad happened for example, say that patient moved and saline got disconnected which result cotting of blood. This is their excuse while the patient is unable to move at all. They won't apologize despite their fault/negligence. They even kick you out if you speak out due to their mistake. After all, you are victim.&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>&lt;p&gt;BIRDEM: &lt;a href="https://www.google.com/search?sxsrf=ACYBGNTMLrdeP99E_eiLCVujRWvrGh7t8g%3A1574983392995&amp;amp;ei=4FbgXaSuPOP19APgwoJg&amp;amp;q=birdem+hospital&amp;amp;oq=birdem+hospital&amp;amp;gs_l=psy-ab.3..35i39l2j0l3j0i20i263j0l4.2652.8043..10211...1.1..0.169.1542.11j5......0....1..gws-wiz.......0i71j0i273j0i131j0i67j35i304i39j0i13.QrrR8Vo4Idc&amp;amp;ved=0ahUKEwiknqqtho7mAhXjOn0KHWChAAwQ4dUDCAs&amp;amp;uact=5#lrd=0x3755b8eb2cd9b849:0x7c213c924dd2d324,1,,,"&gt;google review link&lt;/a&gt;
-As a friend quotes,&lt;/p&gt;</summary>
-	</entry>
-	<entry>
 		<id>https://blog.saosx.com/posts/GPA</id>
 		<title>Hospitals in Dhaka</title>
 		<link href="https://blog.saosx.com/posts/GPA" />
@@ -102,6 +81,76 @@ thrombocytopenia wegener's granulomatosis&lt;/p&gt;
 &lt;a href="https://journal.chestnet.org/article/S0012-3692(17)31844-5/pdf"&gt;https://journal.chestnet.org/article/S0012-3692(17)31844-5/pdf&lt;/a&gt;&lt;/p&gt;
 </content>
 		<summary>&lt;p&gt;wegener's granulomatosis vs rheumatoid arthritis&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>https://blog.saosx.com/posts/hospital-birdem</id>
+		<title>BIRDEM General Hospital Review</title>
+		<link href="https://blog.saosx.com/posts/hospital-birdem" />
+		<updated>2019-11-28T00:00:00Z</updated>
+		<content>&lt;p&gt;BIRDEM: &lt;a href="https://www.google.com/search?sxsrf=ACYBGNTMLrdeP99E_eiLCVujRWvrGh7t8g%3A1574983392995&amp;amp;ei=4FbgXaSuPOP19APgwoJg&amp;amp;q=birdem+hospital&amp;amp;oq=birdem+hospital&amp;amp;gs_l=psy-ab.3..35i39l2j0l3j0i20i263j0l4.2652.8043..10211...1.1..0.169.1542.11j5......0....1..gws-wiz.......0i71j0i273j0i131j0i67j35i304i39j0i13.QrrR8Vo4Idc&amp;amp;ved=0ahUKEwiknqqtho7mAhXjOn0KHWChAAwQ4dUDCAs&amp;amp;uact=5#lrd=0x3755b8eb2cd9b849:0x7c213c924dd2d324,1,,,"&gt;google review link&lt;/a&gt;
+As a friend quotes,&lt;/p&gt;
+&lt;blockquote class="blockquote"&gt;
+&lt;p&gt;Cost is similar to private but environment is identical to public hospitals.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;** Bed bugs are real **: there are bed bugs, dirty environment in wards and cabins follows.&lt;/li&gt;
+&lt;li&gt;wards fees of private, but condition is public.. cabins have few patients..&lt;/li&gt;
+&lt;li&gt;most times doctors are resistant on showing report or taking photos of those.
+hard to get access to Sr Doctor, talks over phone with Sr Doctor, sometimes there are delays in treatment due to that.&lt;/li&gt;
+&lt;li&gt;You need to keep people around the patient during every treatment/dialysis session. Chances are if things go wrong, Nurses might not notice it. They might as well just blame the patient for anything bad happened for example, say that patient moved and saline got disconnected which result cotting of blood. This is their excuse while the patient is unable to move at all. They won't apologize despite their fault/negligence. They even kick you out if you speak out due to their mistake. After all, you are victim.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>&lt;p&gt;BIRDEM: &lt;a href="https://www.google.com/search?sxsrf=ACYBGNTMLrdeP99E_eiLCVujRWvrGh7t8g%3A1574983392995&amp;amp;ei=4FbgXaSuPOP19APgwoJg&amp;amp;q=birdem+hospital&amp;amp;oq=birdem+hospital&amp;amp;gs_l=psy-ab.3..35i39l2j0l3j0i20i263j0l4.2652.8043..10211...1.1..0.169.1542.11j5......0....1..gws-wiz.......0i71j0i273j0i131j0i67j35i304i39j0i13.QrrR8Vo4Idc&amp;amp;ved=0ahUKEwiknqqtho7mAhXjOn0KHWChAAwQ4dUDCAs&amp;amp;uact=5#lrd=0x3755b8eb2cd9b849:0x7c213c924dd2d324,1,,,"&gt;google review link&lt;/a&gt;
+As a friend quotes,&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>https://blog.saosx.com/posts/hospitals-dhaka</id>
+		<title>Hospitals in Dhaka</title>
+		<link href="https://blog.saosx.com/posts/hospitals-dhaka" />
+		<updated>2019-11-28T00:00:00Z</updated>
+		<content>&lt;h2 id="best-hospitals-in-dhaka"&gt;Best Hospitals in Dhaka&lt;/h2&gt;
+&lt;p&gt;To find some good Hospitals in Bangladesh we have to look at affluent medical centers in Dhaka. There is no such thing as Best Hospital in Bangladesh. It's a mix of bad and good experience, bit of luck, type of disease and level of in patient.&lt;/p&gt;
+&lt;p&gt;Public hospitals here are rife with negligence, overflow of patients and reputation of not so hygiene place for patients.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dhaka Medical Hospital&lt;/li&gt;
+&lt;li&gt;PG / BSMMU&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There is an example of negligence, where an elderly patient died in Dhaka Medical due to not taking so good care of a diabetes patient.&lt;/p&gt;
+&lt;p&gt;To get appointments in most public hospitals, sometimes you need political influence, birbery or power. For some, being part of a nearby school campus helps.&lt;/p&gt;
+&lt;p&gt;Among private hospitals a few mentionables are,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Green Life&lt;/li&gt;
+&lt;li&gt;Apollo&lt;/li&gt;
+&lt;li&gt;Padma&lt;/li&gt;
+&lt;li&gt;NINS&lt;/li&gt;
+&lt;li&gt;Birdem, &lt;a href="hospital-birdem"&gt;review&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ABM Abdullah in Central Hospital&lt;/p&gt;
+&lt;p&gt;Specialists are scattered across private and public hospitals.&lt;/p&gt;
+&lt;h3 id="dialysis-facilities"&gt;Dialysis Facilities&lt;/h3&gt;
+&lt;p&gt;For kidney patients, dialysis is like oxygen to breathe. Please, be careful about pneumonia (vaccinate ahead). In foreign countries, there might be stem cell treatments to parmamnently cure Kidney problems.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Sonar Bangla Foundation Bangladesh
+Address: 23/6 RUPAYAN SHELFORD, LEVEL-5,
+Shyamoli, Dhaka 1207
+Phone: +880 2-9143676
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Central Hospital, unfortunately, doesn't have dialysis yet.&lt;/p&gt;
+&lt;h2 id="misc"&gt;Misc&lt;/h2&gt;
+&lt;p&gt;Few points,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For kidney related diseases, it might as well be a good idea to consult with neurology and oncology.&lt;/li&gt;
+&lt;li&gt;There are plenty of examples where a poor diagnosis took place or wrong diagnosis did occur which resulted a seriously worse condition of patients or they died.&lt;/li&gt;
+&lt;li&gt;Transportation: Dhaka City is pretty busy and suffers high traffic situations. Hence, be prepared to spend time on the road while travelling to places.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you are a foreigner, considering treatment travelling to Bangladesh it's probably not a good idea unless you are just trying to save money.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You could use a translator if there's language barrier i.e., you don't know Bangla or English language. Please be aware that average demography don't speak English.&lt;/li&gt;
+&lt;li&gt;For acquiring VISA to india for treatment, it might help to provide appointment document with the hospital/specialist.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Data Plans&lt;/strong&gt;
+A good cell phone carrier helps. It's easy to register a SIM card with one of the carriers to make communication easier to make cals to hospitals or local Bangladesh contacts. Few careers are GrameenPhone, Robi, Airtel. Your roaming service might cover you as well for calling and data; however, please note that &lt;em&gt;cellphone plans are cheaper in Bangladesh compared to other countries&lt;/em&gt;. It's better to just utilize that.&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;To find some good Hospitals in Bangladesh we have to look at affluent medical centers in Dhaka. There is no such thing as Best Hospital in Bangladesh. It's a mix of bad and good experience, bit of luck, type of disease and level of in patient.&lt;/p&gt;</summary>
 	</entry>
 	<entry>
 		<id>https://blog.saosx.com/posts/hospitals-india</id>
@@ -172,55 +221,6 @@ I would bet on Hospitals on Delhi and Mumbai.&lt;/p&gt;
 &lt;/ul&gt;
 </content>
 		<summary>&lt;p&gt;As folk says here are recommended few,&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://blog.saosx.com/posts/hospitals-dhaka</id>
-		<title>Hospitals in Dhaka</title>
-		<link href="https://blog.saosx.com/posts/hospitals-dhaka" />
-		<updated>2019-11-28T00:00:00Z</updated>
-		<content>&lt;h2 id="best-hospitals-in-dhaka"&gt;Best Hospitals in Dhaka&lt;/h2&gt;
-&lt;p&gt;To find some good Hospitals in Bangladesh we have to look at affluent medical centers in Dhaka. There is no such thing as Best Hospital in Bangladesh. It's a mix of bad and good experience, bit of luck, type of disease and level of in patient.&lt;/p&gt;
-&lt;p&gt;Public hospitals here are rife with negligence, overflow of patients and reputation of not so hygiene place for patients.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Dhaka Medical Hospital&lt;/li&gt;
-&lt;li&gt;PG / BSMMU&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;There is an example of negligence, where an elderly patient died in Dhaka Medical due to not taking so good care of a diabetes patient.&lt;/p&gt;
-&lt;p&gt;To get appointments in most public hospitals, sometimes you need political influence, birbery or power. For some, being part of a nearby school campus helps.&lt;/p&gt;
-&lt;p&gt;Among private hospitals a few mentionables are,&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Green Life&lt;/li&gt;
-&lt;li&gt;Apollo&lt;/li&gt;
-&lt;li&gt;Padma&lt;/li&gt;
-&lt;li&gt;NINS&lt;/li&gt;
-&lt;li&gt;Birdem, &lt;a href="hospital-birdem"&gt;review&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;ABM Abdullah in Central Hospital&lt;/p&gt;
-&lt;p&gt;Specialists are scattered across private and public hospitals.&lt;/p&gt;
-&lt;h3 id="dialysis-facilities"&gt;Dialysis Facilities&lt;/h3&gt;
-&lt;p&gt;For kidney patients, dialysis is like oxygen to breathe. Please, be careful about pneumonia (vaccinate ahead). In foreign countries, there might be stem cell treatments to parmamnently cure Kidney problems.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Sonar Bangla Foundation Bangladesh
-Address: 23/6 RUPAYAN SHELFORD, LEVEL-5,
-Shyamoli, Dhaka 1207
-Phone: +880 2-9143676
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Central Hospital, unfortunately, doesn't have dialysis yet.&lt;/p&gt;
-&lt;h2 id="misc"&gt;Misc&lt;/h2&gt;
-&lt;p&gt;Few points,&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;For kidney related diseases, it might as well be a good idea to consult with neurology and oncology.&lt;/li&gt;
-&lt;li&gt;There are plenty of examples where a poor diagnosis took place or wrong diagnosis did occur which resulted a seriously worse condition of patients or they died.&lt;/li&gt;
-&lt;li&gt;Transportation: Dhaka City is pretty busy and suffers high traffic situations. Hence, be prepared to spend time on the road while travelling to places.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;If you are a foreigner, considering treatment travelling to Bangladesh it's probably not a good idea unless you are just trying to save money.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;You could use a translator if there's language barrier i.e., you don't know Bangla or English language. Please be aware that average demography don't speak English.&lt;/li&gt;
-&lt;li&gt;For acquiring VISA to india for treatment, it might help to provide appointment document with the hospital/specialist.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Data Plans&lt;/strong&gt;
-A good cell phone carrier helps. It's easy to register a SIM card with one of the carriers to make communication easier to make cals to hospitals or local Bangladesh contacts. Few careers are GrameenPhone, Robi, Airtel. Your roaming service might cover you as well for calling and data; however, please note that &lt;em&gt;cellphone plans are cheaper in Bangladesh compared to other countries&lt;/em&gt;. It's better to just utilize that.&lt;/p&gt;
-</content>
-		<summary>&lt;p&gt;To find some good Hospitals in Bangladesh we have to look at affluent medical centers in Dhaka. There is no such thing as Best Hospital in Bangladesh. It's a mix of bad and good experience, bit of luck, type of disease and level of in patient.&lt;/p&gt;</summary>
 	</entry>
 	<entry>
 		<id>https://blog.saosx.com/posts/wyam</id>
@@ -2689,55 +2689,45 @@ Application started. Press Ctrl+C to shut down.
 		<link href="https://blog.saosx.com/posts/regex" />
 		<updated>2018-05-18T00:00:00Z</updated>
 		<content>&lt;h2 id="notepad"&gt;Notepad++&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;notepad++&lt;/code&gt; flavor uses &lt;code&gt;\1&lt;/code&gt;, &lt;code&gt;\2&lt;/code&gt; and so on to refer to matched terms under &lt;code&gt;()&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;How to replace NSLog(&amp;#64;x) with printf(x)
-In find text box we put,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;(NSLog\(&amp;#64;)(.*) (;)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;In replace text box we put,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;printf(\2
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Copying from github then removing line numbers in front of all lines
-removing them using notepad++ regular expression,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;find        : ^([0-9][0-9][0-9] )(.*)
-replacement : \2
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;regular expression for clone repo, dependency repos given list of repo names,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;clone_repo /builds/atiq/jv8/\1 \1 false
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Remove beginning line numbers from the output of history command,
-^  7..&lt;/p&gt;
-&lt;p&gt;Remove all numbers from bash history files,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;find        : ^\s*(\d|\d\d|\d\d\d)\s\s(\S)
-replacement : \2
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Exammple table,&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;notepad++&lt;/code&gt; flavor uses &lt;code&gt;\1&lt;/code&gt;, &lt;code&gt;\2&lt;/code&gt; and so on to refer to matched terms under &lt;code&gt;(.*)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Example table,&lt;/p&gt;
 &lt;table class="table"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;Tables&lt;/th&gt;
-&lt;th style="text-align: center;"&gt;Are&lt;/th&gt;
-&lt;th style="text-align: right;"&gt;Cool&lt;/th&gt;
+&lt;th&gt;Intent&lt;/th&gt;
+&lt;th&gt;Find&lt;/th&gt;
+&lt;th&gt;Replace&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;col 1 is&lt;/td&gt;
-&lt;td style="text-align: center;"&gt;left-aligned&lt;/td&gt;
-&lt;td style="text-align: right;"&gt;$1600&lt;/td&gt;
+&lt;td&gt;Replace &lt;code&gt;NSLog(&amp;#64;x)&lt;/code&gt; with &lt;code&gt;printf(x)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;(NSLog\(&amp;#64;)(.*) (;)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;printf(\2&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;col 2 is&lt;/td&gt;
-&lt;td style="text-align: center;"&gt;centered&lt;/td&gt;
-&lt;td style="text-align: right;"&gt;$12&lt;/td&gt;
+&lt;td&gt;Remove line numbers from output of bash &lt;code&gt;history&lt;/code&gt; cmd&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;^  7..&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;null&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;col 3 is&lt;/td&gt;
-&lt;td style="text-align: center;"&gt;right-aligned&lt;/td&gt;
-&lt;td style="text-align: right;"&gt;$1&lt;/td&gt;
+&lt;td&gt;Remove number prefixes from bash history file&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;^\s*(\d|\d\d|\d\d\d)\s\s(\S)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;\2&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Copying from github which contains line numbers as prefixes, then, removing line numbers&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;^([0-9][0-9][0-9] )(.*)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;\2&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Given dependency repos name list, regular expression for clone repo&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;(.*)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;clone_repo /builds/atiq/jv8/\1 \1 false&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;p&gt;&lt;code&gt;null&lt;/code&gt; above represents empty string.&lt;/p&gt;
 &lt;h2 id="npp-regex-refs"&gt;npp regex refs&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://markantoniou.blogspot.com/2008/06/notepad-how-to-use-regular-expressions.html"&gt;notepad-how-to-use-regular-expressions&lt;/a&gt;&lt;/li&gt;
@@ -2746,7 +2736,7 @@ replacement : \2
 &lt;p&gt;&lt;strong&gt;Notepad++ Trips and Tricks&lt;/strong&gt;
 &lt;a href="https://superuser.com/questions/331098/flip-or-reverse-line-order-in-notepad"&gt;Flip or reverse line order in notepad++&lt;/a&gt;. It is used in &lt;a href="https://github.com/atiq-cs/Problem-Solving/blob/master/general-solving/leetcode/0012_integer-to-roman.cs"&gt;soln&lt;/a&gt; of the problem: &lt;a href="https://leetcode.com/problems/integer-to-roman"&gt;12. Integer to Roman&lt;/a&gt;&lt;/p&gt;
 </content>
-		<summary>&lt;p&gt;&lt;code&gt;notepad++&lt;/code&gt; flavor uses &lt;code&gt;\1&lt;/code&gt;, &lt;code&gt;\2&lt;/code&gt; and so on to refer to matched terms under &lt;code&gt;()&lt;/code&gt;.&lt;/p&gt;</summary>
+		<summary>&lt;p&gt;&lt;code&gt;notepad++&lt;/code&gt; flavor uses &lt;code&gt;\1&lt;/code&gt;, &lt;code&gt;\2&lt;/code&gt; and so on to refer to matched terms under &lt;code&gt;(.*)&lt;/code&gt;.&lt;/p&gt;</summary>
 	</entry>
 	<entry>
 		<id>https://blog.saosx.com/posts/interop-calling-cpp-from-csharp</id>

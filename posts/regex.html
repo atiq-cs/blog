@@ -95,55 +95,45 @@ Published on Friday, May 18, 2018<br>    </div>
                                         
 
 <h2 id="notepad">Notepad++</h2>
-<p><code>notepad++</code> flavor uses <code>\1</code>, <code>\2</code> and so on to refer to matched terms under <code>()</code>.</p>
-<p>How to replace NSLog(&#64;x) with printf(x)
-In find text box we put,</p>
-<pre><code>(NSLog\(&#64;)(.*) (;)
-</code></pre>
-<p>In replace text box we put,</p>
-<pre><code>printf(\2
-</code></pre>
-<p>Copying from github then removing line numbers in front of all lines
-removing them using notepad++ regular expression,</p>
-<pre><code>find        : ^([0-9][0-9][0-9] )(.*)
-replacement : \2
-</code></pre>
-<p>regular expression for clone repo, dependency repos given list of repo names,</p>
-<pre><code>clone_repo /builds/atiq/jv8/\1 \1 false
-</code></pre>
-<p>Remove beginning line numbers from the output of history command,
-^  7..</p>
-<p>Remove all numbers from bash history files,</p>
-<pre><code>find        : ^\s*(\d|\d\d|\d\d\d)\s\s(\S)
-replacement : \2
-</code></pre>
-<p>Exammple table,</p>
+<p><code>notepad++</code> flavor uses <code>\1</code>, <code>\2</code> and so on to refer to matched terms under <code>(.*)</code>.</p>
+<p>Example table,</p>
 <table class="table">
 <thead>
 <tr>
-<th>Tables</th>
-<th style="text-align: center;">Are</th>
-<th style="text-align: right;">Cool</th>
+<th>Intent</th>
+<th>Find</th>
+<th>Replace</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>col 1 is</td>
-<td style="text-align: center;">left-aligned</td>
-<td style="text-align: right;">$1600</td>
+<td>Replace <code>NSLog(&#64;x)</code> with <code>printf(x)</code></td>
+<td><code>(NSLog\(&#64;)(.*) (;)</code></td>
+<td><code>printf(\2</code></td>
 </tr>
 <tr>
-<td>col 2 is</td>
-<td style="text-align: center;">centered</td>
-<td style="text-align: right;">$12</td>
+<td>Remove line numbers from output of bash <code>history</code> cmd</td>
+<td><code>^  7..</code></td>
+<td><code>null</code></td>
 </tr>
 <tr>
-<td>col 3 is</td>
-<td style="text-align: center;">right-aligned</td>
-<td style="text-align: right;">$1</td>
+<td>Remove number prefixes from bash history file</td>
+<td><code>^\s*(\d|\d\d|\d\d\d)\s\s(\S)</code></td>
+<td><code>\2</code></td>
+</tr>
+<tr>
+<td>Copying from github which contains line numbers as prefixes, then, removing line numbers</td>
+<td><code>^([0-9][0-9][0-9] )(.*)</code></td>
+<td><code>\2</code></td>
+</tr>
+<tr>
+<td>Given dependency repos name list, regular expression for clone repo</td>
+<td><code>(.*)</code></td>
+<td><code>clone_repo /builds/atiq/jv8/\1 \1 false</code></td>
 </tr>
 </tbody>
 </table>
+<p><code>null</code> above represents empty string.</p>
 <h2 id="npp-regex-refs">npp regex refs</h2>
 <ul>
 <li><a href="http://markantoniou.blogspot.com/2008/06/notepad-how-to-use-regular-expressions.html">notepad-how-to-use-regular-expressions</a></li>
