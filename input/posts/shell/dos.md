@@ -1,4 +1,4 @@
-Title: Generic Windows Command Cache
+Title: Useful Windows Commands
 Published: 11/19/2019
 Tags:
   - windows command prompt
@@ -20,7 +20,7 @@ Customized ping command, waits 20 seconds for reply and keep pinging non-stop [p
 
     ping -w 20000 -t myserver.company.com
 
-Enable or disable Linux Subsystem feture,
+Enable or disable Linux Subsystem feature,
 
     Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
     Disable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux

@@ -1,4 +1,4 @@
-Title: pwsh Command Cache
+Title: Powershell Core Useful Commands
 Published: 11/19/2019
 Tags:
   - Powershell Core
@@ -116,15 +116,14 @@ powercfg -Export D:\Efficient_BP.pow 381b4222-f694-41f0-9685-ff5bb260df2e
 ```
 
 automate importing registry (requires privilege) ref,
-```
-reg import 'D:\Soft\reg files soft settings\app_paths\KeePass.reg'
-```
+
+    reg import 'D:\Soft\reg files soft settings\app_paths\KeePass.reg'
 
 ## Control Panel Cmdlet
 Handy cmds follow, [ref](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/show-controlpanelitem) to access sys properties,
-```
-Show-ControlPanelItem -Name System
-```
+
+    Show-ControlPanelItem -Name System
+
 Names supported by `Show-ControlPanelItem`,
 - Network and Sharing Center
 - Device Manager
@@ -257,11 +256,10 @@ Or finding a square root,
 
 #### String Helpers
 nll or empty related where `$ConfigName` is an example variable,
-```
-[string]::IsNullOrEmpty($ConfigName)
-[string]::IsEmpty($ConfigName)
-[string]::Empty($ConfigName)
-```
+
+    [string]::IsNullOrEmpty($ConfigName)
+    [string]::IsEmpty($ConfigName)
+    [string]::Empty($ConfigName)
 
 substring example,
 
