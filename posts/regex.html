@@ -94,9 +94,10 @@ Published on Friday, May 18, 2018<br>    </div>
                                 <div id="content" class="col-md-12">
                                         
 
+<p>This article currently covers notepad++ flavor or regular expressions.</p>
 <h2 id="notepad">Notepad++</h2>
-<p><code>notepad++</code> flavor uses <code>\1</code>, <code>\2</code> and so on to refer to matched terms under <code>(.*)</code>.</p>
-<p>Example table,</p>
+<p><code>notepad++</code> regex utilizes token <code>\1</code>, <code>\2</code> to replace with matched terms under <code>(.*)</code>.</p>
+<p>Example table for find and replace,</p>
 <table class="table">
 <thead>
 <tr>
@@ -106,6 +107,16 @@ Published on Friday, May 18, 2018<br>    </div>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>Replace <code>-&gt; D:\movies\superman.mkv</code> with <code>'superman'</code> (add quotes around)</td>
+<td><code>-&gt; D:\\movies\\new\\(.*)</code></td>
+<td><code>'\1'</code></td>
+</tr>
+<tr>
+<td>Replace the string starting with a space(<code> </code>) and ending with <code>: convert</code></td>
+<td><code>^ (.*): convert$</code> and keep the matched part quoted around</td>
+<td><code>'\1'</code></td>
+</tr>
 <tr>
 <td>Replace <code>NSLog(&#64;x)</code> with <code>printf(x)</code></td>
 <td><code>(NSLog\(&#64;)(.*) (;)</code></td>
@@ -139,13 +150,14 @@ Published on Friday, May 18, 2018<br>    </div>
 </tbody>
 </table>
 <p><code>null</code> above represents empty string.</p>
+<p>Please note the replace part is not necessary if we only want to find.</p>
 <h2 id="npp-regex-refs">npp regex refs</h2>
 <ul>
 <li><a href="http://markantoniou.blogspot.com/2008/06/notepad-how-to-use-regular-expressions.html">notepad-how-to-use-regular-expressions</a></li>
 <li><a href="http://docs.notepad-plus-plus.org/index.php/Regular_Expressions">npp official regex instructions</a></li>
 </ul>
-<p><strong>Notepad++ Trips and Tricks</strong>
-<a href="https://superuser.com/questions/331098/flip-or-reverse-line-order-in-notepad">Flip or reverse line order in notepad++</a>. It is used in <a href="https://github.com/atiq-cs/Problem-Solving/blob/master/general-solving/leetcode/0012_integer-to-roman.cs">soln</a> of the problem: <a href="https://leetcode.com/problems/integer-to-roman">12. Integer to Roman</a></p>
+<p><strong>Notepad++ Trips and Tricks</strong></p>
+<p>Following <a href="https://superuser.com/questions/331098/flip-or-reverse-line-order-in-notepad">SU - Flip or reverse line order in notepad++</a> we can reverse line orders for given text. Example use is in <a href="https://github.com/atiq-cs/Problem-Solving/blob/master/general-solving/leetcode/0012_integer-to-roman.cs">soln</a> of the problem: <a href="https://leetcode.com/problems/integer-to-roman">12. Integer to Roman</a></p>
 
 
 

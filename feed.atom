@@ -4,7 +4,7 @@
 	<title>SAOSX Blog</title>
 	<link rel="self" href="https://blog.saosx.com/" />
 	<rights>2020</rights>
-	<updated>2020-02-17T19:05:09Z</updated>
+	<updated>2020-02-18T02:52:43Z</updated>
 	<subtitle>Heads in the cloud! A Blog by Atiq Rahman!</subtitle>
 	<entry>
 		<id>https://blog.saosx.com/posts/tools-cmd</id>
@@ -49,87 +49,6 @@ Extract subtitle using &lt;code&gt;mkvextract&lt;/code&gt; (referring to &lt;cod
 &lt;/code&gt;&lt;/pre&gt;
 </content>
 		<summary>&lt;p&gt;Please be aware of notation below in command outlines. &lt;code&gt;$&lt;/code&gt; represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for exxample, &lt;code&gt;takeown&lt;/code&gt;.&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://blog.saosx.com/posts/hospitals-dhaka</id>
-		<title>Hospitals in Dhaka</title>
-		<link href="https://blog.saosx.com/posts/hospitals-dhaka" />
-		<updated>2019-11-28T00:00:00Z</updated>
-		<content>&lt;h2 id="best-hospitals-in-dhaka"&gt;Best Hospitals in Dhaka&lt;/h2&gt;
-&lt;p&gt;To find some good Hospitals in Bangladesh we have to look at affluent medical centers in Dhaka. There is no such thing as Best Hospital in Bangladesh. It's a mix of bad and good experience, bit of luck, type of disease and level of in patient.&lt;/p&gt;
-&lt;p&gt;Public hospitals here are rife with negligence, overflow of patients and reputation of not so hygiene place for patients.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Dhaka Medical Hospital&lt;/li&gt;
-&lt;li&gt;PG / BSMMU&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;There is an example of negligence, where an elderly patient died in Dhaka Medical due to not taking so good care of a diabetes patient.&lt;/p&gt;
-&lt;p&gt;To get appointments in most public hospitals, sometimes you need political influence, birbery or power. For some, being part of a nearby school campus helps.&lt;/p&gt;
-&lt;p&gt;Among private hospitals a few mentionables are,&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Green Life&lt;/li&gt;
-&lt;li&gt;Apollo&lt;/li&gt;
-&lt;li&gt;Padma&lt;/li&gt;
-&lt;li&gt;NINS&lt;/li&gt;
-&lt;li&gt;Birdem, &lt;a href="hospital-birdem"&gt;review&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;ABM Abdullah in Central Hospital&lt;/p&gt;
-&lt;p&gt;Specialists are scattered across private and public hospitals.&lt;/p&gt;
-&lt;h3 id="dialysis-facilities"&gt;Dialysis Facilities&lt;/h3&gt;
-&lt;p&gt;For kidney patients, dialysis is like oxygen to breathe. Please, be careful about pneumonia (vaccinate ahead). In foreign countries, there might be stem cell treatments to parmamnently cure Kidney problems.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Sonar Bangla Foundation Bangladesh
-Address: 23/6 RUPAYAN SHELFORD, LEVEL-5,
-Shyamoli, Dhaka 1207
-Phone: +880 2-9143676
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Central Hospital, unfortunately, doesn't have dialysis yet.&lt;/p&gt;
-&lt;h2 id="misc"&gt;Misc&lt;/h2&gt;
-&lt;p&gt;Few points,&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;For kidney related diseases, it might as well be a good idea to consult with neurology and oncology.&lt;/li&gt;
-&lt;li&gt;There are plenty of examples where a poor diagnosis took place or wrong diagnosis did occur which resulted a seriously worse condition of patients or they died.&lt;/li&gt;
-&lt;li&gt;Transportation: Dhaka City is pretty busy and suffers high traffic situations. Hence, be prepared to spend time on the road while travelling to places.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;If you are a foreigner, considering treatment travelling to Bangladesh it's probably not a good idea unless you are just trying to save money.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;You could use a translator if there's language barrier i.e., you don't know Bangla or English language. Please be aware that average demography don't speak English.&lt;/li&gt;
-&lt;li&gt;For acquiring VISA to india for treatment, it might help to provide appointment document with the hospital/specialist.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Data Plans&lt;/strong&gt;
-A good cell phone carrier helps. It's easy to register a SIM card with one of the carriers to make communication easier to make cals to hospitals or local Bangladesh contacts. Few careers are GrameenPhone, Robi, Airtel. Your roaming service might cover you as well for calling and data; however, please note that &lt;em&gt;cellphone plans are cheaper in Bangladesh compared to other countries&lt;/em&gt;. It's better to just utilize that.&lt;/p&gt;
-</content>
-		<summary>&lt;p&gt;To find some good Hospitals in Bangladesh we have to look at affluent medical centers in Dhaka. There is no such thing as Best Hospital in Bangladesh. It's a mix of bad and good experience, bit of luck, type of disease and level of in patient.&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://blog.saosx.com/posts/GPA</id>
-		<title>Hospitals in Dhaka</title>
-		<link href="https://blog.saosx.com/posts/GPA" />
-		<updated>2019-11-28T00:00:00Z</updated>
-		<content>&lt;h2 id="intro"&gt;Intro&lt;/h2&gt;
-&lt;p&gt;wegener's granulomatosis vs rheumatoid arthritis&lt;/p&gt;
-&lt;p&gt;Platelet counts as a biomarker in ANCA-associated vasculitis.
-&lt;a href="https://www.ncbi.nlm.nih.gov/pubmed/25744854"&gt;https://www.ncbi.nlm.nih.gov/pubmed/25744854&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;wegner, a study in india
-&lt;a href="https://www.ncbi.nlm.nih.gov/pubmed/18610662"&gt;https://www.ncbi.nlm.nih.gov/pubmed/18610662&lt;/a&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;more on wegener
-&lt;a href="https://www.indiatoday.in/lifestyle/health/story/story/wegeners-granulomatosis/1/391068-300511-2014-09-24"&gt;https://www.indiatoday.in/lifestyle/health/story/story/wegeners-granulomatosis/1/391068-300511-2014-09-24&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;why is my platelet count low
-Thrombocytopenia (low platelet count)&lt;/p&gt;
-&lt;p&gt;rheumatoid arthritis&lt;/p&gt;
-&lt;p&gt;Evans Syndrome and Granulomatosis With Polyangiitis: An Interesting Concomitant Occurrence
-&lt;a href="https://journal.chestnet.org/article/S0012-3692(16)55832-2/fulltext"&gt;https://journal.chestnet.org/article/S0012-3692(16)55832-2/fulltext&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Granulomatosis with polyangiitis (Wegener's disease): An updated review of ocular disease manifestations
-&lt;a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4869584/#bib16"&gt;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4869584/#bib16&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Wegener Granulomatosis: An Analysis of 158 Patients
-&lt;a href="https://annals.org/aim/article-abstract/705389"&gt;https://annals.org/aim/article-abstract/705389&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Extreme Thrombocytosis Presenting in Anti-Neutrophil Cytoplasmic Autoantibodies-Associated Crescentic Glomerulonephritis with Immune Complex Deposits: A Case Report
-&lt;a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5285513/"&gt;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5285513/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;cyclophosphamide vs plasmapheresis
-thrombocytopenia wegener's granulomatosis&lt;/p&gt;
-&lt;p&gt;Plasma Exchange and Cyclophosphamide in Combination as Rescue Therapy for Severe Granulomatosis With Polyangiitis Refractory to Rituximab Therapy
-&lt;a href="https://journal.chestnet.org/article/S0012-3692(17)31844-5/pdf"&gt;https://journal.chestnet.org/article/S0012-3692(17)31844-5/pdf&lt;/a&gt;&lt;/p&gt;
-</content>
-		<summary>&lt;p&gt;wegener's granulomatosis vs rheumatoid arthritis&lt;/p&gt;</summary>
 	</entry>
 	<entry>
 		<id>https://blog.saosx.com/posts/hospital-birdem</id>
@@ -221,6 +140,88 @@ I would bet on Hospitals on Delhi and Mumbai.&lt;/p&gt;
 &lt;/ul&gt;
 </content>
 		<summary>&lt;p&gt;As folk says here are recommended few,&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>https://blog.saosx.com/posts/hospitals-dhaka</id>
+		<title>Hospitals in Dhaka</title>
+		<link href="https://blog.saosx.com/posts/hospitals-dhaka" />
+		<updated>2019-11-28T00:00:00Z</updated>
+		<content>&lt;h2 id="best-hospitals-in-dhaka"&gt;Best Hospitals in Dhaka&lt;/h2&gt;
+&lt;p&gt;To find some good Hospitals in Bangladesh we have to look at affluent medical centers in Dhaka. There is no such thing as Best Hospital in Bangladesh. It's a mix of bad and good experience, bit of luck, type of disease and level of in patient.&lt;/p&gt;
+&lt;p&gt;Public hospitals here are rife with negligence, overflow of patients and reputation of not so hygiene place for patients.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dhaka Medical Hospital&lt;/li&gt;
+&lt;li&gt;PG / BSMMU&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There is an example of negligence, where an elderly patient died in Dhaka Medical due to not taking so good care of a diabetes patient.&lt;/p&gt;
+&lt;p&gt;To get appointments in most public hospitals, sometimes you need political influence, birbery or power. For some, being part of a nearby school campus helps.&lt;/p&gt;
+&lt;p&gt;Among private hospitals a few mentionables are,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Green Life&lt;/li&gt;
+&lt;li&gt;Apollo&lt;/li&gt;
+&lt;li&gt;Padma&lt;/li&gt;
+&lt;li&gt;NINS&lt;/li&gt;
+&lt;li&gt;Birdem, &lt;a href="hospital-birdem"&gt;review&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ABM Abdullah in Central Hospital&lt;/p&gt;
+&lt;p&gt;Specialists are scattered across private and public hospitals.&lt;/p&gt;
+&lt;h3 id="dialysis-facilities"&gt;Dialysis Facilities&lt;/h3&gt;
+&lt;p&gt;For kidney patients, dialysis is like oxygen to breathe. Please, be careful about pneumonia (vaccinate ahead). In foreign countries, there might be stem cell treatments to parmamnently cure Kidney problems.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Sonar Bangla Foundation Bangladesh
+Address: 23/6 RUPAYAN SHELFORD, LEVEL-5,
+Shyamoli, Dhaka 1207
+Phone: +880 2-9143676
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Central Hospital, unfortunately, doesn't have dialysis yet.&lt;/p&gt;
+&lt;h2 id="misc"&gt;Misc&lt;/h2&gt;
+&lt;p&gt;Few points,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For kidney related diseases, it might as well be a good idea to consult with neurology and oncology.&lt;/li&gt;
+&lt;li&gt;There are plenty of examples where a poor diagnosis took place or wrong diagnosis did occur which resulted a seriously worse condition of patients or they died.&lt;/li&gt;
+&lt;li&gt;Transportation: Dhaka City is pretty busy and suffers high traffic situations. Hence, be prepared to spend time on the road while travelling to places.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you are a foreigner, considering treatment travelling to Bangladesh it's probably not a good idea unless you are just trying to save money.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You could use a translator if there's language barrier i.e., you don't know Bangla or English language. Please be aware that average demography don't speak English.&lt;/li&gt;
+&lt;li&gt;For acquiring VISA to india for treatment, it might help to provide appointment document with the hospital/specialist.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Data Plans&lt;/strong&gt;
+A good cell phone carrier helps. It's easy to register a SIM card with one of the carriers to make communication easier to make cals to hospitals or local Bangladesh contacts. Few careers are GrameenPhone, Robi, Airtel. Your roaming service might cover you as well for calling and data; however, please note that &lt;em&gt;cellphone plans are cheaper in Bangladesh compared to other countries&lt;/em&gt;. It's better to just utilize that.&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;To find some good Hospitals in Bangladesh we have to look at affluent medical centers in Dhaka. There is no such thing as Best Hospital in Bangladesh. It's a mix of bad and good experience, bit of luck, type of disease and level of in patient.&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>https://blog.saosx.com/posts/rheumatoid-vasculitis</id>
+		<title>Rheumatoid Vasculitis and Granulomatosis with Polyangiitis (GPA)</title>
+		<link href="https://blog.saosx.com/posts/rheumatoid-vasculitis" />
+		<updated>2019-11-28T00:00:00Z</updated>
+		<content>&lt;h2 id="rheumatoid-vasculitis"&gt;Rheumatoid Vasculitis&lt;/h2&gt;
+&lt;h3 id="intro"&gt;Intro&lt;/h3&gt;
+&lt;p&gt;update..&lt;/p&gt;
+&lt;h3 id="gpa"&gt;GPA&lt;/h3&gt;
+&lt;p&gt;Granulomatosis with Polyangiitis or wegener's granulomatosis vs rheumatoid arthritis&lt;/p&gt;
+&lt;p&gt;wegener Granulomatosis ref Articles,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.indiatoday.in/lifestyle/health/story/story/wegeners-granulomatosis/1/391068-300511-2014-09-24"&gt;indiatoday&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.ncbi.nlm.nih.gov/pubmed/18610662"&gt;Wegner, a study in india&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="rheumatoid-arthritis-and-gpa"&gt;Rheumatoid Arthritis and GPA&lt;/h3&gt;
+&lt;p&gt;Refs,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://journal.chestnet.org/article/S0012-3692(16)55832-2/fulltext"&gt;journal.chestnet - Evans Syndrome and Granulomatosis With Polyangiitis: An Interesting Concomitant Occurrence&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4869584/#bib16"&gt;nlm.nih.gov - Granulomatosis with polyangiitis (Wegener's disease): An updated review of ocular disease manifestations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://annals.org/aim/article-abstract/705389"&gt;annals.org - Wegener Granulomatosis: An Analysis of 158 Patients&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5285513"&gt;Extreme Thrombocytosis Presenting in Anti-Neutrophil Cytoplasmic Autoantibodies-Associated Crescentic Glomerulonephritis with Immune Complex Deposits: A Case Report&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Cyclophosphamide vs Plasmapheresis&lt;/strong&gt;
+related to thrombocytopenia wegener's granulomatosis. Platelet counts as a biomarker in ANCA-associated vasculitis, &lt;a href="https://www.ncbi.nlm.nih.gov/pubmed/25744854"&gt;ref&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Why is my platelet count low?&lt;/p&gt;
+&lt;p&gt;Thrombocytopenia (low platelet count) is related.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://journal.chestnet.org/article/S0012-3692(17)31844-5/pdf"&gt;Plasma Exchange and Cyclophosphamide in Combination as Rescue Therapy for Severe Granulomatosis With Polyangiitis Refractory to Rituximab Therapy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>&lt;p&gt;update..&lt;/p&gt;</summary>
 	</entry>
 	<entry>
 		<id>https://blog.saosx.com/posts/wyam</id>
@@ -884,7 +885,7 @@ SSID 3 : hello_kitty
 	</entry>
 	<entry>
 		<id>https://blog.saosx.com/posts/dos</id>
-		<title>Generic Windows Command Cache</title>
+		<title>Useful Windows Commands</title>
 		<link href="https://blog.saosx.com/posts/dos" />
 		<updated>2019-11-19T00:00:00Z</updated>
 		<content>&lt;p&gt;Please be aware of notation below in command outlines. &lt;code&gt;$&lt;/code&gt; represents a command and rests of the lines following that line are output. Powershell is superset of traditional command prompt. Hence, all usual binaries still run on powershell for exxample, &lt;code&gt;takeown&lt;/code&gt;.&lt;/p&gt;
@@ -898,7 +899,7 @@ sysdm.cpl
 &lt;p&gt;Customized ping command, waits 20 seconds for reply and keep pinging non-stop &lt;a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/ping"&gt;ping ref&lt;/a&gt;,&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;ping -w 20000 -t myserver.company.com
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Enable or disable Linux Subsystem feture,&lt;/p&gt;
+&lt;p&gt;Enable or disable Linux Subsystem feature,&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 Disable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 &lt;/code&gt;&lt;/pre&gt;
@@ -969,7 +970,7 @@ For example usage &lt;code&gt;regsvr32&lt;/code&gt; of check &lt;a href="https:/
 	</entry>
 	<entry>
 		<id>https://blog.saosx.com/posts/pwsh</id>
-		<title>pwsh Command Cache</title>
+		<title>Powershell Core Useful Commands</title>
 		<link href="https://blog.saosx.com/posts/pwsh" />
 		<updated>2019-11-19T00:00:00Z</updated>
 		<content>&lt;p&gt;&lt;em&gt;This article formerly titled as 'Powershell Frequently Used Commands. Even though the article is titled pwsh it draws back on the topic of Powershell as well.'&lt;/em&gt;&lt;/p&gt;
@@ -2688,9 +2689,10 @@ Application started. Press Ctrl+C to shut down.
 		<title>Regular Expressions</title>
 		<link href="https://blog.saosx.com/posts/regex" />
 		<updated>2018-05-18T00:00:00Z</updated>
-		<content>&lt;h2 id="notepad"&gt;Notepad++&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;notepad++&lt;/code&gt; flavor uses &lt;code&gt;\1&lt;/code&gt;, &lt;code&gt;\2&lt;/code&gt; and so on to refer to matched terms under &lt;code&gt;(.*)&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Example table,&lt;/p&gt;
+		<content>&lt;p&gt;This article currently covers notepad++ flavor or regular expressions.&lt;/p&gt;
+&lt;h2 id="notepad"&gt;Notepad++&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;notepad++&lt;/code&gt; regex utilizes token &lt;code&gt;\1&lt;/code&gt;, &lt;code&gt;\2&lt;/code&gt; to replace with matched terms under &lt;code&gt;(.*)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Example table for find and replace,&lt;/p&gt;
 &lt;table class="table"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -2700,6 +2702,16 @@ Application started. Press Ctrl+C to shut down.
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Replace &lt;code&gt;-&amp;gt; D:\movies\superman.mkv&lt;/code&gt; with &lt;code&gt;'superman'&lt;/code&gt; (add quotes around)&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;-&amp;gt; D:\\movies\\new\\(.*)&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;'\1'&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Replace the string starting with a space(&lt;code&gt; &lt;/code&gt;) and ending with &lt;code&gt;: convert&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;^ (.*): convert$&lt;/code&gt; and keep the matched part quoted around&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;'\1'&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Replace &lt;code&gt;NSLog(&amp;#64;x)&lt;/code&gt; with &lt;code&gt;printf(x)&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;&lt;code&gt;(NSLog\(&amp;#64;)(.*) (;)&lt;/code&gt;&lt;/td&gt;
@@ -2733,15 +2745,16 @@ Application started. Press Ctrl+C to shut down.
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;&lt;code&gt;null&lt;/code&gt; above represents empty string.&lt;/p&gt;
+&lt;p&gt;Please note the replace part is not necessary if we only want to find.&lt;/p&gt;
 &lt;h2 id="npp-regex-refs"&gt;npp regex refs&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://markantoniou.blogspot.com/2008/06/notepad-how-to-use-regular-expressions.html"&gt;notepad-how-to-use-regular-expressions&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://docs.notepad-plus-plus.org/index.php/Regular_Expressions"&gt;npp official regex instructions&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Notepad++ Trips and Tricks&lt;/strong&gt;
-&lt;a href="https://superuser.com/questions/331098/flip-or-reverse-line-order-in-notepad"&gt;Flip or reverse line order in notepad++&lt;/a&gt;. It is used in &lt;a href="https://github.com/atiq-cs/Problem-Solving/blob/master/general-solving/leetcode/0012_integer-to-roman.cs"&gt;soln&lt;/a&gt; of the problem: &lt;a href="https://leetcode.com/problems/integer-to-roman"&gt;12. Integer to Roman&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Notepad++ Trips and Tricks&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Following &lt;a href="https://superuser.com/questions/331098/flip-or-reverse-line-order-in-notepad"&gt;SU - Flip or reverse line order in notepad++&lt;/a&gt; we can reverse line orders for given text. Example use is in &lt;a href="https://github.com/atiq-cs/Problem-Solving/blob/master/general-solving/leetcode/0012_integer-to-roman.cs"&gt;soln&lt;/a&gt; of the problem: &lt;a href="https://leetcode.com/problems/integer-to-roman"&gt;12. Integer to Roman&lt;/a&gt;&lt;/p&gt;
 </content>
-		<summary>&lt;p&gt;&lt;code&gt;notepad++&lt;/code&gt; flavor uses &lt;code&gt;\1&lt;/code&gt;, &lt;code&gt;\2&lt;/code&gt; and so on to refer to matched terms under &lt;code&gt;(.*)&lt;/code&gt;.&lt;/p&gt;</summary>
+		<summary>&lt;p&gt;This article currently covers notepad++ flavor or regular expressions.&lt;/p&gt;</summary>
 	</entry>
 	<entry>
 		<id>https://blog.saosx.com/posts/interop-calling-cpp-from-csharp</id>
