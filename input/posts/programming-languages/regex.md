@@ -26,6 +26,8 @@ Example table for find and replace,
 
 Please note the replace part is not necessary if we only want to find.
 
+
+
 ## npp regex refs
 - [notepad-how-to-use-regular-expressions](http://markantoniou.blogspot.com/2008/06/notepad-how-to-use-regular-expressions.html)
 - [npp official regex instructions](http://docs.notepad-plus-plus.org/index.php/Regular_Expressions)
@@ -33,3 +35,17 @@ Please note the replace part is not necessary if we only want to find.
 **Notepad++ Trips and Tricks**
 
 Following [SU - Flip or reverse line order in notepad++](https://superuser.com/questions/331098/flip-or-reverse-line-order-in-notepad) we can reverse line orders for given text. Example use is in [soln](https://github.com/atiq-cs/Problem-Solving/blob/master/general-solving/leetcode/0012_integer-to-roman.cs) of the problem: [12. Integer to Roman](https://leetcode.com/problems/integer-to-roman)
+
+** Config Files **
+
+config files can be found inside: $Env:APPDATA\Notepad++
+
+configs for npp: custom backup: `$PFilesX64DIR\npp\backup`
+Theme: `$Env:APPDATA\Notepad++\themes`
+Themes settings Path: `$Env:APPDATA\Notepad++`
+
+### refs for themes
+- [github - VS2015-Dark-Npp](https://github.com/cydh/VS2015-Dark-Npp)
+- [github - VS2015-Dark-Npp backup repo]()https://github.com/Ludomancer/VS2015-Dark-Npp
+- [github - material-theme-for-npp](https://github.com/naderi/material-theme-for-npp)
+- [lonewolfonline - notepad-colour-schemes]()https://lonewolfonline.net/notepad-colour-schemes)

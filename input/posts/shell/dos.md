@@ -89,12 +89,12 @@ view curently shared directories,
 to delete share (requires admin privilege),
 
     $ net share NewDrama /delete
-    Movies      H:\Cool Movies
-    Softs        F:\Sourcecodes\Web\Softs
+    Movies      D:\Cool Movies
+    Softs       D:\Sourcecodes\Web\Softs
 
 To share a directory,
 
-	net share listshare="c:\art list"
+	net share listshare="D:\Docs"
 
 **registry**
 For example usage `regsvr32` of check [codeproject - Windows Media Player Native Subtitle Plugin](https://www.codeproject.com/Articles/766246/Windows-Media-Player-Native-Subtitle-Plugin-Cplusp)

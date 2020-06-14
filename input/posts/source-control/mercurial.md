@@ -6,40 +6,38 @@ Tags:
   - version Control
 ---
 List files changed in previous commit,
-```
-hg show --stat --template 'List of files: \n{files}\n'
-hg show tip~2
-```
+
+    hg show D12345678 --stat --template 'List of files: \n{files}\n'
+    hg show tip~2
+
+Show commit log by short-id,
+
+    hg show 501c70899
 
 Fancy syntax, demonstrating spaces, blank lines etc
-```
-hg show D123456 --ignore-all-space --ignore-space-change --ignore-blank-lines --ignore-space-at-eol --exclude "extra_configs/*"
-```
+
+    hg show D123456 --ignore-all-space --ignore-space-change --ignore-blank-lines --ignore-space-at-eol --exclude "extra_configs/*"
 
 `hg status` has an equivalent. . represents current `HEAD` of bookmark/repo,
-```
-hg status --rev .~1:.
-```
+
+    hg status --rev .~1:.
+
 using alias `tip` (=HEAD) here's one more example,
-```
+
 hg status --rev tip~1:tip
-```
 
 #### Examining differentials
 show current diff (uncommitted),
-```
-hg diff
-```
+
+    hg diff
 
 show difference w.r.t revisions,
-```
-hg diff --rev tip~1::tip
-```
+
+    hg diff --rev tip~1::tip
 
 same as above, but with exclude syntax and demonstrate whilte-space and newline changes,
-```
-hg diff --rev tip~1::tip --ignore-all-space --ignore-space-change --ignore-blank-lines --ignore-space-at-eol --exclude "extra_configs/*"
-```
+
+    hg diff --rev tip~1::tip --ignore-all-space --ignore-space-change --ignore-blank-lines --ignore-space-at-eol --exclude "extra_configs/*"
 
 supparts naming to bookmarks,
 ```
@@ -84,20 +82,18 @@ hg revert --rev master file_path
 
 get a clean state of file
 similar to git reset all,
-```
-hg revert --all
-```
+
+    hg revert --all
 
 Following seems awesome,
-```
-hg revert --rev .~1 --all
-hg revert --rev .~1 file_path..
-hg revert --rev .~1 file_path
-```
 
-Revert a file to specific revision,
+    hg revert --rev .~1 --all
+    hg revert --rev .~1 file_path..
+    hg revert --rev .~1 file_path
+
+Revert a file to specific revision (short-id in example, would work with any commit id),
 ```
-hg revert -rd48959b331d747a10603ebdbef608ff2080a25a0 users/tests/tests_seti.py
+hg revert --rev d48959b33 users/tests/tests_seti.py
 ```
 
 in case of a terrible merge conflict on json files, we can undo that,
@@ -106,17 +102,23 @@ hg revert --rev .~1 materialized_configs/search/*
 ```
 
 #### Misc
+Find short-id of latest commit,
+
+    hg log -l 1 --template="{node|short} {date} {author}\n"
+
 check log,
-```
-hg log -l 10
-```
+
+    hg log -l 10
+
+Find commit logs by user name,
+
+    hg log -u 'Atiq Rahman'
 
 common cmds,
-```
-hg rebase
-hg fold
-hg forget
-```
+
+    hg rebase
+    hg fold
+    hg forget
 
 this will also delete the file,
 ```
@@ -175,50 +177,40 @@ hg commit -m '22720551 aalib should switch from slang to ncurses'
 
 Searching inside component projects
 We automate some stuff for components using `/opt/onbld/bin/pbchk`,
-```
-hg pbchk
-hg: unknown command 'pbchk'
-Mercurial Distributed SCM
 
-hg config --edit
-the user name first hg edit --
+    hg pbchk
+    hg: unknown command 'pbchk'
+    Mercurial Distributed SCM
 
-$ pbchk
--ksh: pbchk: not found [No such file or directory]
+    hg config --edit
+    the user name first hg edit --
 
-hg commit -m remove
-hg recommit
-hg push ssh://user@domain.com//gates/incoming
-```
+    $ pbchk
+    -ksh: pbchk: not found [No such file or directory]
 
-mercurial on Solaris (2017-02)
+    hg commit -m remove
+    hg recommit
+    hg push ssh://user@domain.com//gates/incoming
+
+### mercurial on Solaris (2017-02)
 some examples,
-```
-hg log
-hg serve
-hg view
-hg log -G
 
-hg tip - absolute
-hg parent
-hg summary - working dir and tons of other thing
-hg reconnect
-```
+    hg serve
+    hg view
+    hg log -G
 
-Rewriting history
-hash will change for changing some of the fields
+    hg tip - absolute
+    hg parent
+    hg summary - working dir and tons of other thing
+    hg reconnect
+
+**Rewriting history**
+
+commit id/hashes will change for changing some of the fields
 There are phases
- - public is immutable and others not
+ - public commits are immutable though
 
 amend example,
-```
-hg commit --amend -m "git 2.7.5"
-```
 
-Rebasing,
-like fast forward merge, can go to merge tool
+    hg commit --amend -m "git 2.7.5"
 
-```
-hg pull --rebase
-+1 heads
-```
