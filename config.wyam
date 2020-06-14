@@ -1,11 +1,13 @@
 #recipe Blog
 
 // Customize your settings and add new ones here
-Settings[Keys.Host] = "blog.saosx.com";
+Settings[Keys.Host] = "note.atiq.xyz";
 Settings[Keys.LinksUseHttps] = true;
-Settings[BlogKeys.Title] = "SAOSX Blog";
+Settings[BlogKeys.Title] = "Notes from Atiq";
 Settings[BlogKeys.Description] = "Heads in the cloud! A Blog by Atiq Rahman!";
 Settings[BlogKeys.Intro] = "By day, I am a Software Engineer at Facebook! By night, a wyam hacker. My opionions and contents here does not represent the company!";
 // Settings[BlogKeys.MarkdownConfiguration] = "advanced+bootstrap+Mathematics";
 
 // Add any pipeline customizations here
+// Theme Settings
+#theme SolidState
