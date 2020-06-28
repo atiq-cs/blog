@@ -1,12 +1,11 @@
 #recipe Blog
 
 // Customize your settings and add new ones here
-Settings[Keys.Host] = "note.atiq.xyz";
+Settings[Keys.Host] = "note.iqubit.xyz";
 Settings[Keys.LinksUseHttps] = true;
-Settings[BlogKeys.Title] = "Notes from Atiq";
+Settings[BlogKeys.Title] = "Notes from Qubit Inc.";
 Settings[BlogKeys.Description] = "Heads in the cloud! A Blog by Atiq Rahman!";
-Settings[BlogKeys.Intro] = "By day, I am a Software Engineer at Facebook! By night, a wyam hacker. My opionions and contents here does not represent the company!";
-// Settings[BlogKeys.MarkdownConfiguration] = "advanced+bootstrap+Mathematics";
+Settings[BlogKeys.Intro] = "By day, I convert caffeine to code at FB. I love to hike around the valley. Black lives matter! I strongly support freedom of expression. My opionions and contents here does not represent my company!";
 
 // Add any pipeline customizations here
 // Theme Settings
