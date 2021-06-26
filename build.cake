@@ -119,11 +119,12 @@ Task("CopyToMasterBranch")
         foreach (string newPath in System.IO.Directory.GetFiles(sourcePath, "*.*", SearchOption.AllDirectories))
             System.IO.File.Copy(newPath, newPath.Replace(sourcePath, tempDir), true);
 
-        // Write CNAME file
-        string CNameFileName = "CNAME";
-        // ref, https://docs.microsoft.com/en-us/dotnet/standard/io/how-to-write-text-to-a-file
-        System.IO.File.WriteAllText(System.IO.Path.Combine(tempDir, CNameFileName), CNameContent);
-        // if we need to add more lines to this file use, `File.AppendAllLines()`
+
+        // Do not Write CNAME file: moving to statiq
+        // string CNameFileName = "CNAME";
+        // // ref, https://docs.microsoft.com/en-us/dotnet/standard/io/how-to-write-text-to-a-file
+        // System.IO.File.WriteAllText(System.IO.Path.Combine(tempDir, CNameFileName), CNameContent);
+        // // if we need to add more lines to this file use, `File.AppendAllLines()`
     });
 
 Task("CommitMasterBranch")
